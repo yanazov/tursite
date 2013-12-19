@@ -1,0 +1,121 @@
+$color_blue: #00adc7;
+$color_blue_hover: #00b7d3;
+$color_blue_shadow: #0098af;
+$color_blue_dark: #2a5071;
+$color_blue_border: #008a9f;
+$color_yellow: #ffd200;
+$color_yellow_hover: #ffd929;
+$color_yellow_shadow: #d4b522;
+
+$color_txt: #383d43;
+$color_grey: #ebeef0;
+
+$color_green: #61b77c;
+
+@font-face {
+    font-family: 'lobster';
+    src: url('../fonts/lobster-webfont.eot');
+    src: url('../fonts/lobster-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lobster-webfont.woff') format('woff'),
+         url('../fonts/lobster-webfont.ttf') format('truetype'),
+         url('../fonts/lobster-webfont.svg#lobster-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_r';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_m';
+    src: url('../fonts/roboto-medium-webfont.eot');
+    src: url('../fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_slab_b';
+    src: url('../fonts/robotoslab-bold-webfont.eot');
+    src: url('../fonts/robotoslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotoslab-bold-webfont.woff') format('woff'),
+         url('../fonts/robotoslab-bold-webfont.ttf') format('truetype'),
+         url('../fonts/robotoslab-bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_slab_r';
+    src: url('../fonts/robotoslab-regular-webfont.eot');
+    src: url('../fonts/robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotoslab-regular-webfont.woff') format('woff'),
+         url('../fonts/robotoslab-regular-webfont.ttf') format('truetype'),
+         url('../fonts/robotoslab-regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 0px;
+}
+
+input, textarea:focus{outline:none}
+div, a, span:focus{outline:none}
+
+/* ====================== стилизаци чекбокса ============================================== */				
+input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"] + label span {
+	display:inline-block;
+	width: 29px;
+	height: 22px;
+	/*	top: -1px;*/
+	margin-right: 10px;
+	vertical-align:middle;
+	background:url(../img/icon.png) no-repeat;
+	cursor:pointer;
+	background-position: 0px -370px;
+	font-size: 8pt;
+	color: #fff;
+}
+input[type="checkbox"]:checked + label span {
+	background:url(../img/icon.png) no-repeat;
+	background-position: 0px -340px;
+}
+label{
+	display: inline-block;
+	width: 29px;
+	margin-left: 20px;
+	margin-top: 11px;
+	
+}
+/* ==================================================================== */	

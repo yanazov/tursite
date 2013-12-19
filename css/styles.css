@@ -1,0 +1,3005 @@
+@charset "IBM866";
+@font-face {
+  font-family: 'lobster';
+  src: url("../fonts/lobster-webfont.eot");
+  src: url("../fonts/lobster-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lobster-webfont.woff") format("woff"), url("../fonts/lobster-webfont.ttf") format("truetype"), url("../fonts/lobster-webfont.svg#lobster-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_r';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_m';
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff") format("woff"), url("../fonts/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_slab_b';
+  src: url("../fonts/robotoslab-bold-webfont.eot");
+  src: url("../fonts/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/robotoslab-bold-webfont.svg#roboto_slabbold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto_slab_r';
+  src: url("../fonts/robotoslab-regular-webfont.eot");
+  src: url("../fonts/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/robotoslab-regular-webfont.ttf") format("truetype"), url("../fonts/robotoslab-regular-webfont.svg#roboto_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 84, ../sass/_main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+
+/* line 90, ../sass/_main.scss */
+input, textarea:focus {
+  outline: none;
+}
+
+/* line 91, ../sass/_main.scss */
+div, a, span:focus {
+  outline: none;
+}
+
+/* ====================== ��������� �������� ============================================== */
+/* line 94, ../sass/_main.scss */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* line 97, ../sass/_main.scss */
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 29px;
+  height: 22px;
+  /*	top: -1px;*/
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url(../img/icon.png) no-repeat;
+  cursor: pointer;
+  background-position: 0px -370px;
+  font-size: 8pt;
+  color: #fff;
+}
+
+/* line 110, ../sass/_main.scss */
+input[type="checkbox"]:checked + label span {
+  background: url(../img/icon.png) no-repeat;
+  background-position: 0px -340px;
+}
+
+/* line 114, ../sass/_main.scss */
+label {
+  display: inline-block;
+  width: 29px;
+  margin-left: 20px;
+  margin-top: 11px;
+}
+
+/* ==================================================================== */
+@media only screen and (min-width: 1260px) and (max-width: 3960px), only screen and (min-device-width: 1260px) and (max-device-width: 3960px) {
+  /* line 1, ../sass/_1280.scss */
+  body {
+    display: block;
+    position: relative;
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  /* line 8, ../sass/_1280.scss */
+  .btn-yellow {
+    display: inline-block;
+    position: relative;
+    padding: 8px 15px 8px 15px;
+    margin-left: 43px;
+    background-color: #ffd200;
+    font-family: 'roboto_slab_r';
+    font-weight: bold;
+    font-size: 7.5pt;
+    color: #383d43;
+    text-decoration: none;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 24, ../sass/_1280.scss */
+  .btn-yellow:hover {
+    background-color: #ffd929;
+  }
+
+  /* line 27, ../sass/_1280.scss */
+  .btn-yellow:active {
+    -moz-box-shadow: inset 3px 0 12px #d4b522;
+    -webkit-box-shadow: inset 3px 0 12px #d4b522;
+    box-shadow: inset 0px 2px 0px #d4b522;
+  }
+
+  /* line 33, ../sass/_1280.scss */
+  .b-consultant {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    height: 45px;
+    z-index: 100;
+  }
+
+  /* line 43, ../sass/_1280.scss */
+  .b-consultant__form {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    width: 275px;
+    height: 42px;
+    background-color: #fff;
+    -moz-box-shadow: 3px 0 12px #d4b522;
+    -webkit-box-shadow: 3px 0 12px #d4b522;
+    box-shadow: 0px 0px 5px  #777;
+    z-index: 100;
+  }
+
+  /* line 56, ../sass/_1280.scss */
+  .b-consultant__form__icon {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 42px;
+    height: 42px;
+    background-color: #ffd200;
+  }
+
+  /* line 65, ../sass/_1280.scss */
+  .b-consultant__form__icon span {
+    display: block;
+    position: relative;
+    top: 11px;
+    left: 10px;
+    width: 23px;
+    height: 19px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -420px;
+  }
+
+  /* line 75, ../sass/_1280.scss */
+  .b-consultant__form__txt {
+    display: inline-block;
+    position: relative;
+    margin-left: 52px;
+    margin-top: 10px;
+    font-family: 'roboto_slab_b';
+    font-size: 12pt;
+    color: #383d43;
+  }
+
+  /* line 84, ../sass/_1280.scss */
+  .b-consultant__form__status {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    padding-left: 12px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #61b77c;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -465px;
+  }
+
+  /* line 95, ../sass/_1280.scss */
+  .b-consultant__form__close {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 9px;
+    height: 9px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -440px;
+    cursor: pointer;
+  }
+
+  /* ====================================  BEGIN FOOTER =============================== */
+  /* line 107, ../sass/_1280.scss */
+  .header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 125px;
+    background-color: #00adc7;
+  }
+
+  /* line 114, ../sass/_1280.scss */
+  .header__b-left {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    width: 275px;
+    z-index: 2;
+  }
+
+  /* line 122, ../sass/_1280.scss */
+  .header__b-left_nav {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+  }
+
+  /* line 127, ../sass/_1280.scss */
+  .header__b-left_nav li {
+    display: inline-block;
+    position: relative;
+    margin-left: 26px;
+  }
+
+  /* line 132, ../sass/_1280.scss */
+  .header__b-left_nav li:first-child {
+    margin-left: 0px;
+  }
+
+  /* line 135, ../sass/_1280.scss */
+  .header__b-left_nav a {
+    font-family: 'roboto_m';
+    font-size: 9pt;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* line 141, ../sass/_1280.scss */
+  .header__b-left__tel {
+    display: inline-block;
+    position: relative;
+    margin-top: 37px;
+    font-family: 'roboto_slab_b';
+    font-size: 18pt;
+    color: #fff;
+  }
+
+  /* line 149, ../sass/_1280.scss */
+  .header__b-left__icon {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 17px;
+    margin-left: 12px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px 0px;
+  }
+
+  /* line 158, ../sass/_1280.scss */
+  .header__b-left__zvonok {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-left: 23px;
+    font-family: 'roboto_m';
+    font-size: 8pt;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+  }
+
+  /* line 169, ../sass/_1280.scss */
+  .header__b-center {
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 176, ../sass/_1280.scss */
+  .header__b-center__logo {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 49px;
+    margin: 0 auto;
+    background: url(../img/logo.png) no-repeat;
+  }
+
+  /* line 184, ../sass/_1280.scss */
+  .header__b-center__txt {
+    display: block;
+    position: relative;
+    font-size: 24pt;
+    font-family: 'lobster';
+    color: #fff;
+  }
+
+  /* line 191, ../sass/_1280.scss */
+  .header__b-right {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    width: 275px;
+    z-index: 2;
+    text-align: right;
+  }
+
+  /* line 200, ../sass/_1280.scss */
+  .header__b-right_login {
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 31px;
+    padding: 11px 0px 0px 22px;
+    margin-top: 10px;
+    background-color: #ffd200;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    font-family: 'roboto_slab_b';
+    color: #383d43;
+    font-size: 10.5pt;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  /* line 220, ../sass/_1280.scss */
+  .header__b-right_login:hover {
+    background-color: #ffd929;
+  }
+
+  /* line 223, ../sass/_1280.scss */
+  .header__b-right_login:active {
+    -moz-box-shadow: 3px 0 12px #d4b522;
+    -webkit-box-shadow: 3px 0 12px #d4b522;
+    box-shadow: inset 0px 2px 0px #d4b522;
+  }
+
+  /* line 229, ../sass/_1280.scss */
+  .header__b-right_login span {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 12px;
+    height: 7px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -40px;
+  }
+
+  /* line 239, ../sass/_1280.scss */
+  .header__b-right__search {
+    display: inline-block;
+    position: relative;
+    width: 155px;
+    height: 28px;
+    margin-top: 19px;
+    padding: 0px 30px 0px 15px;
+    border: none;
+    font-family: 'roboto_r';
+    font-size: 10.5pt;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 254, ../sass/_1280.scss */
+  .header__b-right__zoom {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 76px;
+    right: 10px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -20px;
+  }
+
+  /* ====================================  END HEADER =============================== */
+  /* ====================================  BEGIN MENU =============================== */
+  /* line 268, ../sass/_1280.scss */
+  .menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 58px;
+    text-align: center;
+  }
+
+  /* line 275, ../sass/_1280.scss */
+  .menu li {
+    display: inline-block;
+    position: relative;
+    padding: 0px 30px 0px 35px;
+    margin-top: 20px;
+    text-align: center;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -20px -40px;
+  }
+
+  /* line 284, ../sass/_1280.scss */
+  .menu li:first-child {
+    padding-left: 0px;
+    background: none;
+  }
+
+  /* line 288, ../sass/_1280.scss */
+  .menu li:last-child {
+    padding-right: 0px;
+  }
+
+  /* line 291, ../sass/_1280.scss */
+  .menu a {
+    color: #383d43;
+    font-family: 'roboto_slab_b';
+    font-size: 12.5pt;
+    text-decoration: none;
+  }
+
+  /* ====================================   END MENU  =============================== */
+  /* =================================   BEGIN B-SEARCH  ============================ */
+  /* line 300, ../sass/_1280.scss */
+  .b-search {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 81px;
+    padding-bottom: 20px;
+    background-color: #ffd200;
+    text-align: center;
+  }
+
+  /* line 309, ../sass/_1280.scss */
+  .b-search__round {
+    display: block;
+    position: absolute;
+    top: -18px;
+    left: 40px;
+    width: 27px;
+    height: 27px;
+    background-color: #ffd200;
+    border: 4px solid #fff;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 323, ../sass/_1280.scss */
+  .b-search__round span {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 9px;
+    width: 11px;
+    height: 7px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -60px;
+  }
+
+  /* line 333, ../sass/_1280.scss */
+  .b-search__caption {
+    float: left;
+    width: 10.7%;
+    height: 52px;
+    margin-top: 20px;
+    padding: 8px 0px 0px 0px;
+    border-right: 1px solid #d7b40d;
+    text-align: center;
+  }
+
+  /* line 342, ../sass/_1280.scss */
+  .b-search__caption span {
+    display: inline-block;
+    position: relative;
+    width: 75px;
+    font-family: 'roboto_slab_b';
+    font-size: 15.5pt;
+    color: #383d43;
+    text-align: right;
+    line-height: 20px;
+  }
+
+  /* line 352, ../sass/_1280.scss */
+  .b-search__place {
+    float: left;
+    width: 28.3%;
+    height: 55px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-right: 1px solid #d7b40d;
+    text-align: center;
+  }
+
+  /* line 361, ../sass/_1280.scss */
+  .b-search__place__from {
+    display: inline-block;
+    position: relative;
+    width: 44.2%;
+    margin-right: 3px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+    text-align: left;
+  }
+
+  /* line 371, ../sass/_1280.scss */
+  .b-search__place__to {
+    display: inline-block;
+    position: relative;
+    width: 44.2%;
+    margin-left: 3px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+    text-align: left;
+  }
+
+  /* line 381, ../sass/_1280.scss */
+  .b-search__place input {
+    display: block;
+    position: relative;
+    width: 83%;
+    height: 27px;
+    margin: 5px 0px 0px 0px;
+    padding-left: 22px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+    border: none;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 397, ../sass/_1280.scss */
+  .b-search__place__icon {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 8px;
+    width: 11px;
+    height: 15px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -70px;
+  }
+
+  /* line 407, ../sass/_1280.scss */
+  .b-search__time {
+    float: left;
+    width: 25%;
+    height: 55px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-right: 1px solid #d7b40d;
+    text-align: center;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+  }
+
+  /* line 419, ../sass/_1280.scss */
+  .b-search__time__name {
+    display: block;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+  }
+
+  /* line 425, ../sass/_1280.scss */
+  .b-search__time__b-input {
+    display: inline-block;
+    position: relative;
+    width: 40.5%;
+  }
+
+  /* line 430, ../sass/_1280.scss */
+  .b-search__time__b-input input {
+    width: 67%;
+    height: 27px;
+    margin: 5px 0px 0px 0px;
+    padding-right: 27px;
+    padding-left: 10px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+    border: none;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 445, ../sass/_1280.scss */
+  .b-search__time__b-input span {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 6%;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -90px;
+  }
+
+  /* line 455, ../sass/_1280.scss */
+  .b-search__time__separ {
+    display: inline-block;
+    position: relative;
+    width: 11px;
+    text-align: center;
+    font-family: 'roboto_r';
+    font-size: 14pt;
+    color: #383d43;
+  }
+
+  /* line 465, ../sass/_1280.scss */
+  .b-search__cost {
+    float: left;
+    width: 19.8%;
+    height: 55px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-right: 1px solid #d7b40d;
+    text-align: center;
+  }
+
+  /* line 474, ../sass/_1280.scss */
+  .b-search__cost__name {
+    display: block;
+    position: relative;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+  }
+
+  /* line 481, ../sass/_1280.scss */
+  .b-search__cost__name_txt {
+    font-family: 'roboto_slab_b';
+    font-size: 10.5pt;
+    color: #383d43;
+  }
+
+  /* line 486, ../sass/_1280.scss */
+  .b-search__cost__name input {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    font-family: 'roboto_slab_b';
+    font-size: 10.5pt;
+    color: #383d43;
+    border: none;
+    background: none;
+  }
+
+  /* line 496, ../sass/_1280.scss */
+  #minCost {
+    text-align: right;
+  }
+
+  /* Ширина слайдера */
+  /* line 501, ../sass/_1280.scss */
+  .b-search__cost__select {
+    display: inline-block;
+    position: relative;
+    margin-top: 11px;
+    width: 80.3%;
+  }
+
+  /* Контейнер слайдера */
+  /* line 508, ../sass/_1280.scss */
+  .ui-slider {
+    position: relative;
+  }
+
+  /* Ползунок */
+  /* line 512, ../sass/_1280.scss */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    margin-top: 7px;
+    width: 11px;
+    /* Задаем нужную ширину */
+    height: 17px;
+    /* и высоту */
+    background: url(../img/icon.png) no-repeat;
+    /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+    background-position: 0px -110px;
+    cursor: pointer;
+  }
+
+  /* line 522, ../sass/_1280.scss */
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  /* line 531, ../sass/_1280.scss */
+  .ui-slider-horizontal {
+    height: 7px;
+    /* задаем высоту согласно дизайна */
+  }
+
+  /* позиционируем ползунки */
+  /* line 535, ../sass/_1280.scss */
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: -6px;
+  }
+
+  /* line 539, ../sass/_1280.scss */
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+
+  /* line 543, ../sass/_1280.scss */
+  .ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+  }
+
+  /* line 546, ../sass/_1280.scss */
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+
+  /* оформление полосы по которой ходит ползунок */
+  /* line 550, ../sass/_1280.scss */
+  .ui-widget-content {
+    background: #fff;
+  }
+
+  /* оформление активного участка (между двумя ползунками) */
+  /* line 555, ../sass/_1280.scss */
+  .ui-widget-header {
+    background: #00adc7;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* скругление для полосы слайдера */
+  /* line 564, ../sass/_1280.scss */
+  .ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  /* line 569, ../sass/_1280.scss */
+  .b-search__find {
+    float: right;
+    width: 15.7%;
+    text-align: center;
+  }
+
+  /* line 574, ../sass/_1280.scss */
+  .btn-blue {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    padding: 9px 0px 0px 19px;
+    margin-top: 25px;
+    background-color: #00adc7;
+    font-family: 'lobster';
+    font-size: 14pt;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 592, ../sass/_1280.scss */
+  .btn-blue:hover {
+    background-color: #00b7d3;
+  }
+
+  /* line 595, ../sass/_1280.scss */
+  .btn-blue:active {
+    -moz-box-shadow: 3px 0 12px #0098af;
+    -webkit-box-shadow: 3px 0 12px #0098af;
+    box-shadow: inset 0px 2px 0px #0098af;
+  }
+
+  /* line 601, ../sass/_1280.scss */
+  .btn-blue span {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 12px;
+    right: 15px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -130px;
+  }
+
+  /* ==================================   END B-SEARCH  ============================= */
+  /* =================================   BEGIN B-VISUAL  ============================ */
+  /* line 614, ../sass/_1280.scss */
+  .b-visual {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 490px;
+    background: url(../pic/visual1.jpg) no-repeat;
+    background-position: 50% 50%;
+  }
+
+  /* line 622, ../sass/_1280.scss */
+  .b-visual__dimmer {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #2a5071;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+  }
+
+  /* line 633, ../sass/_1280.scss */
+  .b-visual__slogan {
+    display: block;
+    position: relative;
+    width: 890px;
+    margin: 0 auto;
+    padding-top: 65px;
+    font-family: 'roboto_slab_b';
+    font-size: 50pt;
+    color: #fff;
+    text-align: center;
+    line-height: 68px;
+  }
+
+  /* line 645, ../sass/_1280.scss */
+  .b-visual__line {
+    display: block;
+    position: relative;
+    width: 43px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+  }
+
+  /* line 653, ../sass/_1280.scss */
+  .b-visual__txt {
+    display: block;
+    position: relative;
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-family: 'roboto_r';
+    font-size: 10.5pt;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* line 664, ../sass/_1280.scss */
+  .b-visual__btn {
+    display: block;
+    position: relative;
+    width: 210px;
+    height: 41px;
+    margin: 0 auto;
+    margin-top: 45px;
+    font-family: 'lobster';
+    font-size: 16pt;
+    padding: 12px 0px 0px 0px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  /* line 677, ../sass/_1280.scss */
+  .b-visual__nav {
+    display: block;
+    position: relative;
+    width: 93px;
+    margin: 0 auto;
+    margin-top: 63px;
+  }
+
+  /* line 684, ../sass/_1280.scss */
+  .b-visual__nav__elem {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin-left: 16px;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    cursor: pointer;
+  }
+
+  /* line 697, ../sass/_1280.scss */
+  .b-visual__nav__elem:nth-child(1) {
+    background-color: #ffd200;
+    margin-left: 0px;
+    cursor: default;
+  }
+
+  /* line 702, ../sass/_1280.scss */
+  .b-visual__arrow-left {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 204px;
+    left: 40px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -150px;
+    cursor: pointer;
+  }
+
+  /* line 713, ../sass/_1280.scss */
+  .b-visual__arrow-right {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 204px;
+    right: 40px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -190px;
+    cursor: pointer;
+  }
+
+  /* ==================================   END B-VISUAL  ============================= */
+  /* ==================================   BEGIN B-HOT  ============================== */
+  /* line 726, ../sass/_1280.scss */
+  .b-hot {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+  }
+
+  /* line 733, ../sass/_1280.scss */
+  .b-hot__decor {
+    display: block;
+    position: relative;
+    width: 118px;
+    margin: 0 auto;
+    margin-top: 45px;
+    border-top: 1px solid #b3b9bd;
+  }
+
+  /* line 741, ../sass/_1280.scss */
+  .b-hot__decor_img {
+    display: block;
+    position: relative;
+    top: -10px;
+    width: 30px;
+    height: 16px;
+    margin: 0 auto;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 10px -230px;
+    background-color: #fff;
+  }
+
+  /* line 752, ../sass/_1280.scss */
+  .b-hot__caption {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'roboto_slab_r';
+    font-size: 22pt;
+    color: #383d43;
+  }
+
+  /* line 760, ../sass/_1280.scss */
+  .b-hot__b-unit {
+    display: inline-block;
+    position: relative;
+    width: 248px;
+    height: 397px;
+    margin: 44px 15px 0px 15px;
+    background-color: #ebeef0;
+    text-align: left;
+  }
+
+  /* line 769, ../sass/_1280.scss */
+  .b-hot__b-unit:hover {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 28px #ccc;
+    -webkit-box-shadow: 0 0 28px #ccc;
+    box-shadow: 0 0 28px  #ccc;
+  }
+  /* line 774, ../sass/_1280.scss */
+  .b-hot__b-unit:hover .b-hot__b-unit__dimmer {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  }
+
+  /* line 779, ../sass/_1280.scss */
+  .b-hot__b-unit img {
+    display: block;
+    position: relative;
+    width: 248px;
+    height: 123px;
+  }
+
+  /* line 785, ../sass/_1280.scss */
+  .b-hot__b-unit__dimmer {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 248px;
+    height: 123px;
+    background-color: #2a5071;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+  }
+
+  /* line 796, ../sass/_1280.scss */
+  .b-hot__b-unit__b-txt {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 220px;
+  }
+
+  /* line 802, ../sass/_1280.scss */
+  .b-hot__b-unit__name {
+    display: block;
+    position: relative;
+    width: 212px;
+    margin: 15px 0px 0px 18px;
+    line-height: 22px;
+    font-family: 'roboto_slab_b';
+    font-size: 13.5pt;
+    color: #383d43;
+  }
+
+  /* line 812, ../sass/_1280.scss */
+  .b-hot__b-unit__period {
+    display: block;
+    position: relative;
+    margin: 0px 0px 0px 18px;
+    font-family: 'roboto_m';
+    font-size: 9pt;
+    color: #00adc7;
+    text-align: left;
+  }
+
+  /* line 821, ../sass/_1280.scss */
+  .b-hot__b-unit__about {
+    display: block;
+    position: relative;
+    margin: 20px 0px 0px 18px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #777e82;
+    text-align: left;
+    line-height: 15px;
+  }
+
+  /* line 831, ../sass/_1280.scss */
+  .b-hot__b-unit__old-price {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 0px 18px;
+    font-family: 'roboto_slab_r';
+    font-size: 12.5pt;
+    color: #8f999f;
+    text-align: left;
+    text-decoration: line-through;
+  }
+
+  /* line 841, ../sass/_1280.scss */
+  .b-hot__b-unit__new-price {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 0px 9px;
+    font-family: 'roboto_slab_b';
+    font-size: 12.5pt;
+    color: #383d43;
+    text-align: left;
+  }
+
+  /* line 851, ../sass/_1280.scss */
+  .b-hot__btn {
+    display: block;
+    position: relative;
+    width: 210px;
+    margin: 0 auto;
+    margin-top: 48px;
+    padding: 12px 0px 12px 0px;
+    background-color: #d9dcde;
+    color: #383d43;
+    font-family: 'roboto_slab_b';
+    font-size: 10.5pt;
+    text-decoration: none;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* ===================================   END B-HOT  =============================== */
+  /* ==================================   BEGIN B-ICON  ============================= */
+  /* line 870, ../sass/_1280.scss */
+  .b-icon {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background-color: #ebeef0;
+    text-align: center;
+  }
+
+  /* line 878, ../sass/_1280.scss */
+  .b-icon__elem {
+    display: inline-block;
+    position: relative;
+    width: 193px;
+  }
+
+  /* line 883, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(4) {
+    top: -24px;
+  }
+
+  /* line 886, ../sass/_1280.scss */
+  .b-icon__elem_round {
+    display: block;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    margin-top: 38px;
+    background-color: #00adc7;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 899, ../sass/_1280.scss */
+  .b-icon__elem_round:hover {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 15px #ccc;
+    -webkit-box-shadow: 0 0 15px #ccc;
+    box-shadow: 0 0 15px  #ccc;
+  }
+
+  /* line 905, ../sass/_1280.scss */
+  .b-icon__elem_round_img {
+    display: block;
+    position: relative;
+    top: 14px;
+    left: 14px;
+    width: 57px;
+    height: 57px;
+    background: url(../img/icon_big.png) no-repeat;
+  }
+
+  /* line 914, ../sass/_1280.scss */
+  .b-icon__elem_round_img:nth-child(1) {
+    background-position: 0px -240px;
+  }
+
+  /* line 918, ../sass/_1280.scss */
+  .b-icon__elem_round:hover:nth-child(1) .b-icon__elem_round_img {
+    background-position: 0px -300px;
+  }
+
+  /* line 923, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(2) .b-icon__elem_round_img {
+    background-position: 0px 0px;
+  }
+
+  /* line 929, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(2) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -60px;
+  }
+
+  /* line 935, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(3) .b-icon__elem_round_img {
+    background-position: 0px -120px;
+  }
+
+  /* line 941, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(3) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -180px;
+  }
+
+  /* line 947, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(4) .b-icon__elem_round_img {
+    background-position: 0px -360px;
+  }
+
+  /* line 953, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(4) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -420px;
+  }
+
+  /* line 959, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(5) .b-icon__elem_round_img {
+    background-position: 0px -480px;
+  }
+
+  /* line 965, ../sass/_1280.scss */
+  .b-icon__elem:nth-child(5) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -540px;
+  }
+
+  /* line 970, ../sass/_1280.scss */
+  .b-icon__line {
+    display: block;
+    position: relative;
+    width: 17px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-top: 1px solid #383d43;
+  }
+
+  /* line 978, ../sass/_1280.scss */
+  .b-icon__txt {
+    display: block;
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 17px;
+    font-family: 'lobster';
+    font-size: 14pt;
+    color: #383d43;
+  }
+
+  /* line 988, ../sass/_1280.scss */
+  .b-icon__arrow-left {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 110px;
+    left: 64px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -150px;
+    cursor: pointer;
+  }
+
+  /* line 999, ../sass/_1280.scss */
+  .b-icon__arrow-right {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 110px;
+    right: 65px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -190px;
+    cursor: pointer;
+  }
+
+  /* ===================================   END B-ICON  ============================== */
+  /* =================================   BEGIN B-ABOUT  ============================= */
+  /* line 1012, ../sass/_1280.scss */
+  .b-about {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: url(../img/world.png) no-repeat;
+    background-position: 50% 50%;
+  }
+
+  /* line 1020, ../sass/_1280.scss */
+  .b-about__service {
+    float: left;
+    width: 42.4%;
+    margin: 57px 0px 0px 67px;
+    text-align: justify;
+    font-family: 'roboto_r';
+    font-size: 10.5pt;
+    color: #383d43;
+    line-height: 17px;
+  }
+
+  /* line 1030, ../sass/_1280.scss */
+  .b-about__company {
+    float: right;
+    width: 42.4%;
+    margin: 57px 67px 0px 0px;
+    text-align: justify;
+    font-family: 'roboto_r';
+    font-size: 10.5pt;
+    color: #383d43;
+    line-height: 17px;
+  }
+
+  /* line 1040, ../sass/_1280.scss */
+  .b-about__caption {
+    display: block;
+    position: realtive;
+    margin-bottom: 38px;
+    font-family: 'roboto_slab_r';
+    font-size: 18pt;
+    color: #383d43;
+  }
+
+  /* line 1048, ../sass/_1280.scss */
+  .b-about__separ-space {
+    display: block;
+    position: relative;
+    height: 30px;
+  }
+
+  /* line 1053, ../sass/_1280.scss */
+  .b-about__service a {
+    display: block;
+    position: relative;
+    margin-top: 1px;
+    padding-left: 18px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 9pt;
+    color: #00adc7;
+    text-decoration: none;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -450px;
+  }
+
+  /* ===================================   END B-ABOUT  ============================= */
+  /* ===================================   BEGIN B-MAP  ============================= */
+  /* line 1068, ../sass/_1280.scss */
+  .b-map {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 410px;
+    background: url(../img/map_fon.jpg) no-repeat;
+    background-position: 50% 50%;
+    text-align: left;
+  }
+
+  /* line 1077, ../sass/_1280.scss */
+  .b-map__b-left {
+    display: inline-block;
+    position: relative;
+    width: 226px;
+    height: 316px;
+    margin: 47px 0px 8px 60px;
+    padding-left: 20px;
+    background-color: #fff;
+  }
+
+  /* line 1086, ../sass/_1280.scss */
+  .b-map__b-left__name {
+    display: block;
+    position: relative;
+    width: 226px;
+    height: 42px;
+    left: -20px;
+    padding: 8px 0px 0px 20px;
+    margin-bottom: 22px;
+    background-color: #ffd200;
+    font-family: 'roboto_slab_r';
+    font-size: 18pt;
+    color: #383d43;
+  }
+
+  /* line 1099, ../sass/_1280.scss */
+  .b-map__b-left__b-caption {
+    display: block;
+    position: relative;
+    margin: 14px 0px 0px 0px;
+    font-family: 'roboto_r';
+    font-size: 10pt;
+    font-weight: bold;
+    color: #383d43;
+  }
+
+  /* line 1108, ../sass/_1280.scss */
+  .b-map__b-left__b-txt {
+    display: block;
+    position: relative;
+    font-family: 'roboto_r';
+    font-size: 10pt;
+    color: #383d43;
+  }
+
+  /* line 1115, ../sass/_1280.scss */
+  .b-map__b-left a {
+    display: block;
+    position: relative;
+    color: #00adc7;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+  }
+
+  /* line 1125, ../sass/_1280.scss */
+  .b-map__b-right {
+    display: inline-block;
+    position: relative;
+    top: -31px;
+    width: 820px;
+    height: 316px;
+    margin: 18px 0px 0px 65px;
+  }
+
+  /* line 1133, ../sass/_1280.scss */
+  .b-map__b-right__to-map {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  /* line 1139, ../sass/_1280.scss */
+  .b-map__b-right__caption {
+    display: block;
+    position: relative;
+    margin: 38px  0px 10px 0px;
+    font-family: 'roboto_slab_r';
+    font-size: 18pt;
+    color: #fff;
+  }
+
+  /* line 1147, ../sass/_1280.scss */
+  .b-map__b-right__b-input {
+    display: inline-block;
+    position: relative;
+    width: 295px;
+  }
+
+  /* line 1152, ../sass/_1280.scss */
+  .b-map__b-right__b-input input {
+    display: block;
+    position: relative;
+    width: 269px;
+    height: 28px;
+    border: none;
+    margin-top: 20px;
+    padding: 0px 13px 0px 13px;
+    font-family: 'roboto_r';
+    font-size: 10.5pt;
+    color: #383d43;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 1168, ../sass/_1280.scss */
+  .b-map__b-right textarea {
+    display: block;
+    position: absolute;
+    top: 101px;
+    right: 20px;
+    width: 461px;
+    height: 110px;
+    padding: 7px 11px 7px 11px;
+    margin: 0px 0px 0px 18px;
+    border: none;
+    font-family: 'roboto_r';
+    font-size: 10.5pt;
+    color: #383d43;
+    resize: none;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+  }
+
+  /* line 1187, ../sass/_1280.scss */
+  .b-map__b-right__comment {
+    display: block;
+    position: relative;
+    width: 480px;
+    margin-top: 33px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #fff;
+  }
+
+  /* line 1196, ../sass/_1280.scss */
+  .b-map__b-right__send {
+    display: block;
+    position: absolute;
+    width: 150px;
+    bottom: 20px;
+    right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  /* ====================================   END B-MAP  ============================== */
+  /* ==================================   BEGIN FOOTER  ============================= */
+  /* line 1209, ../sass/_1280.scss */
+  .footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 330px;
+    background-color: #00adc7;
+  }
+
+  /* line 1216, ../sass/_1280.scss */
+  .footer__elem {
+    float: left;
+    width: 367px;
+    height: 92px;
+    margin: 30px 0px 0px 40px;
+    background-color: #fff;
+  }
+
+  /* line 1223, ../sass/_1280.scss */
+  .footer__elem img {
+    float: left;
+  }
+
+  /* line 1226, ../sass/_1280.scss */
+  .footer__elem__txt {
+    float: left;
+    width: 205px;
+    margin: 10px 0px 0px 13px;
+    font-family: 'roboto_slab_b';
+    font-size: 10.5pt;
+    color: #383d43;
+  }
+
+  /* line 1234, ../sass/_1280.scss */
+  .footer__elem__txt__date {
+    display: block;
+    position: relative;
+    margin-top: 2px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #00adc7;
+  }
+
+  /* line 1242, ../sass/_1280.scss */
+  .footer__contact {
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: 40px;
+  }
+
+  /* line 1248, ../sass/_1280.scss */
+  .footer__contact__elem {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 52px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #fff;
+    border-right: 1px solid #008a9f;
+  }
+
+  /* line 1258, ../sass/_1280.scss */
+  .footer__contact__elem__caption {
+    display: block;
+    font-weight: bold;
+    font-size: 8pt;
+  }
+
+  /* line 1263, ../sass/_1280.scss */
+  .footer__contact__elem2 {
+    display: inline-block;
+    position: relative;
+    width: 145px;
+    height: 52px;
+    padding-left: 25px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #fff;
+    border-right: 1px solid #008a9f;
+  }
+
+  /* line 1274, ../sass/_1280.scss */
+  .footer__contact__elem3 {
+    display: inline-block;
+    position: relative;
+    width: 145px;
+    height: 52px;
+    padding-left: 25px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #fff;
+  }
+
+  /* line 1284, ../sass/_1280.scss */
+  .footer__contact__elem3 a {
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #fff;
+  }
+
+  /* line 1289, ../sass/_1280.scss */
+  .footer__mailing {
+    display: block;
+    position: absolute;
+    width: 495px;
+    height: 52px;
+    top: 160px;
+    right: 40px;
+    height: 52px;
+    background-color: #ffd200;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 1303, ../sass/_1280.scss */
+  .footer__mailing__txt {
+    display: inline-block;
+    position: relative;
+    top: 11px;
+    width: 110px;
+    margin: 0px 0px 0px 10px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 7.5pt;
+    color: #383d43;
+  }
+
+  /* line 1314, ../sass/_1280.scss */
+  .footer__mailing__fild {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 265px;
+    height: 24px;
+    margin-left: 10px;
+    padding: 0px 25px 0px 10px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+    border: none;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 1331, ../sass/_1280.scss */
+  .footer__mailing__icon {
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    top: 20px;
+    right: 23px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -400px;
+  }
+
+  /* line 1341, ../sass/_1280.scss */
+  .footer__copyright {
+    display: block;
+    position: absolute;
+    top: 247px;
+    left: 40px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #fff;
+  }
+
+  /* line 1350, ../sass/_1280.scss */
+  .footer__rule {
+    display: block;
+    position: absolute;
+    top: 247px;
+    left: 250px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #383d43;
+  }
+
+  /* line 1359, ../sass/_1280.scss */
+  .footer__social {
+    display: block;
+    position: absolute;
+    top: 236px;
+    left: 393px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #fff;
+  }
+
+  /* line 1369, ../sass/_1280.scss */
+  .footer__social ul {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+  }
+
+  /* line 1374, ../sass/_1280.scss */
+  .footer__social li {
+    display: inline-block;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    margin-left: 6px;
+    background-color: #ffd200;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 1386, ../sass/_1280.scss */
+  .footer__social__f {
+    display: block;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 5px -275px;
+  }
+
+  /* line 1394, ../sass/_1280.scss */
+  .footer__social__t {
+    display: block;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 5px -295px;
+  }
+
+  /* line 1402, ../sass/_1280.scss */
+  .footer__social__g {
+    display: block;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 5px -315px;
+  }
+
+  /* line 1410, ../sass/_1280.scss */
+  .footer__webmedia {
+    display: block;
+    position: absolute;
+    top: 245px;
+    right: 40px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #fff;
+  }
+
+  /* line 1419, ../sass/_1280.scss */
+  .footer__webmedia__icon {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 109px;
+    height: 13px;
+    background: url(../img/webmedia.png) no-repeat;
+  }
+
+  /* ===================================   END FOOTER  ============================== */
+  /* line 1428, ../sass/_1280.scss */
+  .btn-up-dwn {
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 47px;
+    height: 47px;
+    background-color: #00adc7;
+    cursor: pointer;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 1442, ../sass/_1280.scss */
+  .btn-up-dwn__icon {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 21px;
+    margin: 13px 0px 0px 14px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -250px;
+  }
+}
+@media only screen and (min-width: 1004px) and (max-width: 1259px), only screen and (min-device-width: 1004px) and (max-device-width: 1259px) {
+  /* line 1, ../sass/_1024.scss */
+  .btn-yellow {
+    margin-left: 22px;
+  }
+
+  /* ====================================  BEGIN FOOTER =============================== */
+  /* line 5, ../sass/_1024.scss */
+  .header__b-left {
+    left: 20px;
+  }
+
+  /* line 8, ../sass/_1024.scss */
+  .header__b-right {
+    right: 20px;
+  }
+
+  /* ====================================  END HEADER =============================== */
+  /* =================================   BEGIN B-VISUAL  ============================ */
+  /* line 13, ../sass/_1024.scss */
+  .b-visual__slogan {
+    width: 650px;
+  }
+
+  /* line 16, ../sass/_1024.scss */
+  .b-visual__txt {
+    width: 365px;
+  }
+
+  /* line 19, ../sass/_1024.scss */
+  .b-visual__btn {
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+
+  /* line 23, ../sass/_1024.scss */
+  .b-visual__arrow-left {
+    left: 20px;
+  }
+
+  /* line 26, ../sass/_1024.scss */
+  .b-visual__arrow-right {
+    right: 20px;
+  }
+
+  /* ==================================   END B-VISUAL  ============================= */
+  /* ==================================   BEGIN B-HOT  ============================== */
+  /* line 31, ../sass/_1024.scss */
+  .b-hot__b-unit {
+    width: 226px;
+    margin: 44px 10px 0px 10px;
+  }
+
+  /* line 36, ../sass/_1024.scss */
+  .b-hot__b-unit img {
+    width: 226px;
+  }
+
+  /* line 39, ../sass/_1024.scss */
+  .b-hot__b-unit__dimmer {
+    width: 226px;
+  }
+
+  /* ===================================   END B-HOT  =============================== */
+  /* ==================================   BEGIN B-ICON  ============================= */
+  /* line 44, ../sass/_1024.scss */
+  .b-icon__elem {
+    width: 175px;
+  }
+
+  /* line 47, ../sass/_1024.scss */
+  .b-icon__arrow-left {
+    left: 20px;
+  }
+
+  /* line 50, ../sass/_1024.scss */
+  .b-icon__arrow-right {
+    right: 20px;
+  }
+
+  /* ===================================   END B-ICON  ============================== */
+  /* =================================   BEGIN B-ABOUT  ============================= */
+  /* line 55, ../sass/_1024.scss */
+  .b-about {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: url(../img/world.png) no-repeat;
+    background-position: 50% 50%;
+  }
+
+  /* line 63, ../sass/_1024.scss */
+  .b-about__service {
+    width: 44.5%;
+    margin: 57px 0px 0px 20px;
+  }
+
+  /* line 67, ../sass/_1024.scss */
+  .b-about__company {
+    width: 44.5%;
+    margin: 57px 20px 0px 0px;
+  }
+
+  /* ===================================   END B-ABOUT  ============================= */
+  /* ===================================   BEGIN B-MAP  ============================= */
+  /* line 73, ../sass/_1024.scss */
+  .b-map__b-left {
+    margin: 47px 0px 8px 20px;
+  }
+
+  /* line 76, ../sass/_1024.scss */
+  .b-map__b-right {
+    width: 680px;
+    width: 67.7%;
+    margin: 18px 0px 0px 40px;
+  }
+
+  /* line 81, ../sass/_1024.scss */
+  .b-map__b-right__b-input {
+    display: inline-block;
+    position: relative;
+    width: 43.3%;
+  }
+
+  /* line 86, ../sass/_1024.scss */
+  .b-map__b-right__b-input input {
+    width: 90%;
+  }
+
+  /* line 89, ../sass/_1024.scss */
+  .b-map__b-right textarea {
+    right: 0px;
+    width: 339px;
+    width: 49.8%;
+  }
+
+  /* line 94, ../sass/_1024.scss */
+  .b-map__b-right__send {
+    right: 0px;
+  }
+
+  /* ====================================   END B-MAP  ============================== */
+  /* ==================================   BEGIN FOOTER  ============================= */
+  /* line 99, ../sass/_1024.scss */
+  .b-center {
+    display: block;
+    position: relative;
+    width: 1004px;
+    height: 10px;
+    margin: 0 auto;
+  }
+
+  /* line 106, ../sass/_1024.scss */
+  .footer__elem {
+    width: 317px;
+    margin: 30px 4px 0px 11px;
+  }
+
+  /* line 110, ../sass/_1024.scss */
+  .footer__elem__txt {
+    width: 150px;
+  }
+
+  /* line 115, ../sass/_1024.scss */
+  .footer__mailing {
+    right: 20px;
+    width: 41%;
+  }
+
+  /* line 119, ../sass/_1024.scss */
+  .footer__mailing__fild {
+    float: right;
+    top: 13px;
+    right: 15px;
+    width: 45.1%;
+  }
+
+  /* line 125, ../sass/_1024.scss */
+  .footer__webmedia {
+    right: 20px;
+  }
+
+  /* ===================================   END FOOTER  ============================== */
+}
+@media only screen and (min-width: 551px) and (max-width: 1003px), only screen and (min-device-width: 551px) and (max-device-width: 1003px) {
+  /* line 1, ../sass/_768.scss */
+  .btn-yellow {
+    margin-left: 20px;
+  }
+
+  /* ====================================  BEGIN FOOTER =============================== */
+  /* line 5, ../sass/_768.scss */
+  .header__b-left {
+    left: 20px;
+  }
+
+  /* line 8, ../sass/_768.scss */
+  .header__b-right {
+    right: 20px;
+  }
+
+  /* ====================================  END HEADER =============================== */
+  /* =================================   BEGIN B-SEARCH  ============================ */
+  /* line 13, ../sass/_768.scss */
+  .b-search {
+    height: 97px;
+  }
+
+  /* line 16, ../sass/_768.scss */
+  .b-search__caption {
+    display: none;
+  }
+
+  /* line 19, ../sass/_768.scss */
+  .b-search__place {
+    width: 41.6%;
+  }
+
+  /* line 22, ../sass/_768.scss */
+  .b-search__place__from {
+    width: 40.3%;
+  }
+
+  /* line 25, ../sass/_768.scss */
+  .b-search__place__to {
+    width: 40.3%;
+  }
+
+  /* line 28, ../sass/_768.scss */
+  .b-search__time {
+    width: 30.6%;
+  }
+
+  /* line 31, ../sass/_768.scss */
+  .b-search__time__b-input {
+    width: 40.5%;
+  }
+
+  /* line 34, ../sass/_768.scss */
+  .b-search__time__b-input span {
+    right: 4%;
+  }
+
+  /* line 37, ../sass/_768.scss */
+  .b-search__time__separ {
+    width: 7px;
+    margin-left: 2%;
+    margin-right: 1%;
+    text-align: center;
+  }
+
+  /* line 43, ../sass/_768.scss */
+  .b-search__cost {
+    width: 27.2%;
+    border-right: none;
+  }
+
+  /* Ширина слайдера */
+  /* line 48, ../sass/_768.scss */
+  .b-search__cost__select {
+    width: 74.6%;
+  }
+
+  /* line 51, ../sass/_768.scss */
+  .b-search__find {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  /* line 55, ../sass/_768.scss */
+  .b-search__find__btn {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  /* ==================================   END B-SEARCH  ============================= */
+  /* =================================   BEGIN B-VISUAL  ============================ */
+  /* line 63, ../sass/_768.scss */
+  .b-visual__slogan {
+    width: 640px;
+  }
+
+  /* line 66, ../sass/_768.scss */
+  .b-visual__txt {
+    width: 365px;
+  }
+
+  /* line 69, ../sass/_768.scss */
+  .b-visual__arrow-left {
+    left: 20px;
+  }
+
+  /* line 72, ../sass/_768.scss */
+  .b-visual__arrow-right {
+    right: 20px;
+  }
+
+  /* ==================================   END B-VISUAL  ============================= */
+  /* ==================================   BEGIN B-HOT  ============================== */
+  /* line 77, ../sass/_768.scss */
+  .b-hot__b-unit {
+    width: 226px;
+    margin: 44px 10px 0px 10px;
+  }
+
+  /* line 81, ../sass/_768.scss */
+  .b-hot__b-unit:nth-child(4) {
+    display: none;
+  }
+
+  /* line 84, ../sass/_768.scss */
+  .b-hot__b-unit img {
+    width: 226px;
+  }
+
+  /* line 87, ../sass/_768.scss */
+  .b-hot__b-unit__dimmer {
+    width: 226px;
+  }
+
+  /* ===================================   END B-HOT  =============================== */
+  /* ==================================   BEGIN B-ICON  ============================= */
+  /* line 93, ../sass/_768.scss */
+  .b-icon__elem {
+    width: 165px;
+  }
+
+  /* line 96, ../sass/_768.scss */
+  .b-icon__elem:nth-child(5) {
+    display: none;
+  }
+
+  /* line 99, ../sass/_768.scss */
+  .b-icon__arrow-left {
+    left: 20px;
+  }
+
+  /* line 102, ../sass/_768.scss */
+  .b-icon__arrow-right {
+    right: 20px;
+  }
+
+  /* ===================================   END B-ICON  ============================== */
+  /* =================================   BEGIN B-ABOUT  ============================= */
+  /* line 107, ../sass/_768.scss */
+  .b-about {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: url(../img/world.png) no-repeat;
+    background-position: 50% 50%;
+  }
+
+  /* line 115, ../sass/_768.scss */
+  .b-about__service {
+    width: 46.1%;
+    margin: 57px 0px 0px 27px;
+  }
+
+  /* line 119, ../sass/_768.scss */
+  .b-about__company {
+    width: 40.6%;
+    margin: 57px 27px 0px 0px;
+  }
+
+  /* ===================================   END B-ABOUT  ============================= */
+  /* ===================================   BEGIN B-MAP  ============================= */
+  /* line 125, ../sass/_768.scss */
+  .b-map {
+    height: 397px;
+  }
+
+  /* line 128, ../sass/_768.scss */
+  .b-map__b-left {
+    margin: 47px 0px 8px 20px;
+  }
+
+  /* line 131, ../sass/_768.scss */
+  .b-map__b-right {
+    top: 2px;
+    width: 58.6%;
+    margin: 18px 0px 0px 4.6%;
+  }
+
+  /* line 136, ../sass/_768.scss */
+  .b-map__b-right__b-input {
+    display: inline-block;
+    position: relative;
+    width: 43.3%;
+  }
+
+  /* line 141, ../sass/_768.scss */
+  .b-map__b-right__b-input input {
+    width: 90%;
+  }
+
+  /* line 144, ../sass/_768.scss */
+  .b-map__b-right textarea {
+    right: 0px;
+    width: 339px;
+    width: 47.8%;
+  }
+
+  /* line 149, ../sass/_768.scss */
+  .b-map__b-right__comment {
+    width: 245px;
+  }
+
+  /* line 152, ../sass/_768.scss */
+  .b-map__b-right__send {
+    right: 0px;
+  }
+
+  /* ====================================   END B-MAP  ============================== */
+  /* ==================================   BEGIN FOOTER  ============================= */
+  /* line 157, ../sass/_768.scss */
+  .footer {
+    height: 390px;
+  }
+
+  /* line 160, ../sass/_768.scss */
+  .b-center {
+    display: block;
+    position: relative;
+    width: 740px;
+    height: 10px;
+    margin: 0 auto;
+  }
+
+  /* line 167, ../sass/_768.scss */
+  .footer__elem {
+    width: 357px;
+    margin: 42px 6px 0px 6px;
+  }
+
+  /* line 171, ../sass/_768.scss */
+  .footer__elem:last-child {
+    display: none;
+  }
+
+  /* line 174, ../sass/_768.scss */
+  .footer__elem__txt {
+    width: 195px;
+  }
+
+  /* line 177, ../sass/_768.scss */
+  .footer__contact {
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 240px;
+    left: 10%;
+    text-align: center;
+  }
+
+  /* line 185, ../sass/_768.scss */
+  .footer__mailing {
+    width: 72.2%;
+    top: 165px;
+    height: 52px;
+    right: 0px;
+    margin: 0 auto;
+    margin: 0px 13.8% 0px 13.8%;
+  }
+
+  /* line 193, ../sass/_768.scss */
+  .footer__b-social {
+    display: block;
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 200, ../sass/_768.scss */
+  .footer__copyright {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  /* line 206, ../sass/_768.scss */
+  .footer__rule {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px 10px 0px 10px;
+  }
+
+  /* line 213, ../sass/_768.scss */
+  .footer__social {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  /* line 220, ../sass/_768.scss */
+  .footer__webmedia {
+    display: block;
+    position: absolute;
+    top: 355px;
+    width: 100%;
+    right: 0px;
+    text-align: center;
+  }
+
+  /* ===================================   END FOOTER  ============================== */
+  /* line 229, ../sass/_768.scss */
+  .b-consultant__form {
+    bottom: 140px;
+    right: -117px;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+}
+@media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
+  /* line 1, ../sass/_320.scss */
+  .b-consultant {
+    display: none;
+  }
+
+  /* line 4, ../sass/_320.scss */
+  .btn-up-dwn {
+    display: none;
+  }
+
+  /* line 7, ../sass/_320.scss */
+  .btn-yellow {
+    margin-left: 20px;
+  }
+
+  /* ====================================  BEGIN FOOTER =============================== */
+  /* line 11, ../sass/_320.scss */
+  .header {
+    height: 168px;
+    margin-top: 68px;
+  }
+
+  /* line 15, ../sass/_320.scss */
+  .header__b-left {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+
+  /* line 24, ../sass/_320.scss */
+  .header__b-left__tel {
+    display: none;
+  }
+
+  /* line 27, ../sass/_320.scss */
+  .header__b-left__icon {
+    display: none;
+  }
+
+  /* line 30, ../sass/_320.scss */
+  .header__b-left__zvonok {
+    display: none;
+  }
+
+  /* line 33, ../sass/_320.scss */
+  .header__b-center {
+    top: 42px;
+  }
+
+  /* line 36, ../sass/_320.scss */
+  .header__b-center__logo {
+    display: inline-block;
+  }
+
+  /* line 39, ../sass/_320.scss */
+  .header__b-center__txt {
+    display: inline-block;
+  }
+
+  /* line 42, ../sass/_320.scss */
+  .header__b-right {
+    display: block;
+    position: relative;
+    top: 96px;
+    right: 0px;
+    width: 280px;
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+  }
+
+  /* line 52, ../sass/_320.scss */
+  .header__b-right_login {
+    display: block;
+    position: absolute;
+    top: -170px;
+    width: 70px;
+    height: 31px;
+    padding: 11px 0px 0px 22px;
+    margin-top: 10px;
+    background-color: #ffd200;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    font-family: 'roboto_slab_b';
+    color: #383d43;
+    font-size: 10.5pt;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  /* line 74, ../sass/_320.scss */
+  .header__b-right_login span {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 12px;
+    height: 7px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -40px;
+  }
+
+  /* line 84, ../sass/_320.scss */
+  .header__b-right__search {
+    display: inline-block;
+    position: relative;
+    width: 235px;
+  }
+
+  /* line 89, ../sass/_320.scss */
+  .header__b-right__zoom {
+    top: 24px;
+  }
+
+  /* ====================================  END HEADER =============================== */
+  /* ====================================  BEGIN MENU =============================== */
+  /* line 94, ../sass/_320.scss */
+  .menu {
+    height: 10px;
+  }
+
+  /* line 97, ../sass/_320.scss */
+  .menu li {
+    display: none;
+  }
+
+  /* ====================================   END MENU  =============================== */
+  /* =================================   BEGIN B-SEARCH  ============================ */
+  /* line 102, ../sass/_320.scss */
+  .b-search {
+    height: 275px;
+  }
+
+  /* line 105, ../sass/_320.scss */
+  .b-search__round {
+    position: relative;
+    margin: 0 auto;
+    left: 0px;
+  }
+
+  /* line 110, ../sass/_320.scss */
+  .b-search__caption {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: -3px;
+    height: 25px;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  /* line 119, ../sass/_320.scss */
+  .b-search__caption span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 125, ../sass/_320.scss */
+  .b-search__place {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    padding-top: 5px;
+    margin-top: 0px;
+    border-right: none;
+  }
+
+  /* line 134, ../sass/_320.scss */
+  .b-search__place input {
+    margin: 0 auto;
+  }
+
+  /* line 137, ../sass/_320.scss */
+  .b-search__place__name {
+    display: block;
+    position: relative;
+    width: 83%;
+    padding-right: 22px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+    margin: 0 auto;
+  }
+
+  /* line 147, ../sass/_320.scss */
+  .b-search__place__icon {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 9px;
+  }
+
+  /* line 153, ../sass/_320.scss */
+  .b-search__time {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    padding-top: 5px;
+    margin-top: 5px;
+    border-right: none;
+    text-align: center;
+  }
+
+  /* line 163, ../sass/_320.scss */
+  .b-search__time__name {
+    display: block;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #383d43;
+  }
+
+  /* line 169, ../sass/_320.scss */
+  .b-search__time__b-input {
+    display: inline-block;
+    position: relative;
+    width: 42.5%;
+  }
+
+  /* line 174, ../sass/_320.scss */
+  .b-search__time__b-input input {
+    width: 69%;
+    height: 27px;
+    margin: 5px 0px 0px 0px;
+    padding-right: 27px;
+    padding-left: 10px;
+  }
+
+  /* line 181, ../sass/_320.scss */
+  .b-search__time__b-input span {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 6%;
+  }
+
+  /* line 187, ../sass/_320.scss */
+  .b-search__cost {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    padding-top: 5px;
+    margin-top: 7px;
+    border-right: none;
+    text-align: center;
+  }
+
+  /* line 197, ../sass/_320.scss */
+  .b-search__find {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 203, ../sass/_320.scss */
+  .b-search__find__btn {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    z-index: 2;
+  }
+
+  /* ==================================   END B-SEARCH  ============================= */
+  /* =================================   BEGIN B-VISUAL  ============================ */
+  /* line 212, ../sass/_320.scss */
+  .b-visual {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 490px;
+    background: url(../pic/visual1.jpg) no-repeat;
+    background-position: 50% 50%;
+  }
+
+  /* line 220, ../sass/_320.scss */
+  .b-visual__dimmer {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #2a5071;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+  }
+
+  /* line 231, ../sass/_320.scss */
+  .b-visual__slogan {
+    display: block;
+    width: 276px;
+    padding-top: 55px;
+    font-size: 28pt;
+    line-height: 40px;
+  }
+
+  /* line 238, ../sass/_320.scss */
+  .b-visual__line {
+    width: 43px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  /* line 243, ../sass/_320.scss */
+  .b-visual__txt {
+    width: 232px;
+    margin-top: 12px;
+    line-height: 17px;
+  }
+
+  /* line 248, ../sass/_320.scss */
+  .b-visual__btn {
+    margin-top: 35px;
+  }
+
+  /* line 251, ../sass/_320.scss */
+  .b-visual__nav {
+    display: block;
+    position: relative;
+    width: 93px;
+    margin: 0 auto;
+    margin-top: 53px;
+  }
+
+  /* line 258, ../sass/_320.scss */
+  .b-visual__nav__elem {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin-left: 16px;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    cursor: pointer;
+  }
+
+  /* line 271, ../sass/_320.scss */
+  .b-visual__nav__elem:nth-child(1) {
+    background-color: #ffd200;
+    margin-left: 0px;
+    cursor: default;
+  }
+
+  /* line 276, ../sass/_320.scss */
+  .b-visual__arrow-left {
+    display: none;
+  }
+
+  /* line 279, ../sass/_320.scss */
+  .b-visual__arrow-right {
+    display: none;
+  }
+
+  /* ==================================   END B-VISUAL  ============================= */
+  /* ==================================   BEGIN B-HOT  ============================== */
+  /* line 284, ../sass/_320.scss */
+  .b-hot {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 596px;
+    text-align: center;
+  }
+
+  /* line 291, ../sass/_320.scss */
+  .b-hot__decor {
+    margin-top: 31px;
+  }
+
+  /* line 294, ../sass/_320.scss */
+  .b-hot__caption {
+    top: -3px;
+    width: 220px;
+  }
+
+  /* line 298, ../sass/_320.scss */
+  .b-hot__b-unit {
+    display: none;
+    width: 226px;
+    margin: 22px 0px 0px 0px;
+  }
+
+  /* line 303, ../sass/_320.scss */
+  .b-hot__b-unit:nth-child(2) {
+    display: block;
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+
+  /* line 308, ../sass/_320.scss */
+  .b-hot__b-unit img {
+    width: 226px;
+  }
+
+  /* line 311, ../sass/_320.scss */
+  .b-hot__b-unit__dimmer {
+    width: 226px;
+  }
+
+  /* line 314, ../sass/_320.scss */
+  .b-hot__b-unit__b-txt {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 220px;
+  }
+
+  /* line 320, ../sass/_320.scss */
+  .b-hot__b-unit__name {
+    display: block;
+    position: relative;
+    width: 212px;
+    margin: 15px 0px 0px 18px;
+    line-height: 22px;
+    font-family: 'roboto_slab_b';
+    font-size: 13.5pt;
+    color: #383d43;
+  }
+
+  /* line 330, ../sass/_320.scss */
+  .b-hot__b-unit__period {
+    display: block;
+    position: relative;
+    margin: 0px 0px 0px 18px;
+    font-family: 'roboto_m';
+    font-size: 9pt;
+    color: #00adc7;
+    text-align: left;
+  }
+
+  /* line 339, ../sass/_320.scss */
+  .b-hot__b-unit__about {
+    display: block;
+    position: relative;
+    margin: 20px 0px 0px 18px;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    color: #777e82;
+    text-align: left;
+    line-height: 15px;
+  }
+
+  /* line 349, ../sass/_320.scss */
+  .b-hot__b-unit__old-price {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 0px 18px;
+    font-family: 'roboto_slab_r';
+    font-size: 12.5pt;
+    color: #8f999f;
+    text-align: left;
+    text-decoration: line-through;
+  }
+
+  /* line 359, ../sass/_320.scss */
+  .b-hot__b-unit__new-price {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 0px 9px;
+    font-family: 'roboto_slab_b';
+    font-size: 12.5pt;
+    color: #383d43;
+    text-align: left;
+  }
+
+  /* line 369, ../sass/_320.scss */
+  .b-hot__btn {
+    display: none;
+  }
+
+  /* ===================================   END B-HOT  =============================== */
+  /* ==================================   BEGIN B-ICON  ============================= */
+  /* line 374, ../sass/_320.scss */
+  .b-icon {
+    height: 257px;
+    padding-top: 28px;
+  }
+
+  /* line 378, ../sass/_320.scss */
+  .b-icon__elem {
+    display: none;
+    position: relative;
+    width: 193px;
+  }
+
+  /* line 383, ../sass/_320.scss */
+  .b-icon__elem:nth-child(4) {
+    top: -24px;
+  }
+
+  /* line 386, ../sass/_320.scss */
+  .b-icon__elem_round {
+    display: block;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    margin-top: 38px;
+    background-color: #00adc7;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 399, ../sass/_320.scss */
+  .b-icon__elem_round:hover {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 15px #ccc;
+    -webkit-box-shadow: 0 0 15px #ccc;
+    box-shadow: 0 0 15px  #ccc;
+  }
+
+  /* line 405, ../sass/_320.scss */
+  .b-icon__elem_round_img {
+    display: block;
+    position: relative;
+    top: 14px;
+    left: 14px;
+    width: 57px;
+    height: 57px;
+    background: url(../img/icon_big.png) no-repeat;
+  }
+
+  /* line 414, ../sass/_320.scss */
+  .b-icon__elem_round_img:nth-child(1) {
+    background-position: 0px -240px;
+  }
+
+  /* line 418, ../sass/_320.scss */
+  .b-icon__elem_round:hover:nth-child(1) .b-icon__elem_round_img {
+    background-position: 0px -300px;
+  }
+
+  /* line 422, ../sass/_320.scss */
+  .b-icon__elem:nth-child(2) {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+  /* line 427, ../sass/_320.scss */
+  .b-icon__elem:nth-child(2) .b-icon__elem_round_img {
+    background-position: 0px 0px;
+  }
+
+  /* line 435, ../sass/_320.scss */
+  .b-icon__elem:nth-child(2) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -60px;
+  }
+
+  /* line 441, ../sass/_320.scss */
+  .b-icon__elem:nth-child(3) .b-icon__elem_round_img {
+    background-position: 0px -120px;
+  }
+
+  /* line 447, ../sass/_320.scss */
+  .b-icon__elem:nth-child(3) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -180px;
+  }
+
+  /* line 453, ../sass/_320.scss */
+  .b-icon__elem:nth-child(4) .b-icon__elem_round_img {
+    background-position: 0px -360px;
+  }
+
+  /* line 459, ../sass/_320.scss */
+  .b-icon__elem:nth-child(4) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -420px;
+  }
+
+  /* line 465, ../sass/_320.scss */
+  .b-icon__elem:nth-child(5) .b-icon__elem_round_img {
+    background-position: 0px -480px;
+  }
+
+  /* line 471, ../sass/_320.scss */
+  .b-icon__elem:nth-child(5) .b-icon__elem_round:hover .b-icon__elem_round_img {
+    background-position: 0px -540px;
+  }
+
+  /* line 476, ../sass/_320.scss */
+  .b-icon__line {
+    display: block;
+    position: relative;
+    width: 17px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-top: 1px solid #383d43;
+  }
+
+  /* line 484, ../sass/_320.scss */
+  .b-icon__txt {
+    display: block;
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 17px;
+    font-family: 'lobster';
+    font-size: 14pt;
+    color: #383d43;
+  }
+
+  /* line 494, ../sass/_320.scss */
+  .b-icon__arrow-left {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 110px;
+    left: 64px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -150px;
+    cursor: pointer;
+  }
+
+  /* line 505, ../sass/_320.scss */
+  .b-icon__arrow-right {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 110px;
+    right: 65px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -190px;
+    cursor: pointer;
+  }
+
+  /* ===================================   END B-ICON  ============================== */
+}

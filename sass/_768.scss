@@ -1,0 +1,235 @@
+.btn-yellow{
+	margin-left: 20px;
+}
+/* ====================================  BEGIN FOOTER =============================== */
+.header__b-left{
+	left: 20px;
+}
+.header__b-right{
+	right: 20px;
+}
+/* ====================================  END HEADER =============================== */
+/* =================================   BEGIN B-SEARCH  ============================ */
+.b-search{
+	height: 97px;
+}
+.b-search__caption{
+	display: none;
+}
+.b-search__place{
+	width: 41.6%;
+}
+.b-search__place__from{
+	width: 40.3%;
+}
+.b-search__place__to{
+	width: 40.3%;
+}
+.b-search__time{
+	width: 30.6%;
+}
+.b-search__time__b-input{
+	width: 40.5%;
+}
+.b-search__time__b-input span{
+	right: 4%;
+}
+.b-search__time__separ{
+	width: 7px;
+	margin-left: 2%;
+	margin-right: 1%;
+	text-align: center;
+}
+.b-search__cost{
+	width: 27.2%;
+	border-right: none;	
+}
+/* Ширина слайдера */
+.b-search__cost__select{
+	width: 74.6%;
+}
+.b-search__find{
+	margin-top: 15px;
+	width: 100%;
+}
+.b-search__find__btn{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	z-index: 2;
+}
+/* ==================================   END B-SEARCH  ============================= */
+/* =================================   BEGIN B-VISUAL  ============================ */
+.b-visual__slogan{
+	width: 640px;
+}
+.b-visual__txt{
+	width: 365px;
+}
+.b-visual__arrow-left{
+	left: 20px;
+}
+.b-visual__arrow-right{
+	right: 20px;
+}
+/* ==================================   END B-VISUAL  ============================= */
+/* ==================================   BEGIN B-HOT  ============================== */
+.b-hot__b-unit{
+	width: 226px;
+	margin: 44px 10px 0px 10px;
+}
+.b-hot__b-unit:nth-child(4){
+	display: none;
+}
+.b-hot__b-unit img{
+	width: 226px;
+}
+.b-hot__b-unit__dimmer{
+	width: 226px;
+}
+
+/* ===================================   END B-HOT  =============================== */
+/* ==================================   BEGIN B-ICON  ============================= */
+.b-icon__elem{
+	width: 165px;
+}
+.b-icon__elem:nth-child(5){
+	display: none;
+}
+.b-icon__arrow-left{
+	left: 20px;
+}
+.b-icon__arrow-right{
+	right: 20px;
+}
+/* ===================================   END B-ICON  ============================== */
+/* =================================   BEGIN B-ABOUT  ============================= */
+.b-about{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 550px;
+	background: url(../img/world.png) no-repeat;
+	background-position: 50% 50%;
+}
+.b-about__service{
+	width: 46.1%;
+	margin: 57px 0px 0px 27px;
+}
+.b-about__company{
+	width: 40.6%;
+	margin: 57px 27px 0px 0px;
+}
+/* ===================================   END B-ABOUT  ============================= */
+/* ===================================   BEGIN B-MAP  ============================= */
+.b-map{
+	height: 397px;
+}
+.b-map__b-left{
+	margin: 47px 0px 8px 20px;
+}
+.b-map__b-right{
+	top: 2px;
+	width: 58.6%;
+	margin: 18px 0px 0px 4.6%;
+}
+.b-map__b-right__b-input{
+	display: inline-block;
+	position: relative;
+	width: 43.3%;
+}
+.b-map__b-right__b-input input{
+	width: 90%;
+}
+.b-map__b-right textarea{
+	right: 0px;
+	width: 339px;
+	width: 47.8%;
+}
+.b-map__b-right__comment{
+	width: 245px;
+}
+.b-map__b-right__send{
+	right: 0px;
+}
+/* ====================================   END B-MAP  ============================== */
+/* ==================================   BEGIN FOOTER  ============================= */
+.footer{
+	height: 390px
+}
+.b-center{
+	display: block;
+	position: relative;
+	width: 740px;
+	height: 10px;
+	margin: 0 auto;
+}
+.footer__elem{
+	width: 357px;
+	margin: 42px 6px 0px 6px;
+}
+.footer__elem:last-child{
+	display: none;
+}
+.footer__elem__txt{
+	width: 195px;
+}
+.footer__contact{
+	display: block;
+	position: absolute;
+	width: 80%;
+	top: 240px;
+	left: 10%;
+	text-align: center;
+}
+.footer__mailing{
+	width: 72.2%;
+	top: 165px;
+	height: 52px;
+	right: 0px;
+	margin: 0 auto;
+	margin: 0px 13.8% 0px 13.8%;
+}
+.footer__b-social{
+	display: block;
+	position: absolute;
+	top: 320px;
+	width: 100%;
+	text-align: center;
+}
+.footer__copyright{
+	display: inline-block;
+	position: relative;
+	top:  0px;
+	left: 0px;
+}
+.footer__rule{
+	display: inline-block;
+	position: relative;
+	top:  0px;
+	left: 0px;
+	margin: 0px 10px 0px 10px;
+}
+.footer__social{
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left:  0px;
+}
+
+.footer__webmedia{
+	display: block;
+	position: absolute;
+	top: 355px;
+	width: 100%;
+	right: 0px;
+	text-align: center;
+}
+/* ===================================   END FOOTER  ============================== */
+.b-consultant__form{
+	bottom: 140px;
+	right: -117px;
+	transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+}

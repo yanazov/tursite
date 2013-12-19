@@ -1,0 +1,516 @@
+.b-consultant{
+	display: none;
+}
+.btn-up-dwn{
+	display: none;
+}
+.btn-yellow{
+	margin-left: 20px;
+}
+/* ====================================  BEGIN FOOTER =============================== */
+.header{
+	height: 168px;
+	margin-top: 68px;
+}
+.header__b-left{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+}
+.header__b-left__tel{
+	display: none;
+}
+.header__b-left__icon{
+	display: none;
+}
+.header__b-left__zvonok{
+	display: none;
+}
+.header__b-center{
+	top: 42px;
+}
+.header__b-center__logo{
+	display: inline-block;
+}
+.header__b-center__txt{
+	display: inline-block;
+}
+.header__b-right{
+	display: block;
+	position: relative;
+	top: 96px;
+	right:  0px;
+	width: 280px;
+	margin: 0 auto;
+	z-index: 2;
+	text-align: center;
+}
+.header__b-right_login{
+	display: block;
+	position: absolute;
+	top: - 170px;
+	width: 70px;
+	height: 31px;
+	padding: 11px 0px 0px 22px;
+	margin-top: 10px;
+	background-color: $color_yellow;
+	border-radius: 150px 150px 150px 150px;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;
+	font-family: 'roboto_slab_b';
+	color: $color_txt;
+	font-size: 10.5pt;
+	text-decoration: none;
+	text-align: left;
+	
+	
+}
+
+.header__b-right_login span{
+	display: block;
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	width: 12px;
+	height: 7px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -40px;
+}
+.header__b-right__search{
+	display: inline-block;
+	position: relative;
+	width: 235px;
+}
+.header__b-right__zoom{
+	top: 24px;
+}
+/* ====================================  END HEADER =============================== */
+/* ====================================  BEGIN MENU =============================== */
+.menu{
+	height: 10px;
+}
+.menu li{
+	display: none;
+}
+/* ====================================   END MENU  =============================== */
+/* =================================   BEGIN B-SEARCH  ============================ */
+.b-search{
+	height: 275px;
+}
+.b-search__round{
+	position: relative;
+	margin: 0 auto;
+	left: 0px;
+}
+.b-search__caption{
+	display: block;
+	position: relative;
+	width: 100%;
+	top: -3px;
+	height: 25px;
+	margin-top: 0px;
+	padding: 0px 0px 0px 0px;
+}
+.b-search__caption span{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.b-search__place{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 55px;
+	padding-top: 5px;
+	margin-top:  0px;
+	border-right: none;	
+}
+.b-search__place input{
+	margin: 0 auto;
+}
+.b-search__place__name{
+	display: block;
+	position: relative;
+	width: 83%;
+	padding-right: 22px;
+	font-family: 'roboto_r';
+	font-size: 9pt;
+	color: $color_txt; 
+	margin: 0 auto;
+}
+.b-search__place__icon{
+	display: block;
+	position: absolute;
+	top: 22px;
+	left: 9px;
+}
+.b-search__time{
+	display: block;
+	position: relative;	
+	width: 100%;
+	height: 55px;
+	padding-top: 5px;
+	margin-top:  5px;
+	border-right: none;	
+	text-align: center;
+}
+.b-search__time__name{
+	display: block;
+	font-family: 'roboto_r';
+	font-size: 9pt;
+	color: $color_txt;
+}
+.b-search__time__b-input{
+	display: inline-block;
+	position: relative;
+	width: 42.5%;
+}
+.b-search__time__b-input input{
+	width: 69%;
+	height: 27px;
+	margin: 5px 0px 0px 0px; 
+	padding-right: 27px;
+	padding-left: 10px;	
+}
+.b-search__time__b-input span{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 6%;
+}
+.b-search__cost{
+	display: block;
+	position: relative;	
+	width: 100%;
+	height: 55px;
+	padding-top: 5px;
+	margin-top: 7px;
+	border-right: none;	
+	text-align: center;
+}
+.b-search__find{
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.b-search__find__btn{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20px;
+	z-index: 2;
+}
+/* ==================================   END B-SEARCH  ============================= */
+/* =================================   BEGIN B-VISUAL  ============================ */
+.b-visual{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 490px;
+	background: url(../pic/visual1.jpg) no-repeat;
+	background-position: 50% 50%;	
+}
+.b-visual__dimmer{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: $color_blue_dark;
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+.b-visual__slogan{
+	display: block;
+	width: 276px;
+	padding-top: 55px;
+	font-size: 28pt;
+	line-height: 40px;
+}
+.b-visual__line{
+	width: 43px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.b-visual__txt{
+	width: 232px;
+	margin-top: 12px;
+	line-height: 17px;
+}
+.b-visual__btn{
+	margin-top: 35px;
+}
+.b-visual__nav{
+	display: block;
+	position: relative;
+	width: 93px;
+	margin: 0 auto;
+	margin-top: 53px;
+}
+.b-visual__nav__elem{
+	display: inline-block;
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	margin-left: 16px;
+	border-radius: 150px 150px 150px 150px;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;	
+	cursor: pointer;
+}
+.b-visual__nav__elem:nth-child(1){
+	background-color: $color_yellow;
+	margin-left: 0px;
+	cursor: default;
+}
+.b-visual__arrow-left{
+	display: none;
+}
+.b-visual__arrow-right{
+	display: none;
+}
+/* ==================================   END B-VISUAL  ============================= */
+/* ==================================   BEGIN B-HOT  ============================== */
+.b-hot{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 596px;
+	text-align: center;
+}
+.b-hot__decor{
+	margin-top: 31px;
+}
+.b-hot__caption{
+	top: -3px;
+	width: 220px;
+}
+.b-hot__b-unit{
+	display: none;	
+	width: 226px;
+	margin: 22px 0px 0px 0px;
+}
+.b-hot__b-unit:nth-child(2){
+	display: block;
+	margin: 0 auto;
+	margin-top: 22px;
+}
+.b-hot__b-unit img{
+	width: 226px;
+}
+.b-hot__b-unit__dimmer{
+	width: 226px;
+}
+.b-hot__b-unit__b-txt{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 220px;
+}
+.b-hot__b-unit__name{
+	display: block;
+	position: relative;
+	width: 212px;
+	margin: 15px 0px 0px 18px;
+	line-height: 22px;
+	font-family: 'roboto_slab_b';
+	font-size: 13.5pt;
+	color: $color_txt;
+}
+.b-hot__b-unit__period{
+	display: block;
+	position: relative;	
+	margin: 0px 0px 0px 18px;
+	font-family: 'roboto_m';
+	font-size: 9pt;
+	color: $color_blue;
+	text-align: left;
+}
+.b-hot__b-unit__about{
+	display: block;
+	position: relative;	
+	margin: 20px 0px 0px 18px;
+	font-family: 'roboto_r';
+	font-size: 9pt;
+	color: #777e82;
+	text-align: left;
+	line-height: 15px;
+}
+.b-hot__b-unit__old-price{
+	display: inline-block;
+	position: relative;
+	margin: 0px 0px 0px 18px;
+	font-family: 'roboto_slab_r';
+	font-size: 12.5pt;
+	color: #8f999f;
+	text-align: left;
+	text-decoration: line-through;
+}
+.b-hot__b-unit__new-price{
+	display: inline-block;
+	position: relative;
+	margin: 0px 0px 0px 9px;
+	font-family: 'roboto_slab_b';
+	font-size: 12.5pt;
+	color: $color_txt;
+	text-align: left;
+}
+
+.b-hot__btn{
+	display: none;
+}
+/* ===================================   END B-HOT  =============================== */
+/* ==================================   BEGIN B-ICON  ============================= */
+.b-icon{
+	height: 257px;
+	padding-top: 28px;
+}
+.b-icon__elem{
+	display: none;
+	position: relative;
+	width: 193px;
+}
+.b-icon__elem:nth-child(4){
+	top: -24px;
+}
+.b-icon__elem_round{
+	display: block;
+	position: relative;
+	width: 85px;
+	height: 85px;
+	margin: 0 auto;
+	margin-top: 38px;
+	background-color: $color_blue;
+	border-radius: 150px 150px 150px 150px;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;
+}
+.b-icon__elem_round:hover{
+	background-color: #fff;
+	-moz-box-shadow: 0 0 15px #ccc; 
+	-webkit-box-shadow: 0 0 15px #ccc; 
+	box-shadow: 0 0 15px  #ccc; 
+}
+.b-icon__elem_round_img{
+	display: block;
+	position: relative;
+	top: 14px;
+	left: 14px;
+	width: 57px;
+	height: 57px;
+	background: url(../img/icon_big.png) no-repeat;	
+}
+.b-icon__elem_round_img:nth-child(1){
+	background-position: 0px -240px;
+}
+.b-icon__elem_round:hover:nth-child(1){
+	.b-icon__elem_round_img{
+		background-position: 0px -300px;
+	}
+}
+.b-icon__elem:nth-child(2){
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	
+	.b-icon__elem_round_img{
+		background-position: 0px 0px;
+	
+	}
+}	
+.b-icon__elem:nth-child(2){
+	
+	.b-icon__elem_round:hover{
+		.b-icon__elem_round_img{
+			background-position: 0px -60px;
+		}
+	}
+}
+.b-icon__elem:nth-child(3){
+	.b-icon__elem_round_img{
+		background-position: 0px -120px;
+	}
+}	
+.b-icon__elem:nth-child(3){
+	.b-icon__elem_round:hover{
+		.b-icon__elem_round_img{
+			background-position: 0px -180px;
+		}
+	}
+}
+.b-icon__elem:nth-child(4){
+	.b-icon__elem_round_img{
+		background-position: 0px -360px;
+	}
+}	
+.b-icon__elem:nth-child(4){
+	.b-icon__elem_round:hover{
+		.b-icon__elem_round_img{
+			background-position: 0px -420px;
+		}
+	}
+}
+.b-icon__elem:nth-child(5){
+	.b-icon__elem_round_img{
+		background-position: 0px -480px;
+	}
+}	
+.b-icon__elem:nth-child(5){
+	.b-icon__elem_round:hover{
+		.b-icon__elem_round_img{
+			background-position: 0px -540px;
+		}
+	}
+}
+.b-icon__line{
+	display: block;
+	position: relative;
+	width: 17px;
+	margin: 0 auto;
+	margin-top: 15px;
+	border-top: 1px solid $color_txt;
+}
+.b-icon__txt{
+	display: block;
+	position: relative;
+	width: 120px;
+	margin: 0 auto;
+	margin-top: 17px;
+	font-family: 'lobster';
+	font-size: 14pt;
+	color: $color_txt;
+}
+.b-icon__arrow-left{
+	display: block;
+	position: absolute; 
+	width: 32px;
+	height: 32px;
+	top: 110px;
+	left: 64px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -150px;
+	cursor: pointer;
+}
+.b-icon__arrow-right{
+	display: block;
+	position: absolute; 
+	width: 32px;
+	height: 32px;
+	top: 110px;
+	right: 65px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -190px;
+	cursor: pointer;
+}
+/* ===================================   END B-ICON  ============================== */
