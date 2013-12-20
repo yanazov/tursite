@@ -513,17 +513,12 @@
                     value = value.pageX +"x"+ value.pageY;
                     break;
                 case 'gesture':{
-                    value = ev.type;
-					switch(value) {
-						case "swipeleft":{
-							alert("ЕЩЕ НЕ ВЕЧЕР!!!");
-							break;
-						}
-						case "swiperight":{
-							/*alert("ЕЩЕ НЕ ВЕЧЕР2!!!");*/
-							js_main_slide("next");
-							break;
-						}						
+                    value = ev.type;					
+					if(value == "swipeleft")
+						alert("ЕЩЕ НЕ ВЕЧЕР!!!");		
+					if(value == "swiperight")
+						js_main_slide("next");
+						/*alert("ЕЩЕ НЕ ВЕЧЕР2!!!");					 */
 					}
                     break;
 				}	
