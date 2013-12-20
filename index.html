@@ -136,7 +136,7 @@
 		</div>
 		<div id="slide1" class="b-visual__slide1">
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!222</span>
+			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!333</span>
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
 				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
@@ -519,9 +519,9 @@
 					if(value == "swiperight")
 						js_main_slide("next");
 						/*alert("ЕЩЕ НЕ ВЕЧЕР2!!!");					 */
-					
+					}
                     break;
-				}	
+					
                 case 'target':
                     value = ev.gesture.target.tagName;
                     break;
@@ -549,8 +549,8 @@
     // start!
     var hammertime = Hammer(getEl('hitarea'), {
             prevent_default: true,
-			drag: false,
-			touch: false,
+		/*	drag: false,
+			touch: false,   */
             no_mouseevents: true
         })
         .on(all_events.join(" "), logEvent);
