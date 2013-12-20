@@ -521,7 +521,7 @@
 					if(value == "swiperight")
 						js_main_slide("next");
 						/*alert("ЕЩЕ НЕ ВЕЧЕР2!!!");					 */
-					}
+					
 					if(value == "dragup"){     /*  'deltaY'  */
 						alert("ЕЩЕ НЕ ВЕЧЕР777");		
 						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -531,8 +531,9 @@
 						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 						window.scrollTo(0, scrollTop - ev.gesture['deltaY']);
 					}*/
-                    break;
 					
+                    break;
+				}	
                 case 'target':
                     value = ev.gesture.target.tagName;
                     break;
