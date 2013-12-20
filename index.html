@@ -136,7 +136,7 @@
 		</div>
 		<div id="slide1" class="b-visual__slide1">
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!888</span>
+			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!999</span>
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
 				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
@@ -532,7 +532,7 @@
                     break;
 				case "hold":{     /*  'deltaY'  */
 					var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-					window.scrollTo(0, scrollTop - value);
+					window.scrollTo(0, scrollTop - ev.gesture['deltaY']);
 				
                  
                     break;
