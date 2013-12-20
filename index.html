@@ -136,7 +136,7 @@
 		</div>
 		<div id="slide1" class="b-visual__slide1">
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!555</span>
+			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!777</span>
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
 				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
@@ -472,6 +472,7 @@
 
     var log_elements = {};
     var prevent_scroll_drag = true;
+	var scroll_y = 0;
 
 
  /*   $("#prevent-default").click(function() {
@@ -528,8 +529,11 @@
 					}
 					if(value == "dragup"){     /*  'deltaY'  */
 					/*	alert("ЕЩЕ НЕ ВЕЧЕР777");		*/
-						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-						window.scrollTo(0, scrollTop - ev.gesture['deltaY']);
+						(if scroll_y - 10 > ev.gesture['deltaY']){
+							scroll_y -=3;
+							var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+							window.scrollTo(0, scrollTop - 3);
+						}
 					}
 					/*if(value == "swipedown"){  
 						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
