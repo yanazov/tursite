@@ -616,8 +616,46 @@ body{
 	position: relative;
 	width: 100%;
 	height: 490px;
+	background-color: $color_blue_dark;
+}
+.b-visual__slide1{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	background: url(../pic/visual1.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.b-visual__slide2{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../pic/visual2.jpg) no-repeat;
 	background-position: 50% 50%;	
+	background-size: cover;
+	opacity: 0;
+}
+.b-visual__slide3{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../pic/visual3.jpg) no-repeat;
+	background-position: 50% 50%;	
+	background-size: cover;
+	opacity: 0;
+}
+.b-visual__slide4{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../pic/visual4.jpg) no-repeat;
+	background-position: 50% 50%;	
+	background-size: cover;
+	opacity: 0;
 }
 .b-visual__dimmer{
 	display: block;
@@ -667,7 +705,7 @@ body{
 	width: 210px;
 	height: 41px;
 	margin: 0 auto;
-	margin-top: 45px;
+	top: 325px;
 	font-family: 'lobster';
 	font-size: 16pt;
 	padding: 12px 0px 0px 0px;
@@ -677,6 +715,7 @@ body{
 .b-visual__nav{
 	display: block;
 	position: relative;
+	top: 325px;
 	width: 93px;
 	margin: 0 auto;
 	margin-top: 63px;
