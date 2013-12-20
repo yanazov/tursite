@@ -852,6 +852,16 @@ label {
   }
 
   /* line 621, ../sass/_1280.scss */
+  .hitarea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  /* line 630, ../sass/_1280.scss */
   .b-visual__slide1 {
     display: block;
     position: absolute;
@@ -862,7 +872,7 @@ label {
     background-size: cover;
   }
 
-  /* line 630, ../sass/_1280.scss */
+  /* line 639, ../sass/_1280.scss */
   .b-visual__slide2 {
     display: block;
     position: absolute;
@@ -874,7 +884,7 @@ label {
     opacity: 0;
   }
 
-  /* line 640, ../sass/_1280.scss */
+  /* line 649, ../sass/_1280.scss */
   .b-visual__slide3 {
     display: block;
     position: absolute;
@@ -886,7 +896,7 @@ label {
     opacity: 0;
   }
 
-  /* line 650, ../sass/_1280.scss */
+  /* line 659, ../sass/_1280.scss */
   .b-visual__slide4 {
     display: block;
     position: absolute;
@@ -898,7 +908,7 @@ label {
     opacity: 0;
   }
 
-  /* line 660, ../sass/_1280.scss */
+  /* line 669, ../sass/_1280.scss */
   .b-visual__dimmer {
     display: block;
     position: absolute;
@@ -911,7 +921,7 @@ label {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
   }
 
-  /* line 671, ../sass/_1280.scss */
+  /* line 680, ../sass/_1280.scss */
   .b-visual__slogan {
     display: block;
     position: relative;
@@ -925,7 +935,7 @@ label {
     line-height: 68px;
   }
 
-  /* line 683, ../sass/_1280.scss */
+  /* line 692, ../sass/_1280.scss */
   .b-visual__line {
     display: block;
     position: relative;
@@ -935,7 +945,7 @@ label {
     border-top: 1px solid #fff;
   }
 
-  /* line 691, ../sass/_1280.scss */
+  /* line 700, ../sass/_1280.scss */
   .b-visual__txt {
     display: block;
     position: relative;
@@ -948,7 +958,7 @@ label {
     text-align: center;
   }
 
-  /* line 702, ../sass/_1280.scss */
+  /* line 711, ../sass/_1280.scss */
   .b-visual__btn {
     display: block;
     position: relative;
@@ -963,7 +973,7 @@ label {
     font-weight: 400;
   }
 
-  /* line 715, ../sass/_1280.scss */
+  /* line 724, ../sass/_1280.scss */
   .b-visual__nav {
     display: block;
     position: relative;
@@ -973,7 +983,7 @@ label {
     margin-top: 63px;
   }
 
-  /* line 723, ../sass/_1280.scss */
+  /* line 732, ../sass/_1280.scss */
   .b-visual__nav__elem {
     display: inline-block;
     position: relative;
@@ -988,14 +998,14 @@ label {
     cursor: pointer;
   }
 
-  /* line 736, ../sass/_1280.scss */
+  /* line 745, ../sass/_1280.scss */
   .b-visual__nav__elem:nth-child(1) {
     background-color: #ffd200;
     margin-left: 0px;
     cursor: default;
   }
 
-  /* line 741, ../sass/_1280.scss */
+  /* line 750, ../sass/_1280.scss */
   .b-visual__arrow-left {
     display: block;
     position: absolute;
@@ -1008,7 +1018,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 752, ../sass/_1280.scss */
+  /* line 761, ../sass/_1280.scss */
   .b-visual__arrow-right {
     display: block;
     position: absolute;
@@ -1023,7 +1033,7 @@ label {
 
   /* ==================================   END B-VISUAL  ============================= */
   /* ==================================   BEGIN B-HOT  ============================== */
-  /* line 765, ../sass/_1280.scss */
+  /* line 774, ../sass/_1280.scss */
   .b-hot {
     display: block;
     position: relative;
@@ -1032,7 +1042,7 @@ label {
     text-align: center;
   }
 
-  /* line 772, ../sass/_1280.scss */
+  /* line 781, ../sass/_1280.scss */
   .b-hot__decor {
     display: block;
     position: relative;
@@ -1042,7 +1052,7 @@ label {
     border-top: 1px solid #b3b9bd;
   }
 
-  /* line 780, ../sass/_1280.scss */
+  /* line 789, ../sass/_1280.scss */
   .b-hot__decor_img {
     display: block;
     position: relative;
@@ -1055,7 +1065,7 @@ label {
     background-color: #fff;
   }
 
-  /* line 791, ../sass/_1280.scss */
+  /* line 800, ../sass/_1280.scss */
   .b-hot__caption {
     display: block;
     position: relative;
@@ -1065,7 +1075,7 @@ label {
     color: #383d43;
   }
 
-  /* line 799, ../sass/_1280.scss */
+  /* line 808, ../sass/_1280.scss */
   .b-hot__b-unit {
     display: inline-block;
     position: relative;
@@ -1076,20 +1086,20 @@ label {
     text-align: left;
   }
 
-  /* line 808, ../sass/_1280.scss */
+  /* line 817, ../sass/_1280.scss */
   .b-hot__b-unit:hover {
     background-color: #fff;
     -moz-box-shadow: 0 0 28px #ccc;
     -webkit-box-shadow: 0 0 28px #ccc;
     box-shadow: 0 0 28px  #ccc;
   }
-  /* line 813, ../sass/_1280.scss */
+  /* line 822, ../sass/_1280.scss */
   .b-hot__b-unit:hover .b-hot__b-unit__dimmer {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
   }
 
-  /* line 818, ../sass/_1280.scss */
+  /* line 827, ../sass/_1280.scss */
   .b-hot__b-unit img {
     display: block;
     position: relative;
@@ -1097,7 +1107,7 @@ label {
     height: 123px;
   }
 
-  /* line 824, ../sass/_1280.scss */
+  /* line 833, ../sass/_1280.scss */
   .b-hot__b-unit__dimmer {
     display: block;
     position: absolute;
@@ -1110,7 +1120,7 @@ label {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
   }
 
-  /* line 835, ../sass/_1280.scss */
+  /* line 844, ../sass/_1280.scss */
   .b-hot__b-unit__b-txt {
     display: block;
     position: relative;
@@ -1118,7 +1128,7 @@ label {
     height: 220px;
   }
 
-  /* line 841, ../sass/_1280.scss */
+  /* line 850, ../sass/_1280.scss */
   .b-hot__b-unit__name {
     display: block;
     position: relative;
@@ -1130,7 +1140,7 @@ label {
     color: #383d43;
   }
 
-  /* line 851, ../sass/_1280.scss */
+  /* line 860, ../sass/_1280.scss */
   .b-hot__b-unit__period {
     display: block;
     position: relative;
@@ -1141,7 +1151,7 @@ label {
     text-align: left;
   }
 
-  /* line 860, ../sass/_1280.scss */
+  /* line 869, ../sass/_1280.scss */
   .b-hot__b-unit__about {
     display: block;
     position: relative;
@@ -1153,7 +1163,7 @@ label {
     line-height: 15px;
   }
 
-  /* line 870, ../sass/_1280.scss */
+  /* line 879, ../sass/_1280.scss */
   .b-hot__b-unit__old-price {
     display: inline-block;
     position: relative;
@@ -1165,7 +1175,7 @@ label {
     text-decoration: line-through;
   }
 
-  /* line 880, ../sass/_1280.scss */
+  /* line 889, ../sass/_1280.scss */
   .b-hot__b-unit__new-price {
     display: inline-block;
     position: relative;
@@ -1176,7 +1186,7 @@ label {
     text-align: left;
   }
 
-  /* line 890, ../sass/_1280.scss */
+  /* line 899, ../sass/_1280.scss */
   .b-hot__btn {
     display: block;
     position: relative;
@@ -1197,7 +1207,7 @@ label {
 
   /* ===================================   END B-HOT  =============================== */
   /* ==================================   BEGIN B-ICON  ============================= */
-  /* line 909, ../sass/_1280.scss */
+  /* line 918, ../sass/_1280.scss */
   .b-icon {
     display: block;
     position: relative;
@@ -1207,19 +1217,19 @@ label {
     text-align: center;
   }
 
-  /* line 917, ../sass/_1280.scss */
+  /* line 926, ../sass/_1280.scss */
   .b-icon__elem {
     display: inline-block;
     position: relative;
     width: 193px;
   }
 
-  /* line 922, ../sass/_1280.scss */
+  /* line 931, ../sass/_1280.scss */
   .b-icon__elem:nth-child(4) {
     top: -24px;
   }
 
-  /* line 925, ../sass/_1280.scss */
+  /* line 934, ../sass/_1280.scss */
   .b-icon__elem_round {
     display: block;
     position: relative;
@@ -1234,7 +1244,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 938, ../sass/_1280.scss */
+  /* line 947, ../sass/_1280.scss */
   .b-icon__elem_round:hover {
     background-color: #fff;
     -moz-box-shadow: 0 0 15px #ccc;
@@ -1242,7 +1252,7 @@ label {
     box-shadow: 0 0 15px  #ccc;
   }
 
-  /* line 944, ../sass/_1280.scss */
+  /* line 953, ../sass/_1280.scss */
   .b-icon__elem_round_img {
     display: block;
     position: relative;
@@ -1253,57 +1263,57 @@ label {
     background: url(../img/icon_big.png) no-repeat;
   }
 
-  /* line 953, ../sass/_1280.scss */
+  /* line 962, ../sass/_1280.scss */
   .b-icon__elem_round_img:nth-child(1) {
     background-position: 0px -240px;
   }
 
-  /* line 957, ../sass/_1280.scss */
+  /* line 966, ../sass/_1280.scss */
   .b-icon__elem_round:hover:nth-child(1) .b-icon__elem_round_img {
     background-position: 0px -300px;
   }
 
-  /* line 962, ../sass/_1280.scss */
+  /* line 971, ../sass/_1280.scss */
   .b-icon__elem:nth-child(2) .b-icon__elem_round_img {
     background-position: 0px 0px;
   }
 
-  /* line 968, ../sass/_1280.scss */
+  /* line 977, ../sass/_1280.scss */
   .b-icon__elem:nth-child(2) .b-icon__elem_round:hover .b-icon__elem_round_img {
     background-position: 0px -60px;
   }
 
-  /* line 974, ../sass/_1280.scss */
+  /* line 983, ../sass/_1280.scss */
   .b-icon__elem:nth-child(3) .b-icon__elem_round_img {
     background-position: 0px -120px;
   }
 
-  /* line 980, ../sass/_1280.scss */
+  /* line 989, ../sass/_1280.scss */
   .b-icon__elem:nth-child(3) .b-icon__elem_round:hover .b-icon__elem_round_img {
     background-position: 0px -180px;
   }
 
-  /* line 986, ../sass/_1280.scss */
+  /* line 995, ../sass/_1280.scss */
   .b-icon__elem:nth-child(4) .b-icon__elem_round_img {
     background-position: 0px -360px;
   }
 
-  /* line 992, ../sass/_1280.scss */
+  /* line 1001, ../sass/_1280.scss */
   .b-icon__elem:nth-child(4) .b-icon__elem_round:hover .b-icon__elem_round_img {
     background-position: 0px -420px;
   }
 
-  /* line 998, ../sass/_1280.scss */
+  /* line 1007, ../sass/_1280.scss */
   .b-icon__elem:nth-child(5) .b-icon__elem_round_img {
     background-position: 0px -480px;
   }
 
-  /* line 1004, ../sass/_1280.scss */
+  /* line 1013, ../sass/_1280.scss */
   .b-icon__elem:nth-child(5) .b-icon__elem_round:hover .b-icon__elem_round_img {
     background-position: 0px -540px;
   }
 
-  /* line 1009, ../sass/_1280.scss */
+  /* line 1018, ../sass/_1280.scss */
   .b-icon__line {
     display: block;
     position: relative;
@@ -1313,7 +1323,7 @@ label {
     border-top: 1px solid #383d43;
   }
 
-  /* line 1017, ../sass/_1280.scss */
+  /* line 1026, ../sass/_1280.scss */
   .b-icon__txt {
     display: block;
     position: relative;
@@ -1325,7 +1335,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1027, ../sass/_1280.scss */
+  /* line 1036, ../sass/_1280.scss */
   .b-icon__arrow-left {
     display: block;
     position: absolute;
@@ -1338,7 +1348,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 1038, ../sass/_1280.scss */
+  /* line 1047, ../sass/_1280.scss */
   .b-icon__arrow-right {
     display: block;
     position: absolute;
@@ -1353,7 +1363,7 @@ label {
 
   /* ===================================   END B-ICON  ============================== */
   /* =================================   BEGIN B-ABOUT  ============================= */
-  /* line 1051, ../sass/_1280.scss */
+  /* line 1060, ../sass/_1280.scss */
   .b-about {
     display: block;
     position: relative;
@@ -1363,7 +1373,7 @@ label {
     background-position: 50% 50%;
   }
 
-  /* line 1059, ../sass/_1280.scss */
+  /* line 1068, ../sass/_1280.scss */
   .b-about__service {
     float: left;
     width: 42.4%;
@@ -1375,7 +1385,7 @@ label {
     line-height: 17px;
   }
 
-  /* line 1069, ../sass/_1280.scss */
+  /* line 1078, ../sass/_1280.scss */
   .b-about__company {
     float: right;
     width: 42.4%;
@@ -1387,7 +1397,7 @@ label {
     line-height: 17px;
   }
 
-  /* line 1079, ../sass/_1280.scss */
+  /* line 1088, ../sass/_1280.scss */
   .b-about__caption {
     display: block;
     position: realtive;
@@ -1397,14 +1407,14 @@ label {
     color: #383d43;
   }
 
-  /* line 1087, ../sass/_1280.scss */
+  /* line 1096, ../sass/_1280.scss */
   .b-about__separ-space {
     display: block;
     position: relative;
     height: 30px;
   }
 
-  /* line 1092, ../sass/_1280.scss */
+  /* line 1101, ../sass/_1280.scss */
   .b-about__service a {
     display: block;
     position: relative;
@@ -1421,7 +1431,7 @@ label {
 
   /* ===================================   END B-ABOUT  ============================= */
   /* ===================================   BEGIN B-MAP  ============================= */
-  /* line 1107, ../sass/_1280.scss */
+  /* line 1116, ../sass/_1280.scss */
   .b-map {
     display: block;
     position: relative;
@@ -1432,7 +1442,7 @@ label {
     text-align: left;
   }
 
-  /* line 1116, ../sass/_1280.scss */
+  /* line 1125, ../sass/_1280.scss */
   .b-map__b-left {
     display: inline-block;
     position: relative;
@@ -1443,7 +1453,7 @@ label {
     background-color: #fff;
   }
 
-  /* line 1125, ../sass/_1280.scss */
+  /* line 1134, ../sass/_1280.scss */
   .b-map__b-left__name {
     display: block;
     position: relative;
@@ -1458,7 +1468,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1138, ../sass/_1280.scss */
+  /* line 1147, ../sass/_1280.scss */
   .b-map__b-left__b-caption {
     display: block;
     position: relative;
@@ -1469,7 +1479,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1147, ../sass/_1280.scss */
+  /* line 1156, ../sass/_1280.scss */
   .b-map__b-left__b-txt {
     display: block;
     position: relative;
@@ -1478,7 +1488,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1154, ../sass/_1280.scss */
+  /* line 1163, ../sass/_1280.scss */
   .b-map__b-left a {
     display: block;
     position: relative;
@@ -1487,7 +1497,7 @@ label {
     font-size: 9pt;
   }
 
-  /* line 1164, ../sass/_1280.scss */
+  /* line 1173, ../sass/_1280.scss */
   .b-map__b-right {
     display: inline-block;
     position: relative;
@@ -1497,7 +1507,7 @@ label {
     margin: 18px 0px 0px 65px;
   }
 
-  /* line 1172, ../sass/_1280.scss */
+  /* line 1181, ../sass/_1280.scss */
   .b-map__b-right__to-map {
     display: block;
     position: absolute;
@@ -1505,7 +1515,7 @@ label {
     right: 0px;
   }
 
-  /* line 1178, ../sass/_1280.scss */
+  /* line 1187, ../sass/_1280.scss */
   .b-map__b-right__caption {
     display: block;
     position: relative;
@@ -1515,14 +1525,14 @@ label {
     color: #fff;
   }
 
-  /* line 1186, ../sass/_1280.scss */
+  /* line 1195, ../sass/_1280.scss */
   .b-map__b-right__b-input {
     display: inline-block;
     position: relative;
     width: 295px;
   }
 
-  /* line 1191, ../sass/_1280.scss */
+  /* line 1200, ../sass/_1280.scss */
   .b-map__b-right__b-input input {
     display: block;
     position: relative;
@@ -1540,7 +1550,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1207, ../sass/_1280.scss */
+  /* line 1216, ../sass/_1280.scss */
   .b-map__b-right textarea {
     display: block;
     position: absolute;
@@ -1561,7 +1571,7 @@ label {
     -khtml-border-radius: 10px 10px 10px 10px;
   }
 
-  /* line 1226, ../sass/_1280.scss */
+  /* line 1235, ../sass/_1280.scss */
   .b-map__b-right__comment {
     display: block;
     position: relative;
@@ -1572,7 +1582,7 @@ label {
     color: #fff;
   }
 
-  /* line 1235, ../sass/_1280.scss */
+  /* line 1244, ../sass/_1280.scss */
   .b-map__b-right__send {
     display: block;
     position: absolute;
@@ -1586,7 +1596,7 @@ label {
 
   /* ====================================   END B-MAP  ============================== */
   /* ==================================   BEGIN FOOTER  ============================= */
-  /* line 1248, ../sass/_1280.scss */
+  /* line 1257, ../sass/_1280.scss */
   .footer {
     display: block;
     position: relative;
@@ -1595,7 +1605,7 @@ label {
     background-color: #00adc7;
   }
 
-  /* line 1255, ../sass/_1280.scss */
+  /* line 1264, ../sass/_1280.scss */
   .footer__elem {
     float: left;
     width: 367px;
@@ -1604,12 +1614,12 @@ label {
     background-color: #fff;
   }
 
-  /* line 1262, ../sass/_1280.scss */
+  /* line 1271, ../sass/_1280.scss */
   .footer__elem img {
     float: left;
   }
 
-  /* line 1265, ../sass/_1280.scss */
+  /* line 1274, ../sass/_1280.scss */
   .footer__elem__txt {
     float: left;
     width: 205px;
@@ -1619,7 +1629,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1273, ../sass/_1280.scss */
+  /* line 1282, ../sass/_1280.scss */
   .footer__elem__txt__date {
     display: block;
     position: relative;
@@ -1629,7 +1639,7 @@ label {
     color: #00adc7;
   }
 
-  /* line 1281, ../sass/_1280.scss */
+  /* line 1290, ../sass/_1280.scss */
   .footer__contact {
     display: block;
     position: absolute;
@@ -1637,7 +1647,7 @@ label {
     left: 40px;
   }
 
-  /* line 1287, ../sass/_1280.scss */
+  /* line 1296, ../sass/_1280.scss */
   .footer__contact__elem {
     display: inline-block;
     position: relative;
@@ -1649,14 +1659,14 @@ label {
     border-right: 1px solid #008a9f;
   }
 
-  /* line 1297, ../sass/_1280.scss */
+  /* line 1306, ../sass/_1280.scss */
   .footer__contact__elem__caption {
     display: block;
     font-weight: bold;
     font-size: 8pt;
   }
 
-  /* line 1302, ../sass/_1280.scss */
+  /* line 1311, ../sass/_1280.scss */
   .footer__contact__elem2 {
     display: inline-block;
     position: relative;
@@ -1669,7 +1679,7 @@ label {
     border-right: 1px solid #008a9f;
   }
 
-  /* line 1313, ../sass/_1280.scss */
+  /* line 1322, ../sass/_1280.scss */
   .footer__contact__elem3 {
     display: inline-block;
     position: relative;
@@ -1681,14 +1691,14 @@ label {
     color: #fff;
   }
 
-  /* line 1323, ../sass/_1280.scss */
+  /* line 1332, ../sass/_1280.scss */
   .footer__contact__elem3 a {
     font-family: 'roboto_r';
     font-size: 8pt;
     color: #fff;
   }
 
-  /* line 1328, ../sass/_1280.scss */
+  /* line 1337, ../sass/_1280.scss */
   .footer__mailing {
     display: block;
     position: absolute;
@@ -1704,7 +1714,7 @@ label {
     border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1342, ../sass/_1280.scss */
+  /* line 1351, ../sass/_1280.scss */
   .footer__mailing__txt {
     display: inline-block;
     position: relative;
@@ -1717,7 +1727,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1353, ../sass/_1280.scss */
+  /* line 1362, ../sass/_1280.scss */
   .footer__mailing__fild {
     display: inline-block;
     position: relative;
@@ -1736,7 +1746,7 @@ label {
     border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1370, ../sass/_1280.scss */
+  /* line 1379, ../sass/_1280.scss */
   .footer__mailing__icon {
     display: block;
     position: absolute;
@@ -1748,7 +1758,7 @@ label {
     background-position: 0px -400px;
   }
 
-  /* line 1380, ../sass/_1280.scss */
+  /* line 1389, ../sass/_1280.scss */
   .footer__copyright {
     display: block;
     position: absolute;
@@ -1759,7 +1769,7 @@ label {
     color: #fff;
   }
 
-  /* line 1389, ../sass/_1280.scss */
+  /* line 1398, ../sass/_1280.scss */
   .footer__rule {
     display: block;
     position: absolute;
@@ -1770,7 +1780,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1398, ../sass/_1280.scss */
+  /* line 1407, ../sass/_1280.scss */
   .footer__social {
     display: block;
     position: absolute;
@@ -1781,14 +1791,14 @@ label {
     color: #fff;
   }
 
-  /* line 1408, ../sass/_1280.scss */
+  /* line 1417, ../sass/_1280.scss */
   .footer__social ul {
     display: inline-block;
     position: relative;
     top: 8px;
   }
 
-  /* line 1413, ../sass/_1280.scss */
+  /* line 1422, ../sass/_1280.scss */
   .footer__social li {
     display: inline-block;
     position: relative;
@@ -1802,7 +1812,7 @@ label {
     border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1425, ../sass/_1280.scss */
+  /* line 1434, ../sass/_1280.scss */
   .footer__social__f {
     display: block;
     position: relative;
@@ -1812,7 +1822,7 @@ label {
     background-position: 5px -275px;
   }
 
-  /* line 1433, ../sass/_1280.scss */
+  /* line 1442, ../sass/_1280.scss */
   .footer__social__t {
     display: block;
     position: relative;
@@ -1822,7 +1832,7 @@ label {
     background-position: 5px -295px;
   }
 
-  /* line 1441, ../sass/_1280.scss */
+  /* line 1450, ../sass/_1280.scss */
   .footer__social__g {
     display: block;
     position: relative;
@@ -1832,7 +1842,7 @@ label {
     background-position: 5px -315px;
   }
 
-  /* line 1449, ../sass/_1280.scss */
+  /* line 1458, ../sass/_1280.scss */
   .footer__webmedia {
     display: block;
     position: absolute;
@@ -1843,7 +1853,7 @@ label {
     color: #fff;
   }
 
-  /* line 1458, ../sass/_1280.scss */
+  /* line 1467, ../sass/_1280.scss */
   .footer__webmedia__icon {
     display: inline-block;
     position: relative;
@@ -1854,7 +1864,7 @@ label {
   }
 
   /* ===================================   END FOOTER  ============================== */
-  /* line 1467, ../sass/_1280.scss */
+  /* line 1476, ../sass/_1280.scss */
   .btn-up-dwn {
     display: block;
     position: fixed;
@@ -1870,7 +1880,7 @@ label {
     border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1481, ../sass/_1280.scss */
+  /* line 1490, ../sass/_1280.scss */
   .btn-up-dwn__icon {
     display: block;
     position: relative;

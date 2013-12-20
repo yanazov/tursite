@@ -12,6 +12,9 @@
     <![endif]-->
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/hammer.fakemultitouch.js"></script>
+	<script src="js/hammer.showtouches.js"></script>
 	<script type="text/javascript" src="js/tursite.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	
@@ -149,6 +152,7 @@
 			</ul>
 			<span class="b-visual__arrow-left" onClick="js_main_slide('prev')"></span>
 			<span class="b-visual__arrow-right"  onClick="js_main_slide('next')"></span>
+			<div id="hitarea" class="hitarea"></div>
 	</div>
 	<div class="b-hot">
 		<span class="b-hot__decor">
@@ -419,5 +423,104 @@
 			
 		});
 	</script>
+	
+		<!--[if !IE]> -->
+	<script>
+		Hammer.plugins.showTouches();
+	</script>
+	<!-- <![endif]-->
+	
+	<script>
+
+    Hammer.plugins.fakeMultitouch();
+
+    function getEl(id) {
+        return document.getElementById(id);
+    }
+
+
+    var log_elements = {};
+    var prevent_scroll_drag = true;
+
+
+    $("#prevent-default").click(function() {
+        hammertime.options.prevent_default = this.checked;
+    });
+
+
+    function getLogElement(type, name) {
+        var el = log_elements[type + name];
+        if(!el) {
+            return log_elements[type + name] = getEl("log-"+ type +"-"+ name);
+        }
+        return el;
+    }
+
+    // log properties
+    var properties = ['gesture','center','deltaTime','angle','direction',
+        'distance','deltaX','deltaY','velocityX','velocityY', 'pointerType',
+        'scale','rotation','touches','target'];
+
+    function logEvent(ev) {
+        if(!ev.gesture) {
+            return;
+        }
+
+        // add to the large event log at the bottom of the page
+        var log = [this.id, ev.type];
+        //event_log.innerHTML = log.join(" - ") +"\n" + event_log.innerHTML;
+
+        // highlight gesture
+        var event_el = getLogElement('gesture', ev.type);
+        event_el.className = "active";
+
+
+        for(var i= 0,len=properties.length; i<len; i++) {
+            var prop = properties[i];
+            var value = ev.gesture[prop];
+            switch(prop) {
+                case 'center':
+                    value = value.pageX +"x"+ value.pageY;
+                    break;
+                case 'gesture':{
+                    value = ev.type;
+					if(value == "touch")
+						alert("ЕЩЕ НЕ ВЕЧЕР!!!");		
+					if(value == "swiperight")
+						alert("ЕЩЕ НЕ ВЕЧЕР2!!!");					 
+					}
+                    break;
+                case 'target':
+                    value = ev.gesture.target.tagName;
+                    break;
+                case 'touches':
+                    value = ev.gesture.touches.length;
+                    break;
+            }
+            getLogElement('prop', prop).innerHTML = value;
+        }
+    }
+
+
+    // get all the events
+    var all_events = [];
+    $("#events-list li").each(function() {
+        var li = $(this);
+        var type = li.text();
+        li.attr("id", "log-gesture-"+type);
+        all_events.push(type);
+    });
+
+
+    // start!
+    var hammertime = Hammer(getEl('hitarea'), {
+            prevent_default: true,
+            no_mouseevents: true
+        })
+        .on(all_events.join(" "), logEvent);
+
+</script>
+
+
 </body>
 </html>
