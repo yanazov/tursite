@@ -405,6 +405,37 @@
 	<span class="btn-up-dwn">
 		<span class="btn-up-dwn__icon"></span>
 	</span>
+	<ul class="unstyled events" id="events-list">
+        <li>touch</li>
+        <li>release</li>
+        <li>hold</li>
+        <li>tap</li>
+        <li>doubletap</li>
+
+        <li>dragstart</li>
+        <li>drag</li>
+        <li>dragend</li>
+        <li>dragleft</li>
+        <li>dragright</li>
+        <li>dragup</li>
+        <li>dragdown</li>
+
+        <li>swipe</li>
+        <li>swipeleft</li>
+        <li>swiperight</li>
+        <li>swipeup</li>
+        <li>swipedown</li>
+
+        <li>transformstart</li>
+        <li>transform</li>
+        <li>transformend</li>
+        <li>rotate</li>
+        <li>pinch</li>
+        <li>pinchin</li>
+        <li>pinchout</li>
+    </ul>
+	
+	
 	
 	<script type="text/javascript">
 		jQuery(".b-search__cost__select").slider({
@@ -443,10 +474,10 @@
     var prevent_scroll_drag = true;
 
 
-    $("#prevent-default").click(function() {
+ /*   $("#prevent-default").click(function() {
         hammertime.options.prevent_default = this.checked;
     });
-
+*/
 
     function getLogElement(type, name) {
         var el = log_elements[type + name];
@@ -454,7 +485,7 @@
             return log_elements[type + name] = getEl("log-"+ type +"-"+ name);
         }
         return el;
-    }
+    } 
 
     // log properties
     var properties = ['gesture','center','deltaTime','angle','direction',
@@ -472,7 +503,6 @@
 
         // highlight gesture
         var event_el = getLogElement('gesture', ev.type);
-        event_el.className = "active";
 
 
         for(var i= 0,len=properties.length; i<len; i++) {
@@ -497,7 +527,6 @@
                     value = ev.gesture.touches.length;
                     break;
             }
-            getLogElement('prop', prop).innerHTML = value;
         }
     }
 
