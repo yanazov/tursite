@@ -775,7 +775,8 @@ body{
 }
 .b-search__find{
 	display: block;
-	position: relative;
+	position: absolute;
+	top: 253px;
 	width: 100%;
 	text-align: center;
 }
