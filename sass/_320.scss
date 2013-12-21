@@ -3,8 +3,12 @@ body{
 	position: relative;
 	max-width: 1260px;
 	margin: 0 auto;
+	overflow: hidden;
+	overflow-y: scroll;
 }
-
+#events-list{
+	display: none;
+}
 .btn-yellow{
 	display: inline-block;
 	position: relative;
@@ -802,6 +806,56 @@ body{
 	background-color: $color_blue_dark;
 	opacity: 0.5;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+.hitarea {
+	display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;    
+}
+.b-visual__slide1{
+	display: block;
+	position: absolute;
+	top: -2px;
+	width: 100%;
+	height: 102%;
+	background: url(../pic/visual1.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	opacity: 1;
+}
+.b-visual__slide2{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../pic/visual2.jpg) no-repeat;
+	background-position: 50% 50%;	
+	background-size: cover;
+	opacity: 0;
+}
+.b-visual__slide3{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../pic/visual3.jpg) no-repeat;
+	background-position: 50% 50%;	
+	background-size: cover;
+	opacity: 0;
+}
+.b-visual__slide4{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../pic/visual4.jpg) no-repeat;
+	background-position: 50% 50%;	
+	background-size: cover;
+	opacity: 0;
 }
 .b-visual__slogan{
 	display: block;

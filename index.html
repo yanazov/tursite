@@ -153,7 +153,7 @@
 				<li class="b-visual__nav__elem"></li>
 			</ul>
 			<span class="b-visual__arrow-left" onClick="js_main_slide('prev')"></span>
-			<span class="b-visual__arrow-right"  onClick="js_main_slide('next')"></span>
+			<span class="b-visual__arrow-right" onClick="js_main_slide('next')"></span>
 	</div>
 	<div class="b-hot">
 		<span class="b-hot__decor">
@@ -517,7 +517,7 @@
                 case 'gesture':{
                     value = ev.type;					
 					if(value == "swipeleft"){	
-						
+						js_main_slide("prev");
 					}
 					if(value == "swiperight")
 						js_main_slide("next");
