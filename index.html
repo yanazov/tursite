@@ -136,7 +136,7 @@
 		</div>
 		<div id="slide1" class="b-visual__slide1">
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!444</span>
+			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!555</span>
 
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
@@ -516,20 +516,22 @@
                     break;
                 case 'gesture':{
                     value = ev.type;					
-					if(value == "swipeleft"){
-						alert("ЕЩЕ НЕ ВЕЧЕР!!!");		
+					if(value == "swipeleft"){	
 						
 					}
 					if(value == "swiperight")
 						js_main_slide("next");
-						/*alert("ЕЩЕ НЕ ВЕЧЕР2!!!");					 */
 					
-					if(value == "dragdown"){     /*  'deltaY'  */
+					if(value == "dragdown"){     /*  'deltaY'  
 						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-						window.scrollTo(0, scrollTop - ev.gesture['deltaY']);
+						window.scrollTo(0, scrollTop - ev.gesture['deltaY']);*/
+						if(scroll_y + 10 < ev.gesture['deltaY']){
+							var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+							window.scrollTo(0, scrollTop + ev.gesture['deltaY'] - scroll_y + 10);
+							scroll_y = ev.gesture['deltaY'] - 10;
+						}
 					}
-					if(value == "dragup"){     /*  'deltaY'  */
-					/*	alert("ЕЩЕ НЕ ВЕЧЕР777");		*/
+					if(value == "dragup"){     
 						if(scroll_y - 10 > ev.gesture['deltaY']){
 							var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 							window.scrollTo(0, scrollTop - ev.gesture['deltaY'] + scroll_y - 10);
