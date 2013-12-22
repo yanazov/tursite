@@ -1,3 +1,4 @@
+
 body{
 	display: block;
 	position: relative;
@@ -231,7 +232,12 @@ body{
 	-webkit-box-shadow: 3px 0 12px $color_yellow_shadow; 
 	box-shadow: inset 0px 2px 0px  $color_yellow_shadow; 
 }
-.header__b-right_login span{
+.header__b-right_login__txt{
+	font-family: 'roboto_slab_b';
+	color: $color_txt;
+	font-size: 10.5pt;
+}
+.header__b-right_login__img{
 	display: block;
 	position: absolute;
 	top: 18px;
