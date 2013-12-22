@@ -30,6 +30,15 @@
 	</div>
 	<header class="header">
 		<div class="header__b-left">
+			<div class="header__menu320">
+				<span class="header__menu320__btn">
+					<span class="header__menu320__btn__img"></span>
+				</span>
+				<span class="header__menu320__call">
+					<span class="header__menu320__call__img"></span>
+					Позвонить
+				</span>
+			</div>
 			<nav class="header__b-left_nav">
 				<ul>
 					<li><a href="#">Новости</a></li>
@@ -47,7 +56,11 @@
 			<span class="header__b-center__txt">ТурСайт</span>			
 		</div>
 		<div class="header__b-right">
-			<a class="header__b-right_login" href="#">Вход<span></span></a>
+			<a class="header__b-right_login" href="#">
+				<span class="header__b-right_login__txt">Вход</span>
+				<span class="header__b-right_login__img"></span>				
+				<span  class="header__b-right_login__arrow"></span>
+			</a>
 			<input class="header__b-right__search" type="text" placeholder="Поиск...">
 			<a class="header__b-right__zoom" href="#"></a>
 		</div>		
@@ -161,7 +174,7 @@
 		</span>
 		<span class="b-hot__caption">Горящие предложения</span>
 		<div class="b-hot__slider">
-			<div class="b-hot__b-unit">
+			<div id="hot-unit1" class="b-hot__b-unit">
 				<img src="pic/hot1.jpg" alt=""/>
 				<div class="b-hot__b-unit__dimmer"></div>
 				<span class="b-hot__b-unit__b-txt">
@@ -178,7 +191,7 @@
 				<span class="b-hot__b-unit__new-price">699$</span>			
 				<a class="btn-yellow" href="#">Подробнее</a>
 			</div>
-			<div class="b-hot__b-unit">
+			<div id="hot-unit2" class="b-hot__b-unit">
 				<img src="pic/hot2.jpg" alt=""/>
 				<div class="b-hot__b-unit__dimmer"></div>
 				<span class="b-hot__b-unit__b-txt">
@@ -195,7 +208,7 @@
 				<span class="b-hot__b-unit__new-price">699$</span>			
 				<a class="btn-yellow" href="#">Подробнее</a>
 			</div>
-			<div class="b-hot__b-unit">
+			<div id="hot-unit3" class="b-hot__b-unit">
 				<img src="pic/hot3.jpg" alt=""/>
 				<div class="b-hot__b-unit__dimmer"></div>
 				<span class="b-hot__b-unit__b-txt">
@@ -212,24 +225,26 @@
 				<span class="b-hot__b-unit__new-price">699$</span>			
 				<a class="btn-yellow" href="#">Подробнее</a>
 			</div>
-			<div class="b-hot__b-unit">
-			<img src="pic/hot4.jpg" alt=""/>
-			<div class="b-hot__b-unit__dimmer"></div>
-			<span class="b-hot__b-unit__b-txt">
-				<span class="b-hot__b-unit__name">
-					Шри-Ланка в лучший сезон со скидкой!!!
-				</span>
-				<span class="b-hot__b-unit__period">3 - 10 Сентября 2013</span>
-				<span class="b-hot__b-unit__about">
-					Экскурсии по Амстердаму, Парижу, Люксембургу в цене!!! 
-					Стоимость указана за чел при двухместном размещении
-				</span>
-			</span>	
-			<span class="b-hot__b-unit__old-price">780$</span>
-			<span class="b-hot__b-unit__new-price">699$</span>			
-			<a class="btn-yellow" href="#">Подробнее</a>
+			<div id="hot-unit4" class="b-hot__b-unit">
+				<img src="pic/hot4.jpg" alt=""/>
+				<div class="b-hot__b-unit__dimmer"></div>
+				<span class="b-hot__b-unit__b-txt">
+					<span class="b-hot__b-unit__name">
+						Шри-Ланка в лучший сезон со скидкой!!!
+					</span>
+					<span class="b-hot__b-unit__period">3 - 10 Сентября 2013</span>
+					<span class="b-hot__b-unit__about">
+						Экскурсии по Амстердаму, Парижу, Люксембургу в цене!!! 
+						Стоимость указана за чел при двухместном размещении
+					</span>
+				</span>	
+				<span class="b-hot__b-unit__old-price">780$</span>
+				<span class="b-hot__b-unit__new-price">699$</span>			
+				<a class="btn-yellow" href="#">Подробнее</a>
+			</div>
 		</div>
-		</div>
+		<span class="b-hot__arrow-left" onClick="js_hot_prev()"></span>
+		<span class="b-hot__arrow-right" onClick="js_hot_next()"></span>
 	<a href="#" class="b-hot__btn">Смотреть еще</a>
 	</div>
 	<div class="b-icon">
