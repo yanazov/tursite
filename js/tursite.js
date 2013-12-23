@@ -4,6 +4,7 @@ var opacity_current = 1;
 var opacity_next = 0;
 var arrow = 0;
 var current_hot = 1;
+var current_icon = 1;
 
 window.onload = function() {
 	if(document.body.clientWidth < 550){
@@ -12,6 +13,13 @@ window.onload = function() {
 			document.getElementById("hot-unit"+i).style.position = "absolute";  
 			document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-1) + "px";   
 		}
+		for(i= 1; i < 6; i++){
+			document.getElementById("icon"+i).style.display = "block";   /* b-width 268px   */
+			document.getElementById("icon"+i).style.position = "absolute";  
+			document.getElementById("icon"+i).style.top = 0 + "px";  
+			document.getElementById("icon"+i).style.left = -162*1.5 + document.body.clientWidth/2 + 147*(i-1) + "px";   
+		}
+		
 		
 	}
 }
@@ -103,6 +111,43 @@ function js_hot_prev(){
 		}
 		if(current_hot < 0){
 			current_hot = 3;
+		}
+	}
+}
+
+function js_icon_next(){
+	if(document.body.clientWidth < 550){
+		current_icon += 1;
+		for(i= 1; i < 7; i++){
+			document.getElementById("icon"+i).style.display = "block";   
+			document.getElementById("icon"+i).style.position = "absolute"; 
+			if(i-current_icon > -1){
+				document.getElementById("icon"+i).style.left = -162*1.5 + document.body.clientWidth/2 + 147*(i-current_icon) + "px";   
+			}
+			if(i-current_icon < 0){
+				document.getElementById("icon"+i).style.left = -162*1.5 + document.body.clientWidth/2 + 147*(i-current_icon) + 147*6 + "px";   
+			}
+		}
+		if(current_icon > 5){
+			current_icon = 0;
+		}
+	}
+}
+function js_icon_prev(){
+	if(document.body.clientWidth < 550){
+		current_icon -= 1;
+		for(i= 1; i < 7; i++){
+			document.getElementById("icon"+i).style.display = "block";   /* b-width 268px   */
+			document.getElementById("icon"+i).style.position = "absolute"; 
+			if(i-current_icon > -6){
+				document.getElementById("icon"+i).style.left = -162*1.5 + document.body.clientWidth/2 + 147*(i-current_icon) + "px";   
+			}
+			if(i-current_icon > 5){
+				document.getElementById("icon"+i).style.left = -162*1.5 + document.body.clientWidth/2 + 147*(i-current_icon) - 147*6 + "px";   
+			}
+		}
+		if(current_icon < 0){
+			current_icon = 5;
 		}
 	}
 }

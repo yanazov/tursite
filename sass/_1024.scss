@@ -1069,6 +1069,19 @@ body{
 		}
 	}
 }
+.b-icon__elem:nth-child(6){
+	display: none;
+	.b-icon__elem_round_img{
+		background-position: 0px -360px;
+	}
+}	
+.b-icon__elem:nth-child(6){
+	.b-icon__elem_round:hover{
+		.b-icon__elem_round_img{
+			background-position: 0px -420px;
+		}
+	}
+}
 .b-icon__line{
 	display: block;
 	position: relative;
