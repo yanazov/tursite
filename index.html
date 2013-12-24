@@ -615,6 +615,30 @@
 	var hammertime_b_icon_r = Hammer(element_block_icon).on("swiperight", function(event) {
         js_icon_prev();
     });
+	var hammertime_b_icon_up = Hammer(element_block_icon).on("dragup", function(event) {
+        if(scroll_y - 10 > event.gesture['deltaY']){
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
+			scroll_y = event.gesture['deltaY'] + 10;
+		}
+    });
+	var hammertime_b_icon_down = Hammer(element_block_icon).on("dragdown", function(event) {
+        if(scroll_y + 10 < event.gesture['deltaY']){
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
+			scroll_y = event.gesture['deltaY'] + 10;
+		}
+    });
+	var hammertime_b_icon_end = Hammer(element_block_icon).on("dragend", function(event) {
+        scroll_y = 0;		
+    });
+	
+	
+	
+	
+	
+	
+	
 	var element_block_hot = document.getElementById('block_hot');
     var hammertime_b_hot_l = Hammer(element_block_hot, {
 			prevent_default: true,
