@@ -606,29 +606,31 @@
     // start!
     var hammertime = Hammer(getEl('hitarea'), {
             prevent_default: true,
-		/*	drag: false,
-			touch: false,   */
             no_mouseevents: true
         })
         .on(all_events.join(" "), logEvent);
 	
 	var element_block_icon = document.getElementById('block_icon');
-    var hammertime_b_icon_l = Hammer(element_block_icon).on("swipeleft", function(event) {
+    var hammertime_b_icon_l = Hammer(element_block_icon, {
+			prevent_default: true,
+            no_mouseevents: true
+		}).on("swipeleft", function(event) {
         js_icon_next();
     });
 	var hammertime_b_icon_r = Hammer(element_block_icon).on("swiperight", function(event) {
         js_icon_prev();
     });
 	var element_block_hot = document.getElementById('block_hot');
-    var hammertime_b_hot_l = Hammer(element_block_hot).on("swipeleft", function(event) {
+    var hammertime_b_hot_l = Hammer(element_block_hot, {
+			prevent_default: true,
+            no_mouseevents: true
+		}).on("swipeleft", function(event) {
         js_hot_next();
     });
 	var hammertime_b_hot_r = Hammer(element_block_hot).on("swiperight", function(event) {
         js_hot_prev();
     });
-	var hammertime_b_hot_t = Hammer(element_block_hot).on("tap", function(event) {
-        alert('hello!');
-	});
+	
 		
 </script>
 
