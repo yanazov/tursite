@@ -111,55 +111,37 @@ function js_main_slide(arrow){
 
 function js_hot_next(){
 	if(document.body.clientWidth < 550){
-		current_step += step_slider;
+		current_hot += 1;
 		for(i= 1; i < 5; i++){
 			document.getElementById("hot-unit"+i).style.display = "block";   /* b-width 268px   */
 			document.getElementById("hot-unit"+i).style.position = "absolute"; 
 			if(i-current_hot > -5){
-				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot  - current_step) + "px";   
+				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot) + "px";   
 			}
 			if(i-current_hot < 0){
-				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot  - current_step) + 247*4 + "px";   
+				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot) + 247*4 + "px";   
 			}
 		}
 		if(current_hot > 3){
 			current_hot = 0;
 		}
-		if(current_step >= 1){
-			clearTimeout(slider_timer);
-			current_step = 0;
-			current_hot += 1;
-			return 0;
-		}
-		if(current_step < 1){
-			var slider_timer= setTimeout(function() {js_hot_next()});
-		}
 	}
 }
 function js_hot_prev(){
 	if(document.body.clientWidth < 550){
-		current_step -= step_slider;
+		current_hot -= 1;
 		for(i= 1; i < 5; i++){
 			document.getElementById("hot-unit"+i).style.display = "block";   /* b-width 268px   */
 			document.getElementById("hot-unit"+i).style.position = "absolute"; 
 			if(i-current_hot > -4){
-				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot - current_step) + "px";   
+				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot) + "px";   
 			}
-			if(i-current_hot > 1){
-				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot - current_step) - 247*4 + "px";   
+			if(i-current_hot > 2){
+				document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-current_hot) - 247*4 + "px";   
 			}
 		}
 		if(current_hot < 0){
 			current_hot = 3;
-		}
-		if(current_step <= -1){
-			clearTimeout(slider_timer);
-			current_step = 0;
-			current_hot -= 1;
-			return 0;
-		}
-		if(current_step > -1){
-			var slider_timer= setTimeout(function() {js_hot_prev()});
 		}
 	}
 }
