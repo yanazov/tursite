@@ -254,7 +254,7 @@
 		<span class="b-hot__arrow-right" onClick="js_hot_next()"></span>
 	<a href="#" class="b-hot__btn">Смотреть еще</a>
 	</div>
-	<div class="b-icon">
+	<div id="block_icon" class="b-icon">
 		<div class="b-icon__conteiner">
 			<div id="icon1" class="b-icon__elem">
 				<a href="#" class="b-icon__elem_round">
@@ -611,7 +611,27 @@
             no_mouseevents: true
         })
         .on(all_events.join(" "), logEvent);
-
+	
+	var element_block_icon = document.getElementById('block_icon');
+    var hammertime_b_icon_l = Hammer(element_block_icon).on("swipeleft", function(event) {
+        js_icon_next();
+    });
+	var hammertime_b_icon_r = Hammer(element_block_icon).on("swiperight", function(event) {
+        js_icon_prev();
+    });
+/*	var element_icon = new Array(6)
+	var hammertime_icon_l = new Array(6)
+	var hammertime_icon_r = new Array(6)
+	for(i = 1; i < 7; i++){
+		element_icon[i] = document.getElementById('icon'+i);
+		hammertime_icon_l[i] = Hammer(element_icon[i]).on("swipeleft", function(event) {
+			js_icon_next();
+		});
+		hammertime_icon_r[i] = Hammer(element_icon[i]).on("swiperight", function(event) {
+			js_icon_prev();
+		});
+	}*/
+	
 		
 </script>
 
