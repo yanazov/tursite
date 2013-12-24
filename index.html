@@ -608,7 +608,7 @@
 	var element_block_icon = document.getElementById('block_icon');
     var hammertime_b_icon_l = Hammer(element_block_icon, {
 			prevent_default: true,
-        /*    no_mouseevents: true*/
+            no_mouseevents: true
 		}).on("swipeleft", function(event) {
         js_icon_next();
     });
@@ -625,6 +625,20 @@
 	var hammertime_b_hot_r = Hammer(element_block_hot).on("swiperight", function(event) {
         js_hot_prev();
     });
+	
+	var hammertime_b_hot_up = Hammer(element_block_hot).on("dragup", function(event) {
+        if(scroll_y - 10 > event.gesture['deltaY']){
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
+			scroll_y = event.gesture['deltaY'] + 10;
+		}
+    });
+	
+	
+	
+	
+	
+	
 	
 		
 </script>
