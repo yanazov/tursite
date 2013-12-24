@@ -156,7 +156,7 @@
 		</div>
 		<div id="slide1" class="b-visual__slide1">
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">1Спланируйте Ваш отпуск с нами!888</span>
+			<span class="b-visual__slogan">1Спланируйте Ваш отпуск с нами!999</span>
 
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
@@ -633,7 +633,13 @@
 			scroll_y = event.gesture['deltaY'] + 10;
 		}
     });
-	
+	var hammertime_b_hot_up = Hammer(element_block_hot).on("dragdown", function(event) {
+        if(scroll_y + 10 < event.gesture['deltaY']){
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
+			scroll_y = event.gesture['deltaY'] + 10;
+		}
+    });
 	
 	
 	
