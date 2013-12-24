@@ -180,7 +180,7 @@
 			<span class="b-hot__decor_img"></span>
 		</span>
 		<span class="b-hot__caption">Горящие предложения</span>
-		<div class="b-hot__slider">
+		<div id="block_hot" class="b-hot__slider">
 			<div id="hot-unit1" class="b-hot__b-unit">
 				<img src="pic/hot1.jpg" alt=""/>
 				<div class="b-hot__b-unit__dimmer"></div>
@@ -619,19 +619,16 @@
 	var hammertime_b_icon_r = Hammer(element_block_icon).on("swiperight", function(event) {
         js_icon_prev();
     });
-/*	var element_icon = new Array(6)
-	var hammertime_icon_l = new Array(6)
-	var hammertime_icon_r = new Array(6)
-	for(i = 1; i < 7; i++){
-		element_icon[i] = document.getElementById('icon'+i);
-		hammertime_icon_l[i] = Hammer(element_icon[i]).on("swipeleft", function(event) {
-			js_icon_next();
-		});
-		hammertime_icon_r[i] = Hammer(element_icon[i]).on("swiperight", function(event) {
-			js_icon_prev();
-		});
-	}*/
-	
+	var element_block_hot = document.getElementById('block_hot');
+    var hammertime_b_hot_l = Hammer(element_block_hot).on("swipeleft", function(event) {
+        js_hot_next();
+    });
+	var hammertime_b_hot_r = Hammer(element_block_hot).on("swiperight", function(event) {
+        js_hot_prev();
+    });
+	var hammertime_b_hot_t = Hammer(element_block_hot).on("tap", function(event) {
+        alert('hello!');
+	});
 		
 </script>
 

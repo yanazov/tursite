@@ -1398,6 +1398,14 @@ body{
 	background-color: $color_grey;
 	text-align: center;
 }
+.b-icon__conteiner{
+	display: block;
+	position: relative;
+	width: 320px;
+	height: 240px;
+	margin: 0 auto;
+	overflow: hidden;
+}
 .b-icon__elem{
 	display: inline-block;
 	position: relative;
