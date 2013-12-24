@@ -65,15 +65,22 @@
 			<a class="header__b-right__zoom" href="#"></a>
 		</div>		
 	</header>
-	<menu class="menu">
-		<li><a href="#">Поиск туров</a></li>
-		<li><a href="#">Отели</a></li>
-		<li><a href="#">Страны</a></li>
-		<li><a href="#">Авиабилеты</a></li>
-		<li><a href="#">Виды отдыха</a></li>
-	</menu>
-	<div class="b-search">
-		<a class="b-search__round" href="#"><span></span></a>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Поиск туров</a></li>
+			<li><a href="#">Отели</a></li>
+			<li><a href="#">Страны</a></li>
+			<li><a href="#">Авиабилеты</a></li>
+			<li><a href="#">Виды отдыха</a></li>
+		</ul>
+	</nav>
+	<div id="mini_search" class="b-search-mini">
+		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
+		<span id="search-mini__txt" class="b-search-mini__txt">Найти тур</span>
+	</div>
+	<div id="open_search" class="b-search">
+	
+		<span class="b-search__round" onClick="js_close_search()"><span></span></span>
 		<span class="b-search__caption">
 			<span>Найти тур</span>
 		</span>
@@ -122,7 +129,7 @@
 	<div class="b-visual">		
 		<div id="slide2" class="b-visual__slide2">		
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Мы работаем, что б Вы отдыхали!</span>
+			<span class="b-visual__slogan">2Мы работаем, что б Вы отдыхали!</span>
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
 				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
@@ -131,7 +138,7 @@
 		</div>
 		<div id="slide3" class="b-visual__slide3">		
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Подберем отдых на любой вкус!</span>
+			<span class="b-visual__slogan">3Подберем отдых на любой вкус!</span>
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
 				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
@@ -140,7 +147,7 @@
 		</div>
 		<div id="slide4" class="b-visual__slide4">		
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Теплые моря ждут Вас!</span>
+			<span class="b-visual__slogan">4Теплые моря ждут Вас!</span>
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
 				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
@@ -149,7 +156,7 @@
 		</div>
 		<div id="slide1" class="b-visual__slide1">
 			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">Спланируйте Ваш отпуск с нами!!!</span>
+			<span class="b-visual__slogan">1Спланируйте Ваш отпуск с нами!!!</span>
 
 			<span class="b-visual__line"></span>
 			<span class="b-visual__txt">
@@ -160,10 +167,10 @@
 			<div id="hitarea" class="hitarea"></div>
 			<span class="btn-yellow b-visual__btn">Подобрать тур</span>
 			<ul class="b-visual__nav">
-				<li class="b-visual__nav__elem"></li>
-				<li class="b-visual__nav__elem"></li>
-				<li class="b-visual__nav__elem"></li>
-				<li class="b-visual__nav__elem"></li>
+				<li id="slider_point1" class="b-visual__nav__elem"></li>
+				<li id="slider_point2" class="b-visual__nav__elem"></li>
+				<li id="slider_point3" class="b-visual__nav__elem"></li>
+				<li id="slider_point4" class="b-visual__nav__elem"></li>
 			</ul>
 			<span class="b-visual__arrow-left" onClick="js_main_slide('prev')"></span>
 			<span class="b-visual__arrow-right" onClick="js_main_slide('next')"></span>
@@ -248,50 +255,54 @@
 	<a href="#" class="b-hot__btn">Смотреть еще</a>
 	</div>
 	<div class="b-icon">
-		<div id="icon1" class="b-icon__elem">
-			<a href="#" class="b-icon__elem_round">
-				<span class="b-icon__elem_round_img"></span>
-			</a>
-			<span class="b-icon__line"></span>
-			<span class="b-icon__txt">Экзотические страны</span>
-		</div>
-		<div id="icon2" class="b-icon__elem">
-			<a href="#" class="b-icon__elem_round">
-				<span class="b-icon__elem_round_img"></span>
-			</a>
-			<span class="b-icon__line"></span>
-			<span class="b-icon__txt">Морские путешествия</span>
-		</div>
-		<div id="icon3" class="b-icon__elem">
-			<a href="#" class="b-icon__elem_round">
-				<span class="b-icon__elem_round_img"></span>
-			</a>
-			<span class="b-icon__line"></span>
-			<span class="b-icon__txt">Автобусные туры</span>
-		</div>
-		<div id="icon4" class="b-icon__elem">
-			<a href="#" class="b-icon__elem_round">
-				<span class="b-icon__elem_round_img"></span>
-			</a>
-			<span class="b-icon__line"></span>
-			<span class="b-icon__txt">Экскурсии</span>
-		</div>
-		<div id="icon5" class="b-icon__elem">
-			<a href="#" class="b-icon__elem_round">
-				<span class="b-icon__elem_round_img"></span>
-			</a>
-			<span class="b-icon__line"></span>
-			<span class="b-icon__txt">Экстрим туры</span>
-		</div>
-		<div id="icon6" class="b-icon__elem">
-			<a href="#" class="b-icon__elem_round">
-				<span class="b-icon__elem_round_img"></span>
-			</a>
-			<span class="b-icon__line"></span>
-			<span class="b-icon__txt">Автобусные туры</span>
+		<div class="b-icon__conteiner">
+			<div id="icon1" class="b-icon__elem">
+				<a href="#" class="b-icon__elem_round">
+					<span class="b-icon__elem_round_img"></span>
+				</a>
+				<span class="b-icon__line"></span>
+				<span class="b-icon__txt">1Экзотические страны</span>
+			</div>
+			<div id="icon2" class="b-icon__elem">
+				<a href="#" class="b-icon__elem_round">
+					<span class="b-icon__elem_round_img"></span>
+				</a>
+				<span class="b-icon__line"></span>
+				<span class="b-icon__txt">2Морские путешествия</span>
+			</div>
+			<div id="icon3" class="b-icon__elem">
+				<a href="#" class="b-icon__elem_round">
+					<span class="b-icon__elem_round_img"></span>
+				</a>
+				<span class="b-icon__line"></span>
+				<span class="b-icon__txt">3Автобусные туры</span>
+			</div>
+			<div id="icon4" class="b-icon__elem">
+				<a href="#" class="b-icon__elem_round">
+					<span class="b-icon__elem_round_img"></span>
+				</a>
+				<span class="b-icon__line"></span>
+				<span class="b-icon__txt">4Экскурсии</span>
+			</div>
+			<div id="icon5" class="b-icon__elem">
+				<a href="#" class="b-icon__elem_round">
+					<span class="b-icon__elem_round_img"></span>
+				</a>
+				<span class="b-icon__line"></span>
+				<span class="b-icon__txt">5Экстрим туры</span>
+			</div>
+			<div id="icon6" class="b-icon__elem">
+				<a href="#" class="b-icon__elem_round">
+					<span class="b-icon__elem_round_img"></span>
+				</a>
+				<span class="b-icon__line"></span>
+				<span class="b-icon__txt">6Автобусные туры</span>
+			</div>
+		
 		</div>
 		<span class="b-icon__arrow-left" onClick="js_icon_prev()"></span>
 		<span class="b-icon__arrow-right" onClick="js_icon_next()"></span>
+		
 	</div>
 	<div class="b-about">
 		<span class="b-about__service">
@@ -384,19 +395,19 @@
 			<div class="footer__contact__elem">
 				<span class="footer__contact__elem__caption">Адрес:</span>
 				г.Киев, Украина
-				</br>
+				<br/>
 				ул. Ивана Франко, 40-Б
 			</div>
 			<div class="footer__contact__elem2">
 				<span class="footer__contact__elem__caption">Телефоны:</span>
 				050 445 25 45, (044)
-				</br>
+				<br/>
 				238 60 20, 238 62 31
 			</div>
 			<div class="footer__contact__elem3">
 				<span class="footer__contact__elem__caption">Email:</span>
 				<a href="#">sale@tursite.com.ua</a>
-				</br>
+				<br/>
 				<a href="#">market@tursite.com.ua</a>
 			</div>
 		</div>
@@ -416,7 +427,7 @@
 					<li><a class="footer__social__f" href="#"></a></li>
 					<li><a class="footer__social__t" href="#"></a></li>
 					<li><a class="footer__social__g" href="#"></a></li>
-				<ul>		
+				</ul>		
 			</div>
 		</div>	
 		<div class="footer__webmedia">
@@ -425,7 +436,7 @@
 		</div>
 		
 	</footer>
-	<span class="btn-up-dwn">
+	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
 		<span class="btn-up-dwn__icon"></span>
 	</span>
 	<ul class="unstyled events" id="events-list">

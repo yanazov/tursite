@@ -313,8 +313,35 @@ body{
 
 /* ====================================   END MENU  =============================== */
 /* =================================   BEGIN B-SEARCH  ============================ */
-.b-search{
+.b-search-mini{
 	display: block;
+	position: relative;
+	width: 100%;
+	height: 25px;
+	background-color: $color_yellow;
+}
+#b-search-mini__down{
+	display: block;
+	position: relative;
+	top: 10px;
+	left: 9px;
+	width: 11px;
+	height: 7px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -40px;
+}
+.b-search-mini__txt{
+	display: block;
+	position: relative;
+	margin-left: 85px;
+	padding-top: 4px;
+	color: $color_txt;
+	font-family: 'roboto_slab_r';
+	font-weight: bold;
+	font-size: 8pt;
+}
+.b-search{
+	display: none;
 	position: relative;
 	width: 100%;
 	height: 81px;
@@ -817,7 +844,6 @@ body{
 	-webkit-border-radius: 150px 150px 150px 150px;
 	-moz-border-radius: 150px 150px 150px 150px;
 	-khtml-border-radius: 150px 150px 150px 150px;	
-	cursor: pointer;
 }
 .b-visual__nav__elem:nth-child(1){
 	background-color: $color_yellow;
@@ -1025,6 +1051,14 @@ body{
 	height: 240px;
 	background-color: $color_grey;
 	text-align: center;
+}
+.b-icon__conteiner{
+	display: block;
+	position: relative;
+	width: 772px;
+	height: 240px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 .b-icon__elem{
 	display: inline-block;
@@ -1721,17 +1755,20 @@ body{
 	text-align: center;
 }
 /* ===================================   END FOOTER  ============================== */
-.b-consultant__form{
-	bottom: 140px;
-	right: -117px;
-	transform:rotate(-90deg);
-	-moz-transform:rotate(-90deg);
-	-webkit-transform:rotate(-90deg);
-}
-.btn-up-dwn{
+.b-consultant{
 	display: block;
 	position: fixed;
-	bottom: 25px;
+	bottom: 0px;	
+	max-width: 1260px;
+	width: 100%;
+	margin: 0 auto;
+	height: 45px;
+	z-index: 100;
+}
+.btn-up-dwn{
+	display: none;
+	position: absolute;
+	bottom: 360px;
 	right: 25px;
 	width: 47px;
 	height: 47px;

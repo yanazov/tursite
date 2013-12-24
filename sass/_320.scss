@@ -437,8 +437,39 @@ body{
 }
 /* ====================================   END MENU  =============================== */
 /* =================================   BEGIN B-SEARCH  ============================ */
-.b-search{
+.b-search-mini{
 	display: block;
+	position: relative;
+	width: 100%;
+	height: 25px;
+	background-color: $color_yellow;
+}
+#b-search-mini__down{
+	display: block;
+	position: relative;
+	top: 10px;
+	left: 9px;
+	width: 11px;
+	height: 7px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -40px;
+}
+.b-search-mini__txt{
+	display: block;
+	position: absolute;
+	width: 50%;
+	top: 0px;
+	left: 0px;
+	margin-left: 0px;
+	padding-top: 4px;
+	color: $color_txt;
+	font-family: 'roboto_slab_r';
+	font-weight: bold;
+	font-size: 8pt;
+	text-align: center;
+}
+.b-search{
+	display: none;
 	position: relative;
 	width: 100%;
 	height: 81px;
@@ -989,8 +1020,7 @@ body{
 	border-radius: 150px 150px 150px 150px;
 	-webkit-border-radius: 150px 150px 150px 150px;
 	-moz-border-radius: 150px 150px 150px 150px;
-	-khtml-border-radius: 150px 150px 150px 150px;	
-	cursor: pointer;
+	-khtml-border-radius: 150px 150px 150px 150px;
 }
 .b-visual__nav__elem:nth-child(1){
 	background-color: $color_yellow;
