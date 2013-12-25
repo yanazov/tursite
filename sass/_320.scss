@@ -4,8 +4,11 @@ body{
 	max-width: 1260px;
 	min-width: 320px;
 	margin: 0 auto;
+	padding: 0px;
+	width: 100%;
 	overflow: hidden;
 	overflow-y: scroll;
+	background-color: #ff5;
 }
 #events-list{
 	display: none;
@@ -507,7 +510,8 @@ body{
 	height: 52px;
 	margin-top: 20px;
 	padding: 8px 0px 0px 0px;	
-	border-right: 1px solid #d7b40d;
+/*	border-right: 1px solid #d7b40d;*/
+	border-right: none;
 	text-align: center;
 }
 .b-search__caption span{
@@ -1775,8 +1779,8 @@ body{
 	position: relative;
 	width: 100%;
 	top: 140px;
-	left: 17px;
-	text-align: left;
+	left: 0px;
+	text-align: center;
 }
 .footer__contact__elem{
 	display: inline-block;
@@ -1787,6 +1791,7 @@ body{
 	font-size: 8pt;
 	color: #fff;
 	border-right: 1px solid $color_blue_border;
+	text-align: left;
 }
 .footer__contact__elem__caption{
 	display: block;
