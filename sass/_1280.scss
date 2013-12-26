@@ -1,16 +1,24 @@
 body{
 	display: block;
 	position: relative;
-	max-width: 1260px;
 	min-width: 320px;
 	margin: 0 auto;
 }
 #events-list{
 	display: none;
 }
+.center_cont{
+	display: block;
+	position: relative;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+#center_cont__b-visual{
+	height: 550px;
+}
 .btn-yellow{
 	display: inline-block;
-	position: relative;
+	position: relative;	
 	padding: 8px 15px 8px 15px;
 	margin-left: 43px;
 	background-color: $color_yellow;
@@ -23,6 +31,7 @@ body{
 	-webkit-border-radius: 150px 150px 150px 150px;
 	-moz-border-radius: 150px 150px 150px 150px;
 	-khtml-border-radius: 150px 150px 150px 150px;
+	cursor: pointer;
 }
 .btn-yellow:hover{
 	background-color: $color_yellow_hover;
@@ -113,6 +122,9 @@ body{
 	width: 100%;
 	height: 125px;
 	background-color: $color_blue;
+}
+.header__menu320{
+	display: none;
 }
 .header__b-left{
 	display: block;
@@ -207,6 +219,7 @@ body{
 	height: 31px;
 	padding: 11px 0px 0px 22px;
 	margin-top: 10px;
+	margin-bottom: 1px;
 	background-color: $color_yellow;
 	border-radius: 150px 150px 150px 150px;
 	-webkit-border-radius: 150px 150px 150px 150px;
@@ -223,8 +236,11 @@ body{
 .header__b-right_login:hover{
 	background-color: $color_yellow_hover;
 }
-.header__b-right_login:active{
+.header__b-right_login:active{	
+	margin-top: 11px;
+	right: -1px;
 	
+	margin-bottom: 0px;
 	-moz-box-shadow: 3px 0 12px $color_yellow_shadow; 
 	-webkit-box-shadow: 3px 0 12px $color_yellow_shadow; 
 	box-shadow: inset 0px 2px 0px  $color_yellow_shadow; 
@@ -306,7 +322,7 @@ body{
 /* ====================================   END MENU  =============================== */
 /* =================================   BEGIN B-SEARCH  ============================ */
 .b-search-mini{
-	display: block;
+	display: none;
 	position: relative;
 	width: 100%;
 	height: 25px;
@@ -333,7 +349,7 @@ body{
 	font-size: 8pt;
 }
 .b-search{
-	display: none;
+	display: block;
 	position: relative;
 	width: 100%;
 	height: 81px;
@@ -354,6 +370,7 @@ body{
 	-webkit-border-radius: 150px 150px 150px 150px;
 	-moz-border-radius: 150px 150px 150px 150px;
 	-khtml-border-radius: 150px 150px 150px 150px;
+	cursor: pointer;
 }
 .b-search__round span{
 	display: block;
@@ -639,6 +656,11 @@ body{
 	-webkit-box-shadow: 3px 0 12px $color_blue_shadow; 
 	box-shadow: inset 0px 2px 0px  $color_blue_shadow; 
 }
+.b-search__find__btn:active{
+	margin-top: 26px;
+	left: 1px;
+}
+
 .btn-blue span{
 	display: block;
 	position: absolute;
@@ -657,8 +679,12 @@ body{
 	position: relative;
 	width: 100%;
 	height: 490px;
-	background-color: $color_blue_dark;
+	background-color: $color_grey;
 	overflow: hidden;
+}
+#center_cont__b-visual{
+	height: 550px;
+	background-color: $color_blue_dark;
 }
 .hitarea {
 	display: block;
@@ -766,6 +792,10 @@ body{
 	text-align: center;
 	font-weight: 400;
 }
+.b-visual__btn:active{
+	top: 326px;
+	left: 1px;
+}
 .b-visual__nav{
 	display: block;
 	position: relative;
@@ -857,8 +887,9 @@ body{
 	margin: 44px 15px 0px 15px;
 	background-color: $color_grey;
 	text-align: left;
-	transition: background-color .5s;
-	transition: box-shadow .5s;
+	transition: background-color .4s;
+	transition: box-shadow .4s;
+	cursor: pointer;
 }
 .b-hot__b-unit:hover{
 	background-color: #fff;
@@ -884,11 +915,11 @@ body{
 	height: 123px;
 	width: 248px;
 	-webkit-transform:scale(1.0);
-	-webkit-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.4s;
 	-moz-transform:scale(1.0);
-	-moz-transition-duration: 0.5s;
+	-moz-transition-duration: 0.4s;
 	-o-transform:scale(1.0);
-	-o-transition-duration: 0.5s;
+	-o-transition-duration: 0.4s;
 }
 .b-hot__img{
 	display: block;
@@ -1010,99 +1041,48 @@ body{
 .b-icon__elem_round{
 	display: block;
 	position: relative;
-	width: 85px;
-	height: 85px;
+	width: 87px;
+	height: 87px;
 	margin: 0 auto;
 	margin-top: 38px;
-	background-color: $color_blue;
-	border-radius: 150px 150px 150px 150px;
-	-webkit-border-radius: 150px 150px 150px 150px;
-	-moz-border-radius: 150px 150px 150px 150px;
-	-khtml-border-radius: 150px 150px 150px 150px;
-}
-.b-icon__elem_round:hover{
-	background-color: #fff;
-	-moz-box-shadow: 0 0 15px #ccc; 
-	-webkit-box-shadow: 0 0 15px #ccc; 
-	box-shadow: 0 0 15px  #ccc; 
-}
-.b-icon__elem_round_img{
-	display: block;
-	position: relative;
-	top: 14px;
-	left: 14px;
-	width: 57px;
-	height: 57px;
 	background: url(../img/icon_big.png) no-repeat;	
+		transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
 }
-.b-icon__elem_round_img:nth-child(1){
-	background-position: 0px -240px;
+#icon1 > .b-icon__elem_round{
+	background-position: 0px -5px;
 }
-.b-icon__elem_round:hover:nth-child(1){
-	.b-icon__elem_round_img{
-		background-position: 0px -300px;
-	}
+#icon1 > .b-icon__elem_round:hover{
+	background-position: 0px -100px;
 }
-.b-icon__elem:nth-child(2){
-	.b-icon__elem_round_img{
-		background-position: 0px 0px;
-	}
-}	
-.b-icon__elem:nth-child(2){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -60px;
-		}
-	}
+#icon2 > .b-icon__elem_round{
+	background-position: 0px -206px;
 }
-.b-icon__elem:nth-child(3){
-	.b-icon__elem_round_img{
-		background-position: 0px -120px;
-	}
-}	
-.b-icon__elem:nth-child(3){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -180px;
-		}
-	}
+#icon2 > .b-icon__elem_round:hover{
+	background-position: 0px -301px;
 }
-.b-icon__elem:nth-child(4){
-	.b-icon__elem_round_img{
-		background-position: 0px -360px;
-	}
-}	
-.b-icon__elem:nth-child(4){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -420px;
-		}
-	}
+#icon3 > .b-icon__elem_round{
+	background-position: 0px -404px;
 }
-.b-icon__elem:nth-child(5){
-	.b-icon__elem_round_img{
-		background-position: 0px -480px;
-	}
-}	
-.b-icon__elem:nth-child(5){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -540px;
-		}
-	}
+#icon3 > .b-icon__elem_round:hover{
+	background-position: 0px -500px;
 }
-.b-icon__elem:nth-child(6){
-	display: none;
-	.b-icon__elem_round_img{
-		background-position: 0px -360px;
-	}
-}	
-.b-icon__elem:nth-child(6){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -420px;
-		}
-	}
+#icon4 > .b-icon__elem_round{
+	background-position: 0px -605px;
+}
+#icon4 > .b-icon__elem_round:hover{
+	background-position: 0px -700px;
+}
+#icon5 > .b-icon__elem_round{
+	background-position: 0px -824px;
+}
+#icon5 > .b-icon__elem_round:hover{
+	background-position: 0px -919px;
+}
+#icon6 > .b-icon__elem_round{
+	background-position: 0px -404px;
+}
+#icon6 > .b-icon__elem_round{
+	background-position: 0px -500px;
 }
 .b-icon__line{
 	display: block;

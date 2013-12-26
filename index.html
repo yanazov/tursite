@@ -29,41 +29,43 @@
 		</a>
 	</div>
 	<header class="header">
-		<div class="header__b-left">
-			<div class="header__menu320">
-				<span class="header__menu320__btn">
-					<span class="header__menu320__btn__img"></span>
-				</span>
-				<span class="header__menu320__call">
-					<span class="header__menu320__call__img"></span>
-					Позвонить
-				</span>
+		<div class="center_cont">
+			<div class="header__b-left">
+				<div class="header__menu320">
+					<span class="header__menu320__btn">
+						<span class="header__menu320__btn__img"></span>
+					</span>
+					<span class="header__menu320__call">
+						<span class="header__menu320__call__img"></span>
+						Позвонить
+					</span>
+				</div>
+				<nav class="header__b-left_nav">
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Контакты</a></li>				
+					</ul>
+				</nav>
+				<span class="header__b-left__tel">8 900 70 70</span>
+				<span class="header__b-left__icon"></span>
+				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
 			</div>
-			<nav class="header__b-left_nav">
-				<ul>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Агентам</a></li>
-					<li><a href="#">Контакты</a></li>				
-				</ul>
-			</nav>
-			<span class="header__b-left__tel">8 900 70 70</span>
-			<span class="header__b-left__icon"></span>
-			<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
+			<div class="header__b-center">
+				<span class="header__b-center__logo"></span>
+				<span class="header__b-center__txt">ТурСайт</span>			
+			</div>
+			<div class="header__b-right">
+				<a class="header__b-right_login" href="#">
+					<span class="header__b-right_login__txt">Вход</span>
+					<span class="header__b-right_login__img"></span>				
+					<span  class="header__b-right_login__arrow"></span>
+				</a>
+				<input class="header__b-right__search" type="text" placeholder="Поиск...">
+				<a class="header__b-right__zoom" href="#"></a>
+			</div>
 		</div>
-		<div class="header__b-center">
-			<span class="header__b-center__logo"></span>
-			<span class="header__b-center__txt">ТурСайт</span>			
-		</div>
-		<div class="header__b-right">
-			<a class="header__b-right_login" href="#">
-				<span class="header__b-right_login__txt">Вход</span>
-				<span class="header__b-right_login__img"></span>				
-				<span  class="header__b-right_login__arrow"></span>
-			</a>
-			<input class="header__b-right__search" type="text" placeholder="Поиск...">
-			<a class="header__b-right__zoom" href="#"></a>
-		</div>		
 	</header>
 	<nav class="menu">
 		<ul>
@@ -78,102 +80,105 @@
 		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
 		<span id="search-mini__txt" class="b-search-mini__txt">Найти тур</span>
 	</div>
-	<div id="open_search" class="b-search">
-	
-		<span class="b-search__round" onClick="js_close_search()"><span></span></span>
-		<span class="b-search__caption">
-			<span>Найти тур</span>
-		</span>
-		<div class="b-search__place">
-			<div class="b-search__place__from">
-				<span class="b-search__place__name">Откуда</span>
-				<input type="text">
-				<span class="b-search__place__icon"></span>
+		<div id="open_search" class="b-search">
+		<div class="center_cont">
+			<span class="b-search__round" onClick="js_close_search()"><span></span></span>
+			<span class="b-search__caption">
+				<span>Найти тур</span>
+			</span>
+			<div class="b-search__place">
+				<div class="b-search__place__from">
+					<span class="b-search__place__name">Откуда</span>
+					<input type="text">
+					<span class="b-search__place__icon"></span>
+				</div>
+				<div class="b-search__place__to">
+					<span class="b-search__place__name">Куда</span>
+					<input type="text">
+					<span class="b-search__place__icon"></span>
+				</div>
 			</div>
-			<div class="b-search__place__to">
-				<span class="b-search__place__name">Куда</span>
-				<input type="text">
-				<span class="b-search__place__icon"></span>
+			<div class="b-search__time">
+				<span class="b-search__time__name">Период заезда</span>
+				<div class="b-search__time__b-input">
+					<input type="text">
+					<span></span>
+				</div>
+				<span class="b-search__time__separ">-</span>
+				<div class="b-search__time__b-input">
+					<input type="text">
+					<span></span>
+				</div>
+				
 			</div>
-		</div>
-		<div class="b-search__time">
-			<span class="b-search__time__name">Период заезда</span>
-			<div class="b-search__time__b-input">
-				<input type="text">
-				<span></span>
+			<div class="b-search__cost">
+				<div class="b-search__cost__name">
+					Стоимость 
+					<input id="minCost" type="text" readonly value="0">
+					<span class="b-search__cost__name_txt">-</span>
+					<input id="maxCost" type="text" readonly value="5000">
+					<span class="b-search__cost__name_txt">$</span>
+				</div>
+				<div class="b-search__cost__select"></div>
 			</div>
-			<span class="b-search__time__separ">-</span>
-			<div class="b-search__time__b-input">
-				<input type="text">
-				<span></span>
+			<div class="b-search__find">
+				<a class="btn-blue b-search__find__btn" href="#">
+					Найти
+					<span></span>
+				</a>
 			</div>
-			
-		</div>
-		<div class="b-search__cost">
-			<div class="b-search__cost__name">
-				Стоимость 
-				<input id="minCost" type="text" readonly value="0">
-				<span class="b-search__cost__name_txt">-</span>
-				<input id="maxCost" type="text" readonly value="5000">
-				<span class="b-search__cost__name_txt">$</span>
-			</div>
-			<div class="b-search__cost__select"></div>
-		</div>
-		<div class="b-search__find">
-			<a class="btn-blue b-search__find__btn" href="#">
-				Найти
-				<span></span>
-			</a>
 		</div>
 	</div>
-	<div class="b-visual">		
-		<div id="slide2" class="b-visual__slide2">		
-			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">2Мы работаем, что б Вы отдыхали!</span>
-			<span class="b-visual__line"></span>
-			<span class="b-visual__txt">
-				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-				горящие туры и путевки оперативнее любого другого источника.
-			</span>
-		</div>
-		<div id="slide3" class="b-visual__slide3">		
-			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">3Подберем отдых на любой вкус!</span>
-			<span class="b-visual__line"></span>
-			<span class="b-visual__txt">
-				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-				горящие туры и путевки оперативнее любого другого источника.
-			</span>
-		</div>
-		<div id="slide4" class="b-visual__slide4">		
-			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">4Теплые моря ждут Вас!</span>
-			<span class="b-visual__line"></span>
-			<span class="b-visual__txt">
-				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-				горящие туры и путевки оперативнее любого другого источника.
-			</span>
-		</div>
-		<div id="slide1" class="b-visual__slide1">
-			<div class="b-visual__dimmer"></div>
-			<span class="b-visual__slogan">1Спланируйте Ваш отпуск с нами!111</span>
+	<div class="b-visual">
+		<div id="center_cont__b-visual" class="center_cont">
+			<div id="slide2" class="b-visual__slide2">		
+				<div class="b-visual__dimmer"></div>
+				<span class="b-visual__slogan">2Мы работаем, что б Вы отдыхали!</span>
+				<span class="b-visual__line"></span>
+				<span class="b-visual__txt">
+					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
+					горящие туры и путевки оперативнее любого другого источника.
+				</span>
+			</div>
+			<div id="slide3" class="b-visual__slide3">		
+				<div class="b-visual__dimmer"></div>
+				<span class="b-visual__slogan">3Подберем отдых на любой вкус!</span>
+				<span class="b-visual__line"></span>
+				<span class="b-visual__txt">
+					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
+					горящие туры и путевки оперативнее любого другого источника.
+				</span>
+			</div>
+			<div id="slide4" class="b-visual__slide4">		
+				<div class="b-visual__dimmer"></div>
+				<span class="b-visual__slogan">4Теплые моря ждут Вас!</span>
+				<span class="b-visual__line"></span>
+				<span class="b-visual__txt">
+					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
+					горящие туры и путевки оперативнее любого другого источника.
+				</span>
+			</div>
+			<div id="slide1" class="b-visual__slide1">
+				<div class="b-visual__dimmer"></div>
+				<span class="b-visual__slogan">1Спланируйте Ваш отпуск с нами!111</span>
 
-			<span class="b-visual__line"></span>
-			<span class="b-visual__txt">
-				Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-				горящие туры и путевки оперативнее любого другого источника.
-			</span>
-		</div>
-			<div id="hitarea" class="hitarea"></div>
-			<span class="btn-yellow b-visual__btn">Подобрать тур</span>
-			<ul class="b-visual__nav">
-				<li id="slider_point1" class="b-visual__nav__elem"></li>
-				<li id="slider_point2" class="b-visual__nav__elem"></li>
-				<li id="slider_point3" class="b-visual__nav__elem"></li>
-				<li id="slider_point4" class="b-visual__nav__elem"></li>
-			</ul>
-			<span class="b-visual__arrow-left" onClick="js_main_slide('prev')"></span>
-			<span class="b-visual__arrow-right" onClick="js_main_slide('next')"></span>
+				<span class="b-visual__line"></span>
+				<span class="b-visual__txt">
+					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
+					горящие туры и путевки оперативнее любого другого источника.
+				</span>
+			</div>
+				<div id="hitarea" class="hitarea"></div>
+				<span class="btn-yellow b-visual__btn">Подобрать тур</span>
+				<ul class="b-visual__nav">
+					<li id="slider_point1" class="b-visual__nav__elem"></li>
+					<li id="slider_point2" class="b-visual__nav__elem"></li>
+					<li id="slider_point3" class="b-visual__nav__elem"></li>
+					<li id="slider_point4" class="b-visual__nav__elem"></li>
+				</ul>
+				<span class="b-visual__arrow-left" onClick="js_main_slide('prev')"></span>
+				<span class="b-visual__arrow-right" onClick="js_main_slide('next')"></span>
+			</div>
 	</div>
 	<div class="b-hot">
 		<span class="b-hot__decor">
@@ -263,186 +268,191 @@
 	<a href="#" class="b-hot__btn">Смотреть еще</a>
 	</div>
 	<div id="block_icon" class="b-icon">
-		<div class="b-icon__conteiner">
-			<div id="icon1" class="b-icon__elem">
-				<a href="#" class="b-icon__elem_round">
-					<span class="b-icon__elem_round_img"></span>
-				</a>
-				<span class="b-icon__line"></span>
-				<span class="b-icon__txt">Экзотические страны</span>
+		<div class="center_cont">
+			<div class="b-icon__conteiner">
+				<div id="icon1" class="b-icon__elem">
+					<a href="#" class="b-icon__elem_round">
+						<span class="b-icon__elem_round_img"></span>
+					</a>
+					<span class="b-icon__line"></span>
+					<span class="b-icon__txt">Экзотические страны</span>
+				</div>
+				<div id="icon2" class="b-icon__elem">
+					<a href="#" class="b-icon__elem_round">
+						<span class="b-icon__elem_round_img"></span>
+					</a>
+					<span class="b-icon__line"></span>
+					<span class="b-icon__txt">Морские путешествия</span>
+				</div>
+				<div id="icon3" class="b-icon__elem">
+					<a href="#" class="b-icon__elem_round">
+						<span class="b-icon__elem_round_img"></span>
+					</a>
+					<span class="b-icon__line"></span>
+					<span class="b-icon__txt">Автобусные туры</span>
+				</div>
+				<div id="icon4" class="b-icon__elem">
+					<a href="#" class="b-icon__elem_round">
+						<span class="b-icon__elem_round_img"></span>
+					</a>
+					<span class="b-icon__line"></span>
+					<span class="b-icon__txt">Экскурсии</span>
+				</div>
+				<div id="icon5" class="b-icon__elem">
+					<a href="#" class="b-icon__elem_round">
+						<span class="b-icon__elem_round_img"></span>
+					</a>
+					<span class="b-icon__line"></span>
+					<span class="b-icon__txt">Экстрим туры</span>
+				</div>
+				<div id="icon6" class="b-icon__elem">
+					<a href="#" class="b-icon__elem_round">
+						<span class="b-icon__elem_round_img"></span>
+					</a>
+					<span class="b-icon__line"></span>
+					<span class="b-icon__txt">Автобусные туры</span>
+				</div>
+			
 			</div>
-			<div id="icon2" class="b-icon__elem">
-				<a href="#" class="b-icon__elem_round">
-					<span class="b-icon__elem_round_img"></span>
-				</a>
-				<span class="b-icon__line"></span>
-				<span class="b-icon__txt">Морские путешествия</span>
-			</div>
-			<div id="icon3" class="b-icon__elem">
-				<a href="#" class="b-icon__elem_round">
-					<span class="b-icon__elem_round_img"></span>
-				</a>
-				<span class="b-icon__line"></span>
-				<span class="b-icon__txt">Автобусные туры</span>
-			</div>
-			<div id="icon4" class="b-icon__elem">
-				<a href="#" class="b-icon__elem_round">
-					<span class="b-icon__elem_round_img"></span>
-				</a>
-				<span class="b-icon__line"></span>
-				<span class="b-icon__txt">Экскурсии</span>
-			</div>
-			<div id="icon5" class="b-icon__elem">
-				<a href="#" class="b-icon__elem_round">
-					<span class="b-icon__elem_round_img"></span>
-				</a>
-				<span class="b-icon__line"></span>
-				<span class="b-icon__txt">Экстрим туры</span>
-			</div>
-			<div id="icon6" class="b-icon__elem">
-				<a href="#" class="b-icon__elem_round">
-					<span class="b-icon__elem_round_img"></span>
-				</a>
-				<span class="b-icon__line"></span>
-				<span class="b-icon__txt">Автобусные туры</span>
-			</div>
-		
+			<span class="b-icon__arrow-left" onClick="js_icon_prev()"></span>
+			<span class="b-icon__arrow-right" onClick="js_icon_next()"></span>
 		</div>
-		<span class="b-icon__arrow-left" onClick="js_icon_prev()"></span>
-		<span class="b-icon__arrow-right" onClick="js_icon_next()"></span>
-		
 	</div>
 	<div class="b-about">
-		<span class="b-about__service">
-			<span class="b-about__caption">Наши услуги</span>			
-			Все предлагаемые нами туристические продукты рассчитаны на потребителей с различным уровнем дохода 
-			- от самых экономичных предложений до VIP-обслуживания. Индивидуальный подход к каждому клиенту 
-			- отличительная черта нашей компании. Вы всегда будете ощущать особое внимание со стороны 
-			сотрудников, потому что каждый клиент для нас - это VIP клиент. Если же Вы не 
-			любитель спонтанного отдыха и привыкли заблаговременно выбирать место предстоящего отпуска, 
-			наши опытные менеджеры помогут Вам не ошибиться с лучшим выбором. Вам просто нужно сообщить 
-			все желаемые условия, а сотрудники компании предложат самые лучшие варианты 
-			Вашего будущего незабываемого отдыха.
-			<span class="b-about__separ-space"></span>
-			<a href="#">Создай сам себе путешествие</a>
-			<a href="#">Бронирование авиабилетов</a>
-			<a href="#">Горящие туры</a>
-			<a href="#">Оформление загран. паспорта</a>
-		</span>
-		<span class="b-about__company">
-			<span class="b-about__caption">О компании</span>
-			Туристическая компания, объединившая в себе профессионалов различных направлений туристичекой 
-			деятельности. Все сотрудники компании имеют многолетний (более 8 лет) опыт, который необходим 
-			для обслуживания запросов и желаний своих клиентов на высочайшем уровне. Множество международных 
-			и украинских дипломов и сертификатов подтверждают статус и профессионализм наших сотрудников. 
-			Мы все преданы одному делу, и мы любим то, чем занимаемся. Попробовав однажды, обслуживание 
-			в компании, Вы навсегда останетесь членами нашей огромной туристической семьи.
+		<div class="center_cont">
+			<span class="b-about__service">
+				<span class="b-about__caption">Наши услуги</span>			
+				Все предлагаемые нами туристические продукты рассчитаны на потребителей с различным уровнем дохода 
+				- от самых экономичных предложений до VIP-обслуживания. Индивидуальный подход к каждому клиенту 
+				- отличительная черта нашей компании. Вы всегда будете ощущать особое внимание со стороны 
+				сотрудников, потому что каждый клиент для нас - это VIP клиент. Если же Вы не 
+				любитель спонтанного отдыха и привыкли заблаговременно выбирать место предстоящего отпуска, 
+				наши опытные менеджеры помогут Вам не ошибиться с лучшим выбором. Вам просто нужно сообщить 
+				все желаемые условия, а сотрудники компании предложат самые лучшие варианты 
+				Вашего будущего незабываемого отдыха.
+				<span class="b-about__separ-space"></span>
+				<a href="#">Создай сам себе путешествие</a>
+				<a href="#">Бронирование авиабилетов</a>
+				<a href="#">Горящие туры</a>
+				<a href="#">Оформление загран. паспорта</a>
+			</span>
+			<span class="b-about__company">
+				<span class="b-about__caption">О компании</span>
+				Туристическая компания, объединившая в себе профессионалов различных направлений туристичекой 
+				деятельности. Все сотрудники компании имеют многолетний (более 8 лет) опыт, который необходим 
+				для обслуживания запросов и желаний своих клиентов на высочайшем уровне. Множество международных 
+				и украинских дипломов и сертификатов подтверждают статус и профессионализм наших сотрудников. 
+				Мы все преданы одному делу, и мы любим то, чем занимаемся. Попробовав однажды, обслуживание 
+				в компании, Вы навсегда останетесь членами нашей огромной туристической семьи.
 
-			Все предлагаемые нами туристические продукты рассчитаны на потребителей с различным уровнем 
-			дохода - от самых экономичных предложений до VIP-обслуживания. Индивидуальный подход к 
-			каждому клиенту - отличительная черта 
-		</span>
+				Все предлагаемые нами туристические продукты рассчитаны на потребителей с различным уровнем 
+				дохода - от самых экономичных предложений до VIP-обслуживания. Индивидуальный подход к 
+				каждому клиенту - отличительная черта 
+			</span>
+		</div>
 	</div>
 	<div class="b-map">
-		<div class="b-map__b-left">
-			<span class="b-map__b-left__name">Контакты</span>
-			<span class="b-map__b-left__b-caption">Главный офис:</span>
-			<span class="b-map__b-left__b-txt">г.Киев, ул.Маханизаторов, 10</span>
-			<span class="b-map__b-left__b-caption">Пункт продажи:</span>
-			<span class="b-map__b-left__b-txt">г.Киев, ул. Ивана Франко, 40-Б</span>			
-			<span class="b-map__b-left__b-caption">Телефоны:</span>
-			<span class="b-map__b-left__b-txt">050 445 25 45, (044)</span>
-			<span class="b-map__b-left__b-txt">238 60 20, 238 62 31</span>
-			<span class="b-map__b-left__b-caption">Email:</span>
-			<a href="#">sale@tursite.com.ua</a>
-			<a href="#">market@tursite.com.ua</a>
-		</div>
-			<a href="#" class="btn-yellow b-map__b-left__to-map">Смотреть на карте</a>
-		<div class="b-map__b-right">
-			<a href="#" class="btn-yellow b-map__b-right__to-map">Смотреть на карте</a>
-			<span class="b-map__b-right__caption">Обратная связь</span>
-			<div class="b-map__b-right__b-input">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="Телефон">
-				<input type="text" placeholder="Email">
-			</div>
-			<textarea placeholder="Что Вас интересует?"></textarea>
-			<span class="b-map__b-right__comment">
-				Оставьте свои контактные данные - наш менеджер свяжется с вами в ближайшее
-				время и поможет выбрать подходящий вариатн отдыха.
-			</span>
-			<a class="btn-blue b-map__b-right__send" href="#">Отправить</a>
-		</div>
-		
-	</div>
-	<footer class="footer">
-		<div class="b-center">
-			<a class="footer__elem" href="#">
-				<img src="pic/footer1.jpg" alt="">
-				<span class="footer__elem__txt">
-					Люксембург + Амстердам + Париж = 699 евро с авиа!
-					<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
-				</span>
-			</a>
-			<a class="footer__elem" href="#">
-				<img src="pic/footer2.jpg" alt="">
-				<span class="footer__elem__txt">
-					 Карнавал в РИО это лучшее событие в июне-июле 2013
-					<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
-				</span>
-			</a>
-			<a class="footer__elem" href="#">
-				<img src="pic/footer3.jpg" alt="">
-				<span class="footer__elem__txt">
-					Мальдивы теперь доступны всем!!!
-					<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
-				</span>
-			</a>
-		</div>	
-		<div class="footer__contact">
-			<div class="footer__contact__elem">
-				<span class="footer__contact__elem__caption">Адрес:</span>
-				г.Киев, Украина
-				<br/>
-				ул. Ивана Франко, 40-Б
-			</div>
-			<div class="footer__contact__elem2">
-				<span class="footer__contact__elem__caption">Телефоны:</span>
-				050 445 25 45, (044)
-				<br/>
-				238 60 20, 238 62 31
-			</div>
-			<div class="footer__contact__elem3">
-				<span class="footer__contact__elem__caption">Email:</span>
+		<div class="center_cont">
+			<div class="b-map__b-left">
+				<span class="b-map__b-left__name">Контакты</span>
+				<span class="b-map__b-left__b-caption">Главный офис:</span>
+				<span class="b-map__b-left__b-txt">г.Киев, ул.Маханизаторов, 10</span>
+				<span class="b-map__b-left__b-caption">Пункт продажи:</span>
+				<span class="b-map__b-left__b-txt">г.Киев, ул. Ивана Франко, 40-Б</span>			
+				<span class="b-map__b-left__b-caption">Телефоны:</span>
+				<span class="b-map__b-left__b-txt">050 445 25 45, (044)</span>
+				<span class="b-map__b-left__b-txt">238 60 20, 238 62 31</span>
+				<span class="b-map__b-left__b-caption">Email:</span>
 				<a href="#">sale@tursite.com.ua</a>
-				<br/>
 				<a href="#">market@tursite.com.ua</a>
 			</div>
-		</div>
-		<div class="footer__mailing">
-			<input id="footer__mailing_check" type="checkbox">
-			<label for="footer__mailing_check"><span></span></label>
-			<span class="footer__mailing__txt">Подписатся на наши обновления</span>
-			<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
-			<span class="footer__mailing__icon"></span>
-		</div>
-		<div class="footer__b-social">
-			<span class="footer__copyright">©  ТурСайт, 2013   Все права защищены.</span>
-			<a class="footer__rule" href="#">Правила использования</a>
-			<div class="footer__social">
-				Мы в сети:
-				<ul>
-					<li><a class="footer__social__f" href="#"></a></li>
-					<li><a class="footer__social__t" href="#"></a></li>
-					<li><a class="footer__social__g" href="#"></a></li>
-				</ul>		
+				<a href="#" class="btn-yellow b-map__b-left__to-map">Смотреть на карте</a>
+			<div class="b-map__b-right">
+				<a href="#" class="btn-yellow b-map__b-right__to-map">Смотреть на карте</a>
+				<span class="b-map__b-right__caption">Обратная связь</span>
+				<div class="b-map__b-right__b-input">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="Email">
+				</div>
+				<textarea placeholder="Что Вас интересует?"></textarea>
+				<span class="b-map__b-right__comment">
+					Оставьте свои контактные данные - наш менеджер свяжется с вами в ближайшее
+					время и поможет выбрать подходящий вариатн отдыха.
+				</span>
+				<a class="btn-blue b-map__b-right__send" href="#">Отправить</a>
 			</div>
-		</div>	
-		<div class="footer__webmedia">
-			Разработка сайтов на Битриксе:
-			<span class="footer__webmedia__icon"></span>
 		</div>
-		
+	</div>
+	<footer class="footer">
+		<div class="center_cont">
+			<div class="b-center">
+				<a class="footer__elem" href="#">
+					<img src="pic/footer1.jpg" alt="">
+					<span class="footer__elem__txt">
+						Люксембург + Амстердам + Париж = 699 евро с авиа!
+						<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
+					</span>
+				</a>
+				<a class="footer__elem" href="#">
+					<img src="pic/footer2.jpg" alt="">
+					<span class="footer__elem__txt">
+						 Карнавал в РИО это лучшее событие в июне-июле 2013
+						<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
+					</span>
+				</a>
+				<a class="footer__elem" href="#">
+					<img src="pic/footer3.jpg" alt="">
+					<span class="footer__elem__txt">
+						Мальдивы теперь доступны всем!!!
+						<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
+					</span>
+				</a>
+			</div>	
+			<div class="footer__contact">
+				<div class="footer__contact__elem">
+					<span class="footer__contact__elem__caption">Адрес:</span>
+					г.Киев, Украина
+					<br/>
+					ул. Ивана Франко, 40-Б
+				</div>
+				<div class="footer__contact__elem2">
+					<span class="footer__contact__elem__caption">Телефоны:</span>
+					050 445 25 45, (044)
+					<br/>
+					238 60 20, 238 62 31
+				</div>
+				<div class="footer__contact__elem3">
+					<span class="footer__contact__elem__caption">Email:</span>
+					<a href="#">sale@tursite.com.ua</a>
+					<br/>
+					<a href="#">market@tursite.com.ua</a>
+				</div>
+			</div>
+			<div class="footer__mailing">
+				<input id="footer__mailing_check" type="checkbox">
+				<label for="footer__mailing_check"><span></span></label>
+				<span class="footer__mailing__txt">Подписатся на наши обновления</span>
+				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
+				<span class="footer__mailing__icon"></span>
+			</div>
+			<div class="footer__b-social">
+				<span class="footer__copyright">©  ТурСайт, 2013   Все права защищены.</span>
+				<a class="footer__rule" href="#">Правила использования</a>
+				<div class="footer__social">
+					Мы в сети:
+					<ul>
+						<li><a class="footer__social__f" href="#"></a></li>
+						<li><a class="footer__social__t" href="#"></a></li>
+						<li><a class="footer__social__g" href="#"></a></li>
+					</ul>		
+				</div>
+			</div>	
+			<div class="footer__webmedia">
+				Разработка сайтов на Битриксе:
+				<span class="footer__webmedia__icon"></span>
+			</div>
+		</div>
 	</footer>
 	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
 		<span class="btn-up-dwn__icon"></span>
