@@ -237,6 +237,9 @@ function js_icon_prev(){
 	}
 }
 function js_map_open(){	
+	if(document.body.clientWidth < 550){
+		document.getElementById("b-map__online").style.zIndex = 1000;
+	}
 	var map_opacity = parseFloat(document.getElementById("b-map-feedback").style.opacity);
 	map_opacity -= .05;
 	document.getElementById("b-map-feedback").style.opacity = map_opacity;
