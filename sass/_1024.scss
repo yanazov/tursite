@@ -882,6 +882,9 @@ body{
 	margin: 44px 15px 0px 15px;
 	background-color: $color_grey;
 	text-align: left;
+	transition: background-color .4s;
+	transition: box-shadow .4s;
+	cursor: pointer;
 }
 .b-hot__b-unit:hover{
 	background-color: #fff;
@@ -892,12 +895,33 @@ body{
 		opacity: 0;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
 	}
+	.b-hot__img img{
+		width: 248px;
+		height: 123px;
+		
+		-webkit-transform:scale(1.2);
+		-moz-transform:scale(1.2);
+		-o-transform:scale(1.2);
+	}
 }
-.b-hot__b-unit img{
+.b-hot__img img{
 	display: block;
 	position: relative;
-	width: 248px;
 	height: 123px;
+	width: 248px;
+	-webkit-transform:scale(1.0);
+	-webkit-transition-duration: 0.4s;
+	-moz-transform:scale(1.0);
+	-moz-transition-duration: 0.4s;
+	-o-transform:scale(1.0);
+	-o-transition-duration: 0.4s;
+}
+.b-hot__img{
+	display: block;
+	position: relative;
+	height: 123px;
+	width: 226px;
+	overflow: hidden;
 }
 .b-hot__b-unit__dimmer{
 	display: block;
@@ -908,6 +932,7 @@ body{
 	height: 123px;
 	background-color: $color_blue_dark;
 	opacity: .5;
+	transition: opacity .5s;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
 }
 .b-hot__b-unit__b-txt{
@@ -1006,7 +1031,7 @@ body{
 .b-icon__conteiner{
 	display: block;
 	position: relative;
-	width: 965px;
+	width: 975px;
 	height: 240px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1022,99 +1047,48 @@ body{
 .b-icon__elem_round{
 	display: block;
 	position: relative;
-	width: 85px;
-	height: 85px;
+	width: 87px;
+	height: 87px;
 	margin: 0 auto;
 	margin-top: 38px;
-	background-color: $color_blue;
-	border-radius: 150px 150px 150px 150px;
-	-webkit-border-radius: 150px 150px 150px 150px;
-	-moz-border-radius: 150px 150px 150px 150px;
-	-khtml-border-radius: 150px 150px 150px 150px;
-}
-.b-icon__elem_round:hover{
-	background-color: #fff;
-	-moz-box-shadow: 0 0 15px #ccc; 
-	-webkit-box-shadow: 0 0 15px #ccc; 
-	box-shadow: 0 0 15px  #ccc; 
-}
-.b-icon__elem_round_img{
-	display: block;
-	position: relative;
-	top: 14px;
-	left: 14px;
-	width: 57px;
-	height: 57px;
 	background: url(../img/icon_big.png) no-repeat;	
+		transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
 }
-.b-icon__elem_round_img:nth-child(1){
-	background-position: 0px -240px;
+#icon1 > .b-icon__elem_round{
+	background-position: 0px -5px;
 }
-.b-icon__elem_round:hover:nth-child(1){
-	.b-icon__elem_round_img{
-		background-position: 0px -300px;
-	}
+#icon1 > .b-icon__elem_round:hover{
+	background-position: 0px -100px;
 }
-.b-icon__elem:nth-child(2){
-	.b-icon__elem_round_img{
-		background-position: 0px 0px;
-	}
-}	
-.b-icon__elem:nth-child(2){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -60px;
-		}
-	}
+#icon2 > .b-icon__elem_round{
+	background-position: 0px -206px;
 }
-.b-icon__elem:nth-child(3){
-	.b-icon__elem_round_img{
-		background-position: 0px -120px;
-	}
-}	
-.b-icon__elem:nth-child(3){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -180px;
-		}
-	}
+#icon2 > .b-icon__elem_round:hover{
+	background-position: 0px -301px;
 }
-.b-icon__elem:nth-child(4){
-	.b-icon__elem_round_img{
-		background-position: 0px -360px;
-	}
-}	
-.b-icon__elem:nth-child(4){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -420px;
-		}
-	}
+#icon3 > .b-icon__elem_round{
+	background-position: 0px -404px;
 }
-.b-icon__elem:nth-child(5){
-	.b-icon__elem_round_img{
-		background-position: 0px -480px;
-	}
-}	
-.b-icon__elem:nth-child(5){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -540px;
-		}
-	}
+#icon3 > .b-icon__elem_round:hover{
+	background-position: 0px -500px;
 }
-.b-icon__elem:nth-child(6){
-	display: none;
-	.b-icon__elem_round_img{
-		background-position: 0px -360px;
-	}
-}	
-.b-icon__elem:nth-child(6){
-	.b-icon__elem_round:hover{
-		.b-icon__elem_round_img{
-			background-position: 0px -420px;
-		}
-	}
+#icon4 > .b-icon__elem_round{
+	background-position: 0px -605px;
+}
+#icon4 > .b-icon__elem_round:hover{
+	background-position: 0px -700px;
+}
+#icon5 > .b-icon__elem_round{
+	background-position: 0px -824px;
+}
+#icon5 > .b-icon__elem_round:hover{
+	background-position: 0px -919px;
+}
+#icon6 > .b-icon__elem_round{
+	background-position: 0px -404px;
+}
+#icon6 > .b-icon__elem_round:hover{
+	background-position: 0px -500px;
 }
 .b-icon__line{
 	display: block;
@@ -1309,6 +1283,12 @@ body{
 	position: absolute;
 	top: 0px;
 	right: 0px;
+}
+.b-map__online__to-contact{
+	display: none;
+	position: absolute;
+	top: 16px;
+	right: 65px;
 }
 .b-map__b-left__to-map{
 	display: none;

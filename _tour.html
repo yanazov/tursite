@@ -20,15 +20,13 @@
     <![endif]-->
 </head>
 <body>
-	<div class="center_cont">
-		<div class="b-consultant">
-			<a class="b-consultant__form" href="#">
-				<span class="b-consultant__form__icon"><span></span></span>
-				<span class="b-consultant__form__txt">Консультант</span>
-				<span class="b-consultant__form__status">в он-лайне</span>
-				<span class="b-consultant__form__close"></span>
-			</a>
-		</div>
+	<div class="b-consultant">
+		<a class="b-consultant__form" href="#">
+			<span class="b-consultant__form__icon"><span></span></span>
+			<span class="b-consultant__form__txt">Консультант</span>
+			<span class="b-consultant__form__status">в он-лайне</span>
+			<span class="b-consultant__form__close"></span>
+		</a>
 	</div>
 	<header class="header">
 		<div class="center_cont">
@@ -355,41 +353,35 @@
 	</div>
 	<div class="b-map">
 		<div class="center_cont">
-			<div class="b-map__online">
-				<span id="b-map__to-contact" class="btn-yellow b-map__online__to-contact" onClick="js_map_close()">Смотреть контакты</span>
+			<div class="b-map__b-left">
+				<span class="b-map__b-left__name">Контакты</span>
+				<span class="b-map__b-left__b-caption">Главный офис:</span>
+				<span class="b-map__b-left__b-txt">г.Киев, ул.Маханизаторов, 10</span>
+				<span class="b-map__b-left__b-caption">Пункт продажи:</span>
+				<span class="b-map__b-left__b-txt">г.Киев, ул. Ивана Франко, 40-Б</span>			
+				<span class="b-map__b-left__b-caption">Телефоны:</span>
+				<span class="b-map__b-left__b-txt">050 445 25 45, (044)</span>
+				<span class="b-map__b-left__b-txt">238 60 20, 238 62 31</span>
+				<span class="b-map__b-left__b-caption">Email:</span>
+				<a href="#">sale@tursite.com.ua</a>
+				<a href="#">market@tursite.com.ua</a>
 			</div>
-			<div id="b-map-feedback" class="b-map__filds">
-				<div class="b-map__filds__dimmer"></div>
-				<div class="b-map__b-left">
-					<span class="b-map__b-left__name">Контакты</span>
-					<span class="b-map__b-left__b-caption">Главный офис:</span>
-					<span class="b-map__b-left__b-txt">г.Киев, ул.Маханизаторов, 10</span>
-					<span class="b-map__b-left__b-caption">Пункт продажи:</span>
-					<span class="b-map__b-left__b-txt">г.Киев, ул. Ивана Франко, 40-Б</span>			
-					<span class="b-map__b-left__b-caption">Телефоны:</span>
-					<span class="b-map__b-left__b-txt">050 445 25 45, (044)</span>
-					<span class="b-map__b-left__b-txt">238 60 20, 238 62 31</span>
-					<span class="b-map__b-left__b-caption">Email:</span>
-					<a href="#">sale@tursite.com.ua</a>
-					<a href="#">market@tursite.com.ua</a>
+				<a href="#" class="btn-yellow b-map__b-left__to-map">Смотреть на карте</a>
+			<div class="b-map__b-right">
+				<a href="#" class="btn-yellow b-map__b-right__to-map">Смотреть на карте</a>
+				<span class="b-map__b-right__caption">Обратная связь</span>
+				<div class="b-map__b-right__b-input">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="Email">
 				</div>
-					<span class="btn-yellow b-map__b-left__to-map"  onClick="js_map_open()">Смотреть на карте</span>
-				<div class="b-map__b-right">
-					<span class="btn-yellow b-map__b-right__to-map" onClick="js_map_open()">Смотреть на карте</span>
-					<span class="b-map__b-right__caption">Обратная связь</span>
-					<div class="b-map__b-right__b-input">
-						<input type="text" placeholder="Имя">
-						<input type="text" placeholder="Телефон">
-						<input type="text" placeholder="Email">
-					</div>
-					<textarea placeholder="Что Вас интересует?"></textarea>
-					<span class="b-map__b-right__comment">
-						Оставьте свои контактные данные - наш менеджер свяжется с вами в ближайшее
-						время и поможет выбрать подходящий вариатн отдыха.
-					</span>
-					<a class="btn-blue b-map__b-right__send" href="#">Отправить</a>
-				</div>
-			</div>	
+				<textarea placeholder="Что Вас интересует?"></textarea>
+				<span class="b-map__b-right__comment">
+					Оставьте свои контактные данные - наш менеджер свяжется с вами в ближайшее
+					время и поможет выбрать подходящий вариатн отдыха.
+				</span>
+				<a class="btn-blue b-map__b-right__send" href="#">Отправить</a>
+			</div>
 		</div>
 	</div>
 	<footer class="footer">
