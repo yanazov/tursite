@@ -239,28 +239,36 @@ function js_icon_prev(){
 function js_map_open(){	
 	if(document.body.clientWidth < 550){
 		document.getElementById("map__online").style.zIndex = 100;
-	}
-	var map_opacity = parseFloat(document.getElementById("b-map-feedback").style.opacity);
-	map_opacity -= .05;
-	document.getElementById("b-map-feedback").style.opacity = map_opacity;
-	if(map_opacity <= 0){
-		document.getElementById("b-map-feedback").style.display = "none";
 		document.getElementById("b-map__to-contact").style.display = "block";
 		return 0;
 	}
-	var timer= setTimeout(function() {js_map_open()});	
+	if(document.body.clientWidth > 550){
+		var map_opacity = parseFloat(document.getElementById("b-map-feedback").style.opacity);
+		map_opacity -= .05;
+		document.getElementById("b-map-feedback").style.opacity = map_opacity;
+		if(map_opacity <= 0){
+			document.getElementById("b-map-feedback").style.display = "none";
+			document.getElementById("b-map__to-contact").style.display = "block";
+			return 0;
+		}
+		var timer= setTimeout(function() {js_map_open()});	
+	}
 }
 function js_map_close(){
 	if(document.body.clientWidth < 550){
 		document.getElementById("map__online").style.zIndex = 0;
-	}
-	document.getElementById("b-map-feedback").style.display = "block";
-	var map_opacity = parseFloat(document.getElementById("b-map-feedback").style.opacity);
-	map_opacity += .05;
-	document.getElementById("b-map-feedback").style.opacity = map_opacity;
-	if(map_opacity >= 1){
 		document.getElementById("b-map__to-contact").style.display = "none";
 		return 0;
 	}
-	var timer= setTimeout(function() {js_map_close()});	
+	if(document.body.clientWidth > 550){
+		document.getElementById("b-map-feedback").style.display = "block";
+		var map_opacity = parseFloat(document.getElementById("b-map-feedback").style.opacity);
+		map_opacity += .05;
+		document.getElementById("b-map-feedback").style.opacity = map_opacity;
+		if(map_opacity >= 1){
+			document.getElementById("b-map__to-contact").style.display = "none";
+			return 0;
+		}
+		var timer= setTimeout(function() {js_map_close()});	
+	}
 }
