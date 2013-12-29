@@ -17,7 +17,7 @@ window.onload = function() {
 			document.getElementById("hot-unit"+i).style.position = "absolute";  
 			document.getElementById("hot-unit"+i).style.left = -242*1.5 + document.body.clientWidth/2 + 247*(i-1) + "px";   
 		}
-		for(i= 1; i < 6; i++){
+		for(i= 1; i < 7; i++){
 			document.getElementById("icon"+i).style.display = "block";   /* b-width 268px   */
 			document.getElementById("icon"+i).style.position = "absolute";  
 			document.getElementById("icon"+i).style.top = 0 + "px";  
