@@ -8426,18 +8426,20 @@ label {
     height: 316px;
     margin: 0 auto;
     margin-top: 60px;
+    text-align: center;
   }
 
-  /* line 1666, ../sass/_320.scss */
+  /* line 1667, ../sass/_320.scss */
   .b-map__b-left__to-map {
     display: block;
     position: relative;
     width: 114px;
     margin: 0 auto;
     margin-top: 85px;
+    text-align: center;
   }
 
-  /* line 1673, ../sass/_320.scss */
+  /* line 1675, ../sass/_320.scss */
   .b-map__online__to-contact {
     display: none;
     position: relative;
@@ -8449,7 +8451,7 @@ label {
     right: 0px;
   }
 
-  /* line 1683, ../sass/_320.scss */
+  /* line 1685, ../sass/_320.scss */
   .b-map__online__to-contact:active {
     display: none;
     position: relative;
@@ -8461,12 +8463,12 @@ label {
     right: 0px;
   }
 
-  /* line 1693, ../sass/_320.scss */
+  /* line 1695, ../sass/_320.scss */
   .b-map__b-right__to-map {
     display: none;
   }
 
-  /* line 1696, ../sass/_320.scss */
+  /* line 1698, ../sass/_320.scss */
   .b-map__b-right__caption {
     display: block;
     position: relative;
@@ -8478,14 +8480,14 @@ label {
     text-align: center;
   }
 
-  /* line 1706, ../sass/_320.scss */
+  /* line 1708, ../sass/_320.scss */
   .b-map__b-right__b-input {
     display: inline-block;
     position: relative;
     width: 100%;
   }
 
-  /* line 1711, ../sass/_320.scss */
+  /* line 1713, ../sass/_320.scss */
   .b-map__b-right__b-input input {
     display: block;
     position: relative;
@@ -8505,7 +8507,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1729, ../sass/_320.scss */
+  /* line 1731, ../sass/_320.scss */
   .b-map__b-right textarea {
     display: block;
     position: relative;
@@ -8527,7 +8529,7 @@ label {
     -khtml-border-radius: 10px 10px 10px 10px;
   }
 
-  /* line 1749, ../sass/_320.scss */
+  /* line 1751, ../sass/_320.scss */
   .b-map__b-right__comment {
     display: block;
     position: relative;
@@ -8540,7 +8542,7 @@ label {
     text-align: center;
   }
 
-  /* line 1760, ../sass/_320.scss */
+  /* line 1762, ../sass/_320.scss */
   .b-map__b-right__send {
     display: block;
     position: relative;
@@ -8556,7 +8558,7 @@ label {
 
   /* ====================================   END B-MAP  ============================== */
   /* ==================================   BEGIN FOOTER  ============================= */
-  /* line 1775, ../sass/_320.scss */
+  /* line 1777, ../sass/_320.scss */
   .footer {
     display: block;
     position: relative;
@@ -8566,12 +8568,12 @@ label {
     text-align: center;
   }
 
-  /* line 1783, ../sass/_320.scss */
+  /* line 1785, ../sass/_320.scss */
   .footer__elem {
     display: none;
   }
 
-  /* line 1786, ../sass/_320.scss */
+  /* line 1788, ../sass/_320.scss */
   .footer__contact {
     display: block;
     position: relative;
@@ -8581,7 +8583,7 @@ label {
     text-align: center;
   }
 
-  /* line 1794, ../sass/_320.scss */
+  /* line 1796, ../sass/_320.scss */
   .footer__contact__elem {
     display: inline-block;
     position: relative;
@@ -8594,14 +8596,14 @@ label {
     text-align: left;
   }
 
-  /* line 1805, ../sass/_320.scss */
+  /* line 1807, ../sass/_320.scss */
   .footer__contact__elem__caption {
     display: block;
     font-weight: bold;
     font-size: 8pt;
   }
 
-  /* line 1810, ../sass/_320.scss */
+  /* line 1812, ../sass/_320.scss */
   .footer__contact__elem2 {
     display: inline-block;
     position: relative;
@@ -8614,7 +8616,7 @@ label {
     border-right: none;
   }
 
-  /* line 1821, ../sass/_320.scss */
+  /* line 1823, ../sass/_320.scss */
   .footer__contact__elem3 {
     display: none;
     position: relative;
@@ -8626,14 +8628,14 @@ label {
     color: #fff;
   }
 
-  /* line 1831, ../sass/_320.scss */
+  /* line 1833, ../sass/_320.scss */
   .footer__contact__elem3 a {
     font-family: 'roboto_r';
     font-size: 8pt;
     color: #fff;
   }
 
-  /* line 1836, ../sass/_320.scss */
+  /* line 1838, ../sass/_320.scss */
   .footer__mailing {
     display: block;
     position: absolute;
@@ -8649,7 +8651,7 @@ label {
     border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1850, ../sass/_320.scss */
+  /* line 1852, ../sass/_320.scss */
   .footer__mailing__txt {
     display: inline-block;
     position: relative;
@@ -8662,7 +8664,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1861, ../sass/_320.scss */
+  /* line 1863, ../sass/_320.scss */
   .footer__mailing__fild {
     display: block;
     position: relative;
@@ -8681,7 +8683,7 @@ label {
     border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1878, ../sass/_320.scss */
+  /* line 1880, ../sass/_320.scss */
   .footer__mailing__icon {
     display: block;
     position: absolute;
@@ -8693,7 +8695,7 @@ label {
     background-position: 0px -400px;
   }
 
-  /* line 1888, ../sass/_320.scss */
+  /* line 1890, ../sass/_320.scss */
   .footer__copyright {
     display: block;
     position: relative;
@@ -8704,7 +8706,7 @@ label {
     color: #fff;
   }
 
-  /* line 1897, ../sass/_320.scss */
+  /* line 1899, ../sass/_320.scss */
   .footer__rule {
     display: block;
     position: relative;
@@ -8716,7 +8718,7 @@ label {
     color: #383d43;
   }
 
-  /* line 1907, ../sass/_320.scss */
+  /* line 1909, ../sass/_320.scss */
   .footer__social {
     display: block;
     position: relative;
@@ -8728,14 +8730,14 @@ label {
     color: #fff;
   }
 
-  /* line 1918, ../sass/_320.scss */
+  /* line 1920, ../sass/_320.scss */
   .footer__social ul {
     display: inline-block;
     position: relative;
     top: 8px;
   }
 
-  /* line 1923, ../sass/_320.scss */
+  /* line 1925, ../sass/_320.scss */
   .footer__social li {
     display: inline-block;
     position: relative;
@@ -8749,7 +8751,7 @@ label {
     border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 1935, ../sass/_320.scss */
+  /* line 1937, ../sass/_320.scss */
   .footer__social__f {
     display: block;
     position: relative;
@@ -8759,7 +8761,7 @@ label {
     background-position: 5px -275px;
   }
 
-  /* line 1943, ../sass/_320.scss */
+  /* line 1945, ../sass/_320.scss */
   .footer__social__t {
     display: block;
     position: relative;
@@ -8769,7 +8771,7 @@ label {
     background-position: 5px -295px;
   }
 
-  /* line 1951, ../sass/_320.scss */
+  /* line 1953, ../sass/_320.scss */
   .footer__social__g {
     display: block;
     position: relative;
@@ -8779,7 +8781,7 @@ label {
     background-position: 5px -315px;
   }
 
-  /* line 1959, ../sass/_320.scss */
+  /* line 1961, ../sass/_320.scss */
   .footer__webmedia {
     display: block;
     position: relative;
@@ -8792,7 +8794,7 @@ label {
     color: #fff;
   }
 
-  /* line 1970, ../sass/_320.scss */
+  /* line 1972, ../sass/_320.scss */
   .footer__webmedia__icon {
     display: inline-block;
     position: relative;
@@ -8803,7 +8805,7 @@ label {
   }
 
   /* ===================================   END FOOTER  ============================== */
-  /* line 1979, ../sass/_320.scss */
+  /* line 1981, ../sass/_320.scss */
   .btn-up-dwn {
     display: none;
   }
