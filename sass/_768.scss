@@ -314,7 +314,7 @@ body{
 /* ====================================   END MENU  =============================== */
 /* =================================   BEGIN B-SEARCH  ============================ */
 .b-search-mini{
-	display: block;
+	display: none;
 	position: relative;
 	width: 100%;
 	height: 25px;
@@ -341,7 +341,7 @@ body{
 	font-size: 8pt;
 }
 .b-search{
-	display: none;
+	display: block;
 	position: relative;
 	width: 100%;
 	height: 81px;
@@ -782,7 +782,6 @@ body{
 .b-visual__slogan{
 	display: block;
 	position: relative;
-	width: 890px;
 	margin: 0 auto;
 	padding-top: 65px;
 	font-family: 'roboto_slab_b';
@@ -873,7 +872,7 @@ body{
 	cursor: pointer;
 }
 .b-visual__slogan{
-	width: 640px;
+	width: 690px;
 }
 .b-visual__txt{
 	width: 365px;
@@ -1256,6 +1255,25 @@ body{
 	background-position: 50% 50%;
 	text-align: left;
 }
+.b-map__online{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 410px;
+	text-align: left;
+	background: url(../img/map.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+.b-map__filds__dimmer{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 410px;
+	background: $color_blue_dark;
+	opacity: .7;
+}
 .b-map__b-left{
 	display: inline-block;
 	position: relative;
@@ -1322,16 +1340,16 @@ body{
 	display: none;
 }
 .b-map__online__to-contact{
-	display: dislay;
+	display: none;
 	position: absolute;
 	top: 19px;
-	right: 58px;
+	right: 3%;
 }
 .b-map__online__to-contact:active{
 	display: dislay;
 	position: absolute;
 	top: 20px;
-	right: 57px;
+	right: 3%;
 }
 .b-map__b-right__caption{
 	display: block;
@@ -1736,7 +1754,7 @@ body{
 .btn-up-dwn{
 	display: none;
 	position: absolute;
-	bottom: 360px;
+	bottom: 405px;
 	right: 25px;
 	width: 47px;
 	height: 47px;
