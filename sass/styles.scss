@@ -1,5 +1,5 @@
 @import "main";
-@media only screen and (min-width: 1260px) and (max-width: 3960px),
+/*@media only screen and (min-width: 1260px) and (max-width: 3960px),
 only screen  and (min-device-width: 1260px) and (max-device-width: 3960px){
 	@import "1280";
 }
@@ -10,7 +10,7 @@ only screen  and (min-device-width: 1004px) and (max-device-width: 1259px){
 @media only screen and (min-width: 551px) and (max-width: 1003px),
 only screen  and (min-device-width: 551px) and (max-device-width: 1003px){
 	@import "768";
-}    
+}    */
 @media only screen and (max-width: 550px),
 only screen  and (max-device-width: 550px) {
 	@import "320";
