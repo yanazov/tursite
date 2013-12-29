@@ -3342,7 +3342,7 @@ label {
   .b-icon__conteiner {
     display: block;
     position: relative;
-    width: 100%;
+    width: 780px;
     height: 240px;
     margin: 0 auto;
     overflow: hidden;
@@ -5464,7 +5464,7 @@ label {
   .b-icon__conteiner {
     display: block;
     position: relative;
-    width: 100%;
+    width: 585px;
     height: 240px;
     margin: 0 auto;
     overflow: hidden;
