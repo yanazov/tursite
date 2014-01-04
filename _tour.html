@@ -18,8 +18,12 @@
     <!--[if lt IE 9]> 
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
     <![endif]-->
+	
+	<script type="text/javascript" src="js/jquery_masonry_min.js"></script> <!-- подключаем сам плагин -->
+	<script type="text/javascript" src="js/modernizr-transitions.js"></script> <!-- подключаем плагин заставляющий работать css transitions в браузерах не поддерживающих css3 -->
 </head>
 <body>
+	<span id="name_page">tour</span>
 	<div class="b-consultant">
 		<a class="b-consultant__form" href="#">
 			<span class="b-consultant__form__icon"><span></span></span>
@@ -129,260 +133,476 @@
 			</div>
 		</div>
 	</div>
-	<div class="b-visual">
-		<div id="center_cont__b-visual" class="center_cont">
-			<div id="slide2" class="b-visual__slide2">		
-				<div class="b-visual__dimmer"></div>
-				<span class="b-visual__slogan">2Мы работаем, что б Вы отдыхали!</span>
-				<span class="b-visual__line"></span>
-				<span class="b-visual__txt">
-					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-					горящие туры и путевки оперативнее любого другого источника.
-				</span>
-			</div>
-			<div id="slide3" class="b-visual__slide3">		
-				<div class="b-visual__dimmer"></div>
-				<span class="b-visual__slogan">3Подберем отдых на любой вкус!</span>
-				<span class="b-visual__line"></span>
-				<span class="b-visual__txt">
-					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-					горящие туры и путевки оперативнее любого другого источника.
-				</span>
-			</div>
-			<div id="slide4" class="b-visual__slide4">		
-				<div class="b-visual__dimmer"></div>
-				<span class="b-visual__slogan">4Теплые моря ждут Вас!</span>
-				<span class="b-visual__line"></span>
-				<span class="b-visual__txt">
-					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-					горящие туры и путевки оперативнее любого другого источника.
-				</span>
-			</div>
-			<div id="slide1" class="b-visual__slide1">
-				<div class="b-visual__dimmer"></div>
-				<span class="b-visual__slogan">1Спланируйте Ваш отпуск с нами!111</span>
-
-				<span class="b-visual__line"></span>
-				<span class="b-visual__txt">
-					Наш портал не только поможет Вам найти интересующий Вас тур, но и предложит 
-					горящие туры и путевки оперативнее любого другого источника.
-				</span>
-			</div>
-				<div id="hitarea" class="hitarea"></div>
-				<span class="btn-yellow b-visual__btn">Подобрать тур</span>
-				<ul class="b-visual__nav">
-					<li id="slider_point1" class="b-visual__nav__elem"></li>
-					<li id="slider_point2" class="b-visual__nav__elem"></li>
-					<li id="slider_point3" class="b-visual__nav__elem"></li>
-					<li id="slider_point4" class="b-visual__nav__elem"></li>
-				</ul>
-				<span class="b-visual__arrow-left" onClick="js_main_slide('prev')"></span>
-				<span class="b-visual__arrow-right" onClick="js_main_slide('next')"></span>
-			</div>
+	<div class="path">
+		<div class="center_cont">
+			<a class="path__active" href="index.html">Главная</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">Тайланд</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">о-в Самуи</a>
+			<span class="path__separ"></span>
+			<span class="path__current" href="#">Незабываемый отдых в Тайланде...</span>
+		</div>
 	</div>
-	<div class="b-hot">
-		<span class="b-hot__decor">
-			<span class="b-hot__decor_img"></span>
-		</span>
-		<span class="b-hot__caption">Горящие предложения</span>
-		<div id="block_hot" class="b-hot__slider">
-			<div id="hot-unit1" class="b-hot__b-unit">
-				<div class="b-hot__img">	
+	<div class="b-tour">
+		<div class="center_cont">
+			<div class="b-tour__b-main">
+				<span class="b-tour__b-main__dimmer"></span>
+				<span class="b-tour__b-main__b-card">
+					<span class="b-tour__b-main__b-card__caption">
+						Вид тура:
+						<span id ="b-card__icon1" class="b-tour__b-main__b-card__caption__icon">
+							<span class="b-tour__b-main__b-card__caption__icon__description">
+								Морской круиз
+								<span></span>
+							</span>
+						</span>
+						<span id ="b-card__icon2" class="b-tour__b-main__b-card__caption__icon">
+							<span class="b-tour__b-main__b-card__caption__icon__description">
+								Экстрим
+								<span></span>
+							</span>						
+						</span>
+						<span id ="b-card__icon3" class="b-tour__b-main__b-card__caption__icon">
+							<span class="b-tour__b-main__b-card__caption__icon__description">
+								Экскурсионный
+								<span></span>
+							</span>
+						</span>
+						<span class="b-tour__b-main__b-card__hover-stop"></span>
+					</span>
+					<span class="b-tour__b-main__b-card__elem">
+						<span class="b-tour__b-main__b-card__caption2">
+							Откуда:
+						</span>
+						вылет из Киева
+					</span>
+					<span class="b-tour__b-main__b-card__elem b-card__elem__hotel">
+						<span class="b-tour__b-main__b-card__caption2">
+							Отель:
+						</span>
+						Bora-Bora Beach Club
+						<span class="b-tour__b-main__b-card__raiting"></span>
+					</span>
+					<span class="b-tour__b-main__b-card__elem">
+						<span class="b-tour__b-main__b-card__elem__cont">
+							<span class="b-tour__b-main__b-card__caption2">
+								Питание:
+							</span>
+							HB, Al
+							<span class="b-tour__b-main__b-card__icon"></span>
+						</span>
+						<span class="b-tour__b-main__b-card__elem__cont">
+							<span class="b-tour__b-main__b-card__caption2">
+								Номер:
+							</span>
+							Deluxe Room
+							<span class="b-tour__b-main__b-card__icon"></span>
+						</span>
+					</span>
+					<span class="b-tour__b-main__b-card__elem">
+						<span class="b-tour__b-main__b-card__caption2">
+							Транспорт:
+						</span>
+						АВИА + трансфер к отелю
+					</span>
+					<span class="b-tour__b-main__b-card__elem">
+						<span class="b-tour__b-main__b-card__caption2">
+							Начало/Конец тура:
+						</span>
+						15.11.2013 - 22.11.2013
+					</span>
+					<span class="b-tour__b-main__b-card__elem border-bottom-none">
+						<span class="b-tour__b-main__b-card__caption2">
+							Продолжительность:
+						</span>
+						14 дней/15 ночей
+					</span>
+				</span>
+				<div class="b-tour__b-main__slogan">
+					Самый незабываемый отдых в Тайланде в Марте 2013 года
+					<span class="b-tour__b-main__slogan__txt">
+						Наш портал не только поможет Вам найти интересующий Вас тур,
+						но и предложит горящие туры и путевки оперативнее любого другого.
+					</span>
+					<div class="b-tour__b-main__b-price">
+						<span class="b-tour__b-main__b-price__decor"></span>
+						<span class="b-tour__b-main__b-price__txt">Цена за</span>
+						<input type="text" value="2" readonly>
+						<span class="b-tour__b-main__btn-select"></span>
+						<span class="b-tour__b-main__b-price__unit">чел.</span>						
+						<span class="b-tour__b-main__b-price__number">
+						$2099
+						<span>$1899</span>
+						</span>
+					</div>
+				</div>
+								
+				
+				<a class="btn-yellow b-tour__b-main__btn">
+					Хочу поехать!
+				</a>
+			</div>
+			<span class="b-tour__btn-galery">
+				<span class="btn-yellow b-tour__btn-galery__body" onClick="js_galery_on_off()">
+					<span id="btn_galery_icon"></span>
+				</span>
+				<span class="b-tour__btn-galery__number">
+					24
+				</span>
+				<span class="b-tour__btn-galery__txt">
+					Фото
+				</span>
+			</span>
+			<div class="b-tour__b-galery">
+				<div class="b-tour__b-galery__scroll">
+					<div id="galery__body" class="b-tour__b-galery__body">
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto()">
+							<img  src="galery/s_pic1.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic2.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic3.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic4.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic5.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic6.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic7.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic8.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic9.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic10.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic1.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic2.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic3.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic4.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic5.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic6.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic7.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic8.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic9.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem">
+							<img src="galery/s_pic10.jpg" alt="">
+						</div>    
+					
+					</div>
+				</div>
+				<div class="b-tour__b-galery__nav">
+					<span class="b-tour__b-galery__nav__up"></span>
+					<span class="b-tour__b-galery__nav__dwn"></span>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="center_cont">
+		<div class="b-same">
+			<span class="details__caption">Похожие туры:</span>
+			<a id="same-unit1" class="b-same__b-unit" href="_tour.html">
+				<div class="b-same__img">	
 					<img src="pic/hot1.jpg" alt=""/>
 				</div>
-				<div class="b-hot__b-unit__dimmer"></div>
-				<span class="b-hot__b-unit__b-txt">
-					<span class="b-hot__b-unit__name">
-						Люксембург + Амстердам + Париж = 699 евро с авиа!
+				<div class="b-same__b-unit__dimmer"></div>
+				<span class="b-same__b-unit__b-txt">
+					<span class="b-same__b-unit__name">
+						Мальдивы на Новый Год это реальность!
+						Все включено, авиа, перелет, отель!
 					</span>
-					<span class="b-hot__b-unit__period">3 - 10 Сентября 2013</span>
-					<span class="b-hot__b-unit__about">
-						Экскурсии по Амстердаму, Парижу, Люксембургу в цене!!! 
-						Стоимость указана за чел при двухместном размещении
-					</span>
+					<span class="b-same__b-unit__period">3 - 10 Сентября 2013</span>					
 				</span>
-				<span class="b-hot__b-unit__old-price">780$</span>
-				<span class="b-hot__b-unit__new-price">699$</span>			
-				<a class="btn-yellow" href="#">Подробнее</a>
-			</div>
-			<div id="hot-unit2" class="b-hot__b-unit">
-				<div class="b-hot__img">				
+				<span class="b-same__b-unit__old-price">780$</span>
+				<span class="b-same__b-unit__new-price">699$</span>			
+				<span class="btn-yellow b-same__btn">Подробнее</span>
+			</a>
+			<a id="same-unit1" class="b-same__b-unit" href="_tour.html">
+				<div class="b-same__img">	
 					<img src="pic/hot2.jpg" alt=""/>
 				</div>
-				<div class="b-hot__b-unit__dimmer"></div>
-				<span class="b-hot__b-unit__b-txt">
-					<span class="b-hot__b-unit__name">
+				<div class="b-same__b-unit__dimmer"></div>
+				<span class="b-same__b-unit__b-txt">
+					<span class="b-same__b-unit__name">
 						Шри-Ланка в лучший сезон со скидкой!!!
 					</span>
-					<span class="b-hot__b-unit__period">3 - 10 Сентября 2013</span>
-					<span class="b-hot__b-unit__about">
-						Экскурсии по Амстердаму, Парижу, Люксембургу в цене!!! 
-						Стоимость указана за чел при двухместном размещении
-					</span>
-				</span>	
-				<span class="b-hot__b-unit__old-price">780$</span>
-				<span class="b-hot__b-unit__new-price">699$</span>			
-				<a class="btn-yellow" href="#">Подробнее</a>
-			</div>
-			<div id="hot-unit3" class="b-hot__b-unit">
-				<div class="b-hot__img">	
-					<img src="pic/hot3.jpg" alt=""/>
-				</div>	
-				<div class="b-hot__b-unit__dimmer"></div>
-				<span class="b-hot__b-unit__b-txt">
-					<span class="b-hot__b-unit__name">
-						Шри-Ланка в лучший сезон со скидкой!!!
-					</span>
-					<span class="b-hot__b-unit__period">3 - 10 Сентября 2013</span>
-					<span class="b-hot__b-unit__about">
-						Экскурсии по Амстердаму, Парижу, Люксембургу в цене!!! 
-						Стоимость указана за чел при двухместном размещении
-					</span>
-				</span>	
-				<span class="b-hot__b-unit__old-price">780$</span>
-				<span class="b-hot__b-unit__new-price">699$</span>			
-				<a class="btn-yellow" href="#">Подробнее</a>
-			</div>
-			<div id="hot-unit4" class="b-hot__b-unit">
-				<div class="b-hot__img">
-					<img src="pic/hot4.jpg" alt=""/>
-				</div>
-				<div class="b-hot__b-unit__dimmer"></div>
-				<span class="b-hot__b-unit__b-txt">
-					<span class="b-hot__b-unit__name">
-						Шри-Ланка в лучший сезон со скидкой!!!
-					</span>
-					<span class="b-hot__b-unit__period">3 - 10 Сентября 2013</span>
-					<span class="b-hot__b-unit__about">
-						Экскурсии по Амстердаму, Парижу, Люксембургу в цене!!! 
-						Стоимость указана за чел при двухместном размещении
-					</span>
-				</span>	
-				<span class="b-hot__b-unit__old-price">780$</span>
-				<span class="b-hot__b-unit__new-price">699$</span>			
-				<a class="btn-yellow" href="#">Подробнее</a>
-			</div>
-		</div>
-		<span class="b-hot__arrow-left" onClick="js_hot_prev()"></span>
-		<span class="b-hot__arrow-right" onClick="js_hot_next()"></span>
-	<a href="#" class="b-hot__btn">Смотреть еще</a>
-	</div>
-	<div id="block_icon" class="b-icon">
-		<div class="center_cont">
-			<div class="b-icon__conteiner">
-				<div id="icon1" class="b-icon__elem">
-					<a href="#" class="b-icon__elem_round">
-						<span class="b-icon__elem_round_img"></span>
-					</a>
-					<span class="b-icon__line"></span>
-					<span class="b-icon__txt">Экзотические страны</span>
-				</div>
-				<div id="icon2" class="b-icon__elem">
-					<a href="#" class="b-icon__elem_round">
-						<span class="b-icon__elem_round_img"></span>
-					</a>
-					<span class="b-icon__line"></span>
-					<span class="b-icon__txt">Морские путешествия</span>
-				</div>
-				<div id="icon3" class="b-icon__elem">
-					<a href="#" class="b-icon__elem_round">
-						<span class="b-icon__elem_round_img"></span>
-					</a>
-					<span class="b-icon__line"></span>
-					<span class="b-icon__txt">Автобусные туры</span>
-				</div>
-				<div id="icon4" class="b-icon__elem">
-					<a href="#" class="b-icon__elem_round">
-						<span class="b-icon__elem_round_img"></span>
-					</a>
-					<span class="b-icon__line"></span>
-					<span class="b-icon__txt">Экскурсии</span>
-				</div>
-				<div id="icon5" class="b-icon__elem">
-					<a href="#" class="b-icon__elem_round">
-						<span class="b-icon__elem_round_img"></span>
-					</a>
-					<span class="b-icon__line"></span>
-					<span class="b-icon__txt">Экстрим туры</span>
-				</div>
-				<div id="icon6" class="b-icon__elem">
-					<a href="#" class="b-icon__elem_round">
-						<span class="b-icon__elem_round_img"></span>
-					</a>
-					<span class="b-icon__line"></span>
-					<span class="b-icon__txt">Автобусные туры</span>
-				</div>
-			
-			</div>
-			<span class="b-icon__arrow-left" onClick="js_icon_prev()"></span>
-			<span class="b-icon__arrow-right" onClick="js_icon_next()"></span>
-		</div>
-	</div>
-	<div class="b-about">
-		<div class="center_cont">
-			<span class="b-about__service">
-				<span class="b-about__caption">Наши услуги</span>			
-				Все предлагаемые нами туристические продукты рассчитаны на потребителей с различным уровнем дохода 
-				- от самых экономичных предложений до VIP-обслуживания. Индивидуальный подход к каждому клиенту 
-				- отличительная черта нашей компании. Вы всегда будете ощущать особое внимание со стороны 
-				сотрудников, потому что каждый клиент для нас - это VIP клиент. Если же Вы не 
-				любитель спонтанного отдыха и привыкли заблаговременно выбирать место предстоящего отпуска, 
-				наши опытные менеджеры помогут Вам не ошибиться с лучшим выбором. Вам просто нужно сообщить 
-				все желаемые условия, а сотрудники компании предложат самые лучшие варианты 
-				Вашего будущего незабываемого отдыха.
-				<span class="b-about__separ-space"></span>
-				<a href="#">Создай сам себе путешествие</a>
-				<a href="#">Бронирование авиабилетов</a>
-				<a href="#">Горящие туры</a>
-				<a href="#">Оформление загран. паспорта</a>
-			</span>
-			<span class="b-about__company">
-				<span class="b-about__caption">О компании</span>
-				Туристическая компания, объединившая в себе профессионалов различных направлений туристичекой 
-				деятельности. Все сотрудники компании имеют многолетний (более 8 лет) опыт, который необходим 
-				для обслуживания запросов и желаний своих клиентов на высочайшем уровне. Множество международных 
-				и украинских дипломов и сертификатов подтверждают статус и профессионализм наших сотрудников. 
-				Мы все преданы одному делу, и мы любим то, чем занимаемся. Попробовав однажды, обслуживание 
-				в компании, Вы навсегда останетесь членами нашей огромной туристической семьи.
-
-				Все предлагаемые нами туристические продукты рассчитаны на потребителей с различным уровнем 
-				дохода - от самых экономичных предложений до VIP-обслуживания. Индивидуальный подход к 
-				каждому клиенту - отличительная черта 
-			</span>
-		</div>
-	</div>
-	<div class="b-map">
-		<div class="center_cont">
-			<div class="b-map__b-left">
-				<span class="b-map__b-left__name">Контакты</span>
-				<span class="b-map__b-left__b-caption">Главный офис:</span>
-				<span class="b-map__b-left__b-txt">г.Киев, ул.Маханизаторов, 10</span>
-				<span class="b-map__b-left__b-caption">Пункт продажи:</span>
-				<span class="b-map__b-left__b-txt">г.Киев, ул. Ивана Франко, 40-Б</span>			
-				<span class="b-map__b-left__b-caption">Телефоны:</span>
-				<span class="b-map__b-left__b-txt">050 445 25 45, (044)</span>
-				<span class="b-map__b-left__b-txt">238 60 20, 238 62 31</span>
-				<span class="b-map__b-left__b-caption">Email:</span>
-				<a href="#">sale@tursite.com.ua</a>
-				<a href="#">market@tursite.com.ua</a>
-			</div>
-				<a href="#" class="btn-yellow b-map__b-left__to-map">Смотреть на карте</a>
-			<div class="b-map__b-right">
-				<a href="#" class="btn-yellow b-map__b-right__to-map">Смотреть на карте</a>
-				<span class="b-map__b-right__caption">Обратная связь</span>
-				<div class="b-map__b-right__b-input">
-					<input type="text" placeholder="Имя">
-					<input type="text" placeholder="Телефон">
-					<input type="text" placeholder="Email">
-				</div>
-				<textarea placeholder="Что Вас интересует?"></textarea>
-				<span class="b-map__b-right__comment">
-					Оставьте свои контактные данные - наш менеджер свяжется с вами в ближайшее
-					время и поможет выбрать подходящий вариатн отдыха.
+					<span class="b-same__b-unit__period">3 - 10 Сентября 2013</span>					
 				</span>
-				<a class="btn-blue b-map__b-right__send" href="#">Отправить</a>
-			</div>
+				<span class="b-same__b-unit__old-price">1300$</span>
+				<span class="b-same__b-unit__new-price">1099$</span>			
+				<span class="btn-yellow b-same__btn">Подробнее</span>
+			</a>
+			<a id="same-unit1" class="b-same__b-unit" href="_tour.html">
+				<div class="b-same__img">	
+					<img src="pic/hot1.jpg" alt=""/>
+				</div>
+				<div class="b-same__b-unit__dimmer"></div>
+				<span class="b-same__b-unit__b-txt">
+					<span class="b-same__b-unit__name">
+						Мальдивы на Новый Год это реальность!
+						Все включено, авиа, перелет, отель!
+					</span>
+					<span class="b-same__b-unit__period">3 - 10 Сентября 2013</span>					
+				</span>
+				<span class="b-same__b-unit__old-price">780$</span>
+				<span class="b-same__b-unit__new-price">699$</span>			
+				<span class="btn-yellow b-same__btn">Подробнее</span>
+			</a>
+			<a id="same-unit1" class="b-same__b-unit" href="_tour.html">
+				<div class="b-same__img">	
+					<img src="pic/hot2.jpg" alt=""/>
+				</div>
+				<div class="b-same__b-unit__dimmer"></div>
+				<span class="b-same__b-unit__b-txt">
+					<span class="b-same__b-unit__name">
+						Шри-Ланка в лучший сезон со скидкой!!!
+					</span>
+					<span class="b-same__b-unit__period">3 - 10 Сентября 2013</span>					
+				</span>
+				<span class="b-same__b-unit__old-price">1300$</span>
+				<span class="b-same__b-unit__new-price">1099$</span>			
+				<span class="btn-yellow b-same__btn">Подробнее</span>
+			</a>
 		</div>
+		<div class="details">
+			<div class="details__social">
+			Поделится с друзьями:
+			<ul>
+				<li><a class="details__social__f" href="#"></a></li>
+				<li><a class="details__social__t" href="#"></a></li>
+				<li><a class="details__social__g" href="#"></a></li>
+			</ul>		
+			</div>
+			<div class="details__make">
+				<span class="details__make__txt">В избранное:</span>
+				<a id="details__favorite" class="details__make__btn"></a>
+				<span class="details__make__txt">Отправить на email:</span>
+				<a id="details__email" class="details__make__btn"></a>
+				<span class="details__make__txt">Распечатать:</span>
+				<a id="details__print" class="details__make__btn"></a>			
+			</div>
+			<span class="details__line"></span>
+			<span class="details__caption">Описание:</span>
+			Туристическая компания, объединившая в себе профессионалов различных направлений 
+			туристичекой деятельности. Все сотрудники компании имеют многолетний (более 8 лет) 
+			опыт, который необходим для обслуживания запросов и желаний своих клиентов на 
+			высочайшем уровне. Множество международных и украинских дипломов и сертификатов 
+			подтверждают статус и профессионализм наших сотрудников. Мы все преданы одному делу, 
+			и мы любим то, чем занимаемся. Попробовав однажды, обслуживание в компании, Вы 
+			навсегда останетесь членами нашей огромной туристической семьи.
+			<span class="details__abz">Заголовок для абзаца</span>
+			Все предлагаемые нами туристические продукты рассчитаны на потребителей с 
+			различным уровнем дохода - от самых экономичных предложений до VIP-обслуживания. 
+			Индивидуальный подход к каждому клиенту - отличительная черта нашей компании. 
+			Вы всегда будете ощущать особое внимание со стороны сотрудников,
+			потому что каждый клиент для нас - это VIP клиент. Туристическая компания, 
+			объединившая в себе профессионалов различных направлений туристичекой деятельности. 
+			Все сотрудники компании имеют многолетний (более 8 лет) опыт, который необходим 
+			для обслуживания запросов и желаний своих клиентов на высочайшем уровне. 
+			Множество международных и украинских дипломов и сертификатов подтверждают 
+			статус и профессионализм наших сотрудников.
+			<div class="details__cont1">
+				<div class="details__include-cost">
+					<span class="details__caption">В стоимость включено:</span>
+					<ul class="details__include-cost__ul">
+						<li>Трансфер</li>
+						<li>Бронирование авиабилетов</li>
+						<li>Горящие туры</li>
+						<li>Оформление загран. паспорта</li>
+						<li>Создай сам себе путешествие</li>
+						<li>Бронирование авиабилетов</li>
+						<li>Горящие туры</li>
+						<li>Оформление виз</li>
+					
+					</ul>
+				</div>
+				<div class="details__add-cost">
+					<span class="details__caption">Дополнительно оплачивается:</span>
+					<ul class="details__add-cost__ul">
+						<li>Трансфер</li>
+						<li>Бронирование авиабилетов</li>
+						<li>Горящие туры</li>
+						<li>Оформление загран. паспорта</li>
+						<li>Создай сам себе путешествие</li>
+					</ul>
+				</div>
+			</div>
+			<span class="details__caption">Транспорт:</span>
+			<ul class="details__transport">
+				<li>
+					<span class="details__transport__column1">Направление</span>
+					<span class="details__transport__column2">Отбытие</span>
+					<span class="details__transport__column3">Прибытие</span>
+					<span class="details__transport__column4">В пути</span>
+				</li>
+				<li>
+					<span class="details__transport__column1">Киев - Хургада</span>
+					<span class="details__transport__column2">12.11 / 18:00</span>
+					<span class="details__transport__column3">12.11 / 23:50</span>
+					<span class="details__transport__column4">5:50 часов</span>
+				</li>
+				<li>
+					<span class="details__transport__column1">Киев - Шарм-фль-Шейх</span>
+					<span class="details__transport__column2">12.11 / 18:00</span>
+					<span class="details__transport__column3">12.11 / 23:50</span>
+					<span class="details__transport__column4">5:50 часов</span>
+				</li>
+				<li>
+					<span class="details__transport__column1">Киев - Хургада</span>
+					<span class="details__transport__column2">12.11 / 18:00</span>
+					<span class="details__transport__column3">12.11 / 23:50</span>
+					<span class="details__transport__column4">5:50 часов</span>
+				</li>
+				<li>
+					<span class="details__transport__column1">Киев - Шарм-фль-Шейх</span>
+					<span class="details__transport__column2">12.11 / 18:00</span>
+					<span class="details__transport__column3">12.11 / 23:50</span>
+					<span class="details__transport__column4">5:50 часов</span>
+				</li>
+				<li>
+					<span class="details__transport__column1">Киев - Хургада</span>
+					<span class="details__transport__column2">12.11 / 18:00</span>
+					<span class="details__transport__column3">12.11 / 23:50</span>
+					<span class="details__transport__column4">5:50 часов</span>
+				</li>
+				<li>
+					<span class="details__transport__column1">Киев - Шарм-фль-Шейх</span>
+					<span class="details__transport__column2">12.11 / 18:00</span>
+					<span class="details__transport__column3">12.11 / 23:50</span>
+					<span class="details__transport__column4">5:50 часов</span>
+				</li>
+			</ul>
+			<span class="details__caption">Программа тура:</span>
+			<ul class="details__shedule">
+				<li>
+					<span class="details__shedule__column1">День</span>
+					<span class="details__shedule__column2">Описание</span>
+				</li>
+				<li>
+					<span class="details__shedule__column1">
+						<span class="details__shedule__column1__number">1</span>
+						<span class="details__shedule__column1__day">Суббота<br/>12.09</span>
+						<span class="details__shedule__column1__decor"><span></span></span>
+					</span>
+					<span class="details__shedule__column2">
+						Все предлагаемые нами туристические продукты рассчитаны на потребителей 
+						с различным уровнем дохода - от самых экономичных предложений до 
+						VIP-обслуживания. Индивидуальный подход к каждому клиенту - 
+						отличительная черта нашей компании. Вы всегда будете ощущать особое 
+						внимание со стороны сотрудников Персей Тревел, потому что каждый клиент 
+						для нас - это VIP клиент. 
+					</span>
+				</li>
+				<li>
+					<span class="details__shedule__column1">
+						<span class="details__shedule__column1__number">2</span>
+						<span class="details__shedule__column1__day">Воскресенье<br/>13.09</span>
+						<span class="details__shedule__column1__decor"><span></span></span>
+					</span>
+					<span class="details__shedule__column2">
+						Если же Вы не любитель спонтанного отдыха и привыкли заблаговременно выбирать 
+						место предстоящего отпуска, наши опытные менеджеры помогут Вам не ошибиться 
+						с лучшим выбором. 
+						<br/>
+						<br/>
+						Вам просто нужно сообщить все желаемые условия, а сотрудники компании 
+						предложат самые лучшие варианты Вашего будущего незабываемого отдыха. Все 
+						предлагаемые нами туристические продукты рассчитаны на потребителей с различным 
+						уровнем дохода - от самых экономичных предложений до VIP-обслуживания. 
+						Индивидуальный подход к каждому клиенту - отличительная черта нашей компании. 
+						<br/>
+						<br/>
+						Вы всегда будете ощущать особое внимание со стороны сотрудников
+						, потому что каждый клиент для нас - это VIP клиент. Если же Вы не любитель 
+						спонтанного отдыха и привыкли заблаговременно выбирать место предстоящего отпуска, 
+						
+					
+					</span>
+				</li>
+				<li>
+					<span class="details__shedule__column1">
+						<span class="details__shedule__column1__number">3</span>
+						<span class="details__shedule__column1__day">Понедельник<br/>14.09</span>
+						<span class="details__shedule__column1__decor"><span></span></span>
+					</span>
+					<span class="details__shedule__column2">
+						Вам просто нужно сообщить все желаемые условия, а сотрудники компании 
+						предложат самые лучшие варианты Вашего будущего незабываемого отдыха. Все 
+						предлагаемые нами туристические продукты рассчитаны на потребителей с различным 
+					</span>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<div class="b-quick-ask">
+		<div class="center_cont">
+			<span class="b-quick-ask__caption">Заказать сейчас</span>
+			<span class="b-quick-ask__txt">Чтобы заказать тур свяжитесь с нашим менеджером по телефону
+			<br/>
+			<span class="b-quick-ask__txt txt-bold">+7(495)215-52-30* </span>
+				или воспользуйтесь формой заказа
+			</span>
+			<br/>
+			<div class="b-quick-ask__b-fild">
+				Ваше имя:
+				<input type="text">
+			</div>
+			<div class="b-quick-ask__b-fild">
+				Телефон**:
+				<input type="text">
+				<span class="b-quick-ask__b-fild__example">например +74952222222</span>
+			</div>
+			
+			<div class="b-quick-ask__b-fild b-fild-email">
+				Email:
+				<span class="b-quick-ask__or">или</span>
+				<input type="text">
+			</div>
+			<br/>
+			<div class="b-quick-ask__b-bottom">
+				<span class="b-quick-ask__b-bottom__left">
+					* Номер телефона берется с мастера установки
+					<br/>
+					** Должно быть заполнено хотя бы одно из полей
+				</span>
+				<a class="btn-yellow b-quick__btn" href="#">Отправить</a>
+				<span class="b-quick-ask__b-bottom__right">
+					<input id="b-quick-ask__checkbox" type="checkbox">
+					<label for="b-quick-ask__checkbox"><span></span></label>
+					Подобрать похожие предложения
+				</span>
+			</div>
+		</div>	
 	</div>
 	<footer class="footer">
 		<div class="center_cont">
@@ -430,8 +650,7 @@
 				</div>
 			</div>
 			<div class="footer__mailing">
-				<input id="footer__mailing_check" type="checkbox">
-				<label for="footer__mailing_check"><span></span></label>
+				<span class="footer__mailing__check-icon"></span>
 				<span class="footer__mailing__txt">Подписатся на наши обновления</span>
 				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
 				<span class="footer__mailing__icon"></span>
@@ -457,6 +676,11 @@
 	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
 		<span class="btn-up-dwn__icon"></span>
 	</span>
+	<div id="galery_popup" onClick="js_close_foto(event)">
+		<img id="galery_popup_img" alt="" onClick="js_galery_next()">;
+	</div>
+	
+	
 	<ul class="unstyled events" id="events-list">
         <li>touch</li>
         <li>release</li>

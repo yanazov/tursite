@@ -20,6 +20,7 @@
     <![endif]-->
 </head>
 <body>
+	<span id="name_page">main</span>
 	<div class="center_cont">
 		<div class="b-consultant">
 			<a class="b-consultant__form" href="#">
@@ -188,7 +189,7 @@
 		</span>
 		<span class="b-hot__caption">Горящие предложения</span>
 		<div id="block_hot" class="b-hot__slider">
-			<div id="hot-unit1" class="b-hot__b-unit">
+			<a id="hot-unit1" class="b-hot__b-unit" href="_tour.html">
 				<div class="b-hot__img">	
 					<img src="pic/hot1.jpg" alt=""/>
 				</div>
@@ -205,8 +206,8 @@
 				</span>
 				<span class="b-hot__b-unit__old-price">780$</span>
 				<span class="b-hot__b-unit__new-price">699$</span>			
-				<a class="btn-yellow" href="#">Подробнее</a>
-			</div>
+				<span class="btn-yellow">Подробнее</span>
+			</a>
 			<div id="hot-unit2" class="b-hot__b-unit">
 				<div class="b-hot__img">				
 					<img src="pic/hot2.jpg" alt=""/>
@@ -438,8 +439,7 @@
 				</div>
 			</div>
 			<div class="footer__mailing">
-				<input id="footer__mailing_check" type="checkbox">
-				<label for="footer__mailing_check"><span></span></label>
+				<span class="footer__mailing__check-icon"></span>
 				<span class="footer__mailing__txt">Подписатся на наши обновления</span>
 				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
 				<span class="footer__mailing__icon"></span>

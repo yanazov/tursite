@@ -5,8 +5,18 @@ body{
 	max-width: 1260px;
 	margin: 0 auto;
 }
+#name_page{
+	display: none;
+}
 #events-list{
 	display: none;
+}
+.center_cont{
+	display: block;
+	position: relative;
+	max-width: 1260px;
+	margin: 0 auto;
+	height: 100%;
 }
 .btn-yellow{
 	display: inline-block;
@@ -316,7 +326,7 @@ body{
 /* ====================================   END MENU  =============================== */
 /* =================================   BEGIN B-SEARCH  ============================ */
 .b-search-mini{
-	display: block;
+	display: none;
 	position: relative;
 	width: 100%;
 	height: 25px;
@@ -343,7 +353,7 @@ body{
 	font-size: 8pt;
 }
 .b-search{
-	display: none;
+	display: block;
 	position: relative;
 	width: 100%;
 	height: 81px;
@@ -669,6 +679,13 @@ body{
 	background-color: $color_blue_dark;
 	overflow: hidden;
 }
+#center_cont__b-visual{
+	display: block;
+	position: relative;
+	height: 550px;
+/*	top: -45px;*/
+	background-color: $color_blue_dark;
+}
 .hitarea {
     position: absolute;
     left: 0;
@@ -680,6 +697,7 @@ body{
 .b-visual__slide1{
 	display: block;
 	position: absolute;
+	top: -45px;
 	width: 100%;
 	height: 100%;
 	background: url(../pic/visual1.jpg) no-repeat;
@@ -689,6 +707,7 @@ body{
 .b-visual__slide2{
 	display: block;
 	position: absolute;
+	top: -45px;
 	width: 100%;
 	height: 100%;
 	background: url(../pic/visual2.jpg) no-repeat;
@@ -699,6 +718,7 @@ body{
 .b-visual__slide3{
 	display: block;
 	position: absolute;
+	top: -45px;
 	width: 100%;
 	height: 100%;
 	background: url(../pic/visual3.jpg) no-repeat;
@@ -709,6 +729,7 @@ body{
 .b-visual__slide4{
 	display: block;
 	position: absolute;
+	top: -45px;
 	width: 100%;
 	height: 100%;
 	background: url(../pic/visual4.jpg) no-repeat;
@@ -823,7 +844,7 @@ body{
 	cursor: pointer;
 }
 .b-visual__slogan{
-	width: 650px;
+	width: 690px;
 }
 .b-visual__txt{
 	width: 365px;
@@ -885,6 +906,7 @@ body{
 	transition: background-color .4s;
 	transition: box-shadow .4s;
 	cursor: pointer;
+	text-decoration: none;
 }
 .b-hot__b-unit:hover{
 	background-color: #fff;
@@ -1221,6 +1243,25 @@ body{
 	background: url(../img/map_fon.jpg) no-repeat;
 	background-position: 50% 50%;
 	text-align: left;
+}
+.b-map__online{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 410px;
+	text-align: left;
+	background: url(../img/map.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+.b-map__filds__dimmer{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 410px;
+	background: $color_blue_dark;
+	opacity: .7;
 }
 .b-map__b-left{
 	display: inline-block;

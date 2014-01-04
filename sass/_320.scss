@@ -9,6 +9,9 @@ body{
 	overflow: hidden;
 	overflow-y: scroll;
 }
+#name_page{
+	display: none;
+}
 .center_cont{
 	display: block;
 	position: relative;
@@ -1191,6 +1194,7 @@ body{
 	margin: 44px 10px 0px 10px;
 	background-color: $color_grey;
 	text-align: left;
+	text-decoration: none;
 }
 .b-hot__img{
 	display: block;
