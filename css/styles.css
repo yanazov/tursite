@@ -2583,7 +2583,8 @@ label {
   .b-tour__b-galery__scroll {
     display: block;
     position: relative;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    /*  scroll  */
     height: 100%;
   }
 
