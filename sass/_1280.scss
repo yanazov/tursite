@@ -10,15 +10,15 @@ body{
 #events-list{
 	display: none;
 }
+#center_cont__b-visual{
+	height: 550px;
+}
 .center_cont{
 	display: block;
 	position: relative;
 	max-width: 1260px;
 	margin: 0 auto;
 	height: 100%;
-}
-#center_cont__b-visual{
-	height: 550px;
 }
 .btn-yellow{
 	display: inline-block;
@@ -1677,15 +1677,16 @@ body{
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 430px;
+	top: 0px;
+	height: 430px;   
 	background-color: $color_grey_dark;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 .b-tour__b-main{
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 430px;
 	background: url(../pic/tour.jpg) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
@@ -2298,9 +2299,9 @@ body{
 	background-position: 5px -315px;
 }
 .details__make{
-	display: block;
+	display: inline-block;
 	position: absolute;
-	top: 15px;
+	margin-top: 15px;
 	right: 0px;	
 }
 .details__make__txt{
@@ -2409,6 +2410,9 @@ body{
 .details__transport li:nth-child(2n){
 	background-color: $color_grey;
 }
+.details__transport__column__caption{
+	display: none;
+}
 .details__transport__column1{
 	display: inline-block;
 	position: relative;
@@ -2483,6 +2487,9 @@ body{
 	-moz-border-radius: 150px 150px 150px 150px;
 	-khtml-border-radius: 150px 150px 150px 150px;	
 }
+.details__shedule__column1__txt{
+	display: none;
+}
 .details__shedule__column1__day{
 	display: block;
 	position: relative;
@@ -2491,6 +2498,14 @@ body{
 	font-size: 9pt;
 	color: #a0a5a8;
 	
+}
+.details__shedule__column1__day__number{
+	display: block;
+	position: relative;
+	margin-left: 0px;
+	font-family: 'roboto_slab_r';
+	font-size: 9pt;
+	color: #a0a5a8;
 }
 .details__shedule__column1__decor{
 	display: block;
@@ -2649,10 +2664,54 @@ body{
 #galery_popup_img{
 	display: none;
 	position: absolute;
-	left: 100px;
+	left: 10px;
 	top: 30px;
-	
-/*	background-color: rgba(0,0,0,1);*/
+}
+#galery__prev{
+	display: block;
+	position: absolute;
+	width: 31px;
+	height: 31px;
+	top: 200px;
+	left: 5%;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -150px;
+	cursor: pointer;
+}
+#galery__next{
+	display: block;
+	position: absolute;
+	width: 31px;
+	height: 31px;
+	top: 200px;
+	right: 5%;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -190px;
+	cursor: pointer;
+}
+#galery__close{
+	display: block;
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: 5%;
+	right: 5%;
+	background-color: $color_yellow;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;
+	border-radius: 150px 150px 150px 150px;
+	cursor: pointer;
+}
+#galery__close span{
+	display: block;
+	position: relative;
+	top: 7px;
+	left: 8px;
+	width: 11px;
+	height: 11px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -1006px;
 }
 
 /* =================================   END GALERY POPUP  ========================== */

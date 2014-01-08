@@ -8,6 +8,7 @@ var current_icon = 1;
 var step_slider = 0.05;
 var current_step = 0;
 var galery_status = "close";
+var galery_namber_elem = 0;
 
 /*  document.location.href='http://anekdot.ru';  */
 
@@ -79,9 +80,10 @@ window.onresize = function() {
 		}
 		img.style.width = img.naturalWidth*scale + "px";
 		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
-	
+		document.getElementById('galery__prev').style.top = windowHeight()/2 - 15 + "px";
+		document.getElementById('galery__next').style.top = windowHeight()/2 - 15 + "px";
 	}
 }
 function sort_block(){
@@ -382,7 +384,8 @@ function windowWidth() {
 	var ww = document.documentElement;
 	return self.innerWidth || (ww && ww.clientWidth) || document.body.clientWidth;
 }
-function js_open_foto(){
+function js_open_foto(t){
+	galery_namber_elem = $('.b-tour__b-galery__body__elem').index(t);  
 	document.getElementById('galery_popup').style.display = "block";
 	document.getElementById('galery_popup').style.height = windowHeight () + "px";	
 	document.body.style.overflowY = "hidden";
@@ -390,7 +393,9 @@ function js_open_foto(){
 	var img = new Image();
 	img = document.getElementById('galery_popup_img');
 	img.style.opacity = 0;
-	img.src = "galery/pic2.jpg";
+	var tmp_str = t.firstElementChild.src;
+	var name_pic = find_name(tmp_str);
+	img.src = "galery/" + name_pic;
 	img.style.display = "block";
 	img.onload = function(){
 		var scale = 1;
@@ -402,16 +407,18 @@ function js_open_foto(){
 		}
 		img.style.width = img.naturalWidth*scale + "px";
 		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 		img.style.opacity = 1;
+		document.getElementById('galery__prev').style.top = windowHeight()/2 - 15 + "px";
+		document.getElementById('galery__next').style.top = windowHeight()/2 - 15 + "px";
 	}
 }
 function js_galery_next(){
-	var img = new Image();
+/*	var img = new Image();
 	img = document.getElementById('galery_popup_img');
 	/*img.style.opacity = 0;*/
-	img.src = "galery/pic1.jpg";
+/*	img.src = "galery/pic1.jpg";
 	img.onload = function(){
 		var scale = 1;
 		if(img.naturalWidth > document.body.clientWidth*0.8){
@@ -422,7 +429,28 @@ function js_galery_next(){
 		}
 		img.style.width = img.naturalWidth*scale + "px";
 		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
+		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
+	}*/
+	galery_namber_elem += 1;
+	if(galery_namber_elem > document.getElementsByClassName('b-tour__b-galery__body__elem').length - 1){
+		galery_namber_elem = 0;	
+	}
+	var t = document.getElementsByClassName("b-tour__b-galery__body__elem")[galery_namber_elem];
+	var tmp_str = t.firstElementChild.src;
+	var name_pic = find_name(tmp_str);
+	img.src = "galery/" + name_pic;
+	img.onload = function(){
+		var scale = 1;
+		if(img.naturalWidth > document.body.clientWidth*0.8){
+			scale = document.body.clientWidth*0.8/img.naturalWidth;
+		}
+		if(img.naturalHeight*scale > windowHeight()*0.8){
+			scale = windowHeight()*0.8/img.naturalHeight;
+		}
+		img.style.width = img.naturalWidth*scale + "px";
+		img.style.height = img.naturalHeight*scale + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 	}
 }
@@ -430,10 +458,45 @@ function js_close_foto(event){
 	event = event || window.event
 	var t = event.target || event.srcElement
 	  
-	if(t.id == "galery_popup" || t.id == "galery_popup"){
+	if(t.id == "galery_popup" || t.id == "galery__close" || t.id =="galery__close__icon"){
 		document.body.style.overflowY = "";
 		document.body.style.paddingRight = 0 + "px";
 		document.getElementById('galery_popup').style.display = "none";
 	/*	document.getElementsByClassName("pop_up")[0].style.display = "none";*/
+	}
+}
+function find_name(tmp_str){
+	var  start_name = 0;
+	var length_str = tmp_str.length;
+	for(i = length_str; i > 0; i--){
+		if(tmp_str[i] == "/"){
+			start_name = i+3;
+			i = 0;
+		}
+	}
+	var name = tmp_str.substring(start_name);
+	return name;
+}
+function js_galery_prev(){
+	galery_namber_elem -= 1;
+	if(galery_namber_elem < 0){
+		galery_namber_elem = document.getElementsByClassName('b-tour__b-galery__body__elem').length - 1;	
+	}
+	var t = document.getElementsByClassName("b-tour__b-galery__body__elem")[galery_namber_elem];
+	var tmp_str = t.firstElementChild.src;
+	var name_pic = find_name(tmp_str);
+	img.src = "galery/" + name_pic;
+	img.onload = function(){
+		var scale = 1;
+		if(img.naturalWidth > document.body.clientWidth*0.8){
+			scale = document.body.clientWidth*0.8/img.naturalWidth;
+		}
+		if(img.naturalHeight*scale > windowHeight()*0.8){
+			scale = windowHeight()*0.8/img.naturalHeight;
+		}
+		img.style.width = img.naturalWidth*scale + "px";
+		img.style.height = img.naturalHeight*scale + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
+		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 	}
 }
