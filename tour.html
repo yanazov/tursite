@@ -741,7 +741,7 @@
 		<span class="btn-up-dwn__icon"></span>
 	</span>
 	<div id="galery_popup" onClick="js_close_foto(event)">
-		<img id="galery_popup_img" src="galery/pic3.jpg" alt="">;
+		<img id="galery_popup_img" src="galery/pic3.jpg" ondragstart="return false" alt="">;
 		<span id="galery__prev" onClick="js_galery_prev()"></span>
 		<span id="galery__next" onClick="js_galery_next()"></span>
 		<span id="galery__close">
@@ -771,7 +771,7 @@
 			
 		});
 	
-    function getEl(id) {
+/*    function getEl(id) {
         return document.getElementById(id);
     }
 	
@@ -791,9 +791,9 @@
 	var hammertime_b_icon_r = Hammer(galery_img_popup).on("swiperight", function(event) {
         js_galery_prev();
     });
-/*	var hammertime_b_icon_r = Hammer(galery_img_popup).on("tap", function(event) {
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on("tap", function(event) {
         js_galery_next();
-    });    */
+    });    
 	var hammertime_b_icon_r = Hammer(galery_img_popup).on('tap', function(event) {
         var scale =  event.gesture.scale;
 		var img = document.getElementById('galery_popup_img');
@@ -801,8 +801,55 @@
 		img.style.height = img.naturalHeight + "px";
 		img.style.left = (windowWidth() - img.naturalWidth)/2 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight)/2 + "px";
+    });                 */
+	if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
+		Hammer.plugins.fakeMultitouch();
+	}   
+
+    var hammertime = Hammer(document.getElementById('galery_popup'), {
+        transform_always_block: true,
+        transform_min_scale: 1,
+        drag_block_horizontal: true,
+        drag_block_vertical: true,
+        drag_min_distance: 0
     });
 
+    var rect = document.getElementById('galery_popup_img');
+
+    var posX=0, posY=0,
+        scale=1, last_scale,
+        rotation= 1, last_rotation;
+
+    hammertime.on('touch drag transform', function(ev) {
+        switch(ev.type) {
+            case 'touch':
+                last_scale = scale;
+                last_rotation = rotation;
+                break;
+
+            case 'drag':
+                posX = ev.gesture.deltaX;
+                posY = ev.gesture.deltaY;
+                break;
+
+            case 'transform':
+                rotation = last_rotation + ev.gesture.rotation;
+                scale = Math.max(1, Math.min(last_scale * ev.gesture.scale, 10));
+                break;
+        }
+
+        // transform!
+        var transform =
+                "translate3d("+posX+"px,"+posY+"px, 0) " +
+                "scale3d("+scale+","+scale+", 0) " +
+                "rotate("+rotation+"deg) ";
+
+        rect.style.transform = transform;
+        rect.style.oTransform = transform;
+        rect.style.msTransform = transform;
+        rect.style.mozTransform = transform;
+        rect.style.webkitTransform = transform;
+    });
  
 </script>
 
