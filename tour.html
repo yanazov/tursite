@@ -776,7 +776,7 @@
     }
 
 	var galery_img = document.getElementById('galery_popup_img');
-    var hammertime_b_icon_l = Hammer(galery_img, {
+ /*   var hammertime_b_icon_l = Hammer(galery_img, {
 			prevent_default: true,
             no_mouseevents: true
 		}).on("swipeleft", function(event) {
@@ -784,7 +784,7 @@
     });
 	var hammertime_b_icon_r = Hammer(galery_img).on("swiperight", function(event) {
         js_galery_prev();
-    });
+    });    */
 	var hammertime_b_icon_r = Hammer(galery_img).on("tap", function(event) {
         js_galery_next();
     });
