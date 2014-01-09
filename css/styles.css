@@ -3343,11 +3343,13 @@ label {
     height: 100%;
     /*background-color: #3c4550;*/
     background-color: rgba(60, 69, 80, 0.95);
+    -webkit-transform: translate3d(0, 0, 0);
+    overflow: hidden;
     /*	opacity: .95;*/
     z-index: 100;
   }
 
-  /* line 2663, ../sass/_1280.scss */
+  /* line 2664, ../sass/_1280.scss */
   #galery_popup_img {
     display: none;
     position: absolute;
@@ -3355,7 +3357,7 @@ label {
     top: 30px;
   }
 
-  /* line 2669, ../sass/_1280.scss */
+  /* line 2671, ../sass/_1280.scss */
   #galery__prev {
     display: block;
     position: absolute;
@@ -3368,7 +3370,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 2680, ../sass/_1280.scss */
+  /* line 2682, ../sass/_1280.scss */
   #galery__next {
     display: block;
     position: absolute;
@@ -3381,7 +3383,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 2691, ../sass/_1280.scss */
+  /* line 2693, ../sass/_1280.scss */
   #galery__close {
     display: block;
     position: absolute;
@@ -3397,7 +3399,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 2705, ../sass/_1280.scss */
+  /* line 2707, ../sass/_1280.scss */
   #galery__close span {
     display: block;
     position: relative;
