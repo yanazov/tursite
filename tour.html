@@ -800,6 +800,21 @@
         js_galery_prev();
     });
 	
+	var galery_next_btn = document.getElementById('galery__next');
+    var hammertime_b_icon_l = Hammer(galery_next_btn, {
+			prevent_default: true,
+            no_mouseevents: true
+		}).on("tap", function(event) {
+        js_galery_next();
+    });
+	
+	var galery_prev_btn = document.getElementById('galery__prev');
+    var hammertime_b_icon_l = Hammer(galery_prev_btn, {
+			prevent_default: true,
+            no_mouseevents: true
+		}).on("tap", function(event) {
+        js_galery_next();
+    });
  
 </script>
 
