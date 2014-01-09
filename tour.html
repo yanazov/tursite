@@ -221,7 +221,7 @@
 					</span>
 				</span>
 				<div class="b-tour__b-main__slogan">
-					Самый незабываемый отдых в Тайланде в Марте 2012 года
+					Самый незабываемый отдых в Тайланде в Марте 2015 года
 					<span class="b-tour__b-main__slogan__txt">
 						Наш портал не только поможет Вам найти интересующий Вас тур,
 						но и предложит горящие туры и путевки оперативнее любого другого.
@@ -817,14 +817,12 @@
     var rect = document.getElementById('galery_popup_img');
 
     var posX=0, posY=0,
-        scale=1, last_scale,
-        rotation= 1, last_rotation;
+        scale=1, last_scale;
 
     hammertime.on('touch drag transform', function(ev) {
         switch(ev.type) {
             case 'touch':
                 last_scale = scale;
-                last_rotation = rotation;
                 break;
 
             case 'drag':
@@ -841,8 +839,7 @@
         // transform!
         var transform =
                 "translate3d("+posX+"px,"+posY+"px, 0) " +
-                "scale3d("+scale+","+scale+", 0) " +
-                "rotate("+rotation+"deg) ";
+                "scale3d("+scale+","+scale+", 0) ";
 
         rect.style.transform = transform;
         rect.style.oTransform = transform;
