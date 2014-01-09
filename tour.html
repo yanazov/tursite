@@ -221,7 +221,7 @@
 					</span>
 				</span>
 				<div class="b-tour__b-main__slogan">
-					Самый незабываемый отдых в Тайланде в Марте 2015 года
+					Самый незабываемый отдых в Тайланде в Марте 2016 года
 					<span class="b-tour__b-main__slogan__txt">
 						Наш портал не только поможет Вам найти интересующий Вас тур,
 						но и предложит горящие туры и путевки оперативнее любого другого.
@@ -826,18 +826,18 @@
                 break;
 
             case 'drag':
-               posX = ev.gesture.deltaX;
-                posY = ev.gesture.deltaY;
+               posX += ev.gesture.deltaX;
+               posY += ev.gesture.deltaY;
 			/*	posX = 40 + "px";
                 posY = 40 + "px";   */
                 break;
 
             case 'transform':
-                scale = Math.max(0.2, Math.min(last_scale * ev.gesture.scale, 10));
+                scale = Math.max(0.2, Math.min(last_scale * ev.gesture.scale, 2));
 				img.style.width = img.naturalWidth + "px";
 				img.style.height = img.naturalHeight + "px";
-				posX = 40 + "px";
-                posY = 40 + "px";
+			/*	posX = 40 + "px";
+                posY = 40 + "px";   */
                 break;
         }
 
