@@ -785,6 +785,9 @@
 	var hammertime_b_icon_r = Hammer(galery_img).on("swiperight", function(event) {
         js_galery_prev();
     });
+	var hammertime_b_icon_r = Hammer(galery_img).on("tap", function(event) {
+        js_galery_next();
+    });
 	
 	var galery_img_popup = document.getElementById('galery_popup');
     var hammertime_b_icon_l = Hammer(galery_img_popup, {
@@ -795,6 +798,11 @@
     });
 	var hammertime_b_icon_r = Hammer(galery_img_popup).on("swiperight", function(event) {
         js_galery_prev();
+    });
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on("tap", function(event) {
+        document.body.style.overflowY = "";
+		document.body.style.paddingRight = 0 + "px";
+		document.getElementById('galery_popup').style.display = "none";
     });
  
 </script>
