@@ -221,7 +221,7 @@
 					</span>
 				</span>
 				<div class="b-tour__b-main__slogan">
-					Самый незабываемый отдых в Тайланде в Марте 2012 года
+					Самый незабываемый отдых в Тайланде в Марте 2013 года
 					<span class="b-tour__b-main__slogan__txt">
 						Наш портал не только поможет Вам найти интересующий Вас тур,
 						но и предложит горящие туры и путевки оперативнее любого другого.
@@ -741,7 +741,7 @@
 		<span class="btn-up-dwn__icon"></span>
 	</span>
 	<div id="galery_popup" onClick="js_close_foto(event)">
-		<img id="galery_popup_img" src="galery/pic3.jpg" alt="" onClick="js_galery_next()">;
+		<img id="galery_popup_img" src="galery/pic3.jpg" alt="">;
 		<span id="galery__prev" onClick="js_galery_prev()"></span>
 		<span id="galery__next" onClick="js_galery_next()"></span>
 		<span id="galery__close">
@@ -774,11 +774,17 @@
     function getEl(id) {
         return document.getElementById(id);
     }
+	
+	 if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
+            Hammer.plugins.fakeMultitouch();
+        }  
 
 	var galery_img_popup = document.getElementById('galery_popup');
     var hammertime_b_icon_l = Hammer(galery_img_popup, {
 			prevent_default: true,
-            no_mouseevents: true
+            no_mouseevents: true,
+			transform_always_block: true,
+			transform_min_scale: 1,
 		}).on("swipeleft", function(event) {
         js_galery_next();
     });
@@ -788,8 +794,8 @@
 	var hammertime_b_icon_r = Hammer(galery_img_popup).on("tap", function(event) {
         js_galery_next();
     });
-	var hammertime_b_icon_r = Hammer(galery_img_popup).on("transform", function(event) {
-        var scale =  event.gesture['scale'];
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on('transform', function(event) {
+        var scale =  event.gesture.scale;
 		img.style.width = 300*scale + "px";
 		img.style.height = 300*scale + "px";
     });
