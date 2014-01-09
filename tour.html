@@ -750,35 +750,7 @@
 	</div>
 	
 	
-	<ul class="unstyled events" id="events-list">
-        <li>touch</li>
-        <li>release</li>
-        <li>hold</li>
-        <li>tap</li>
-        <li>doubletap</li>
-
-        <li>dragstart</li>
-        <li>drag</li>
-        <li>dragend</li>
-        <li>dragleft</li>
-        <li>dragright</li>
-        <li>dragup</li>
-        <li>dragdown</li>
-
-        <li>swipe</li>
-        <li>swipeleft</li>
-        <li>swiperight</li>
-        <li>swipeup</li>
-        <li>swipedown</li>
-
-        <li>transformstart</li>
-        <li>transform</li>
-        <li>transformend</li>
-        <li>rotate</li>
-        <li>pinch</li>
-        <li>pinchin</li>
-        <li>pinchout</li>
-    </ul>
+	
 	
 	
 	
@@ -798,187 +770,22 @@
 			}
 			
 		});
-	</script>
 	
-		<!--[if !IE]> -->
-	<script>
-		Hammer.plugins.showTouches();
-	</script>
-	<!-- <![endif]-->
-	
-	<script>
-
-    Hammer.plugins.fakeMultitouch();
-
     function getEl(id) {
         return document.getElementById(id);
     }
 
-
-    var log_elements = {};
-    var prevent_scroll_drag = true;
-	var scroll_y = 0;
-
-
-    function getLogElement(type, name) {
-        var el = log_elements[type + name];
-        if(!el) {
-            return log_elements[type + name] = getEl("log-"+ type +"-"+ name);
-        }
-        return el;
-    } 
-
-    // log properties
-    var properties = ['gesture','center','deltaTime','angle','direction',
-        'distance','deltaX','deltaY','velocityX','velocityY', 'pointerType',
-        'scale','rotation','touches','target'];
-
-    function logEvent(ev) {
-        if(!ev.gesture) {
-            return;
-        }
-
-        // add to the large event log at the bottom of the page
-        var log = [this.id, ev.type];
-        //event_log.innerHTML = log.join(" - ") +"\n" + event_log.innerHTML;
-
-        // highlight gesture
-        var event_el = getLogElement('gesture', ev.type);
-
-
-        for(var i= 0,len=properties.length; i<len; i++) {
-            var prop = properties[i];
-            var value = ev.gesture[prop];
-            switch(prop) {
-                case 'center':
-                    value = value.pageX +"x"+ value.pageY;
-                    break;
-                case 'gesture':{
-                    value = ev.type;					
-					if(value == "swipeleft"){	
-						js_main_slide("prev");
-					}
-					if(value == "swiperight")
-						js_main_slide("next");
-					
-					if(value == "dragdown"){     /*  'deltaY'  
-						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-						window.scrollTo(0, scrollTop - ev.gesture['deltaY']);*/
-						if(scroll_y + 10 < ev.gesture['deltaY']){
-							var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-							window.scrollTo(0, scrollTop - ev.gesture['deltaY'] + scroll_y - 10);
-							scroll_y = ev.gesture['deltaY'] + 10;
-						}
-					}
-					if(value == "dragup"){     
-						if(scroll_y - 10 > ev.gesture['deltaY']){
-							var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-							window.scrollTo(0, scrollTop - ev.gesture['deltaY'] + scroll_y - 10);
-							scroll_y = ev.gesture['deltaY'] + 10;
-						}
-					}
-					if(value == "dragend"){
-						scroll_y = 0;
-					}
-                    break;
-				}	
-                case 'target':
-                    value = ev.gesture.target.tagName;
-                    break;
-                case 'touches':
-                    value = ev.gesture.touches.length;
-                    break;
-				
-            }
-        }
-    }
-
-
-    // get all the events
-    var all_events = [];
-    $("#events-list li").each(function() {
-        var li = $(this);
-        var type = li.text();
-        li.attr("id", "log-gesture-"+type);
-        all_events.push(type);
-    });
-
-
-    // start!
-    var hammertime = Hammer(getEl('hitarea'), {
-            prevent_default: true,
-            no_mouseevents: true
-        })
-        .on(all_events.join(" "), logEvent);
-	
-	var element_block_icon = document.getElementById('block_icon');
-    var hammertime_b_icon_l = Hammer(element_block_icon, {
+	var galery_img = document.getElementById('galery_popup_img');
+    var hammertime_b_icon_l = Hammer(galery_img, {
 			prevent_default: true,
             no_mouseevents: true
 		}).on("swipeleft", function(event) {
-        js_icon_next();
+        js_galery_next();
     });
-	var hammertime_b_icon_r = Hammer(element_block_icon).on("swiperight", function(event) {
-        js_icon_prev();
+	var hammertime_b_icon_r = Hammer(galery_img).on("swiperight", function(event) {
+        js_galery_prev();
     });
-	var hammertime_b_icon_up = Hammer(element_block_icon).on("dragup", function(event) {
-        if(scroll_y - 10 > event.gesture['deltaY']){
-			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
-			scroll_y = event.gesture['deltaY'] + 10;
-		}
-    });
-	var hammertime_b_icon_down = Hammer(element_block_icon).on("dragdown", function(event) {
-        if(scroll_y + 10 < event.gesture['deltaY']){
-			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
-			scroll_y = event.gesture['deltaY'] + 10;
-		}
-    });
-	var hammertime_b_icon_end = Hammer(element_block_icon).on("dragend", function(event) {
-        scroll_y = 0;		
-    });
-	
-	
-	
-	
-	
-	
-	
-	var element_block_hot = document.getElementById('block_hot');
-    var hammertime_b_hot_l = Hammer(element_block_hot, {
-			prevent_default: true,
-            no_mouseevents: true
-		}).on("swipeleft", function(event) {
-        js_hot_next();
-    });
-	var hammertime_b_hot_r = Hammer(element_block_hot).on("swiperight", function(event) {
-        js_hot_prev();
-    });
-	
-	var hammertime_b_hot_up = Hammer(element_block_hot).on("dragup", function(event) {
-        if(scroll_y - 10 > event.gesture['deltaY']){
-			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
-			scroll_y = event.gesture['deltaY'] + 10;
-		}
-    });
-	var hammertime_b_hot_down = Hammer(element_block_hot).on("dragdown", function(event) {
-        if(scroll_y + 10 < event.gesture['deltaY']){
-			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-			window.scrollTo(0, scrollTop - event.gesture['deltaY'] + scroll_y - 10);
-			scroll_y = event.gesture['deltaY'] + 10;
-		}
-    });
-	var hammertime_b_hot_end = Hammer(element_block_hot).on("dragend", function(event) {
-        scroll_y = 0;		
-    });
-	
-	
-	
-	
-	
-		
+ 
 </script>
 
 

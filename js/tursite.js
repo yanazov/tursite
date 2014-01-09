@@ -415,23 +415,6 @@ function js_open_foto(t){
 	}
 }
 function js_galery_next(){
-/*	var img = new Image();
-	img = document.getElementById('galery_popup_img');
-	/*img.style.opacity = 0;*/
-/*	img.src = "galery/pic1.jpg";
-	img.onload = function(){
-		var scale = 1;
-		if(img.naturalWidth > document.body.clientWidth*0.8){
-			scale = document.body.clientWidth*0.8/img.naturalWidth;
-		}
-		if(img.naturalHeight*scale > windowHeight()*0.8){
-			scale = windowHeight()*0.8/img.naturalHeight;
-		}
-		img.style.width = img.naturalWidth*scale + "px";
-		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
-		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
-	}*/
 	galery_namber_elem += 1;
 	if(galery_namber_elem > document.getElementsByClassName('b-tour__b-galery__body__elem').length - 1){
 		galery_namber_elem = 0;	
