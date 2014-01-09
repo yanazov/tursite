@@ -785,6 +785,17 @@
 	var hammertime_b_icon_r = Hammer(galery_img).on("swiperight", function(event) {
         js_galery_prev();
     });
+	
+	var galery_img_popup = document.getElementById('galery_popup');
+    var hammertime_b_icon_l = Hammer(galery_img_popup, {
+			prevent_default: true,
+            no_mouseevents: true
+		}).on("swipeleft", function(event) {
+        js_galery_next();
+    });
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on("swiperight", function(event) {
+        js_galery_prev();
+    });
  
 </script>
 
