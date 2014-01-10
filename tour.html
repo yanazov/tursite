@@ -740,7 +740,8 @@
 	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
 		<span class="btn-up-dwn__icon"></span>
 	</span>
-	<div id="galery_popup" onClick="js_close_foto(event)">
+<!--	<div id="galery_popup" onClick="js_close_foto(event)">   -->
+	<div id="galery_popup" >
 		<img id="galery_popup_img" src="galery/pic3.jpg" ondragstart="return false" alt="">;
 		<span id="galery__prev" onClick="js_galery_prev()"></span>
 		<span id="galery__next" onClick="js_galery_next()"></span>
@@ -771,7 +772,7 @@
 			
 		});
 	
-/*    function getEl(id) {
+   function getEl(id) {
         return document.getElementById(id);
     }
 	
@@ -801,8 +802,11 @@
 		img.style.height = img.naturalHeight + "px";
 		img.style.left = (windowWidth() - img.naturalWidth)/2 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight)/2 + "px";
-    });                 */
-	if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
+    });                  
+
+
+
+/*	if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
 		Hammer.plugins.fakeMultitouch();
 	}   
 
@@ -831,16 +835,14 @@
             case 'drag':
                posX = ev.gesture.deltaX;
                posY = ev.gesture.deltaY;
-			/*	posX = 40 + "px";
-                posY = 40 + "px";   */
+			
                 break;
 
             case 'transform':
                 scale = Math.max(0.2, Math.min(last_scale * ev.gesture.scale, 10));
 				img.style.width = img.naturalWidth + "px";
 				img.style.height = img.naturalHeight + "px";
-			/*	posX = 40 + "px";
-                posY = 40 + "px";   */
+			
                 break;
         }
 
@@ -854,7 +856,7 @@
         rect.style.msTransform = transform;
         rect.style.mozTransform = transform;
         rect.style.webkitTransform = transform;
-    });
+    });         */
  
 </script>
 
