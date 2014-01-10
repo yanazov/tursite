@@ -9,6 +9,7 @@ var step_slider = 0.05;
 var current_step = 0;
 var galery_status = "close";
 var galery_namber_elem = 0;
+var img = new Image();
 
 /*  document.location.href='http://anekdot.ru';  */
 
@@ -390,7 +391,7 @@ function js_open_foto(t){
 	document.getElementById('galery_popup').style.height = windowHeight () + "px";	
 	document.body.style.overflowY = "hidden";
 	document.body.style.paddingRight = 18 + "px";
-	var img = new Image();
+	
 	img = document.getElementById('galery_popup_img');
 	img.style.opacity = 0;
 	var tmp_str = t.firstElementChild.src;
