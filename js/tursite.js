@@ -357,6 +357,7 @@ function js_galery_on_off(){
 			galery_status = "open";
 			document.getElementsByClassName('b-tour__b-galery')[0].style.opacity = 1;
 			document.getElementById("btn_galery_icon").style.backgroundPosition = "2px -800px";
+			document.getElementsByClassName('b-tour__b-galery__scroll')[0].style.overflowY = "scroll";
 			window.onresize();
 			return 0;
 		}
@@ -370,6 +371,7 @@ function js_galery_on_off(){
 			document.getElementsByClassName('b-tour__b-galery')[0].style.opacity = 0;
 			document.getElementById("btn_galery_icon").style.backgroundPosition = "0px -700px";
 			document.getElementsByClassName('b-tour__b-galery')[0].style.zIndex = 1;
+			document.getElementsByClassName('b-tour__b-galery__scroll')[0].style.overflowY = "hidden";
 			window.onresize();
 			
 			return 0;
