@@ -489,7 +489,8 @@ function js_galery_prev(){
 function js_galery_dwn(){
 	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
 	var tmp_scroll = block.scrollTop + 300;
-	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");
+	block.scrollTop = tmp_scroll + 300;
+/*	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");*/
 }
 function js_galery_up(){
 	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
