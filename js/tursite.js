@@ -89,7 +89,7 @@ window.onresize = function() {
 }
 function sort_block(){
 	
-/*			$('#galery__body').masonry({ // выбираем элемент-контейнер в котором расположены блоки для динамической верстки
+			$('#galery__body').masonry({ // выбираем элемент-контейнер в котором расположены блоки для динамической верстки
 				itemSelector: '.b-tour__b-galery__body__elem', // указываем класс элемента являющегося блоком в нашей сетке
 				singleMode: true, // true - если у вас все блоки одинаковой ширины
 				resizeable: true, // перестраивает блоки при изменении размеров окна
@@ -100,7 +100,7 @@ function sort_block(){
 					duration: 500 
 				}
 				// опции анимации - очередь и продолжительность анимации
-			}); */
+			}); 
 		
 }
 
@@ -498,6 +498,6 @@ function js_galery_dwn(){
 function js_galery_up(){
 	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
 	var tmp_scroll = block.scrollTop - 300;
-/*	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");*/
-	$(".b-tour__b-galery__scroll").scrollTop(100);
+	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");
+/*	$(".b-tour__b-galery__scroll").scrollTop(100);*/
 }
