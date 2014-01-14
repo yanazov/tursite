@@ -2598,7 +2598,7 @@ label {
     position: relative;
     overflow-y: hidden;
     /*  scroll  */
-    height: 100%;
+    height: 430px;
   }
 
   /* line 2051, ../sass/_1280.scss */
