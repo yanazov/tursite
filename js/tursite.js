@@ -493,6 +493,7 @@ function js_galery_dwn(){
 /*	block.scrollTop = tmp_scroll;*/
 /*	$("#b-galery__scroll").animate({scrollTop:300},"slow");*/
 	document.getElementsByClassName("b-tour__b-galery__scroll")[0].scrollTop = 300;
+	document.getElementsByClassName("b-tour__b-galery__scroll")[0].style.width = 400 + "px";
 }
 function js_galery_up(){
 	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
