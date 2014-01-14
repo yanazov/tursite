@@ -487,9 +487,10 @@ function js_galery_prev(){
 	}
 }
 function js_galery_dwn(){
+	$("html, body").animate({scrollTop:0},"slow");
 	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
 	var tmp_scroll = block.scrollTop + 300;
-	block.scrollTop = tmp_scroll + 300;
+	block.scrollTop = tmp_scroll;
 /*	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");*/
 }
 function js_galery_up(){
