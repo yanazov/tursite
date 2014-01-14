@@ -486,3 +486,13 @@ function js_galery_prev(){
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 	}
 }
+function js_galery_dwn(){
+	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
+	var tmp_scroll = block.scrollTop + 300;
+	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");
+}
+function js_galery_up(){
+	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
+	var tmp_scroll = block.scrollTop - 300;
+	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");
+}
