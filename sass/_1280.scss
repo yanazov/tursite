@@ -2052,12 +2052,15 @@ body{
 	display: block;
 	position: relative;
 	width: 90%;
+	height: 430px;
 	padding: 16px 0px 0px 10px;
 	height: 3200px;
-	overflow-y: scroll;
+	overflow: scroll;
 }
 .b-tour__b-galery__body__elem{
-	float: left;
+/*	float: left;*/
+	display: block;
+	position: relative;
 	margin: 0px 0px 8px 8px;
 	width: 214px;
 	overflow: hidden;
