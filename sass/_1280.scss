@@ -2044,7 +2044,7 @@ body{
 .b-tour__b-galery__scroll{
 	display: block;
 	position: relative;
-	overflow-y: hidden;   /*  scroll  */
+	overflow-y: scroll;   /*  scroll  */
 	height: 430px;
 	
 }
@@ -2054,6 +2054,7 @@ body{
 	width: 90%;
 	padding: 16px 0px 0px 10px;
 	height: 3200px;
+	overflow-y: scroll;
 }
 .b-tour__b-galery__body__elem{
 	float: left;
