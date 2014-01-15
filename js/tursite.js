@@ -490,7 +490,10 @@ function js_galery_dwn(){
 /*	$("html, body").animate({scrollTop:0},"slow");*/
 	var block = document.getElementsByClassName("b-tour__b-galery__scroll")[0];
 	var tmp_scroll = block.scrollTop + 300; 
-	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");
+/*	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");*/
+	
+	$(".b-tour__b-galery__scroll").scrollTo('300px', 500);
+	
 /*	block.scrollTop = tmp_scroll;*/
 /*	$("#b-galery__scroll").animate({scrollTop:300},"slow");*/
 /*	document.getElementsByClassName("b-tour__b-galery__scroll")[0].scrollTop = 300;*/
