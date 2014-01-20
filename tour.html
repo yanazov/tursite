@@ -88,7 +88,7 @@
 		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
 		<span id="search-mini__txt" class="b-search-mini__txt">Найти тур</span>
 	</div>
-		<div id="open_search" class="b-search">
+	<div id="open_search" class="b-search">
 		<div class="center_cont">
 			<span class="b-search__round" onClick="js_close_search()"><span></span></span>
 			<span class="b-search__caption">
@@ -233,8 +233,14 @@
 					<div class="b-tour__b-main__b-price">
 						<span class="b-tour__b-main__b-price__decor"></span>
 						<span class="b-tour__b-main__b-price__txt">Цена за</span>
-						<input type="text" value="2" readonly>
-						<span class="b-tour__b-main__btn-select"></span>
+						<input class="select_number_men" type="text" value="2" readonly onClick="js_select_number_men()">
+						<ul class="b-tour__select-number-men">
+							<li onClick=></li>
+							<li onClick="js_close_select_number_men(this)">3</li>
+							<li onClick="js_close_select_number_men(this)">4</li>
+							<li onClick="js_close_select_number_men(this)">5</li>
+						</ul>
+						<span class="b-tour__b-main__btn-select" onClick="js_select_number_men()"></span>
 						<span class="b-tour__b-main__b-price__unit">чел.</span>						
 						<span class="b-tour__b-main__b-price__number">
 						$2099

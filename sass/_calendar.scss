@@ -1,0 +1,232 @@
+/* ================================  BEGIN CALENDER-BODY ============================ */
+#calendar-body{
+	display: block;
+	position: absolute;
+	width: 210px;
+	height: 0px;
+	top: -200px;
+	left: 100px;
+	background-color: $color_blue;
+	padding: 15px 15px 15px 15px;
+	z-index: 100;
+	overflow: hidden;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	table{
+		border-collapse:collapse;
+	}
+	.day_txt{
+		font-size: 14px;
+	}
+	td{	
+		width: 29px;
+		height: 39px;
+		font-size: 12px;
+		border: 1px solid $color_blue_border;
+		text-align: center;
+		color: #fff;
+		font-family: 'roboto_r';
+		font-weight: bold;
+	}
+	.td_active{
+		cursor: pointer;
+	}
+	.day_txt{
+		display: inline-block;
+		position: relative;
+		width: 30px;
+		color: #393e44;
+		padding: 15px 0px 10px 0px;
+		text-align: center;
+		font-family: 'roboto_r';
+		font-size: 8pt;
+	}
+	.calendar-body__txt{
+		display: block;
+		position: relative;
+		font-family: 'roboto_slab_b';
+		color: #fff;
+		font-size: 14pt;
+	}
+	#calendar-body__month{
+		display: inline-block;
+		position: relative;
+		width: 97px;
+		height: 24px;
+		margin-top: 13px;
+		padding: 4px 25px 0px 11px;		
+		color: $color_txt;
+		border: none;
+		background-color: #fff;
+		font-family: 'roboto_slab_b';
+		font-size: 10.5pt;
+		-webkit-border-radius: 150px 150px 150px 150px;
+		-moz-border-radius: 150px 150px 150px 150px;
+		-khtml-border-radius: 150px 150px 150px 150px;
+		border-radius: 150px 150px 150px 150px;
+		cursor: pointer;
+		z-index: 2;
+	}
+	#calendar-body__year{
+		display: block;
+		position: absolute;
+		width: 36px;
+		height: 24px;
+		top: 55px;
+		left: 153px;
+		padding: 4px 25px 0px 11px;
+		color: $color_txt;
+		border: none;
+		background-color: #fff;
+		font-family: 'roboto_slab_b';
+		font-size: 10.5pt;
+		-webkit-border-radius: 150px 150px 150px 150px;
+		-moz-border-radius: 150px 150px 150px 150px;
+		-khtml-border-radius: 150px 150px 150px 150px;
+		border-radius: 150px 150px 150px 150px;
+		cursor: pointer;
+		z-index: 2;
+	}
+	#calendar-body__select-month{
+		display: block;
+		position: absolute;
+		top: 70px;
+		height: 0px;
+		border: 1px solid #dbdee0;
+		-webkit-border-radius: 0px 0px 8px 8px;
+		-moz-border-radius: 0px 0px 8px 8px;
+		-khtml-border-radius: 0px 0px 8px 8px;
+		border-radius: 0px 0px 8px 8px;
+		overflow: hidden;
+		li{
+			display: block;
+			position: relative;
+			height: 19px;
+			width: 120px;
+			padding-left: 11px;
+			border-bottom: 1px solid #dbdee0;
+			font-family: 'roboto_r';
+			font-size: 10.5pt;
+			background-color: #ebeef0;
+			cursor: pointer;
+			color: $color_txt;
+			z-index: 200;
+			
+		}
+		li:hover{
+			background-color: #fff;
+		}
+		li:first-child{
+			z-index: 0;
+			border: none;
+			height: 14px;
+		}
+		li:first-child:hover{
+			background-color: #ebeef0;
+		}
+		li:last-child{
+			border: none;
+			-webkit-border-radius: 0px 0px 6px 6px;
+			-moz-border-radius: 0px 0px 6px 6px;
+			-khtml-border-radius: 0px 0px 6px 6px;
+			border-radius: 0px 0px 6px 6px;
+		}
+	}
+	#calendar-body__month__arrow{
+		display: block;
+		position: absolute;
+		top: 66px;
+		left: 127px;
+		width: 11px;
+		height: 10px;
+		background: url(../img/icon.png) no-repeat;
+		background-position: 0px -40px;
+		z-index: 5;
+		cursor: pointer;
+	}
+	#calendar-body__year__arrow{
+		display: block;
+		position: absolute;
+		top: 66px;
+		left: 205px;
+		width: 11px;
+		height: 10px;
+		background: url(../img/icon.png) no-repeat;
+		background-position: 0px -40px;
+		z-index: 5;
+		cursor: pointer;
+	}
+	#calendar-body__select-year{
+		display: block;
+		position: absolute;
+		top: 70px;
+		left: 153px;
+		height: 0px;
+		border: 1px solid #dbdee0;
+		-webkit-border-radius: 0px 0px 8px 8px;
+		-moz-border-radius: 0px 0px 8px 8px;
+		-khtml-border-radius: 0px 0px 8px 8px;
+		border-radius: 0px 0px 8px 8px;
+		overflow: hidden;
+		li{
+			display: block;
+			position: relative;
+			height: 19px;
+			width: 59px;
+			padding-left: 11px;
+			border-bottom: 1px solid #dbdee0;
+			font-family: 'roboto_r';
+			font-size: 10.5pt;
+			background-color: #ebeef0;
+			cursor: pointer;
+			color: $color_txt;
+			z-index: 200;
+			
+		}
+		li:hover{
+			background-color: #fff;
+		}
+		li:first-child{
+			z-index: 0;
+			border: none;
+			height: 14px;
+		}
+		li:first-child:hover{
+			background-color: #ebeef0;
+		}
+		li:last-child{
+			border: none;
+			-webkit-border-radius: 0px 0px 6px 6px;
+			-moz-border-radius: 0px 0px 6px 6px;
+			-khtml-border-radius: 0px 0px 6px 6px;
+			border-radius: 0px 0px 6px 6px;
+		}
+	}
+	.calendar-body__decor{
+		display: block;
+		position: absolute;
+		top: -6px;
+		left: 50px;
+		width: 11px;
+		height: 6px;
+		background: url(../img/icon.png) no-repeat;
+		background-position: 0px -1040px;
+	}
+	.calendar-body__close{
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 14px;
+		height: 14px;
+		background: url(../img/icon.png) no-repeat;
+		background-position: 0px -1060px;
+		cursor: pointer;
+		z-index: 100;
+	}
+}
+
+
+/* =================================  END CALENDER-BODY ============================= */

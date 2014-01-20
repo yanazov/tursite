@@ -10,6 +10,7 @@ var current_step = 0;
 var galery_status = "close";
 var galery_namber_elem = 0;
 var img = new Image();
+var id_data_number;
 
 /*  document.location.href='http://anekdot.ru';  */
 
@@ -52,8 +53,8 @@ window.onload = function() {
 			var tmp_height = parseInt(document.getElementsByClassName('details__shedule__column2')[i+1].offsetHeight);
 			document.getElementsByClassName('details__shedule__column1__decor')[i].style.height = tmp_height - 25 + "px";
 		}
+		document.getElementsByClassName('b-tour__b-galery')[0].style.opacity = 0;
 	}
-	document.getElementsByClassName('b-tour__b-galery')[0].style.opacity = 0;
 	window.onresize();
 }
 window.onresize = function() {
@@ -504,4 +505,122 @@ function js_galery_up(){
 	var tmp_scroll = block.scrollTop - 300;
 	$(".b-tour__b-galery__scroll").animate({scrollTop:tmp_scroll},"slow");
 /*	$(".b-tour__b-galery__scroll").scrollTop(100);*/
+}
+function js_open_select_month(){
+	document.getElementById('calendar-body__select-month').style.height = 253 + 'px';
+}
+function js_select_month(t){
+	document.getElementById('calendar-body__month').innerHTML = t.innerHTML;
+	document.getElementById('calendar-body__select-month').style.height = 0 + 'px';
+	var Month_number = 0;
+	switch(t.innerHTML) {
+		case "Январь":	{ Month_number = "0"; break;}
+		case "Февраль":	{ Month_number = "1"; break;}
+		case "Март":	{ Month_number = "2"; break;}
+		case "Апрель":	{ Month_number = "3"; break;}
+		case "Май":		{ Month_number = "4"; break;}
+		case "Июнь":	{ Month_number = "5"; break;}
+		case "Июль":	{ Month_number = "6"; break;}
+		case "Август":	{ Month_number = "7"; break;}
+		case "Октябрь":	{ Month_number = "8"; break;}
+		case "Сентябрь":{ Month_number = "9"; break;}
+		case "Ноябрь":	{ Month_number = "10"; break;}
+		case "Декабрь":	{ Month_number = "11"; break;}  
+	}
+	createCalendar("calendar-body__fild", document.getElementById('calendar-body__year').innerHTML, Month_number);
+}
+function js_open_select_year(){
+	document.getElementById('calendar-body__select-year').style.height = 73 + 'px';
+}
+function js_select_year(t){
+	document.getElementById('calendar-body__year').innerHTML = t.innerHTML;
+	document.getElementById('calendar-body__select-year').style.height = 0 + 'px';
+	var Month_number = 0;
+	switch(document.getElementById('calendar-body__month').innerHTML) {
+		case "Январь":	{ Month_number = "0"; break;}
+		case "Февраль":	{ Month_number = "1"; break;}
+		case "Март":	{ Month_number = "2"; break;}
+		case "Апрель":	{ Month_number = "3"; break;}
+		case "Май":		{ Month_number = "4"; break;}
+		case "Июнь":	{ Month_number = "5"; break;}
+		case "Июль":	{ Month_number = "6"; break;}
+		case "Август":	{ Month_number = "7"; break;}
+		case "Октябрь":	{ Month_number = "8"; break;}
+		case "Сентябрь":{ Month_number = "9"; break;}
+		case "Ноябрь":	{ Month_number = "10"; break;}
+		case "Декабрь":	{ Month_number = "11"; break;}  
+	}
+	createCalendar("calendar-body__fild", t.innerHTML, Month_number);
+}
+function js_calendar_open(number){
+	var tmp_x = document.getElementsByClassName("time_fild")[number].offsetTop;
+	var position = document.getElementsByClassName("time_fild")[number].getBoundingClientRect();
+	var scroll
+	createCalendar("calendar-body__fild", 2014, 0);
+	document.getElementById('calendar-body').style.overflow = 'visible';
+	id_data_number = number;
+	if(windowWidth() >= 680){
+		document.getElementById('calendar-body').style.top = position.top + 40 + window.pageYOffset + 'px';
+		document.getElementById('calendar-body').style.left = position.left + 20 + 'px';
+	}
+	if(windowWidth() < 680){
+		document.getElementById('calendar-body').style.top = position.top -20 + window.pageYOffset + 'px';
+		document.getElementById('calendar-body').style.left =   20 + 'px';
+		if(id_data_number == 1){
+			document.getElementById('calendar-body').style.left =   windowWidth() - 20 - 250 + 'px';
+		}
+	}
+	document.getElementById('calendar-body').style.height = 'auto';
+	document.getElementById('calendar-body__month').innerHTML = 'Январь';
+	document.getElementById('calendar-body__year').innerHTML = '2014';
+	
+}
+function select_data(current_td){
+	document.getElementById('calendar-body').style.overflow = 'visible';
+	document.getElementById('calendar-body').style.top = - 1000 + 'px';
+	
+	var select_number = current_td.innerHTML;
+	var select_montth = document.getElementById('calendar-body__month').innerHTML;
+	var select_year = document.getElementById('calendar-body__year').innerHTML
+	var Month_number;
+	switch(select_montth) {
+		case "Январь":	{ Month_number = "01"; break;}
+		case "Февраль":	{ Month_number = "02"; break;}
+		case "Март":	{ Month_number = "03"; break;}
+		case "Апрель":	{ Month_number = "04"; break;}
+		case "Май":		{ Month_number = "05"; break;}
+		case "Июнь":	{ Month_number = "06"; break;}
+		case "Июль":	{ Month_number = "07"; break;}
+		case "Август":	{ Month_number = "08"; break;}
+		case "Октябрь":	{ Month_number = "09"; break;}
+		case "Сентябрь":{ Month_number = "10"; break;}
+		case "Ноябрь":	{ Month_number = "11"; break;}
+		case "Декабрь":	{ Month_number = "12"; break;}  
+	}
+	document.getElementsByClassName('time_fild')[id_data_number].value = select_number+"."+Month_number+"."+select_year;
+	
+	
+}
+function js_open_select_place(number){
+	document.getElementsByClassName("search-select-place")[number].style.height = 'auto';
+}
+function js_close_select_place(number, t){
+	document.getElementsByClassName("b-search__place__input")[number].value = t.innerHTML;
+	document.getElementsByClassName("search-select-place")[number].style.height = 0 + 'px';
+}
+function js_select_number_men(){
+	document.getElementsByClassName("b-tour__select-number-men")[0].style.height = 'auto';
+}
+function js_close_select_number_men(t){
+	document.getElementsByClassName("select_number_men")[0].value = t.innerHTML;
+	document.getElementsByClassName("b-tour__select-number-men")[0].style.height = 0 + 'px';
+}
+function js_open_menu320(){
+	if(document.getElementById('b-menu-320').style.display == 'block'){
+		document.getElementById('b-menu-320').style.display = 'none';
+		document.getElementsByClassName("header__menu320__btn__img")[0].style.backgroundPosition = "0px -490px";
+		return 0;
+	}
+	document.getElementById('b-menu-320').style.display = 'block';
+	document.getElementsByClassName("header__menu320__btn__img")[0].style.backgroundPosition = "0px -1080px";
 }
