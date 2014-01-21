@@ -565,7 +565,7 @@ label {
     font-family: 'roboto_slab_b';
     font-size: 18pt;
     color: #fff;
-    background-color: #cc0055;
+    white-space: nowrap;
   }
 
   /* line 177, ../sass/_1280.scss */
@@ -4527,11 +4527,11 @@ label {
     display: inline-block;
     position: relative;
     width: 130px;
-    background-color: #cc0055;
     margin-top: 37px;
     font-family: 'roboto_slab_b';
     font-size: 18pt;
     color: #fff;
+    white-space: nowrap;
   }
 
   /* line 167, ../sass/_1024.scss */
