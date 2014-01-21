@@ -33,6 +33,15 @@ body{
 	-webkit-border-radius: 150px 150px 150px 150px;
 	-moz-border-radius: 150px 150px 150px 150px;
 	-khtml-border-radius: 150px 150px 150px 150px;
+	
+	/*  ЗАПРЕТ ВЫДЕЛЕНИЯ ТЕКСТА   */
+
+	-moz-user-select: none; 
+	-o-user-select:none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	user-select: none; 
 }
 .btn-yellow:hover{
 	background-color: $color_yellow_hover;
@@ -1027,7 +1036,7 @@ body{
 .b-hot__b-unit__period{
 	display: block;
 	position: relative;	
-	margin: 0px 0px 0px 18px;
+	margin: 5px 0px 0px 18px;
 	font-family: 'roboto_m';
 	font-size: 9pt;
 	color: $color_blue;
@@ -1501,6 +1510,9 @@ body{
 	width: 367px;
 	height: 92px;
 	margin: 30px 0px 0px 40px;
+	background-color: #ebeef0;
+}
+.footer__elem:hover{
 	background-color: #fff;
 }
 .footer__elem img{

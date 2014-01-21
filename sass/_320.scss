@@ -44,6 +44,15 @@ body{
 	-webkit-border-radius: 150px 150px 150px 150px;
 	-moz-border-radius: 150px 150px 150px 150px;
 	-khtml-border-radius: 150px 150px 150px 150px;
+	
+	/*  ЗАПРЕТ ВЫДЕЛЕНИЯ ТЕКСТА   */
+
+	-moz-user-select: none; 
+	-o-user-select:none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	user-select: none; 
 }
 .btn-yellow:hover{
 	background-color: $color_yellow_hover;
@@ -1409,6 +1418,7 @@ body{
 .b-hot__b-unit__period{
 	display: block;
 	position: relative;	
+	top: 5px;
 	margin: 0px 0px 0px 18px;
 	font-family: 'roboto_m';
 	font-size: 9pt;
@@ -3169,7 +3179,8 @@ body{
 .b-quick-ask{
 	display: block;
 	position: relative;
-	width: 100%;
+	width: 94%;
+	padding: 0px 3% 0px 3%;
 	margin-top: 0px;
 	height: 550px;
 	background-color: $color_grey;

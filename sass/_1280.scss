@@ -1026,7 +1026,7 @@ body{
 .b-hot__b-unit__period{
 	display: block;
 	position: relative;	
-	margin: 0px 0px 0px 18px;
+	margin: 5px 0px 0px 18px;
 	font-family: 'roboto_m';
 	font-size: 9pt;
 	color: $color_blue;
@@ -1457,6 +1457,9 @@ body{
 	width: 367px;
 	height: 92px;
 	margin: 30px 0px 0px 40px;
+	background-color: #ebeef0;
+}
+.footer__elem:hover{
 	background-color: #fff;
 }
 .footer__elem img{
@@ -2163,12 +2166,12 @@ body{
 	
 	/*  ЗАПРЕТ ВЫДЕЛЕНИЯ ТЕКСТА   */
 
-	-moz-user-select: none; /*Мозилка*/ 
-	-o-user-select:none; /*Опера*/ 
-	-khtml-user-select: none;/*khtml семейка*/ 
-	-webkit-user-select: none;/*webkit семейка*/ 
-	-ms-user-select: none; /*Ослик 9+*/ 
-	user-select: none; /*для особо не привередливых браузеров, обожаю такие*/ 
+	-moz-user-select: none; 
+	-o-user-select:none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	user-select: none; 
 }
 .b-tour__b-galery__scroll{
 	display: block;
@@ -2471,7 +2474,7 @@ body{
 	background-position: 0px -820px;
 }
 .details__make__input-mail{
-	display: block;
+	display: none;
 	position: absolute;
 	top: 30px;
 	left: 22px;
@@ -2489,7 +2492,7 @@ body{
 	-khtml-border-radius: 150px 150px 150px 150px;	
 }
 .details__make__icon{
-	display: block;
+	display: none;
 	position: absolute;
 	top: 43px;
 	left: 226px;
@@ -2501,7 +2504,7 @@ body{
 	cursor: pointer;
 }
 .details__make__decor{
-	display: block;
+	display: none;
 	position: absolute;
 	top: 24px;
 	left: 117px;
