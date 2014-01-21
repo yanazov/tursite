@@ -158,9 +158,10 @@ body{
 	position: relative;
 	width: 130px;
 	margin-top: 37px;
-	font-family: 'roboto_slab_b';
+	white-space: nowrap; 
 	font-size: 18pt;
-	color: #fff;
+	color: #fff;	 
+	background-color: #cc0066;
 }
 .header__b-left__icon{
 	display: inline-block;
