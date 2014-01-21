@@ -167,6 +167,7 @@ body{
 .header__b-left__tel{
 	display: inline-block;
 	position: relative;
+	width: 130px;
 	margin-top: 37px;
 	font-family: 'roboto_slab_b';
 	font-size: 18pt;
@@ -1669,6 +1670,22 @@ body{
 	height: 13px;
 	background: url(../img/webmedia.png) no-repeat;
 }
+.footer__inner{
+	height: 175px;
+}
+.footer__contact__inner{
+	top: 30px;
+}
+.footer__mailing__inner{
+	top: 30px;
+}
+.footer__webmedia__inner{
+	top: 115px;
+}
+.footer__b-social__inner{
+	position: relative;
+	top: -130px;
+}
 /* ===================================   END FOOTER  ============================== */
 .btn-up-dwn{
 	display: none;
@@ -2445,11 +2462,52 @@ body{
 }
 #details__email{
 	background-position: 0px -850px;
+	cursor: pointer;
 }
 #details__print{
 	background-position: 0px -820px;
 }
-
+.details__make__input-mail{
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 22px;
+	width: 213px;
+	height: 24px;
+	padding-left: 7px;
+	border: 7px solid $color_blue;
+	z-index: 200;
+	font-family: 'roboto_r';
+	font-size: 10.5pt;
+	color: $color_txt;
+	border-radius: 150px 150px 150px 150px;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;	
+}
+.details__make__icon{
+	display: block;
+	position: absolute;
+	top: 43px;
+	left: 226px;
+	width: 15px;
+	height: 12px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 1px -399px;
+	z-index: 201;
+	cursor: pointer;
+}
+.details__make__decor{
+	display: block;
+	position: absolute;
+	top: 24px;
+	left: 117px;
+	width: 15px;
+	height: 12px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 1px -1040px;
+	z-index: 201;
+}
 .details__line{
 	display: block;
 	position: relative;

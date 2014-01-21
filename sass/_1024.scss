@@ -157,6 +157,7 @@ body{
 .header__b-left__tel{
 	display: inline-block;
 	position: relative;
+	width: 130px;
 	margin-top: 37px;
 	font-family: 'roboto_slab_b';
 	font-size: 18pt;
@@ -1741,6 +1742,22 @@ body{
 }
 .footer__webmedia{
 	right: 20px;
+}
+.footer__inner{
+	height: 175px;
+}
+.footer__contact__inner{
+	top: 30px;
+}
+.footer__mailing__inner{
+	top: 30px;
+}
+.footer__webmedia__inner{
+	top: 115px;
+}
+.footer__b-social__inner{
+	position: relative;
+	top: -130px;
 }
 /* ===================================   END FOOTER  ============================== */
 .btn-up-dwn{

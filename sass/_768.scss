@@ -156,6 +156,7 @@ body{
 .header__b-left__tel{
 	display: inline-block;
 	position: relative;
+	width: 130px;
 	margin-top: 37px;
 	font-family: 'roboto_slab_b';
 	font-size: 18pt;
@@ -1822,6 +1823,22 @@ body{
 	right: 0px;
 	text-align: center;
 }
+.footer__inner{
+	height: 275px;
+}
+.footer__contact__inner{
+	top: 110px;
+}
+.footer__mailing__inner{
+	top: 30px;
+}
+.footer__webmedia__inner{
+	top: 215px;
+}
+.footer__b-social__inner{
+	position: relative;
+	top: 110px;
+} 
 /* ===================================   END FOOTER  ============================== */
 .b-consultant{
 	display: block;
@@ -1855,6 +1872,10 @@ body{
 	margin: 13px 0px 0px 14px;
 	background: url(../img/icon.png) no-repeat;
 	background-position: 0px -250px;
+}
+
+.mailing__txt__top{
+	margin-top: 123px;
 }
 /* ==================================   BEGIN PAGE 1  ============================= */
 /* ===================================   BEGIN PATH  ============================== */
