@@ -53,7 +53,7 @@
 						<li><a href="#">Контакты</a></li>				
 					</ul>
 				</nav>
-				<span class="header__b-left__tel">8 900 77 70</span>
+				<span class="header__b-left__tel">8 900 71 70</span>
 				<span class="header__b-left__icon"></span>
 				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
 			</div>
@@ -735,17 +735,11 @@
         js_icon_prev();
     });
 
-	var element_icon_left = document.getElementById('icon_left');
-    var icon_l = Hammer(element_icon_left, {
-			prevent_default: true,
-            no_mouseevents: true
-		}).on("tap", function(event) {
-        js_icon_prev();
-    });
-	/*var hammertime_b_icon_r = Hammer(element_block_icon).on("tap", function(event) {
+	
+	var hammertime_b_icon_r = Hammer(element_block_icon).on("tap", function(event) {
 			
 			js_icon_prev();
-    }); */
+    }); 
 	
 	var hammertime_b_icon_up = Hammer(element_block_icon).on("dragup", function(event) {
         if(scroll_y - 10 > event.gesture['deltaY']){
