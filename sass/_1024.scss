@@ -2559,7 +2559,47 @@ body{
 #details__print{
 	background-position: 0px -820px;
 }
-
+.details__make__input-mail{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 22px;
+	width: 213px;
+	height: 24px;
+	padding-left: 7px;
+	border: 7px solid $color_blue;
+	z-index: 200;
+	font-family: 'roboto_r';
+	font-size: 10.5pt;
+	color: $color_txt;
+	border-radius: 150px 150px 150px 150px;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;	
+}
+.details__make__icon{
+	display: none;
+	position: absolute;
+	top: 43px;
+	left: 226px;
+	width: 15px;
+	height: 12px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 1px -399px;
+	z-index: 201;
+	cursor: pointer;
+}
+.details__make__decor{
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 117px;
+	width: 15px;
+	height: 12px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 1px -1040px;
+	z-index: 201;
+}
 .details__line{
 	display: block;
 	position: relative;
