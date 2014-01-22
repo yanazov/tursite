@@ -1828,8 +1828,9 @@ body{
 	font-family: 'roboto_r';
 	font-size: 10pt;
 	color: $color_txt;
+	text-decoration: none;
 }
-.b-map__b-left a{
+.b-map__b-left__mail{
 	display: block;
 	position: relative;
 	color: $color_blue;
