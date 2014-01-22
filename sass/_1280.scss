@@ -315,7 +315,7 @@ body{
 	display: inline-block;
 	position: relative;
 	padding: 0px 30px 0px 35px;
-	margin-top: 20px;
+	margin-top: 18px;
 	text-align: center;
 	background: url(../img/icon.png) no-repeat;
 	background-position: -20px -40px;
@@ -695,6 +695,7 @@ body{
 	width: 15.7%;
 	text-align: center;
 }
+
 .btn-blue{
 	display: inline-block;
 	position: relative;
@@ -722,8 +723,11 @@ body{
 	-webkit-box-shadow: 3px 0 12px $color_blue_shadow; 
 	box-shadow: inset 0px 2px 0px  $color_blue_shadow; 
 }
+.b-search__find__btn{
+	margin-top: 28px;
+}
 .b-search__find__btn:active{
-	margin-top: 26px;
+	margin-top: 29px;
 	left: 1px;
 }
 

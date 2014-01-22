@@ -37,6 +37,7 @@ body{
 	background-color: $color_yellow;
 	font-family: 'roboto_slab_r';
 	font-weight: bold;
+	font-weight: bold;
 	font-size: 7.5pt;
 	color: $color_txt;
 	text-decoration: none;
@@ -1772,6 +1773,7 @@ body{
 	background: url(../img/map.jpg) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
+	overflow: hidden;
 }
 .b-map__b-left{
 	display: block;
@@ -1785,7 +1787,7 @@ body{
 	
 }
 #b-map-feedback{
-	height: 570px;
+/*	height: 570px;*/
 }
 .b-map__filds{
 		height: 470px;

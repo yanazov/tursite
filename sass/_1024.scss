@@ -317,7 +317,7 @@ body{
 	display: inline-block;
 	position: relative;
 	padding: 0px 30px 0px 35px;
-	margin-top: 20px;
+	margin-top: 18px;
 	text-align: center;
 	background: url(../img/icon.png) no-repeat;
 	background-position: -20px -40px;
@@ -728,7 +728,13 @@ body{
 	background: url(../img/icon.png) no-repeat;
 	background-position: 0px -130px;	
 }
-
+.b-search__find__btn{
+	margin-top: 28px;
+}
+.b-search__find__btn:active{
+	margin-top: 29px;
+	left: 1px;
+}
 /* ==================================   END B-SEARCH  ============================= */
 /* =================================   BEGIN B-VISUAL  ============================ */
 .b-visual{
@@ -1123,7 +1129,7 @@ body{
 .b-icon__conteiner{
 	display: block;
 	position: relative;
-	width: 777px;
+	width: 85%;
 	height: 240px;
 	margin: 0 auto;
 	overflow: hidden;
