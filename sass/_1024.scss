@@ -128,6 +128,9 @@ body{
 .btn-yellow{
 	margin-left: 22px;
 }
+#b-menu-320,#b-personal-data{
+	display: none;
+}
 /* ====================================  BEGIN HEADER =============================== */
 .header{
 	display: block;
@@ -1571,6 +1574,12 @@ body{
 	font-size: 8pt;
 	color: #fff;
 	border-right: 1px solid $color_blue_border;
+	a{
+		font-family: 'roboto_r';
+		font-size: 8pt;
+		color: #fff;
+		text-decoration: none;
+	}
 }
 .footer__contact__elem3{
 	display: inline-block;

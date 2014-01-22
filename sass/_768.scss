@@ -127,7 +127,10 @@ body{
 .btn-yellow{
 	margin-left: 20px;
 }
-/* ====================================  BEGIN FOOTER =============================== */
+#b-menu-320,#b-personal-data{
+	display: none;
+}
+/* ====================================  BEGIN HEADER =============================== */
 .header{
 	display: block;
 	position: relative;
@@ -433,10 +436,11 @@ body{
 .search-select-place{
 	display: block;
 	position: absolute;
+	height: 1px;
 	width: 100%;
 	left: 0px;
 	top: 13px;
-	
+	overflow: hidden;
 	li{
 		display: block;
 		position: relative;
@@ -501,6 +505,7 @@ body{
 	padding-left: 22px;
 	font-family: 'roboto_r';
 	font-size: 9pt;
+	font-weight: bold;
 	color: $color_txt; 
 	border: none;
 	border-radius: 150px 150px 150px 150px;
@@ -1600,6 +1605,12 @@ body{
 	font-size: 8pt;
 	color: #fff;
 	border-right: 1px solid $color_blue_border;
+	a{
+		font-family: 'roboto_r';
+		font-size: 8pt;
+		color: #fff;
+		text-decoration: none;
+	}
 }
 .footer__contact__elem3{
 	display: inline-block;

@@ -386,8 +386,8 @@
 					<span class="b-map__b-left__b-caption">Пункт продажи:</span>
 					<span class="b-map__b-left__b-txt">г.Киев, ул. Ивана Франко, 40-Б</span>			
 					<span class="b-map__b-left__b-caption">Телефоны:</span>
-					<span class="b-map__b-left__b-txt">050 445 25 45, (044)</span>
-					<span class="b-map__b-left__b-txt">238 60 20, 238 62 31</span>
+					<a class="b-map__b-left__b-txt" href="">050 445 25 45, (044)</a>
+					<a class="b-map__b-left__b-txt" href="">238 60 20, 238 62 31</a>
 					<span class="b-map__b-left__b-caption">Email:</span>
 					<a href="#">sale@tursite.com.ua</a>
 					<a href="#">market@tursite.com.ua</a>
@@ -445,9 +445,9 @@
 				</div>
 				<div class="footer__contact__elem2">
 					<span class="footer__contact__elem__caption">Телефоны:</span>
-					050 445 25 45, (044)
+					<a href="">050 445 25 45, (044)</a>
 					<br/>
-					238 60 20, 238 62 31
+					<a href="">238 60 20, 238 62 31</a>
 				</div>
 				<div class="footer__contact__elem3">
 					<span class="footer__contact__elem__caption">Email:</span>
@@ -744,6 +744,7 @@
 			if(event.gesture['center'].pageX > windowWidth()*0.95){
 				js_icon_next();			
 			}
+			return 0;
 		}
 		if(event.gesture['center'].pageX < windowWidth()*0.08){
 			js_icon_prev();			
