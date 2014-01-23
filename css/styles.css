@@ -5001,15 +5001,5 @@ only screen  and (min-device-width: 681px) and (max-device-width: 1073px){
   }
 
   /* ================================ END EXTENDET SEARCH ============================*/
-  /* line 3815, ../sass/_320.scss */
-  #tmp1, #tmp2, #tmp3, #tmp4 {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    font-family: 'roboto_r';
-    font-size: 14pt;
-  }
-
   /* ===================================   END PAGE 2  ============================== */
 }
