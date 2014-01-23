@@ -53,7 +53,7 @@
 						<li><a href="#">Контакты</a></li>				
 					</ul>
 				</nav>
-				<a class="header__b-left__tel" href="">8 900 29 70</a>
+				<a class="header__b-left__tel" href="">8 900 39 70</a>
 				<span class="header__b-left__icon"></span>
 				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
 			</div>
@@ -341,6 +341,10 @@
 			<span class="b-icon__arrow-right"></span>
 		</div>
 	</div>
+				<div class="chtoto1">333</div>
+				<span class="chtoto1">333</span>
+				<span class="chtoto1">333</span>
+				<span class="chtoto1">333</span>
 	<div class="b-about">
 		<div class="center_cont">
 			<span class="b-about__service">
@@ -742,6 +746,12 @@
 		var position = document.getElementById("block_icon").getBoundingClientRect();
 		var deltaY = window.pageYOffset;
 		document.getElementById("block_icon").style.backgroundColor = '#f0f';
+		document.getElementById("tmp1").innerHTML = position.top;
+		document.getElementById("tmp2").innerHTML = deltaY;
+		document.getElementById("tmp3").innerHTML = event.gesture['center'].pageY;
+		document.getElementById("tmp4").innerHTML = event.gesture['center'].pageX;
+		
+		
 		if(windowWidth() < 680){
 			if((event.gesture['center'].pageY - deltaY - position.top) > 226 &&
 				event.gesture['center'].pageX < 100){
