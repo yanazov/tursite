@@ -53,7 +53,7 @@
 						<li><a href="#">Контакты</a></li>				
 					</ul>
 				</nav>
-				<a class="header__b-left__tel" href="">8 900 88 70</a>
+				<a class="header__b-left__tel" href="">8 900 89 70</a>
 				<span class="header__b-left__icon"></span>
 				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
 			</div>
@@ -335,8 +335,10 @@
 				</div>
 			
 			</div>
-			<span class="b-icon__arrow-left" onClick="js_icon_prev()"></span>
-			<span class="b-icon__arrow-right" onClick="js_icon_next()"></span>
+<!--			<span class="b-icon__arrow-left" onClick="js_icon_prev()"></span>
+			<span class="b-icon__arrow-right" onClick="js_icon_next()"></span>   -->
+			<span class="b-icon__arrow-left"></span>
+			<span class="b-icon__arrow-right"></span>
 		</div>
 	</div>
 	<div class="b-about">
@@ -739,14 +741,16 @@
 	var hammertime_b_icon_r = Hammer(element_block_icon).on("tap", function(event) {		
 		var position = document.getElementById("block_icon").getBoundingClientRect();
 		var deltaY = window.pageYOffset;
-		if(windowWidth( < 680){
+		if(windowWidth() < 680){
 			if((event.gesture['center'].pageY - deltaY - position.top) > 226 &&
-				event.gesture['center'].pageX < 100)){
+				event.gesture['center'].pageX < 100){
 				js_icon_prev();
+				return 0;
 			}
 			if((event.gesture['center'].pageY - deltaY - position.top) > 226 &&
-				event.gesture['center'].pageX > windowWidth()-100)){
-				js_icon_next();		
+				event.gesture['center'].pageX > windowWidth()-100){
+				js_icon_next();	
+				return 0;				
 			}
 		}
 		if(windowWidth() < 900){
