@@ -5002,7 +5002,7 @@ only screen  and (min-device-width: 681px) and (max-device-width: 1073px){
 
   /* ================================ END EXTENDET SEARCH ============================*/
   /* line 3815, ../sass/_320.scss */
-  .chtoto1 {
+  #tmp1, #tmp2, #tmp3, #tmp4 {
     display: block;
     position: relative;
     width: 30px;
