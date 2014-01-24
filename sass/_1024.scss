@@ -429,10 +429,11 @@ body{
 .search-select-place{
 	display: block;
 	position: absolute;
+	height: 1px;
 	width: 100%;
 	left: 0px;
 	top: 13px;
-	
+	overflow: hidden;
 	li{
 		display: block;
 		position: relative;
