@@ -740,13 +740,7 @@
 	
 	var hammertime_b_icon_r = Hammer(element_block_icon).on("tap", function(event) {		
 		var position = document.getElementById("block_icon").getBoundingClientRect();
-		var deltaY = window.pageYOffset;
-		document.getElementById("block_icon").style.backgroundColor = '#f0f';
-		document.getElementById("tmp1").innerHTML = position.top;
-		document.getElementById("tmp2").innerHTML = deltaY;
-		document.getElementById("tmp3").innerHTML = event.gesture['center'].pageY;
-		document.getElementById("tmp4").innerHTML = event.gesture['center'].pageX;
-		
+		var deltaY = window.pageYOffset;	
 		if(windowWidth() < 680){
 			if(deltaY > 226 &&
 				event.gesture['center'].pageX < 100){

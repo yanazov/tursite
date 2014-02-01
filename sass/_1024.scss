@@ -3712,3 +3712,221 @@ body{
 }
 /* ============================= END BODY EXTENDET SEARCH ==========================*/
 /* ===================================   END PAGE 2  ============================== */
+/* ==================================   BEGIN PAGE 3  ============================= */
+.b-campaign{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 430px;
+}
+.b-campaign__caption{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 57px;
+	text-align: right;
+}
+.b-campaign__caption__slogan{
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: 9px;
+	font-family: 'roboto_slab_b';
+	color: $color_txt;
+	font-size: 17pt;
+	text-align: left;
+}
+.b-campaign__caption__logo{
+	display: inline-block;
+	position: relative;
+	margin-right: 15px;
+	width: 94px;
+	height: 33px;
+	background: url(../img/logo_avia.jpg) no-repeat;
+}
+.b-campaign__caption__company{
+	display: inline-block;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 15px;
+	font-family: 'roboto_slab_b';
+	color: $color_txt;
+	font-size: 10.5pt;
+	text-align: left;
+}
+.b-campaign__b-visual{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 373px;
+}
+.b-campaign__b-visual__L{
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: url(../pic/avia_in_L.jpg) no-repeat;
+	background-position: -1px 50%;
+	background-size: cover;
+}
+.b-campaign__b-visual__R{
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: url(../pic/avia_in_R.jpg) no-repeat;
+	background-position: 0px 50%;
+	background-size: cover;
+}
+.b-campaign__dimmer__L{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -1px;
+	width: 100%;
+	height: 100%;
+	background-color: $color_blue_dark;
+	opacity: 0.5;	
+}
+.b-campaign__dimmer__R{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: $color_blue_dark;
+	opacity: 0.5;	
+}
+.b-campaign__b-visual__L__icon{
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 20px;
+	margin: 0 auto;
+	margin-top: 245px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -1140px;
+}
+.b-campaign__b-visual__R__icon{
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 20px;
+	margin: 0 auto;
+	margin-top: 245px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -1110px;
+}
+.b-campaign__b-visual__L__city{
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	top: 5px;
+	font-family: 'roboto_slab_b';
+	font-size: 28pt;
+	color: #fff;
+}
+.b-campaign__b-visual__R__city{
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	top: 5px;
+	font-family: 'roboto_slab_b';
+	font-size: 28pt;
+	color: #fff;
+}
+.b-campaign__b-visual__L__country{
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	top: 5px;
+	font-family: 'roboto_r';
+	font-size: 9pt;
+	color: #cfd7de;
+}
+.b-campaign__b-visual__R__country{
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	top: 5px;
+	font-family: 'roboto_r';
+	font-size: 9pt;
+	color: #cfd7de;
+}
+.b-campaign__b-visual__center{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.b-campaign__b-visual__center__decor{
+	display: inline-block;
+	position: relative;
+	top: -4px;
+	width: 45px;
+	border-top: 1px solid #fff;
+}
+.b-campaign__b-visual__center__txt{
+	display: inline-block;
+	position: relative;
+	width: 220px;
+	margin-top: 23px;
+	font-family: 'roboto_slab_b';
+	font-size: 10.5pt;
+	color: #fff;
+}
+.b-campaign__b-visual__center__b-timer{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 42px;
+	margin-top: 10px;
+}
+.b-campaign__b-visual__center__b-timer__element{
+	display: inline-block;
+	position: relative;
+	width: 42px;
+	height: 42px;
+	background-color: #fff;
+	margin-left: 11px;
+}
+.b-campaign__b-visual__center__b-timer__element2{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 42px;
+	height: 21px;
+	background-color: #ebeef0;
+	border-top: 1px solid #daddde;
+}
+.margin-left0{
+	margin-left: 0px;
+}
+#b-campaign__second, #b-campaign__minut, #b-campaign__hour, #b-campaign__day{
+	display: block;
+	position: relative;
+	/*top: 1px;*/
+	font-family: 'roboto_slab_r';
+	font-size: 18pt;
+	color: $color_txt;
+}
+.animated_timer{
+  top: 4px;
+  transition: top 0.5s;
+  
+}
+
+/* ===================================   END PAGE 3  ============================== */

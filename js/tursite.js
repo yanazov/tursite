@@ -55,6 +55,9 @@ window.onload = function() {
 		}
 		document.getElementsByClassName('b-tour__b-galery')[0].style.opacity = 0;
 	}
+	if(document.getElementById("name_page").innerHTML == "avia_in"){
+		t=setTimeout('startTime()',10);
+	}
 	window.onresize();
 }
 window.onresize = function() {
@@ -555,7 +558,7 @@ function js_select_year(t){
 function js_calendar_open(number){
 	var tmp_x = document.getElementsByClassName("time_fild")[number].offsetTop;
 	var position = document.getElementsByClassName("time_fild")[number].getBoundingClientRect();
-	var scroll
+	var scroll;
 	createCalendar("calendar-body__fild", 2014, 0);
 	document.getElementById('calendar-body').style.overflow = 'visible';
 	id_data_number = number;
@@ -623,4 +626,39 @@ function js_open_menu320(){
 	}
 	document.getElementById('b-menu-320').style.display = 'block';
 	document.getElementsByClassName("header__menu320__btn__img")[0].style.backgroundPosition = "0px -1080px";
+}
+function startTime(){
+	var tm=new Date();
+	var d=tm.getDate();
+	var h=tm.getHours();
+	var m=tm.getMinutes();
+	var s=tm.getSeconds();
+	var end = new Date(2014, 1,25);
+	var elapsed = end - tm;
+	document.getElementById('b-campaign__day').innerHTML= div(elapsed, 86400000);
+	elapsed = elapsed - div(elapsed, 86400000)*86400000;
+	h = div(elapsed, 3600000);
+	h=checkTime(h);
+	elapsed = elapsed - h*3600000;
+	m = div(elapsed, 60000);
+	m=checkTime(m);
+	elapsed = elapsed - m*60000;
+	s = div(elapsed, 1000);
+	s=checkTime(s);
+	document.getElementById('b-campaign__hour').innerHTML=h;
+	document.getElementById('b-campaign__second').innerHTML=s;
+	document.getElementById('b-campaign__minut').innerHTML=m;
+	t=setTimeout('startTime()',500);
+	document.getElementById('b-campaign__second').style.top = 42 + 'px';
+/*	$('#b-campaign__second').addClass('animated_timer_end');*/
+
+}
+function checkTime(i){
+	if (i<10){
+		i="0" + i;
+	}
+	return i;
+}
+function div(val, by){
+    return (val - val % by) / by;
 }
