@@ -4028,7 +4028,7 @@ body{
 	margin-top: 36px;
 	margin-left: 23px;
 	margin-right: 23px;
-	text-align: left;
+	text-align: justify;
 	.b-avia-in-order__input{
 		display: block;
 		position: relative;
@@ -4102,7 +4102,7 @@ body{
 	-khtml-border-radius: 150px 150px 150px 150px;
 }
 .b-avia-in-order__data-from__txt{
-	margin: 0px 5px 0px 5px;
+	margin: 0px 8px 0px 8px;
 	font-family: 'roboto_slab_b';
 	font-size: 10.5pt;
 	color: $color_txt;
@@ -4128,7 +4128,7 @@ body{
 .b-avia-in-order__unit{
 	display: inline-block;
 	position: relative;
-	margin-left: 5px;
+	margin-left: 7px;
 	font-family: 'roboto_r';
 	font-size: 10pt;
 }
@@ -4140,7 +4140,11 @@ body{
 	width: 10px;
 	height: 6px;
 	background: url(../img/icon.png) no-repeat;
-	background-position: 0px -692px;
-	
+	background-position: 0px -692px;	
+}
+.b-avia-in-order__h-space{
+	display: block;
+	position: relative;
+	height: 46px;
 }
 /* ===================================   END PAGE 3  ============================== */
