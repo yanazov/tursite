@@ -77,15 +77,17 @@ window.onresize = function() {
 		img = document.getElementById('galery_popup_img');
 		document.getElementById('galery_popup').style.height = windowHeight () + "px";	
 		var scale = 1;
-		if(img.naturalWidth > document.body.clientWidth*0.8){
-			scale = document.body.clientWidth*0.8/img.naturalWidth;
+		
+		var scale_display = 1;
+		if(img.naturalWidth > document.body.clientWidth*scale_display){
+			scale = document.body.clientWidth*scale_display/img.naturalWidth;
 		}
-		if(img.naturalHeight*scale > windowHeight()*0.8){
-			scale = windowHeight()*0.8/img.naturalHeight;
+		if(img.naturalHeight*scale > windowHeight()*scale_display){
+			scale = windowHeight()*scale_display/img.naturalHeight;
 		}
 		img.style.width = img.naturalWidth*scale + "px";
 		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 		document.getElementById('galery__prev').style.top = windowHeight()/2 - 15 + "px";
 		document.getElementById('galery__next').style.top = windowHeight()/2 - 15 + "px";
