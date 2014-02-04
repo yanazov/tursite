@@ -12,6 +12,7 @@
 	<script src="js/hammer.showtouches.js"></script>
 	<script type="text/javascript" src="js/tursite.js"></script>   
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+	<script src="js/calendar.js"></script>
 <!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">    -->
 	<!--[if IE]>
 		<link rel="stylesheet" type="text/css" href="css/styles_ie.css" > 
@@ -95,27 +96,43 @@
 				<span>Найти тур</span>
 			</span>
 			<div class="b-search__place">
-				<div class="b-search__place__from">
+				<div class="b-search__place__from place__input__320L">
 					<span class="b-search__place__name">Откуда</span>
-					<input type="text">
+					<div class="cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(0)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(0, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 3</li>														
+						</ul>
+					</div>
 					<span class="b-search__place__icon"></span>
 				</div>
-				<div class="b-search__place__to">
+				<div class="b-search__place__to place__input__320R">
 					<span class="b-search__place__name">Куда</span>
-					<input type="text">
+					<div class="cont-place">
+						<input class="b-search__place__input " type="text" onkeypress="js_open_select_place(1)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(1, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 3</li>		
+						</ul>
+					</div>
 					<span class="b-search__place__icon"></span>
 				</div>
 			</div>
 			<div class="b-search__time">
 				<span class="b-search__time__name">Период заезда</span>
 				<div class="b-search__time__b-input">
-					<input type="text">
-					<span></span>
+					<input class="time_fild" type="text" readonly onClick="js_calendar_open(0)">
+					<span onClick="js_calendar_open(0)"></span>
 				</div>
 				<span class="b-search__time__separ">-</span>
 				<div class="b-search__time__b-input">
-					<input type="text">
-					<span></span>
+					<input class="time_fild" type="text" readonly readonly onClick="js_calendar_open(1)">
+					<span onClick="js_calendar_open(1)"></span>
 				</div>
 				
 			</div>
@@ -743,7 +760,37 @@
 			<span id="galery__close__icon"></span>
 		</span>
 	</div>
-	
+	<div id="calendar-body">
+		<span class="calendar-body__decor"></span>
+		<span class="calendar-body__close" onClick="js_calendar_close()"></span>
+		<span class="calendar-body__txt">Календарь</span>
+		<span id="calendar-body__month" onClick="js_open_select_month()">Январь</span>
+		<span id="calendar-body__month__arrow" onClick="js_open_select_month()"></span>
+		<ul id="calendar-body__select-month">
+			<li></li>
+			<li onClick="js_select_month(this)">Январь</li>
+			<li onClick="js_select_month(this)">Февраль</li>
+			<li onClick="js_select_month(this)">Март</li>
+			<li onClick="js_select_month(this)">Апрель</li>
+			<li onClick="js_select_month(this)">Май</li>
+			<li onClick="js_select_month(this)">Июнь</li>
+			<li onClick="js_select_month(this)">Июль</li>
+			<li onClick="js_select_month(this)">Август</li>
+			<li onClick="js_select_month(this)">Сентябрь</li>
+			<li onClick="js_select_month(this)">Октябрь</li>
+			<li onClick="js_select_month(this)">Ноябрь</li>
+			<li onClick="js_select_month(this)">Декабрь</li>
+		</ul>
+		<span id="calendar-body__year" onClick="js_open_select_year()">2014</span>
+		<span id="calendar-body__year__arrow" onClick="js_open_select_year()"></span>
+		<ul id="calendar-body__select-year">
+			<li></li>
+			<li onClick="js_select_year(this)">2014</li>
+			<li onClick="js_select_year(this)">2015</li>
+			<li onClick="js_select_year(this)">2016</li>
+		</ul>
+		<div id="calendar-body__fild"></div>
+	</div>
 	
 	
 	

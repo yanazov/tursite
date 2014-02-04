@@ -564,7 +564,7 @@ function js_calendar_open(number){
 	var tmp_x = document.getElementsByClassName("time_fild")[number].offsetTop;
 	var position = document.getElementsByClassName("time_fild")[number].getBoundingClientRect();
 	var scroll;
-	createCalendar("calendar-body__fild", 2014, 0);
+	createCalendar("calendar-body__fild", 2014, 1);
 	document.getElementById('calendar-body').style.overflow = 'visible';
 	id_data_number = number;
 	if(windowWidth() >= 680){
@@ -579,7 +579,7 @@ function js_calendar_open(number){
 		}
 	}
 	document.getElementById('calendar-body').style.height = 'auto';
-	document.getElementById('calendar-body__month').innerHTML = 'Январь';
+	document.getElementById('calendar-body__month').innerHTML = 'Февраль';
 	document.getElementById('calendar-body__year').innerHTML = '2014';
 	
 }
