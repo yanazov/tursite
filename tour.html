@@ -805,69 +805,19 @@
 		 js_galery_next();
 		
     });    
-/*	var hammertime_b_icon_r = Hammer(galery_img_popup).on('tap', function(event) {
-        var scale =  event.gesture.scale;
-		var img = document.getElementById('galery_popup_img');
-		img.style.width = img.naturalWidth + "px";
-		img.style.height = img.naturalHeight + "px";
-		img.style.left = (windowWidth() - img.naturalWidth)/2 + "px";
-		img.style.top = (windowHeight() - img.naturalHeight)/2 + "px";
-    });                  */
-
-
-
-/*	if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
-		Hammer.plugins.fakeMultitouch();
-	}   
-
-    var hammertime = Hammer(document.getElementById('galery_popup'), {
-        transform_always_block: true,
-        transform_min_scale: 0.5,
-        drag_block_horizontal: true,
-        drag_block_vertical: true,
-        drag_min_distance: 0
-    });
-
-    var rect = document.getElementById('galery_popup_img');
-
-    var posX=0, posY=0,
-		pos_scaleX=0, pos_scaleY=0,
-        scale=1, last_scale;
-
-    hammertime.on('touch drag transform', function(ev) {
-        switch(ev.type) {
-            case 'touch':
-                last_scale = scale;
-				pos_scaleX = posX;
-				pos_scaleY = posY;
-                break;
-
-            case 'drag':
-               posX = ev.gesture.deltaX;
-               posY = ev.gesture.deltaY;
-			
-                break;
-
-            case 'transform':
-                scale = Math.max(0.2, Math.min(last_scale * ev.gesture.scale, 10));
-				img.style.width = img.naturalWidth + "px";
-				img.style.height = img.naturalHeight + "px";
-			
-                break;
-        }
-
-        // transform!
-        var transform =
-                "translate3d("+posX+"px,"+posY+"px, 0) " +
-                "scale3d("+scale+","+scale+", 0) ";
-
-        rect.style.transform = transform;
-        rect.style.oTransform = transform;
-        rect.style.msTransform = transform;
-        rect.style.mozTransform = transform;
-        rect.style.webkitTransform = transform;
-    });         */
- /*  1-cos((x*x)/6.5)  */
+	document.onkeyup = function checkKeycode(event)
+	{
+		var keycode, keyChar;
+		if(!event) var event = window.event;
+		if (event.keyCode) keycode = event.keyCode;
+		else if(event.which) keycode = event.which;
+		if(keycode ==37 && document.getElementById('galery_popup').style.display== "block"){
+			js_galery_prev();
+		}
+		if(keycode ==39 && document.getElementById('galery_popup').style.display== "block"){
+			js_galery_next();
+		}
+	}
 </script>
 
 

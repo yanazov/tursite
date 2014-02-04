@@ -406,15 +406,16 @@ function js_open_foto(t){
 	img.style.display = "block";
 	img.onload = function(){
 		var scale = 1;
-		if(img.naturalWidth > document.body.clientWidth*0.8){
-			scale = document.body.clientWidth*0.8/img.naturalWidth;
+		var scale_display = 1;
+		if(img.naturalWidth > document.body.clientWidth*scale_display){
+			scale = document.body.clientWidth*scale_display/img.naturalWidth;
 		}
-		if(img.naturalHeight*scale > windowHeight()*0.8){
-			scale = windowHeight()*0.8/img.naturalHeight;
+		if(img.naturalHeight*scale > windowHeight()*scale_display){
+			scale = windowHeight()*scale_display/img.naturalHeight;
 		}
 		img.style.width = img.naturalWidth*scale + "px";
 		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 		img.style.opacity = 1;
 		document.getElementById('galery__prev').style.top = windowHeight()/2 - 15 + "px";
@@ -432,15 +433,16 @@ function js_galery_next(){
 	img.src = "galery/" + name_pic;
 	img.onload = function(){
 		var scale = 1;
-		if(img.naturalWidth > document.body.clientWidth*0.8){
-			scale = document.body.clientWidth*0.8/img.naturalWidth;
+		var scale_display = 1;
+		if(img.naturalWidth > document.body.clientWidth*scale_display){
+			scale = document.body.clientWidth*scale_display/img.naturalWidth;
 		}
-		if(img.naturalHeight*scale > windowHeight()*0.8){
-			scale = windowHeight()*0.8/img.naturalHeight;
+		if(img.naturalHeight*scale > windowHeight()*scale_display){
+			scale = windowHeight()*scale_display/img.naturalHeight;
 		}
 		img.style.width = img.naturalWidth*scale + "px";
 		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 	}
 }
@@ -478,15 +480,16 @@ function js_galery_prev(){
 	img.src = "galery/" + name_pic;
 	img.onload = function(){
 		var scale = 1;
-		if(img.naturalWidth > document.body.clientWidth*0.8){
-			scale = document.body.clientWidth*0.8/img.naturalWidth;
+		var scale_display = 1;
+		if(img.naturalWidth > document.body.clientWidth*scale_display){
+			scale = document.body.clientWidth*scale_display/img.naturalWidth;
 		}
-		if(img.naturalHeight*scale > windowHeight()*0.8){
-			scale = windowHeight()*0.8/img.naturalHeight;
+		if(img.naturalHeight*scale > windowHeight()*scale_display){
+			scale = windowHeight()*scale_display/img.naturalHeight;
 		}
 		img.style.width = img.naturalWidth*scale + "px";
 		img.style.height = img.naturalHeight*scale + "px";
-		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 - 8 + "px";
+		img.style.left = (windowWidth() - img.naturalWidth*scale)/2 + "px";
 		img.style.top = (windowHeight() - img.naturalHeight*scale)/2 + "px";
 	}
 }
@@ -633,7 +636,7 @@ function startTime(){
 	var h=tm.getHours();
 	var m=tm.getMinutes();
 	var s=tm.getSeconds();
-	var end = new Date(2014, 1,25);
+	var end = new Date(2014, 2,1);
 	var elapsed = end - tm;
 	document.getElementById('b-campaign__day').innerHTML= div(elapsed, 86400000);
 	elapsed = elapsed - div(elapsed, 86400000)*86400000;
@@ -649,8 +652,8 @@ function startTime(){
 	document.getElementById('b-campaign__second').innerHTML=s;
 	document.getElementById('b-campaign__minut').innerHTML=m;
 	t=setTimeout('startTime()',500);
-	document.getElementById('b-campaign__second').style.top = 42 + 'px';
-/*	$('#b-campaign__second').addClass('animated_timer_end');*/
+/*	document.getElementById('b-campaign__second').style.top = 42 + 'px';
+	$('#b-campaign__second').addClass('animated_timer_end');*/
 
 }
 function checkTime(i){
