@@ -3392,6 +3392,33 @@ body{
 		background-position: 0px -90px;
 	}
 }
+.b-avia-in-time__br{
+	display: block;
+	position: relative;	
+}
+.cont-place{
+	height: 40px;
+}
+.b-avia-in-time__txt2{
+	display: inline-block;
+	position: relative;
+	width: 33px;
+	margin-bottom: 35px;
+	font-family: 'roboto_r';
+	font-weight: bold;
+	font-size: 9pt;
+	color: $color_txt;
+	text-align: left;
+	
+}
+.b-avia-in__time__b-input{
+	width: 53%;
+}
+.b-search__time__b-input{
+	span{
+		left: 110%;
+	}
+}
 .b-search__right__cost{
 	display: block;
 	position: relative;
@@ -3468,15 +3495,22 @@ body{
 /* ================================ END EXTENDET SEARCH ============================*/
 /* ===================================   END PAGE 2  ============================== */
 /* ==================================   BEGIN PAGE 3  ============================= */
+.b-avia-in-search{
+	height: 140px;
+}
 .b-avia-in-place{
-	width: 47.5%;
+	width: 40.25%;
+	height: 115px;
+	padding: 0px;
+	margin-top: 25px;
 }
 .b-avia-in-place__to{
-	margin-left: 3%;
-	left: 2.5%;
+	margin-left: 0%;
+	left: 0%;
+	margin: 0px;
 }
 .b-avia-in-place__separ{
-	display: block;
+	display: none;
 	position: absolute;
 	top: -5px;
 	left: -10%;
@@ -3484,12 +3518,16 @@ body{
 	border-left: 1px solid #d7b40d;	
 }
 .b-avia-in-time{
-	width: 26.4%;
+	width: 21.34%;
+	height: 115px;
 	padding-right: 0.5%;
-	padding-left: 0.5%;
+	padding-left: 2.5%;
+	text-align: left;
 }
 .b-avia-in-find{
+	position: absolute;
 	width: 14%;
+	right: 0px;
 }
 .b-campaign{
 	display: block;
@@ -3501,7 +3539,6 @@ body{
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 57px;
 	text-align: right;
 }
 .b-campaign__caption__slogan{
@@ -3891,7 +3928,7 @@ body{
 	display: block;
 	position: absolute;
 	top: 35px;
-	left: 255px;
+	left: 260px;
 	width: 10px;
 	height: 6px;
 	background: url(../img/icon.png) no-repeat;
@@ -3901,5 +3938,37 @@ body{
 	display: block;
 	position: relative;
 	height: 46px;
+}
+.b-avia-in__caption{
+	display: block;
+	width: 14.28%;
+	height: 115px;
+}
+.b-search__place__from, .b-search__place__to{
+	width: 96%;
+	left: 5%;
+	
+}
+.b-search__time__b-input input{
+	width: 95%;
+	height: 27px;
+	margin: 5px 0px 0px 0px; 
+	padding-right: 27px;
+	padding-left: 7px;	
+	font-family: 'roboto_r';
+	font-weight: bold;
+	font-size: 9pt;
+	color: $color_txt; 
+	border: none;
+	border-radius: 150px 150px 150px 150px;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;	
+	cursor: pointer;
+}
+.b-avia-in__find__btn{
+	position: absolute;
+	top: 53px;
+	right: 18%;
 }
 /* ===================================   END PAGE 3  ============================== */

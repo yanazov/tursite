@@ -4850,9 +4850,10 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
     cursor: pointer;
     font-family: 'roboto_slab_b';
+    z-index: 2;
   }
 
-  /* line 3706, ../sass/_1280.scss */
+  /* line 3707, ../sass/_1280.scss */
   .b-avia-in-order__unit {
     display: inline-block;
     position: relative;
@@ -4861,23 +4862,40 @@ label {
     font-size: 10pt;
   }
 
-  /* line 3713, ../sass/_1280.scss */
+  /* line 3714, ../sass/_1280.scss */
   .b-avia-in-order__unit__decor {
     display: block;
     position: absolute;
     top: 35px;
-    left: 255px;
+    left: 260px;
     width: 10px;
     height: 6px;
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -692px;
+    z-index: 2;
+    cursor: pointer;
   }
 
-  /* line 3723, ../sass/_1280.scss */
+  /* line 3726, ../sass/_1280.scss */
   .b-avia-in-order__h-space {
     display: block;
     position: relative;
     height: 46px;
+  }
+
+  /* line 3731, ../sass/_1280.scss */
+  .b-avia-in-select {
+    left: 226px;
+    top: 36px;
+    width: 55px;
+    z-index: 1;
+  }
+  /* line 3736, ../sass/_1280.scss */
+  .b-avia-in-select li {
+    height: 24px;
+    padding-left: 12px;
+    font-size: 14pt;
+    line-height: 25px;
   }
 
   /* ===================================   END PAGE 3  ============================== */
@@ -9940,9 +9958,10 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
     cursor: pointer;
     font-family: 'roboto_slab_b';
+    z-index: 2;
   }
 
-  /* line 4128, ../sass/_1024.scss */
+  /* line 4129, ../sass/_1024.scss */
   .b-avia-in-order__unit {
     display: inline-block;
     position: relative;
@@ -9951,23 +9970,40 @@ label {
     font-size: 10pt;
   }
 
-  /* line 4135, ../sass/_1024.scss */
+  /* line 4136, ../sass/_1024.scss */
   .b-avia-in-order__unit__decor {
     display: block;
     position: absolute;
     top: 35px;
-    left: 255px;
+    left: 260px;
     width: 10px;
     height: 6px;
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -692px;
+    z-index: 2;
+    cursor: pointer;
   }
 
-  /* line 4145, ../sass/_1024.scss */
+  /* line 4148, ../sass/_1024.scss */
   .b-avia-in-order__h-space {
     display: block;
     position: relative;
     height: 46px;
+  }
+
+  /* line 4153, ../sass/_1024.scss */
+  .b-avia-in-select {
+    left: 226px;
+    top: 36px;
+    width: 55px;
+    z-index: 1;
+  }
+  /* line 4158, ../sass/_1024.scss */
+  .b-avia-in-select li {
+    height: 24px;
+    padding-left: 12px;
+    font-size: 14pt;
+    line-height: 25px;
   }
 
   /* ===================================   END PAGE 3  ============================== */
@@ -14156,6 +14192,40 @@ label {
   }
 
   /* line 3395, ../sass/_768.scss */
+  .b-avia-in-time__br {
+    display: block;
+    position: relative;
+  }
+
+  /* line 3399, ../sass/_768.scss */
+  .cont-place {
+    height: 40px;
+  }
+
+  /* line 3402, ../sass/_768.scss */
+  .b-avia-in-time__txt2 {
+    display: inline-block;
+    position: relative;
+    width: 33px;
+    margin-bottom: 35px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 9pt;
+    color: #383d43;
+    text-align: left;
+  }
+
+  /* line 3414, ../sass/_768.scss */
+  .b-avia-in__time__b-input {
+    width: 53%;
+  }
+
+  /* line 3418, ../sass/_768.scss */
+  .b-search__time__b-input span {
+    left: 110%;
+  }
+
+  /* line 3422, ../sass/_768.scss */
   .b-search__right__cost {
     display: block;
     position: relative;
@@ -14172,7 +14242,7 @@ label {
     color: #383d43;
   }
 
-  /* line 3410, ../sass/_768.scss */
+  /* line 3437, ../sass/_768.scss */
   #b-right-cost-name {
     display: block;
     position: relative;
@@ -14184,7 +14254,7 @@ label {
     text-align: left;
   }
 
-  /* line 3420, ../sass/_768.scss */
+  /* line 3447, ../sass/_768.scss */
   .b-search__right__hot {
     display: block;
     position: absolute;
@@ -14199,7 +14269,7 @@ label {
     color: #383d43;
   }
 
-  /* line 3433, ../sass/_768.scss */
+  /* line 3460, ../sass/_768.scss */
   .b-search__right__hot__arrow {
     display: block;
     position: absolute;
@@ -14211,7 +14281,7 @@ label {
     background-position: 0px -1020px;
   }
 
-  /* line 3443, ../sass/_768.scss */
+  /* line 3470, ../sass/_768.scss */
   .b-search__right__hot__unit {
     display: inlineblock;
     position: relative;
@@ -14225,12 +14295,12 @@ label {
     text-align: left;
   }
 
-  /* line 3455, ../sass/_768.scss */
+  /* line 3482, ../sass/_768.scss */
   .b-search__right__hot__icon {
     top: -24px;
   }
 
-  /* line 3458, ../sass/_768.scss */
+  /* line 3485, ../sass/_768.scss */
   .b-search-e__find {
     display: block;
     position: absolute;
@@ -14242,20 +14312,29 @@ label {
   /* ================================ END EXTENDET SEARCH ============================*/
   /* ===================================   END PAGE 2  ============================== */
   /* ==================================   BEGIN PAGE 3  ============================= */
-  /* line 3471, ../sass/_768.scss */
+  /* line 3498, ../sass/_768.scss */
+  .b-avia-in-search {
+    height: 140px;
+  }
+
+  /* line 3501, ../sass/_768.scss */
   .b-avia-in-place {
-    width: 47.5%;
+    width: 40.25%;
+    height: 115px;
+    padding: 0px;
+    margin-top: 25px;
   }
 
-  /* line 3474, ../sass/_768.scss */
+  /* line 3507, ../sass/_768.scss */
   .b-avia-in-place__to {
-    margin-left: 3%;
-    left: 2.5%;
+    margin-left: 0%;
+    left: 0%;
+    margin: 0px;
   }
 
-  /* line 3478, ../sass/_768.scss */
+  /* line 3512, ../sass/_768.scss */
   .b-avia-in-place__separ {
-    display: block;
+    display: none;
     position: absolute;
     top: -5px;
     left: -10%;
@@ -14263,19 +14342,23 @@ label {
     border-left: 1px solid #d7b40d;
   }
 
-  /* line 3486, ../sass/_768.scss */
+  /* line 3520, ../sass/_768.scss */
   .b-avia-in-time {
-    width: 26.4%;
+    width: 21.34%;
+    height: 115px;
     padding-right: 0.5%;
-    padding-left: 0.5%;
+    padding-left: 2.5%;
+    text-align: left;
   }
 
-  /* line 3491, ../sass/_768.scss */
+  /* line 3527, ../sass/_768.scss */
   .b-avia-in-find {
+    position: absolute;
     width: 14%;
+    right: 0px;
   }
 
-  /* line 3494, ../sass/_768.scss */
+  /* line 3532, ../sass/_768.scss */
   .b-campaign {
     display: block;
     position: relative;
@@ -14283,16 +14366,15 @@ label {
     height: 430px;
   }
 
-  /* line 3500, ../sass/_768.scss */
+  /* line 3538, ../sass/_768.scss */
   .b-campaign__caption {
     display: block;
     position: relative;
     width: 100%;
-    height: 57px;
     text-align: right;
   }
 
-  /* line 3507, ../sass/_768.scss */
+  /* line 3544, ../sass/_768.scss */
   .b-campaign__caption__slogan {
     display: block;
     position: absolute;
@@ -14304,7 +14386,7 @@ label {
     text-align: left;
   }
 
-  /* line 3517, ../sass/_768.scss */
+  /* line 3554, ../sass/_768.scss */
   .b-campaign__caption__logo {
     display: inline-block;
     position: relative;
@@ -14314,7 +14396,7 @@ label {
     background: url(../img/logo_avia.jpg) no-repeat;
   }
 
-  /* line 3525, ../sass/_768.scss */
+  /* line 3562, ../sass/_768.scss */
   .b-campaign__caption__company {
     display: inline-block;
     position: relative;
@@ -14326,7 +14408,7 @@ label {
     text-align: left;
   }
 
-  /* line 3535, ../sass/_768.scss */
+  /* line 3572, ../sass/_768.scss */
   .b-campaign__b-visual {
     display: block;
     position: relative;
@@ -14334,7 +14416,7 @@ label {
     height: 373px;
   }
 
-  /* line 3541, ../sass/_768.scss */
+  /* line 3578, ../sass/_768.scss */
   .b-campaign__b-visual__L {
     display: inline-block;
     position: relative;
@@ -14345,7 +14427,7 @@ label {
     background-size: cover;
   }
 
-  /* line 3550, ../sass/_768.scss */
+  /* line 3587, ../sass/_768.scss */
   .b-campaign__b-visual__R {
     display: inline-block;
     position: relative;
@@ -14356,7 +14438,7 @@ label {
     background-size: cover;
   }
 
-  /* line 3559, ../sass/_768.scss */
+  /* line 3596, ../sass/_768.scss */
   .b-campaign__dimmer__L {
     display: block;
     position: absolute;
@@ -14368,7 +14450,7 @@ label {
     opacity: 0.5;
   }
 
-  /* line 3569, ../sass/_768.scss */
+  /* line 3606, ../sass/_768.scss */
   .b-campaign__dimmer__R {
     display: block;
     position: absolute;
@@ -14380,7 +14462,7 @@ label {
     opacity: 0.5;
   }
 
-  /* line 3579, ../sass/_768.scss */
+  /* line 3616, ../sass/_768.scss */
   .b-campaign__b-visual__L__icon {
     display: block;
     position: relative;
@@ -14392,7 +14474,7 @@ label {
     background-position: 0px -1140px;
   }
 
-  /* line 3589, ../sass/_768.scss */
+  /* line 3626, ../sass/_768.scss */
   .b-campaign__b-visual__R__icon {
     display: block;
     position: relative;
@@ -14404,7 +14486,7 @@ label {
     background-position: 0px -1110px;
   }
 
-  /* line 3599, ../sass/_768.scss */
+  /* line 3636, ../sass/_768.scss */
   .b-campaign__b-visual__L__city {
     display: block;
     position: relative;
@@ -14417,7 +14499,7 @@ label {
     color: #fff;
   }
 
-  /* line 3610, ../sass/_768.scss */
+  /* line 3647, ../sass/_768.scss */
   .b-campaign__b-visual__R__city {
     display: block;
     position: relative;
@@ -14430,7 +14512,7 @@ label {
     color: #fff;
   }
 
-  /* line 3621, ../sass/_768.scss */
+  /* line 3658, ../sass/_768.scss */
   .b-campaign__b-visual__L__country {
     display: block;
     position: relative;
@@ -14443,7 +14525,7 @@ label {
     color: #cfd7de;
   }
 
-  /* line 3632, ../sass/_768.scss */
+  /* line 3669, ../sass/_768.scss */
   .b-campaign__b-visual__R__country {
     display: block;
     position: relative;
@@ -14456,7 +14538,7 @@ label {
     color: #cfd7de;
   }
 
-  /* line 3643, ../sass/_768.scss */
+  /* line 3680, ../sass/_768.scss */
   .b-campaign__b-visual__center {
     display: block;
     position: absolute;
@@ -14467,7 +14549,7 @@ label {
     text-align: center;
   }
 
-  /* line 3652, ../sass/_768.scss */
+  /* line 3689, ../sass/_768.scss */
   .b-campaign__b-visual__center__decor {
     display: inline-block;
     position: relative;
@@ -14476,7 +14558,7 @@ label {
     border-top: 1px solid #fff;
   }
 
-  /* line 3659, ../sass/_768.scss */
+  /* line 3696, ../sass/_768.scss */
   .b-campaign__b-visual__center__txt {
     display: inline-block;
     position: relative;
@@ -14487,7 +14569,7 @@ label {
     color: #fff;
   }
 
-  /* line 3668, ../sass/_768.scss */
+  /* line 3705, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-timer {
     display: block;
     position: relative;
@@ -14496,7 +14578,7 @@ label {
     margin-top: 10px;
   }
 
-  /* line 3675, ../sass/_768.scss */
+  /* line 3712, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-timer__element {
     display: inline-block;
     position: relative;
@@ -14506,7 +14588,7 @@ label {
     margin-left: 11px;
   }
 
-  /* line 3683, ../sass/_768.scss */
+  /* line 3720, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-timer__element2 {
     display: block;
     position: absolute;
@@ -14518,12 +14600,12 @@ label {
     border-top: 1px solid #daddde;
   }
 
-  /* line 3693, ../sass/_768.scss */
+  /* line 3730, ../sass/_768.scss */
   .margin-left0 {
     margin-left: 0px;
   }
 
-  /* line 3696, ../sass/_768.scss */
+  /* line 3733, ../sass/_768.scss */
   #b-campaign__second, #b-campaign__minut, #b-campaign__hour, #b-campaign__day {
     display: block;
     position: relative;
@@ -14533,13 +14615,13 @@ label {
     color: #383d43;
   }
 
-  /* line 3704, ../sass/_768.scss */
+  /* line 3741, ../sass/_768.scss */
   .animated_timer {
     top: 4px;
     transition: top 0.5s;
   }
 
-  /* line 3709, ../sass/_768.scss */
+  /* line 3746, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-price {
     display: inline-block;
     position: relative;
@@ -14551,7 +14633,7 @@ label {
     background-color: #00adc7;
   }
 
-  /* line 3719, ../sass/_768.scss */
+  /* line 3756, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-price__old {
     font-family: 'roboto_slab_r';
     font-weight: 100;
@@ -14560,7 +14642,7 @@ label {
     text-decoration: line-through;
   }
 
-  /* line 3726, ../sass/_768.scss */
+  /* line 3763, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-price__new {
     margin-left: 12px;
     font-family: 'roboto_slab_b';
@@ -14568,7 +14650,7 @@ label {
     font-size: 22pt;
   }
 
-  /* line 3732, ../sass/_768.scss */
+  /* line 3769, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-price__date {
     display: block;
     position: absolute;
@@ -14582,7 +14664,7 @@ label {
     color: #383d43;
   }
 
-  /* line 3744, ../sass/_768.scss */
+  /* line 3781, ../sass/_768.scss */
   .b-campaign__b-visual__center__b-price__decor {
     display: block;
     position: absolute;
@@ -14594,7 +14676,7 @@ label {
     background-position: 0px -1160px;
   }
 
-  /* line 3754, ../sass/_768.scss */
+  /* line 3791, ../sass/_768.scss */
   .b-campaign__b-visual__center__btn {
     width: 140px;
     height: 36px;
@@ -14607,25 +14689,25 @@ label {
     font-weight: 400;
   }
 
-  /* line 3766, ../sass/_768.scss */
+  /* line 3803, ../sass/_768.scss */
   .b-campaign__b-visual__center__btn:active {
     top: 1px;
     left: 1px;
   }
 
-  /* line 3770, ../sass/_768.scss */
+  /* line 3807, ../sass/_768.scss */
   .b-avia-btn2 {
     width: 98px;
   }
 
-  /* line 3773, ../sass/_768.scss */
+  /* line 3810, ../sass/_768.scss */
   .b-avia-in-separ {
     display: block;
     position: relative;
     height: 58px;
   }
 
-  /* line 3779, ../sass/_768.scss */
+  /* line 3816, ../sass/_768.scss */
   .b-avia-in-order__from, .b-avia-in-order__to, .b-avia-in-order__data-from, .b-avia-in-order__data-to {
     display: inline-block;
     position: relative;
@@ -14635,7 +14717,7 @@ label {
     margin-right: 23px;
     text-align: justify;
   }
-  /* line 3787, ../sass/_768.scss */
+  /* line 3824, ../sass/_768.scss */
   .b-avia-in-order__from .b-avia-in-order__input, .b-avia-in-order__to .b-avia-in-order__input, .b-avia-in-order__data-from .b-avia-in-order__input, .b-avia-in-order__data-to .b-avia-in-order__input {
     display: block;
     position: relative;
@@ -14655,18 +14737,18 @@ label {
     z-index: 101;
   }
 
-  /* line 3806, ../sass/_768.scss */
+  /* line 3843, ../sass/_768.scss */
   .b-avia-in__select2 {
     top: 39px;
   }
 
-  /* line 3809, ../sass/_768.scss */
+  /* line 3846, ../sass/_768.scss */
   .b-avia-in__select2 li {
     width: 292px;
     text-align: left;
   }
 
-  /* line 3813, ../sass/_768.scss */
+  /* line 3850, ../sass/_768.scss */
   .b-avia-in-order__name {
     display: block;
     position: relative;
@@ -14677,7 +14759,7 @@ label {
     text-align: left;
   }
 
-  /* line 3822, ../sass/_768.scss */
+  /* line 3859, ../sass/_768.scss */
   .b-avia-in-order__icon {
     display: block;
     position: absolute;
@@ -14690,7 +14772,7 @@ label {
     z-index: 102;
   }
 
-  /* line 3833, ../sass/_768.scss */
+  /* line 3870, ../sass/_768.scss */
   .b-avia-in__select2__city {
     font-family: 'roboto_r';
     font-weight: bold;
@@ -14698,12 +14780,12 @@ label {
     color: #383d43;
   }
 
-  /* line 3839, ../sass/_768.scss */
+  /* line 3876, ../sass/_768.scss */
   .b-avia-in-ask {
     height: 573px;
   }
 
-  /* line 3842, ../sass/_768.scss */
+  /* line 3879, ../sass/_768.scss */
   .b-avia-in-order__data-fild {
     display: inline-block;
     position: relative;
@@ -14722,7 +14804,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 3859, ../sass/_768.scss */
+  /* line 3896, ../sass/_768.scss */
   .b-avia-in-order__data-from__txt {
     margin: 0px 8px 0px 8px;
     font-family: 'roboto_slab_b';
@@ -14730,7 +14812,7 @@ label {
     color: #383d43;
   }
 
-  /* line 3865, ../sass/_768.scss */
+  /* line 3902, ../sass/_768.scss */
   .b-avia-in-order__unit-fild {
     display: inline-block;
     position: relative;
@@ -14750,7 +14832,7 @@ label {
     font-family: 'roboto_slab_b';
   }
 
-  /* line 3883, ../sass/_768.scss */
+  /* line 3920, ../sass/_768.scss */
   .b-avia-in-order__unit {
     display: inline-block;
     position: relative;
@@ -14759,23 +14841,62 @@ label {
     font-size: 10pt;
   }
 
-  /* line 3890, ../sass/_768.scss */
+  /* line 3927, ../sass/_768.scss */
   .b-avia-in-order__unit__decor {
     display: block;
     position: absolute;
     top: 35px;
-    left: 255px;
+    left: 260px;
     width: 10px;
     height: 6px;
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -692px;
   }
 
-  /* line 3900, ../sass/_768.scss */
+  /* line 3937, ../sass/_768.scss */
   .b-avia-in-order__h-space {
     display: block;
     position: relative;
     height: 46px;
+  }
+
+  /* line 3942, ../sass/_768.scss */
+  .b-avia-in__caption {
+    display: block;
+    width: 14.28%;
+    height: 115px;
+  }
+
+  /* line 3947, ../sass/_768.scss */
+  .b-search__place__from, .b-search__place__to {
+    width: 96%;
+    left: 5%;
+  }
+
+  /* line 3952, ../sass/_768.scss */
+  .b-search__time__b-input input {
+    width: 95%;
+    height: 27px;
+    margin: 5px 0px 0px 0px;
+    padding-right: 27px;
+    padding-left: 7px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 9pt;
+    color: #383d43;
+    border: none;
+    border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    cursor: pointer;
+  }
+
+  /* line 3969, ../sass/_768.scss */
+  .b-avia-in__find__btn {
+    position: absolute;
+    top: 53px;
+    right: 18%;
   }
 
   /* ===================================   END PAGE 3  ============================== */

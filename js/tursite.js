@@ -619,9 +619,16 @@ function js_close_select_place(number, t){
 function js_select_number_men(){
 	document.getElementsByClassName("b-tour__select-number-men")[0].style.height = 'auto';
 }
+function js_select_number_men_2(number){
+	document.getElementsByClassName("b-tour__select-number-men")[number].style.height = 'auto';
+}
 function js_close_select_number_men(t){
 	document.getElementsByClassName("select_number_men")[0].value = t.innerHTML;
 	document.getElementsByClassName("b-tour__select-number-men")[0].style.height = 0 + 'px';
+}
+function js_close_select_number_men_avia_in(t, number){
+	document.getElementsByClassName("b-avia-in-order__unit-fild")[number].value = t.innerHTML;
+	document.getElementsByClassName("b-tour__select-number-men")[number].style.height = 0 + 'px';
 }
 function js_open_menu320(){
 	if(document.getElementById('b-menu-320').style.display == 'block'){

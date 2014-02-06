@@ -3702,6 +3702,7 @@ body{
 	-khtml-border-radius: 150px 150px 150px 150px;
 	cursor: pointer;
 	font-family: 'roboto_slab_b';
+	z-index: 2;
 }
 .b-avia-in-order__unit{
 	display: inline-block;
@@ -3714,15 +3715,29 @@ body{
 	display: block;
 	position: absolute;
 	top: 35px;
-	left: 255px;
+	left: 260px;
 	width: 10px;
 	height: 6px;
 	background: url(../img/icon.png) no-repeat;
-	background-position: 0px -692px;	
+	background-position: 0px -692px;		
+	z-index: 2;
+	cursor: pointer;
 }
 .b-avia-in-order__h-space{
 	display: block;
 	position: relative;
 	height: 46px;
+}
+.b-avia-in-select{
+	left: 226px;
+	top: 36px;
+	width: 55px;
+	z-index: 1;
+	li{
+		height: 24px;
+		padding-left: 12px;
+		font-size: 14pt;
+		line-height: 25px;
+	}
 }
 /* ===================================   END PAGE 3  ============================== */
