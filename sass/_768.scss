@@ -3408,13 +3408,12 @@ body{
 	font-weight: bold;
 	font-size: 9pt;
 	color: $color_txt;
-	text-align: left;
-	
+	text-align: left;	
 }
 .b-avia-in__time__b-input{
 	width: 53%;
 }
-.b-search__time__b-input{
+.b-avia-in__time__b-input{
 	span{
 		left: 110%;
 	}
@@ -3944,12 +3943,12 @@ body{
 	width: 14.28%;
 	height: 115px;
 }
-.b-search__place__from, .b-search__place__to{
+.b-avia-in__place__from, .b-avia-in__place__to{
 	width: 96%;
 	left: 5%;
 	
 }
-.b-search__time__b-input input{
+.b-avia-in__time__b-input input{
 	width: 95%;
 	height: 27px;
 	margin: 5px 0px 0px 0px; 
@@ -3970,5 +3969,21 @@ body{
 	position: absolute;
 	top: 53px;
 	right: 18%;
+}
+.b-avia-in__find__btn:active{
+	top: 54px;
+	margin-left: 1px;
+	right: 18%;
+}
+.b-avia-in-time__txt3{
+	display: inline-block;
+	position: relative;
+	width: 33px;
+	margin-bottom: 35px;
+	font-family: 'roboto_r';
+	font-weight: bold;
+	font-size: 9pt;
+	color: $color_txt;
+	text-align: left;	
 }
 /* ===================================   END PAGE 3  ============================== */

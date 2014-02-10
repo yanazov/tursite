@@ -96,9 +96,9 @@
 				<span>Поиск акций</span>
 			</span>
 			<div class="b-search__place b-avia-in-place">
-				<div class="b-search__place__from">
-					<span class="b-search__place__name">Откуда</span>
-					<div class="cont-place">
+				<div class="b-search__place__from b-avia-in-place__from b-avia-in__place__from">
+					<span class="b-search__place__name width100">Откуда</span>
+					<div class="cont-place b-avia-in-cont-place">
 						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(0)">
 						<ul class="search-select-place">
 							<li></li>
@@ -107,12 +107,12 @@
 							<li onClick="js_close_select_place(0, this)">подсказка 3</li>														
 						</ul>
 					</div>
-					<span class="b-search__place__icon"></span>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
 				</div>
 				<span class="b-avia-in-time__br"></span>
-				<div class="b-search__place__to b-avia-in-place__to">
+				<div class="b-search__place__to b-avia-in-place__to b-avia-in__place__to">
 					<span class="b-avia-in-place__separ"></span>
-					<span class="b-search__place__name">Куда</span>
+					<span class="b-search__place__name width100">Куда</span>
 					<div class="cont-place">
 						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(1)">
 						<ul class="search-select-place">
@@ -122,18 +122,18 @@
 							<li onClick="js_close_select_place(1, this)">подсказка 3</li>														
 						</ul>
 					</div>
-					<span class="b-search__place__icon"></span>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
 				</div>
 			</div>
 			<div class="b-search__time b-avia-in-time">
-				<span class="b-search__time__name">Когда</span>
+				<span class="b-search__time__name b-avia-in__time__name">Когда</span>
 				<span class="b-avia-in-time__txt2">с</span>
 				<div class="b-search__time__b-input b-avia-in__time__b-input">
 					<input class="time_fild b-avia-in__time-fild" type="text" readonly onClick="js_calendar_open(0)">
 					<span onClick="js_calendar_open(0)"></span>
 				</div>
 				<span class="b-avia-in-time__br"></span>
-				<span class="b-avia-in-time__txt2">по</span>
+				<span class="b-avia-in-time__txt3">по</span>
 				<div class="b-search__time__b-input b-avia-in__time__b-input">
 					<input class="time_fild" type="text" readonly readonly onClick="js_calendar_open(1)">
 					<span onClick="js_calendar_open(1)"></span>
@@ -148,7 +148,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="path">
+	<div class="path block-none">
 		<div class="center_cont">
 			<a class="path__active" href="index.html">Главная</a>
 			<span class="path__separ"></span>
@@ -223,6 +223,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="b-avia-in-city320">
+		<span></span>
 	</div>
 	<div class="center_cont">
 		<div class="b-same">
@@ -328,8 +331,8 @@
 			<div class="b-avia-in-order__from">
 				<span class="b-avia-in-order__name">Откуда</span>
 				<div class="b-avia-in-order__cont-place">
-					<input class="b-search__place__input b-avia-in-order__input" type="text" onkeypress="js_open_select_place(2)">
-					<ul class="search-select-place b-avia-in__select2">
+					<input class="b-search__place__input b-avia-in-order__input z121" type="text" onkeypress="js_open_select_place(2)">
+					<ul class="search-select-place b-avia-in__select2 z120">
 						<li></li>
 						<li onClick="js_close_select_place(2, this)">Киев (Украина)</li>
 						<li onClick="js_close_select_place(2, this)">подсказка 2</li>
@@ -356,14 +359,14 @@
 				<span class="b-avia-in-order__name">Дата отправления:</span>
 				<input class="b-avia-in-order__data-fild" type="text">
 				<span class="b-avia-in-order__data-from__txt">+/-</span>
-				<input class="b-avia-in-order__unit-fild" type="text" value="2" readonly onClick="js_select_number_men_2(0)">
-				<ul class="b-tour__select-number-men b-avia-in-select">
+				<input class="b-avia-in-order__unit-fild z121" type="text" value="2" readonly onClick="js_select_number_men_2(0)">
+				<ul class="b-tour__select-number-men b-avia-in-select z120">
 					<li onClick=></li>
 					<li onClick="js_close_select_number_men_avia_in(this, 0)">3</li>
 					<li onClick="js_close_select_number_men_avia_in(this, 0)">4</li>
 					<li onClick="js_close_select_number_men_avia_in(this, 0)">5</li>
 				</ul>
-				<span class="b-avia-in-order__unit__decor" onClick="js_select_number_men_2(0)"></span>
+				<span class="b-avia-in-order__unit__decor z121" onClick="js_select_number_men_2(0)"></span>
 				<span class="b-avia-in-order__unit">чел.</span>				
 			</div>
 			<div class="b-avia-in-order__data-to">
@@ -382,17 +385,17 @@
 			</div>
 			
 			<br/>
-			<div class="b-quick-ask__b-fild">
+			<div class="b-quick-ask__b-fild b-avia-in-ask__b-fild">
 				Ваше имя:
 				<input type="text">
 			</div>
-			<div class="b-quick-ask__b-fild">
+			<div class="b-quick-ask__b-fild b-avia-in-ask__b-fild2">
 				Телефон**:
 				<input type="text">
 				<span class="b-quick-ask__b-fild__example">например +74952222222</span>
 			</div>
 			
-			<div class="b-quick-ask__b-fild b-fild-email">
+			<div class="b-quick-ask__b-fild b-fild-email b-avia-in-ask__b-fild2">
 				Email:
 				<span class="b-quick-ask__or">или</span>
 				<input type="text">

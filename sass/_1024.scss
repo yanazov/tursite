@@ -3434,6 +3434,7 @@ body{
 		-moz-border-radius: 150px 150px 150px 150px;
 		-khtml-border-radius: 150px 150px 150px 150px;
 		cursor: pointer;
+		z-index: 101;
 	}
 }
 .b-search-e__body__top__b-select__arrow{
@@ -3445,6 +3446,7 @@ body{
 	height: 13px;
 	background: url(../img/icon.png) no-repeat;
 	background-position: 0px -40px;	
+	z-index: 102;
 }	
 .b-search-e__body__top__hat{
 	display: block;
@@ -3467,8 +3469,12 @@ body{
 	min-height: 120px;
 	margin-left: 2.3%;
 	border-top: 1px solid #e1e5e8;
+	
 	color: $color_txt;
 /*	background-color: #9a5;*/
+}
+.found_elem:last-child{	
+	border-bottom: 1px solid #e1e5e8;
 }
 .found_elem__img{
 	float: left;
@@ -3511,7 +3517,7 @@ body{
 }
 .found_elem__b-day{
 	float: right;
-	margin-top: 23px;
+	margin-top: 15px;
 	width: 19%;
 	min-width: 170px;
 }
@@ -3541,7 +3547,7 @@ body{
 	float: right;
 	width: 21%;
 	min-width: 190px;
-	margin-top: 23px;
+	margin-top: 15px;
 }
 .found_elem__b-detail__index{
 	float: left;
@@ -3563,7 +3569,7 @@ body{
 	float: right;
 	width: 17%;
 	min-width: 170px;
-	margin-top: 16px;
+	margin-top: 8px;
 }
 .found_elem__b-resume__price{
 	float: left;
@@ -3641,32 +3647,33 @@ body{
 	display: block;
 	position: absolute;
 	top: 78px;
-	right: 5px;
+	right: 9px;
 	height: 16px;
 	padding: 4px 27px 3px 10px;
 	
 }
 .found_elem__btn:active{
 	top: 79px;
-	right: 4px;
+	right: 8px;
 }
 .found_elem__btn__arrow{
 	display: block;
 	position: absolute;
-	top: 8px;
+	top: 7px;
 	right: 9px;
 	width: 10px;
 	height: 10px;
 	background: url(../img/icon.png) no-repeat;
-	background-position: 0px -40px;
+	background-position: 0px -39px;
 	
 }
 .found_elem__add{
 	display: block;
 	position: relative;
 	width: 100%;
+	height: 62px;
 /*	margin-left: 4.6%;*/
-	height: 60px;
+	overflow: hidden;
 	.found_elem__b-resume__icon{
 		background: none;
 	}
@@ -3687,9 +3694,11 @@ body{
 	display: block;
 	position: relative;
 	width: 100%;
-/*	margin-left: 2.3%;*/
 	margin-top: 120px;
-	border-top: 1px solid #e1e5e8;
+/*	margin-left: 2.3%;*/
+	height: 0px;
+	overflow: hidden;
+	border-top: 0px solid #e1e5e8;
 	background-color: #fff;
 }
 .b-search-e__body__btn{
@@ -3709,6 +3718,16 @@ body{
 .b-search-e__body__btn:active{
 	left: 1px;
 	top: 1px;
+}
+.b-search-select{
+	top: 15px;
+	left: 99px;
+	width: 77px;
+	li{
+		height: 25px;
+		line-height: 25px;
+		font-size: 12pt;
+	}
 }
 /* ============================= END BODY EXTENDET SEARCH ==========================*/
 /* ===================================   END PAGE 2  ============================== */
@@ -4161,5 +4180,11 @@ body{
 		font-size: 14pt;
 		line-height: 25px;
 	}
+}
+.z120{
+	z-index: 120;
+}
+.z121{
+	z-index: 121;
 }
 /* ===================================   END PAGE 3  ============================== */

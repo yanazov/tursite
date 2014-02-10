@@ -630,6 +630,10 @@ function js_close_select_number_men_avia_in(t, number){
 	document.getElementsByClassName("b-avia-in-order__unit-fild")[number].value = t.innerHTML;
 	document.getElementsByClassName("b-tour__select-number-men")[number].style.height = 0 + 'px';
 }
+function js_close_select_number_men_search(t, number){
+	document.getElementsByClassName("b-search-e__input")[number].value = t.innerHTML;
+	document.getElementsByClassName("b-tour__select-number-men")[number].style.height = 0 + 'px';
+}
 function js_open_menu320(){
 	if(document.getElementById('b-menu-320').style.display == 'block'){
 		document.getElementById('b-menu-320').style.display = 'none';
@@ -673,4 +677,18 @@ function checkTime(i){
 }
 function div(val, by){
     return (val - val % by) / by;
+}
+function js_open_b_add(t){
+	var number = $('.found_elem__btn').index(t);
+	if(document.getElementsByClassName("found_elem__b-add")[number].style.height == 'auto'){
+		document.getElementsByClassName("found_elem__b-add")[number].style.height = 0 + 'px';
+		document.getElementsByClassName("found_elem__b-add")[number].style.borderTop = "0px solid #e1e5e8";
+		t.innerHTML = 'еще 8<span class="found_elem__btn__arrow"></span>';		
+		document.getElementsByClassName("found_elem__btn__arrow")[number].style.backgroundPosition = "0px -39px";
+		return 0;
+	}
+	document.getElementsByClassName("found_elem__b-add")[number].style.height = 'auto';
+	document.getElementsByClassName("found_elem__b-add")[number].style.borderTop = "1px solid #e1e5e8";
+	t.innerHTML = 'свернуть<span class="found_elem__btn__arrow"></span>';
+	document.getElementsByClassName("found_elem__btn__arrow")[number].style.backgroundPosition = "0px -60px";
 }

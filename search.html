@@ -10,6 +10,7 @@
 	<script src="js/hammer.js"></script>
 	<script src="js/hammer.fakemultitouch.js"></script>
 	<script src="js/hammer.showtouches.js"></script>
+	<script src="js/calendar.js"></script>
 	<script type="text/javascript" src="js/tursite.js"></script>   
 <!--	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -187,13 +188,13 @@
 				<div class="b-search__right__time">
 					<span class="b-search__right__time__name">Период заезда</span>
 					<div class="b-search-e__time__b-input">
-						<input type="text">
-						<span></span>
+						<input class="time_fild" type="text" readonly onClick="js_calendar_open(0)">
+					<span onClick="js_calendar_open(0)"></span>
 					</div>
 					<span class="b-search__time__separ">-</span>
 					<div class="b-search-e__time__b-input">
-						<input type="text">
-						<span></span>
+						<input class="time_fild" type="text" readonly onClick="js_calendar_open(1)">
+					<span onClick="js_calendar_open(1)"></span>
 					</div>					
 				</div>
 				<div class="b-search__right__hot">
@@ -245,8 +246,14 @@
 			
 			<div class="b-search-e__body__top__b-select">
 				<span class="b-search-e__body__top__txt-select">Отображать по:</span>
-				<input type="text" value="10" readonly>
+				<input class="b-search-e__input" type="text" value="10" readonly onClick="js_select_number_men_2(0)">
 				<span class="b-search-e__body__top__b-select__arrow"></span>
+				<ul class="b-tour__select-number-men b-search-select">
+					<li onClick=></li>
+					<li onClick="js_close_select_number_men_search(this, 0)">5</li>
+					<li onClick="js_close_select_number_men_search(this, 0)">15</li>
+					<li onClick="js_close_select_number_men_search(this, 0)">20</li>
+				</ul>
 			</div>
 			
 		</div>		
@@ -299,7 +306,7 @@
 					<span class="found_elem__b-day__night">8 ночей</span>
 				</span>	
 			</span>
-			<a class="btn-yellow found_elem__btn">
+			<a class="btn-yellow found_elem__btn" onClick="js_open_b_add(this)">
 				еще 8 
 				<span class="found_elem__btn__arrow"></span>
 			</a>
@@ -391,7 +398,7 @@
 					<span class="found_elem__b-day__night">8 ночей</span>
 				</span>	
 			</span>
-			<a class="btn-yellow found_elem__btn">
+			<a class="btn-yellow found_elem__btn" onClick="js_open_b_add(this)">
 				еще 8 
 				<span class="found_elem__btn__arrow"></span>
 			</a>
@@ -454,8 +461,372 @@
 				
 		</div>
 	
-	
-	
+		<div class="found_elem">
+			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+			<span class="found_elem__b-txt">
+				<span class="found_elem__b-txt__caption">
+					Новогодняя супер сказка 
+					<br/>
+					в сердце Египта
+				</span>
+				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+				<span class="found_elem__b-txt__rating"></span>
+			</span>
+			<span class="found_elem__b-resume">
+				<span class="found_elem__b-resume__price">1899$</span>
+				<span class="found_elem__b-resume__icon"></span>
+			</span>
+			<span class="found_elem__b-detail">
+				<span class="found_elem__b-detail__index">HB</span>
+				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+			</span>
+			<span class="found_elem__b-day">
+				<span class="found_elem__b-day__country">Египет</span>
+				<span class="found_elem__b-day__period">
+					22.08 - 27.08
+					<span class="found_elem__b-day__night">8 ночей</span>
+				</span>	
+			</span>
+			<a class="btn-yellow found_elem__btn" onClick="js_open_b_add(this)">
+				еще 8 
+				<span class="found_elem__btn__arrow"></span>
+			</a>
+		
+		
+		
+			<div class="found_elem__b-add">
+				<div class="found_elem__add">			
+					<span class="found_elem__add__decor-line"></span>
+					<span class="found_elem__b-resume">				
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+			</div>	  
+				
+		</div>	
+		
+		<div class="found_elem">
+			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+			<span class="found_elem__b-txt">
+				<span class="found_elem__b-txt__caption">
+					Новогодняя супер сказка 
+					<br/>
+					в сердце Египта
+				</span>
+				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+				<span class="found_elem__b-txt__rating"></span>
+			</span>
+			<span class="found_elem__b-resume">
+				<span class="found_elem__b-resume__price">1899$</span>
+				<span class="found_elem__b-resume__icon"></span>
+			</span>
+			<span class="found_elem__b-detail">
+				<span class="found_elem__b-detail__index">HB</span>
+				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+			</span>
+			<span class="found_elem__b-day">
+				<span class="found_elem__b-day__country">Египет</span>
+				<span class="found_elem__b-day__period">
+					22.08 - 27.08
+					<span class="found_elem__b-day__night">8 ночей</span>
+				</span>	
+			</span>
+			<a class="btn-yellow found_elem__btn" onClick="js_open_b_add(this)">
+				еще 8 
+				<span class="found_elem__btn__arrow"></span>
+			</a>
+		
+		
+		
+			<div class="found_elem__b-add">
+				<div class="found_elem__add">			
+					<span class="found_elem__add__decor-line"></span>
+					<span class="found_elem__b-resume">				
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+			</div>	  
+				
+		</div>	
+		<div class="found_elem">
+			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+			<span class="found_elem__b-txt">
+				<span class="found_elem__b-txt__caption">
+					Новогодняя супер сказка 
+					<br/>
+					в сердце Египта
+				</span>
+				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+				<span class="found_elem__b-txt__rating"></span>
+			</span>
+			<span class="found_elem__b-resume">
+				<span class="found_elem__b-resume__price">1899$</span>
+				<span class="found_elem__b-resume__icon"></span>
+			</span>
+			<span class="found_elem__b-detail">
+				<span class="found_elem__b-detail__index">HB</span>
+				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+			</span>
+			<span class="found_elem__b-day">
+				<span class="found_elem__b-day__country">Египет</span>
+				<span class="found_elem__b-day__period">
+					22.08 - 27.08
+					<span class="found_elem__b-day__night">8 ночей</span>
+				</span>	
+			</span>
+			<a class="btn-yellow found_elem__btn" onClick="js_open_b_add(this)">
+				еще 8 
+				<span class="found_elem__btn__arrow"></span>
+			</a>
+		
+		
+		
+			<div class="found_elem__b-add">
+				<div class="found_elem__add">			
+					<span class="found_elem__add__decor-line"></span>
+					<span class="found_elem__b-resume">				
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+			</div>	  
+				
+		</div>	
+		<div class="found_elem">
+			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+			<span class="found_elem__b-txt">
+				<span class="found_elem__b-txt__caption">
+					Новогодняя супер сказка 
+					<br/>
+					в сердце Египта
+				</span>
+				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+				<span class="found_elem__b-txt__rating"></span>
+			</span>
+			<span class="found_elem__b-resume">
+				<span class="found_elem__b-resume__price">1899$</span>
+				<span class="found_elem__b-resume__icon"></span>
+			</span>
+			<span class="found_elem__b-detail">
+				<span class="found_elem__b-detail__index">HB</span>
+				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+			</span>
+			<span class="found_elem__b-day">
+				<span class="found_elem__b-day__country">Египет</span>
+				<span class="found_elem__b-day__period">
+					22.08 - 27.08
+					<span class="found_elem__b-day__night">8 ночей</span>
+				</span>	
+			</span>
+			<a class="btn-yellow found_elem__btn" onClick="js_open_b_add(this)">
+				еще 8 
+				<span class="found_elem__btn__arrow"></span>
+			</a>
+		
+		
+		
+			<div class="found_elem__b-add">
+				<div class="found_elem__add">			
+					<span class="found_elem__add__decor-line"></span>
+					<span class="found_elem__b-resume">				
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+				<div class="found_elem__add">	
+					<span class="found_elem__add__decor-line"></span>			
+					<span class="found_elem__b-resume">
+						<span class="found_elem__b-resume__price">1899$</span>
+						<span class="found_elem__b-resume__icon"></span>
+					</span>
+					<span class="found_elem__b-detail">
+						<span class="found_elem__b-detail__index">HB</span>
+						<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+					</span>
+					<span class="found_elem__b-day">
+						<span class="found_elem__b-day__country">Египет</span>
+						<span class="found_elem__b-day__period">
+							22.08 - 27.08
+							<span class="found_elem__b-day__night">8 ночей</span>
+						</span>	
+					</span>
+				</div>
+			</div>	  
+				
+		</div>	
+		
 	
 	
 		<a class="btn-yellow b-search-e__body__btn">
@@ -466,32 +837,9 @@
 	</div>
 <!-- ****************************************** END BODY EXTENDET SEARCH ************************************** -->	
 	
-	<footer class="footer">
+	<footer class="footer footer__inner">
 		<div class="center_cont">
-			<div class="b-center">
-				<a class="footer__elem" href="#">
-					<img src="pic/footer1.jpg" alt="">
-					<span class="footer__elem__txt">
-						Люксембург + Амстердам + Париж = 699 евро с авиа!
-						<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
-					</span>
-				</a>
-				<a class="footer__elem" href="#">
-					<img src="pic/footer2.jpg" alt="">
-					<span class="footer__elem__txt">
-						 Карнавал в РИО это лучшее событие в июне-июле 2013
-						<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
-					</span>
-				</a>
-				<a class="footer__elem" href="#">
-					<img src="pic/footer3.jpg" alt="">
-					<span class="footer__elem__txt">
-						Мальдивы теперь доступны всем!!!
-						<span class="footer__elem__txt__date">3 - 10 Сентября 2013</span>
-					</span>
-				</a>
-			</div>	
-			<div class="footer__contact">
+			<div class="footer__contact footer__contact__inner">
 				<div class="footer__contact__elem">
 					<span class="footer__contact__elem__caption">Адрес:</span>
 					г.Киев, Украина
@@ -500,9 +848,9 @@
 				</div>
 				<div class="footer__contact__elem2">
 					<span class="footer__contact__elem__caption">Телефоны:</span>
-					050 445 25 45, (044)
+					<a href="">050 445 25 45, (044)</a>
 					<br/>
-					238 60 20, 238 62 31
+					<a href="">238 60 20, 238 62 31</a>
 				</div>
 				<div class="footer__contact__elem3">
 					<span class="footer__contact__elem__caption">Email:</span>
@@ -511,13 +859,13 @@
 					<a href="#">market@tursite.com.ua</a>
 				</div>
 			</div>
-			<div class="footer__mailing">
+			<div class="footer__mailing footer__mailing__inner">
 				<span class="footer__mailing__check-icon"></span>
-				<span class="footer__mailing__txt">Подписатся на наши обновления</span>
+				<span class="footer__mailing__txt mailing__txt__top">Подписатся на наши обновления</span>
 				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
 				<span class="footer__mailing__icon"></span>
 			</div>
-			<div class="footer__b-social">
+			<div class="footer__b-social footer__b-social__inner">
 				<span class="footer__copyright">©  ТурСайт, 2013   Все права защищены.</span>
 				<a class="footer__rule" href="#">Правила использования</a>
 				<div class="footer__social">
@@ -529,7 +877,7 @@
 					</ul>		
 				</div>
 			</div>	
-			<div class="footer__webmedia">
+			<div class="footer__webmedia footer__webmedia__inner">
 				Разработка сайтов на Битриксе:
 				<span class="footer__webmedia__icon"></span>
 			</div>
@@ -548,7 +896,37 @@
 		</span>
 	</div>
 	
-	
+	<div id="calendar-body">
+		<span class="calendar-body__decor"></span>
+		<span class="calendar-body__close" onClick="js_calendar_close()"></span>
+		<span class="calendar-body__txt">Календарь</span>
+		<span id="calendar-body__month" onClick="js_open_select_month()">Январь</span>
+		<span id="calendar-body__month__arrow" onClick="js_open_select_month()"></span>
+		<ul id="calendar-body__select-month">
+			<li></li>
+			<li onClick="js_select_month(this)">Январь</li>
+			<li onClick="js_select_month(this)">Февраль</li>
+			<li onClick="js_select_month(this)">Март</li>
+			<li onClick="js_select_month(this)">Апрель</li>
+			<li onClick="js_select_month(this)">Май</li>
+			<li onClick="js_select_month(this)">Июнь</li>
+			<li onClick="js_select_month(this)">Июль</li>
+			<li onClick="js_select_month(this)">Август</li>
+			<li onClick="js_select_month(this)">Сентябрь</li>
+			<li onClick="js_select_month(this)">Октябрь</li>
+			<li onClick="js_select_month(this)">Ноябрь</li>
+			<li onClick="js_select_month(this)">Декабрь</li>
+		</ul>
+		<span id="calendar-body__year" onClick="js_open_select_year()">2014</span>
+		<span id="calendar-body__year__arrow" onClick="js_open_select_year()"></span>
+		<ul id="calendar-body__select-year">
+			<li></li>
+			<li onClick="js_select_year(this)">2014</li>
+			<li onClick="js_select_year(this)">2015</li>
+			<li onClick="js_select_year(this)">2016</li>
+		</ul>
+		<div id="calendar-body__fild"></div>
+	</div>
 	
 	
 	
