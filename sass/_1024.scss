@@ -4188,3 +4188,98 @@ body{
 	z-index: 121;
 }
 /* ===================================   END PAGE 3  ============================== */
+/* ==================================   BEGIN AVIA 3  ============================= */
+.b-avia-body-top{
+	height: 80px;
+}
+.b-avia-elem{
+	display: block;
+	position: relative;
+	width: 95.4%;
+	min-height: 120px;
+	margin-left: 2.3%;
+	border-top: 1px solid #e1e5e8;
+	
+	color: $color_txt;
+/*	background-color: #9a5;*/
+}
+.b-avia-elem:last-child{	
+	border-bottom: 1px solid #e1e5e8;
+}
+.b-avia-elem:nth-child(2n+4){
+	background-color: #ebeef0;
+}
+.b-avia-elem__name{
+	float: left;
+	padding: 25px 0px 0px 18px;
+	font-family: 'roboto_slab_b';
+	font-size: 11pt;
+	color: $color_txt;
+}
+.b-avia-elem__name span{
+	display: block;
+	margin-top: 5px;
+	font-size: 9pt;
+	color: $color_blue;
+	font-family: 'roboto_r';
+}
+.b-avia-elem__period{
+	float: right;
+	padding: 28px 80px 0px 0px;
+	font-family: 'roboto_r';
+	font-size: 9pt;
+	color: $color_txt;
+	text-align: right;
+}
+.b-avia-elem__price{
+	float: right;
+	padding: 26px 104px 0px 0px;
+	font-family: 'roboto_slab_b';
+	font-size: 10.5pt;
+	color: $color_txt;
+	text-align: right;
+}
+.b-avia-elem__price__grey{
+	display: inline-block;
+	position: relative;
+	margin-right: 4px;
+	color: #959b9e;
+	font-size: 10.5pt;
+}
+.b-avia-elem__price__old{
+	display: inline-block;
+	position: relative;
+	font-size: 10.5pt;
+	color: #959b9e;
+	text-decoration: line-through;
+	font-family: 'roboto_r';
+}
+.b-avia-first-elem__name{
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 180px;
+	font-size: 9pt;
+	color: #959b9e;
+	font-family: 'roboto_r';
+}
+.b-avia-first-elem__period{
+	display: block;
+	position: absolute;
+	top: 80px;
+	right: 235px;
+	margin-right: 80px;
+	font-size: 9pt;
+	color: #959b9e;
+	font-family: 'roboto_r';
+}
+.b-avia-first-elem__price{
+	display: block;
+	position: absolute;
+	top: 80px;
+	right: 85px;
+	margin-right: 80px;
+	font-size: 9pt;
+	color: #959b9e;
+	font-family: 'roboto_r';
+}
+/* ===================================   END AVIA 3  ============================== */

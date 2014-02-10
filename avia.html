@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>ТурСайт</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" > 	
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/hammer.fakemultitouch.js"></script>
+	<script src="js/hammer.showtouches.js"></script>
+	<script src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/tursite.js"></script>   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">    -->
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/styles_ie.css" > 
+	<![endif]-->	
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+	
+	<script type="text/javascript" src="js/jquery_masonry_min.js"></script> <!-- подключаем сам плагин -->
+	<script type="text/javascript" src="js/modernizr-transitions.js"></script> <!-- подключаем плагин заставляющий работать css transitions в браузерах не поддерживающих css3 -->
+
+	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+
+</head>
+<body>
+	<span id="name_page">avia_in</span>
+	<div class="b-consultant">
+		<a class="b-consultant__form" href="#">
+			<span class="b-consultant__form__icon"><span></span></span>
+			<span class="b-consultant__form__txt">Консультант</span>
+			<span class="b-consultant__form__status">в он-лайне</span>
+			<span class="b-consultant__form__close"></span>
+		</a>
+	</div>
+	<header class="header">
+		<div class="center_cont">
+			<div class="header__b-left">
+				<div class="header__menu320">
+					<span class="header__menu320__btn">
+						<span class="header__menu320__btn__img"></span>
+					</span>
+					<span class="header__menu320__call">
+						<span class="header__menu320__call__img"></span>
+						Позвонить
+					</span>
+				</div>
+				<nav class="header__b-left_nav">
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Контакты</a></li>				
+					</ul>
+				</nav>
+				<a class="header__b-left__tel" href="">8 900 72 70</a>
+				<span class="header__b-left__icon"></span>
+				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
+			</div>
+			<div class="header__b-center">
+				<span class="header__b-center__logo"></span>
+				<span class="header__b-center__txt">ТурСайт</span>			
+			</div>
+			<div class="header__b-right">
+				<a class="header__b-right_login" href="#">
+					<span class="header__b-right_login__txt">Вход</span>
+					<span class="header__b-right_login__img"></span>				
+					<span  class="header__b-right_login__arrow"></span>
+				</a>
+				<input class="header__b-right__search" type="text" placeholder="Поиск...">
+				<a class="header__b-right__zoom" href="#"></a>
+			</div>
+		</div>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Поиск туров</a></li>
+			<li><a href="#">Отели</a></li>
+			<li><a href="#">Страны</a></li>
+			<li><a href="#">Авиабилеты</a></li>
+			<li><a href="#">Виды отдыха</a></li>
+		</ul>
+	</nav>
+	<div id="mini_search" class="b-search-mini">
+		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
+		<span id="search-mini__txt" class="b-search-mini__txt">Поиск акций</span>
+	</div>
+	<div id="open_search" class="b-search b-avia-in-search">
+		<div class="center_cont">
+			<span class="b-search__round" onClick="js_close_search()"><span></span></span>
+			<span class="b-search__caption b-avia-in__caption">
+				<span>Поиск акций</span>
+			</span>
+			<div class="b-search__place b-avia-in-place">
+				<div class="b-search__place__from b-avia-in-place__from b-avia-in__place__from">
+					<span class="b-search__place__name width100">Откуда</span>
+					<div class="cont-place b-avia-in-cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(0)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(0, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+				<span class="b-avia-in-time__br"></span>
+				<div class="b-search__place__to b-avia-in-place__to b-avia-in__place__to">
+					<span class="b-avia-in-place__separ"></span>
+					<span class="b-search__place__name width100">Куда</span>
+					<div class="cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(1)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(1, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+			</div>
+			<div class="b-search__time b-avia-in-time">
+				<span class="b-search__time__name b-avia-in__time__name">Когда</span>
+				<span class="b-avia-in-time__txt2">с</span>
+				<div class="b-search__time__b-input b-avia-in__time__b-input">
+					<input class="time_fild b-avia-in__time-fild" type="text" readonly onClick="js_calendar_open(0)">
+					<span onClick="js_calendar_open(0)"></span>
+				</div>
+				<span class="b-avia-in-time__br"></span>
+				<span class="b-avia-in-time__txt3">по</span>
+				<div class="b-search__time__b-input b-avia-in__time__b-input">
+					<input class="time_fild" type="text" readonly readonly onClick="js_calendar_open(1)">
+					<span onClick="js_calendar_open(1)"></span>
+				</div>
+				
+			</div>			
+			<div class="b-search__find b-avia-in-find">
+				<a class="btn-blue b-search__find__btn b-avia-in__find__btn" href="#">
+					Найти
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="path block-none">
+		<div class="center_cont">
+			<a class="path__active" href="index.html">Главная</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">Тайланд</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">о-в Самуи</a>
+			<span class="path__separ"></span>
+			<span class="path__current">Незабываемый отдых в Тайланде...</span>
+		</div>
+	</div>
+	<div class="b-search-e__body">
+		<div class="b-search-e__body__top b-avia-body-top">
+			<span class="b-search-e__body__top__txt">Всего найдено </span>
+			<span class="b-search-e__body__top__arrow"></span>
+			<span class="b-search-e__body__top__number">159</span>
+			<span class="b-search-e__body__top__unit">туров</span>
+			
+			<div class="b-search-e__body__top__b-select">
+				<span class="b-search-e__body__top__txt-select">Отображать по:</span>
+				<input class="b-search-e__input" type="text" value="10" readonly onClick="js_select_number_men_2(0)">
+				<span class="b-search-e__body__top__b-select__arrow"></span>
+				<ul class="b-tour__select-number-men b-search-select">
+					<li onClick=></li>
+					<li onClick="js_close_select_number_men_search(this, 0)">5</li>
+					<li onClick="js_close_select_number_men_search(this, 0)">15</li>
+					<li onClick="js_close_select_number_men_search(this, 0)">20</li>
+				</ul>
+			</div>			
+		</div>		
+		<div class="b-avia-first-elem">
+			<span class="b-avia-first-elem__name">Название</span>
+			<span class="b-avia-first-elem__price">Цена</span>
+			<span class="b-avia-first-elem__period">Дата</span>
+		</div>
+		<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia1.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Уикенды в Европе и не только!
+				<span>Киев - Амстердам</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+		<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia2.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Свадебный романтический вечер 
+				<br/>
+				в Австрии на 2х
+				<span>Киев - Вена</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+	</div>
+	<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia1.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Уикенды в Европе и не только!
+				<span>Киев - Амстердам</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+		<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia2.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Свадебный романтический вечер 
+				<br/>
+				в Австрии на 2х
+				<span>Киев - Вена</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+	</div>
+	<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia1.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Уикенды в Европе и не только!
+				<span>Киев - Амстердам</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+		<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia2.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Свадебный романтический вечер 
+				<br/>
+				в Австрии на 2х
+				<span>Киев - Вена</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+	</div>
+	<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia1.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Уикенды в Европе и не только!
+				<span>Киев - Амстердам</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+		<div class="b-avia-elem">
+			<img class="found_elem__img" src="pic/avia2.jpg" alt="" width="125px">
+			<span class="b-avia-elem__name">
+				Свадебный романтический вечер 
+				<br/>
+				в Австрии на 2х
+				<span>Киев - Вена</span>
+			</span>
+			<span class="b-avia-elem__price">
+				<span class="b-avia-elem__price__grey">от </span>
+				1 899$
+				<br/>
+				<span class="b-avia-elem__price__old">2 000$</span>
+			</span>
+			<span class="b-avia-elem__period">
+				12.01 - 20.01
+			</span>
+		</div>
+	</div>
+	<a class="btn-yellow b-search-e__body__btn">
+		еще
+	</a>
+	<footer class="footer footer__inner">
+		<div class="center_cont">
+			<div class="footer__contact footer__contact__inner">
+				<div class="footer__contact__elem">
+					<span class="footer__contact__elem__caption">Адрес:</span>
+					г.Киев, Украина
+					<br/>
+					ул. Ивана Франко, 40-Б
+				</div>
+				<div class="footer__contact__elem2">
+					<span class="footer__contact__elem__caption">Телефоны:</span>
+					<a href="">050 445 25 45, (044)</a>
+					<br/>
+					<a href="">238 60 20, 238 62 31</a>
+				</div>
+				<div class="footer__contact__elem3">
+					<span class="footer__contact__elem__caption">Email:</span>
+					<a href="#">sale@tursite.com.ua</a>
+					<br/>
+					<a href="#">market@tursite.com.ua</a>
+				</div>
+			</div>
+			<div class="footer__mailing footer__mailing__inner">
+				<span class="footer__mailing__check-icon"></span>
+				<span class="footer__mailing__txt mailing__txt__top">Подписатся на наши обновления</span>
+				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
+				<span class="footer__mailing__icon"></span>
+			</div>
+			<div class="footer__b-social footer__b-social__inner">
+				<span class="footer__copyright">©  ТурСайт, 2013   Все права защищены.</span>
+				<a class="footer__rule" href="#">Правила использования</a>
+				<div class="footer__social">
+					Мы в сети:
+					<ul>
+						<li><a class="footer__social__f" href="#"></a></li>
+						<li><a class="footer__social__t" href="#"></a></li>
+						<li><a class="footer__social__g" href="#"></a></li>
+					</ul>		
+				</div>
+			</div>	
+			<div class="footer__webmedia footer__webmedia__inner">
+				Разработка сайтов на Битриксе:
+				<span class="footer__webmedia__icon"></span>
+			</div>
+		</div>
+	</footer>
+	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
+		<span class="btn-up-dwn__icon"></span>
+	</span>
+	<div id="calendar-body">
+		<span class="calendar-body__decor"></span>
+		<span class="calendar-body__close" onClick="js_calendar_close()"></span>
+		<span class="calendar-body__txt">Календарь</span>
+		<span id="calendar-body__month" onClick="js_open_select_month()">Январь</span>
+		<span id="calendar-body__month__arrow" onClick="js_open_select_month()"></span>
+		<ul id="calendar-body__select-month">
+			<li></li>
+			<li onClick="js_select_month(this)">Январь</li>
+			<li onClick="js_select_month(this)">Февраль</li>
+			<li onClick="js_select_month(this)">Март</li>
+			<li onClick="js_select_month(this)">Апрель</li>
+			<li onClick="js_select_month(this)">Май</li>
+			<li onClick="js_select_month(this)">Июнь</li>
+			<li onClick="js_select_month(this)">Июль</li>
+			<li onClick="js_select_month(this)">Август</li>
+			<li onClick="js_select_month(this)">Сентябрь</li>
+			<li onClick="js_select_month(this)">Октябрь</li>
+			<li onClick="js_select_month(this)">Ноябрь</li>
+			<li onClick="js_select_month(this)">Декабрь</li>
+		</ul>
+		<span id="calendar-body__year" onClick="js_open_select_year()">2014</span>
+		<span id="calendar-body__year__arrow" onClick="js_open_select_year()"></span>
+		<ul id="calendar-body__select-year">
+			<li></li>
+			<li onClick="js_select_year(this)">2014</li>
+			<li onClick="js_select_year(this)">2015</li>
+			<li onClick="js_select_year(this)">2016</li>
+		</ul>
+		<div id="calendar-body__fild"></div>
+	</div>
+	
+</body>
+</html>
