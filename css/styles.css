@@ -11615,6 +11615,90 @@ label {
   }
 
   /* =================================   END RESTTYPES  ============================= */
+  /* =================================   BEGIN HOTELS =============================== */
+  /* line 4645, ../sass/_1024.scss */
+  .b-hotels-top-elem {
+    display: inline-block;
+    position: relative;
+    width: 228px;
+    height: 238px;
+    margin: 7px;
+    text-decoration: none;
+    background-color: #ebeef0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4659, ../sass/_1024.scss */
+  .b-hotels-top-elem:hover {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 28px #ccc;
+    -webkit-box-shadow: 0 0 28px #ccc;
+    box-shadow: 0 0 28px  #ccc;
+  }
+  /* line 4664, ../sass/_1024.scss */
+  .b-hotels-top-elem:hover .b-hot__b-unit__dimmer {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  }
+  /* line 4668, ../sass/_1024.scss */
+  .b-hotels-top-elem:hover .b-hot__img img {
+    width: 248px;
+    height: 123px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  /* line 4675, ../sass/_1024.scss */
+  .b-hotels-top-elem:hover .b-countries__elem__name {
+    background-color: #fff;
+  }
+
+  /* line 4679, ../sass/_1024.scss */
+  .b-hotels__caption__name {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    font-size: 22pt;
+    color: #383d43;
+    font-family: 'roboto_slab_r';
+    text-align: center;
+  }
+
+  /* line 4689, ../sass/_1024.scss */
+  .b-counries__raiting {
+    display: block;
+    position: relative;
+    width: 61px;
+    height: 13px;
+    background: url(../img/star_raiting.png) no-repeat;
+    background-position: 0px 0px;
+  }
+
+  /* line 4698, ../sass/_1024.scss */
+  .b-countries__city {
+    display: block;
+    position: absolute;
+    left: 8%;
+    bottom: 22px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #97999b;
+  }
+
+  /* line 4707, ../sass/_1024.scss */
+  .b-countries__elem__name {
+    display: block;
+    position: absolute;
+    top: 122px;
+    left: 0px;
+  }
+
+  /* ==================================   END HOTELS  =============================== */
 }
 @media only screen and (min-width: 681px) and (max-width: 999px), only screen and (min-device-width: 681px) and (max-device-width: 999px) {
   /* line 1, ../sass/_768.scss */
