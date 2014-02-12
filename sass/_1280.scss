@@ -4111,10 +4111,34 @@ body{
 		line-height: 25px;
 	}
 }
+.b-avia-in-time__txt2{
+	display: inline-block;
+	position: relative;
+	width: 10px;
+	margin-bottom: 35px;
+	font-family: 'roboto_r';
+	font-weight: bold;
+	font-size: 9pt;
+	color: $color_txt;
+	text-align: left;	
+}
+.b-avia-in-time__txt3{
+	display: inline-block;
+	position: relative;
+	width: 15px;
+	margin-bottom: 35px;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-family: 'roboto_r';
+	font-weight: bold;
+	font-size: 9pt;
+	color: $color_txt;
+	text-align: left;	
+}
 /* ===================================   END PAGE 3  ============================== */
 /* ==================================   BEGIN AVIA 3  ============================= */
 .b-avia-body-top{
-	height: 80px;
+	height: 80px;	
 }
 .b-avia-elem{
 	display: block;
@@ -4207,3 +4231,349 @@ body{
 	font-family: 'roboto_r';
 }
 /* ===================================   END AVIA 3  ============================== */
+/* ================================   BEGIN COUTRIES 3  =========================== */
+.b-countries-place{
+	width: 73%;
+}
+.b-countries-country{
+	width: 49%;
+	left: 3%;
+}
+.b-countries-hotel{
+	width: 47%;
+}
+.b-countries__caption{
+	display: block;
+	position: relative;
+	height: 72px;	
+	width: 100%;
+}
+.b-countries__caption__name{
+	display: inline-block;
+	position: relative;
+	width: 35%;
+	padding-left: 20px;
+	padding-top: 15px;
+	font-size: 22pt;
+	color: $color_txt;
+	font-family: 'roboto_slab_r';
+}
+.b-countries__caption__right{
+	display: block;
+	position: absolute;
+	width: 65%;
+	top: -5px;
+	right: 0px;
+	padding-right: 10px;
+	text-align: right;
+}
+.b-countries__chek1{
+	display: inline-block;
+	position: relative;
+	
+}
+.b-countries__caption__txt{
+	display: inline-block;
+	position: relative;
+	width: 119px;
+	top: 24px;
+	color: $color_txt;
+	font-family: 'roboto_r';
+	font-size: 9pt;
+	text-align: left;
+}
+.b-countries__b-main{
+	display: block;
+	position: relative;
+	text-align: center;
+}
+.b-countries__elem{
+	display: inline-block;
+	position: relative;
+	width: 228px;
+	height: 284px;
+	margin: 7px;
+	background-color: $color_grey;
+	-webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.b-countries__elem__img{
+	width: 228px;
+}
+.b-counries__dimmer{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 228px;
+	height: 123px;
+	background-color: $color_blue_dark;
+	opacity: .5;
+	transition: opacity .5s;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+.b-countries__elem:hover{
+	background-color: #fff;
+	-moz-box-shadow: 0 0 28px #ccc; 
+	-webkit-box-shadow: 0 0 28px #ccc; 
+	box-shadow: 0 0 28px  #ccc; 
+	.b-hot__b-unit__dimmer{
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	}
+	.b-hot__img img{
+		width: 248px;
+		height: 123px;
+		
+		-webkit-transform:scale(1.2);
+		-moz-transform:scale(1.2);
+		-o-transform:scale(1.2);
+	}
+	.b-resttypes__elem__cont-city{
+		background-color: #fff;
+		-moz-box-shadow: 0 0 28px #ccc; 
+		-webkit-box-shadow: 0 0 28px #ccc; 
+		box-shadow: 0 0 28px  #ccc; 
+	}
+	.b-resttypes__elem__another{
+		background-color: #fff;
+	}
+	.b-countries__elem__name{
+		background-color: #fff;
+	}
+}
+.b-countries__elem__all{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	font-family: 'roboto_slab_b';
+	color: $color_txt;
+	font-size: 10.5pt;
+	background-color: $color_yellow;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;
+	border-radius: 150px 150px 150px 150px;
+}
+.b-countries__elem__all:hover{
+	.b-countries__elem__all__hover{
+		opacity: 1;
+		z-index: 1;
+		-webkit-transition: all 0.6s ease-in-out;
+		-moz-transition: all 0.6s ease-in-out;
+		-o-transition: all 0.6s ease-in-out;
+		-ms-transition: all 0.6s ease-in-out;
+		transition: all 0.6s ease-in-out;
+	}
+}
+.b-countries__elem__hover-all-no{
+	display: block;
+	position: absolute;
+	width: 100px;
+	background-color: #ccc;
+	opacity: .5;
+}
+.b-countries__elem__all__hover{
+	display: block;
+	position: absolute;
+	width: 85px;
+	height: 27px;
+	left: -71px;
+	margin-top: 12px;
+	line-height: 27px;
+	padding: 0px 10px 0px 10px;
+	background-color: $color_yellow;
+	font-family: 'roboto_r';
+	font-size: 8pt;
+	color: $color_txt;
+	z-index: 1;
+	-webkit-border-radius: 150px 150px 150px 150px;
+	-moz-border-radius: 150px 150px 150px 150px;
+	-khtml-border-radius: 150px 150px 150px 150px;
+	border-radius: 150px 150px 150px 150px;
+	opacity: 0;
+	z-index: -1;
+	span{
+		display: block;
+		position: absolute;
+		left: 79px;
+		top: -6px;
+		width: 9px;
+		height: 6px;
+		background: url(../img/icon.png) no-repeat;
+		background-position: 0px -1180px;
+	}
+}
+.b-countries__elem__name{
+	display: block;
+	position: relative;
+	width: 92%;
+	padding-left: 8%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-family: 'roboto_slab_b';
+	color: $color_txt;
+	font-size: 13.5pt;
+	text-align: left;
+	background-color: $color_grey;
+	z-index: 100;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+.b-countries__elem__city{
+	display: inline-block;
+	position: relative;
+	width: 82px;
+	margin: 3px 15px 0px 15px;
+	color: $color_blue;
+	font-size: 9pt;
+	text-align: left;
+	font-family: 'roboto_r';
+}
+.b-countries__elem__another{
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: $color_txt;
+	font-size: 8pt;
+	text-align: left;
+	font-family: 'roboto_r';
+	text-decoration: none;
+	text-align: right;
+}
+.b-countries__elem__cont-city{
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 160px;
+	width: 100%;
+	text-align: left;
+}
+/* ================================   END COUTNRIES 3  ============================ */
+/* ================================   BEGIN RESTTYPES  ============================ */
+.resttype-icon1{
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -660px;
+}
+.resttype-icon2{
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -630px;
+}
+.resttype-icon3{
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -600px;
+}
+.resttype-icon4{
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -1190px;
+}
+.b-resttype__hover-icon{
+	top: 27px;
+}
+.b-resttypes__country-number{
+	display: inline-block;
+	position: relative;
+	width: 82px;
+	margin: 3px 15px 0px 15px;
+	font-family: 'roboto_r';
+	font-size: 8pt;
+	color: $color_txt;
+}
+.b-resttypes__elem__city{
+	display: inline-block;
+	position: relative;
+	color: $color_blue;
+	font-size: 9pt;
+	text-align: left;
+	font-family: 'roboto_r';
+}
+.b-resttypes__elem__arrow{
+	display: inline-block;
+	position: relative;
+	
+	width: 10px;
+	height: 7px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -40px;
+}
+.b-resttypes__elem__cont-city{
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 158px;
+	width: 100%;
+	padding-bottom: 25px;	
+	background-color: $color_grey;
+	text-align: left;
+	overflow: hidden;
+	z-index: 1;
+	max-height: 999px;
+	
+	
+	
+	-webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;   
+}
+.b-resttypes__elem__cont-city__anim{
+	max-height: 100px;
+}
+.b-resttypes__elem__another{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	height: 21px;
+	width: 218px;
+	padding-top: 4px;
+	padding-right: 10px;
+	color: $color_txt;
+	font-size: 8pt;
+	text-align: left;
+	font-family: 'roboto_r';
+	text-decoration: none;
+	text-align: right;
+	cursor: pointer;
+	z-index: 1;
+	background-color: $color_grey;
+	-webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.width228{
+	width: 228px;
+}
+.b-countries__elem__zerro{
+	display: inline-block;
+	position: relative;
+	width: 228px;
+	height: 2px;
+	margin: 7px;
+	background-color: #fff;
+	
+}
+.b-resttype-place{
+	width: 73%;
+}
+.b-resttype__country, .b-resttyperesttype__hotel, .b-resttype__type{
+	width: 29%;
+}
+.b-resttyperesttype__hotel{
+	left: 1%;
+}
+/* =================================   END RESTTYPES  ============================= */

@@ -5357,14 +5357,42 @@ label {
     line-height: 25px;
   }
 
+  /* line 4114, ../sass/_1280.scss */
+  .b-avia-in-time__txt2 {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    margin-bottom: 35px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 9pt;
+    color: #383d43;
+    text-align: left;
+  }
+
+  /* line 4125, ../sass/_1280.scss */
+  .b-avia-in-time__txt3 {
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    margin-bottom: 35px;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 9pt;
+    color: #383d43;
+    text-align: left;
+  }
+
   /* ===================================   END PAGE 3  ============================== */
   /* ==================================   BEGIN AVIA 3  ============================= */
-  /* line 4116, ../sass/_1280.scss */
+  /* line 4140, ../sass/_1280.scss */
   .b-avia-body-top {
     height: 80px;
   }
 
-  /* line 4119, ../sass/_1280.scss */
+  /* line 4143, ../sass/_1280.scss */
   .b-avia-elem {
     display: block;
     position: relative;
@@ -5376,17 +5404,17 @@ label {
     /*	background-color: #9a5;*/
   }
 
-  /* line 4130, ../sass/_1280.scss */
+  /* line 4154, ../sass/_1280.scss */
   .b-avia-elem:last-child {
     border-bottom: 1px solid #e1e5e8;
   }
 
-  /* line 4133, ../sass/_1280.scss */
+  /* line 4157, ../sass/_1280.scss */
   .b-avia-elem:nth-child(2n+4) {
     background-color: #ebeef0;
   }
 
-  /* line 4136, ../sass/_1280.scss */
+  /* line 4160, ../sass/_1280.scss */
   .b-avia-elem__name {
     float: left;
     padding: 25px 0px 0px 18px;
@@ -5395,7 +5423,7 @@ label {
     color: #383d43;
   }
 
-  /* line 4143, ../sass/_1280.scss */
+  /* line 4167, ../sass/_1280.scss */
   .b-avia-elem__name span {
     display: block;
     margin-top: 5px;
@@ -5404,7 +5432,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4150, ../sass/_1280.scss */
+  /* line 4174, ../sass/_1280.scss */
   .b-avia-elem__period {
     float: right;
     padding: 28px 80px 0px 0px;
@@ -5414,7 +5442,7 @@ label {
     text-align: right;
   }
 
-  /* line 4158, ../sass/_1280.scss */
+  /* line 4182, ../sass/_1280.scss */
   .b-avia-elem__price {
     float: right;
     padding: 26px 104px 0px 0px;
@@ -5424,7 +5452,7 @@ label {
     text-align: right;
   }
 
-  /* line 4166, ../sass/_1280.scss */
+  /* line 4190, ../sass/_1280.scss */
   .b-avia-elem__price__grey {
     display: inline-block;
     position: relative;
@@ -5433,7 +5461,7 @@ label {
     font-size: 10.5pt;
   }
 
-  /* line 4173, ../sass/_1280.scss */
+  /* line 4197, ../sass/_1280.scss */
   .b-avia-elem__price__old {
     display: inline-block;
     position: relative;
@@ -5443,7 +5471,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4181, ../sass/_1280.scss */
+  /* line 4205, ../sass/_1280.scss */
   .b-avia-first-elem__name {
     display: block;
     margin-bottom: 10px;
@@ -5453,7 +5481,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4189, ../sass/_1280.scss */
+  /* line 4213, ../sass/_1280.scss */
   .b-avia-first-elem__period {
     display: block;
     position: absolute;
@@ -5465,7 +5493,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4199, ../sass/_1280.scss */
+  /* line 4223, ../sass/_1280.scss */
   .b-avia-first-elem__price {
     display: block;
     position: absolute;
@@ -5478,6 +5506,423 @@ label {
   }
 
   /* ===================================   END AVIA 3  ============================== */
+  /* ================================   BEGIN COUTRIES 3  =========================== */
+  /* line 4235, ../sass/_1280.scss */
+  .b-countries-place {
+    width: 73%;
+  }
+
+  /* line 4238, ../sass/_1280.scss */
+  .b-countries-country {
+    width: 49%;
+    left: 3%;
+  }
+
+  /* line 4242, ../sass/_1280.scss */
+  .b-countries-hotel {
+    width: 47%;
+  }
+
+  /* line 4245, ../sass/_1280.scss */
+  .b-countries__caption {
+    display: block;
+    position: relative;
+    height: 72px;
+    width: 100%;
+  }
+
+  /* line 4251, ../sass/_1280.scss */
+  .b-countries__caption__name {
+    display: inline-block;
+    position: relative;
+    width: 35%;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 22pt;
+    color: #383d43;
+    font-family: 'roboto_slab_r';
+  }
+
+  /* line 4261, ../sass/_1280.scss */
+  .b-countries__caption__right {
+    display: block;
+    position: absolute;
+    width: 65%;
+    top: -5px;
+    right: 0px;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  /* line 4270, ../sass/_1280.scss */
+  .b-countries__chek1 {
+    display: inline-block;
+    position: relative;
+  }
+
+  /* line 4275, ../sass/_1280.scss */
+  .b-countries__caption__txt {
+    display: inline-block;
+    position: relative;
+    width: 119px;
+    top: 24px;
+    color: #383d43;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    text-align: left;
+  }
+
+  /* line 4285, ../sass/_1280.scss */
+  .b-countries__b-main {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  /* line 4290, ../sass/_1280.scss */
+  .b-countries__elem {
+    display: inline-block;
+    position: relative;
+    width: 228px;
+    height: 284px;
+    margin: 7px;
+    background-color: #ebeef0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4303, ../sass/_1280.scss */
+  .b-countries__elem__img {
+    width: 228px;
+  }
+
+  /* line 4306, ../sass/_1280.scss */
+  .b-counries__dimmer {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 228px;
+    height: 123px;
+    background-color: #2a5071;
+    opacity: .5;
+    transition: opacity .5s;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+  }
+
+  /* line 4318, ../sass/_1280.scss */
+  .b-countries__elem:hover {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 28px #ccc;
+    -webkit-box-shadow: 0 0 28px #ccc;
+    box-shadow: 0 0 28px  #ccc;
+  }
+  /* line 4323, ../sass/_1280.scss */
+  .b-countries__elem:hover .b-hot__b-unit__dimmer {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  }
+  /* line 4327, ../sass/_1280.scss */
+  .b-countries__elem:hover .b-hot__img img {
+    width: 248px;
+    height: 123px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  /* line 4335, ../sass/_1280.scss */
+  .b-countries__elem:hover .b-resttypes__elem__cont-city {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 28px #ccc;
+    -webkit-box-shadow: 0 0 28px #ccc;
+    box-shadow: 0 0 28px  #ccc;
+  }
+  /* line 4341, ../sass/_1280.scss */
+  .b-countries__elem:hover .b-resttypes__elem__another {
+    background-color: #fff;
+  }
+  /* line 4344, ../sass/_1280.scss */
+  .b-countries__elem:hover .b-countries__elem__name {
+    background-color: #fff;
+  }
+
+  /* line 4348, ../sass/_1280.scss */
+  .b-countries__elem__all {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'roboto_slab_b';
+    color: #383d43;
+    font-size: 10.5pt;
+    background-color: #ffd200;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 4367, ../sass/_1280.scss */
+  .b-countries__elem__all:hover .b-countries__elem__all__hover {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4377, ../sass/_1280.scss */
+  .b-countries__elem__hover-all-no {
+    display: block;
+    position: absolute;
+    width: 100px;
+    background-color: #ccc;
+    opacity: .5;
+  }
+
+  /* line 4384, ../sass/_1280.scss */
+  .b-countries__elem__all__hover {
+    display: block;
+    position: absolute;
+    width: 85px;
+    height: 27px;
+    left: -71px;
+    margin-top: 12px;
+    line-height: 27px;
+    padding: 0px 10px 0px 10px;
+    background-color: #ffd200;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #383d43;
+    z-index: 1;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+    opacity: 0;
+    z-index: -1;
+  }
+  /* line 4404, ../sass/_1280.scss */
+  .b-countries__elem__all__hover span {
+    display: block;
+    position: absolute;
+    left: 79px;
+    top: -6px;
+    width: 9px;
+    height: 6px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -1180px;
+  }
+
+  /* line 4415, ../sass/_1280.scss */
+  .b-countries__elem__name {
+    display: block;
+    position: relative;
+    width: 92%;
+    padding-left: 8%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'roboto_slab_b';
+    color: #383d43;
+    font-size: 13.5pt;
+    text-align: left;
+    background-color: #ebeef0;
+    z-index: 100;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4434, ../sass/_1280.scss */
+  .b-countries__elem__city {
+    display: inline-block;
+    position: relative;
+    width: 82px;
+    margin: 3px 15px 0px 15px;
+    color: #00adc7;
+    font-size: 9pt;
+    text-align: left;
+    font-family: 'roboto_r';
+  }
+
+  /* line 4444, ../sass/_1280.scss */
+  .b-countries__elem__another {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #383d43;
+    font-size: 8pt;
+    text-align: left;
+    font-family: 'roboto_r';
+    text-decoration: none;
+    text-align: right;
+  }
+
+  /* line 4456, ../sass/_1280.scss */
+  .b-countries__elem__cont-city {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* ================================   END COUTNRIES 3  ============================ */
+  /* ================================   BEGIN RESTTYPES  ============================ */
+  /* line 4466, ../sass/_1280.scss */
+  .resttype-icon1 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -660px;
+  }
+
+  /* line 4470, ../sass/_1280.scss */
+  .resttype-icon2 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -630px;
+  }
+
+  /* line 4474, ../sass/_1280.scss */
+  .resttype-icon3 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -600px;
+  }
+
+  /* line 4478, ../sass/_1280.scss */
+  .resttype-icon4 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -1190px;
+  }
+
+  /* line 4482, ../sass/_1280.scss */
+  .b-resttype__hover-icon {
+    top: 27px;
+  }
+
+  /* line 4485, ../sass/_1280.scss */
+  .b-resttypes__country-number {
+    display: inline-block;
+    position: relative;
+    width: 82px;
+    margin: 3px 15px 0px 15px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #383d43;
+  }
+
+  /* line 4494, ../sass/_1280.scss */
+  .b-resttypes__elem__city {
+    display: inline-block;
+    position: relative;
+    color: #00adc7;
+    font-size: 9pt;
+    text-align: left;
+    font-family: 'roboto_r';
+  }
+
+  /* line 4502, ../sass/_1280.scss */
+  .b-resttypes__elem__arrow {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 7px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -40px;
+  }
+
+  /* line 4511, ../sass/_1280.scss */
+  .b-resttypes__elem__cont-city {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 158px;
+    width: 100%;
+    padding-bottom: 25px;
+    background-color: #ebeef0;
+    text-align: left;
+    overflow: hidden;
+    z-index: 1;
+    max-height: 999px;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4532, ../sass/_1280.scss */
+  .b-resttypes__elem__cont-city__anim {
+    max-height: 100px;
+  }
+
+  /* line 4535, ../sass/_1280.scss */
+  .b-resttypes__elem__another {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    height: 21px;
+    width: 218px;
+    padding-top: 4px;
+    padding-right: 10px;
+    color: #383d43;
+    font-size: 8pt;
+    text-align: left;
+    font-family: 'roboto_r';
+    text-decoration: none;
+    text-align: right;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #ebeef0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4558, ../sass/_1280.scss */
+  .width228 {
+    width: 228px;
+  }
+
+  /* line 4561, ../sass/_1280.scss */
+  .b-countries__elem__zerro {
+    display: inline-block;
+    position: relative;
+    width: 228px;
+    height: 2px;
+    margin: 7px;
+    background-color: #fff;
+  }
+
+  /* line 4570, ../sass/_1280.scss */
+  .b-resttype-place {
+    width: 73%;
+  }
+
+  /* line 4573, ../sass/_1280.scss */
+  .b-resttype__country, .b-resttyperesttype__hotel, .b-resttype__type {
+    width: 29%;
+  }
+
+  /* line 4576, ../sass/_1280.scss */
+  .b-resttyperesttype__hotel {
+    left: 1%;
+  }
+
+  /* =================================   END RESTTYPES  ============================= */
 }
 @media only screen and (min-width: 1000px) and (max-width: 1259px), only screen and (min-device-width: 1000px) and (max-device-width: 1259px) {
   /* line 2, ../sass/_1024.scss */
@@ -10618,14 +11063,42 @@ label {
     z-index: 121;
   }
 
+  /* line 4190, ../sass/_1024.scss */
+  .b-avia-in-time__txt2 {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    margin-bottom: 35px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 9pt;
+    color: #383d43;
+    text-align: left;
+  }
+
+  /* line 4201, ../sass/_1024.scss */
+  .b-avia-in-time__txt3 {
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    margin-bottom: 35px;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-family: 'roboto_r';
+    font-weight: bold;
+    font-size: 9pt;
+    color: #383d43;
+    text-align: left;
+  }
+
   /* ===================================   END PAGE 3  ============================== */
   /* ==================================   BEGIN AVIA 3  ============================= */
-  /* line 4192, ../sass/_1024.scss */
+  /* line 4216, ../sass/_1024.scss */
   .b-avia-body-top {
     height: 80px;
   }
 
-  /* line 4195, ../sass/_1024.scss */
+  /* line 4219, ../sass/_1024.scss */
   .b-avia-elem {
     display: block;
     position: relative;
@@ -10637,17 +11110,17 @@ label {
     /*	background-color: #9a5;*/
   }
 
-  /* line 4206, ../sass/_1024.scss */
+  /* line 4230, ../sass/_1024.scss */
   .b-avia-elem:last-child {
     border-bottom: 1px solid #e1e5e8;
   }
 
-  /* line 4209, ../sass/_1024.scss */
+  /* line 4233, ../sass/_1024.scss */
   .b-avia-elem:nth-child(2n+4) {
     background-color: #ebeef0;
   }
 
-  /* line 4212, ../sass/_1024.scss */
+  /* line 4236, ../sass/_1024.scss */
   .b-avia-elem__name {
     float: left;
     padding: 25px 0px 0px 18px;
@@ -10656,7 +11129,7 @@ label {
     color: #383d43;
   }
 
-  /* line 4219, ../sass/_1024.scss */
+  /* line 4243, ../sass/_1024.scss */
   .b-avia-elem__name span {
     display: block;
     margin-top: 5px;
@@ -10665,7 +11138,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4226, ../sass/_1024.scss */
+  /* line 4250, ../sass/_1024.scss */
   .b-avia-elem__period {
     float: right;
     padding: 28px 80px 0px 0px;
@@ -10675,7 +11148,7 @@ label {
     text-align: right;
   }
 
-  /* line 4234, ../sass/_1024.scss */
+  /* line 4258, ../sass/_1024.scss */
   .b-avia-elem__price {
     float: right;
     padding: 26px 104px 0px 0px;
@@ -10685,7 +11158,7 @@ label {
     text-align: right;
   }
 
-  /* line 4242, ../sass/_1024.scss */
+  /* line 4266, ../sass/_1024.scss */
   .b-avia-elem__price__grey {
     display: inline-block;
     position: relative;
@@ -10694,7 +11167,7 @@ label {
     font-size: 10.5pt;
   }
 
-  /* line 4249, ../sass/_1024.scss */
+  /* line 4273, ../sass/_1024.scss */
   .b-avia-elem__price__old {
     display: inline-block;
     position: relative;
@@ -10704,7 +11177,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4257, ../sass/_1024.scss */
+  /* line 4281, ../sass/_1024.scss */
   .b-avia-first-elem__name {
     display: block;
     margin-bottom: 10px;
@@ -10714,7 +11187,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4265, ../sass/_1024.scss */
+  /* line 4289, ../sass/_1024.scss */
   .b-avia-first-elem__period {
     display: block;
     position: absolute;
@@ -10726,7 +11199,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4275, ../sass/_1024.scss */
+  /* line 4299, ../sass/_1024.scss */
   .b-avia-first-elem__price {
     display: block;
     position: absolute;
@@ -10739,6 +11212,409 @@ label {
   }
 
   /* ===================================   END AVIA 3  ============================== */
+  /* ================================   BEGIN COUTRIES 3  =========================== */
+  /* line 4311, ../sass/_1024.scss */
+  .b-countries-place {
+    width: 73%;
+  }
+
+  /* line 4314, ../sass/_1024.scss */
+  .b-countries-country {
+    width: 49%;
+    left: 3%;
+  }
+
+  /* line 4318, ../sass/_1024.scss */
+  .b-countries-hotel {
+    width: 47%;
+  }
+
+  /* line 4321, ../sass/_1024.scss */
+  .b-countries__caption {
+    display: block;
+    position: relative;
+    height: 72px;
+    width: 100%;
+  }
+
+  /* line 4327, ../sass/_1024.scss */
+  .b-countries__caption__name {
+    display: inline-block;
+    position: relative;
+    width: 35%;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 22pt;
+    color: #383d43;
+    font-family: 'roboto_slab_r';
+  }
+
+  /* line 4337, ../sass/_1024.scss */
+  .b-countries__caption__right {
+    display: block;
+    position: absolute;
+    width: 65%;
+    top: -5px;
+    right: 0px;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  /* line 4346, ../sass/_1024.scss */
+  .b-countries__chek1 {
+    display: inline-block;
+    position: relative;
+  }
+
+  /* line 4351, ../sass/_1024.scss */
+  .b-countries__caption__txt {
+    display: inline-block;
+    position: relative;
+    width: 119px;
+    top: 24px;
+    color: #383d43;
+    font-family: 'roboto_r';
+    font-size: 9pt;
+    text-align: left;
+  }
+
+  /* line 4361, ../sass/_1024.scss */
+  .b-countries__b-main {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  /* line 4366, ../sass/_1024.scss */
+  .b-countries__elem {
+    display: inline-block;
+    position: relative;
+    width: 228px;
+    height: 284px;
+    margin: 7px;
+    background-color: #ebeef0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4379, ../sass/_1024.scss */
+  .b-countries__elem__img {
+    width: 228px;
+  }
+
+  /* line 4382, ../sass/_1024.scss */
+  .b-countries__elem:hover {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 28px #ccc;
+    -webkit-box-shadow: 0 0 28px #ccc;
+    box-shadow: 0 0 28px  #ccc;
+  }
+  /* line 4387, ../sass/_1024.scss */
+  .b-countries__elem:hover .b-hot__b-unit__dimmer {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  }
+  /* line 4391, ../sass/_1024.scss */
+  .b-countries__elem:hover .b-hot__img img {
+    width: 248px;
+    height: 123px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  /* line 4399, ../sass/_1024.scss */
+  .b-countries__elem:hover .b-resttypes__elem__cont-city {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 28px #ccc;
+    -webkit-box-shadow: 0 0 28px #ccc;
+    box-shadow: 0 0 28px  #ccc;
+  }
+  /* line 4405, ../sass/_1024.scss */
+  .b-countries__elem:hover .b-resttypes__elem__another {
+    background-color: #fff;
+  }
+  /* line 4408, ../sass/_1024.scss */
+  .b-countries__elem:hover .b-countries__elem__name {
+    background-color: #fff;
+  }
+
+  /* line 4412, ../sass/_1024.scss */
+  .b-countries__elem__all {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'roboto_slab_b';
+    color: #383d43;
+    font-size: 10.5pt;
+    background-color: #ffd200;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  /* line 4431, ../sass/_1024.scss */
+  .b-countries__elem__all:hover .b-countries__elem__all__hover {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4441, ../sass/_1024.scss */
+  .b-countries__elem__hover-all-no {
+    display: block;
+    position: absolute;
+    width: 100px;
+    background-color: #ccc;
+    opacity: .5;
+  }
+
+  /* line 4448, ../sass/_1024.scss */
+  .b-countries__elem__all__hover {
+    display: block;
+    position: absolute;
+    width: 85px;
+    height: 27px;
+    left: -71px;
+    margin-top: 12px;
+    line-height: 27px;
+    padding: 0px 10px 0px 10px;
+    background-color: #ffd200;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #383d43;
+    z-index: 1;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -khtml-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+    opacity: 0;
+    z-index: -1;
+  }
+  /* line 4468, ../sass/_1024.scss */
+  .b-countries__elem__all__hover span {
+    display: block;
+    position: absolute;
+    left: 79px;
+    top: -6px;
+    width: 9px;
+    height: 6px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -1180px;
+  }
+
+  /* line 4479, ../sass/_1024.scss */
+  .b-countries__elem__name {
+    display: block;
+    position: relative;
+    width: 92%;
+    padding-left: 8%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'roboto_slab_b';
+    color: #383d43;
+    font-size: 13.5pt;
+    text-align: left;
+    background-color: #ebeef0;
+    z-index: 100;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4498, ../sass/_1024.scss */
+  .b-countries__elem__city {
+    display: inline-block;
+    position: relative;
+    width: 82px;
+    margin: 3px 15px 0px 15px;
+    color: #00adc7;
+    font-size: 9pt;
+    text-align: left;
+    font-family: 'roboto_r';
+  }
+
+  /* line 4508, ../sass/_1024.scss */
+  .b-countries__elem__another {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #383d43;
+    font-size: 8pt;
+    text-align: left;
+    font-family: 'roboto_r';
+    text-decoration: none;
+    text-align: right;
+  }
+
+  /* line 4520, ../sass/_1024.scss */
+  .b-countries__elem__cont-city {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* ================================   END COUTNRIES 3  ============================ */
+  /* ================================   BEGIN RESTTYPES  ============================ */
+  /* line 4530, ../sass/_1024.scss */
+  .resttype-icon1 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -660px;
+  }
+
+  /* line 4534, ../sass/_1024.scss */
+  .resttype-icon2 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -630px;
+  }
+
+  /* line 4538, ../sass/_1024.scss */
+  .resttype-icon3 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -600px;
+  }
+
+  /* line 4542, ../sass/_1024.scss */
+  .resttype-icon4 {
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -1190px;
+  }
+
+  /* line 4546, ../sass/_1024.scss */
+  .b-resttype__hover-icon {
+    top: 27px;
+  }
+
+  /* line 4549, ../sass/_1024.scss */
+  .b-resttypes__country-number {
+    display: inline-block;
+    position: relative;
+    width: 82px;
+    margin: 3px 15px 0px 15px;
+    font-family: 'roboto_r';
+    font-size: 8pt;
+    color: #383d43;
+  }
+
+  /* line 4558, ../sass/_1024.scss */
+  .b-resttypes__elem__city {
+    display: inline-block;
+    position: relative;
+    color: #00adc7;
+    font-size: 9pt;
+    text-align: left;
+    font-family: 'roboto_r';
+  }
+
+  /* line 4566, ../sass/_1024.scss */
+  .b-resttypes__elem__arrow {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 7px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0px -40px;
+  }
+
+  /* line 4575, ../sass/_1024.scss */
+  .b-resttypes__elem__cont-city {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 158px;
+    width: 100%;
+    padding-bottom: 25px;
+    background-color: #ebeef0;
+    text-align: left;
+    overflow: hidden;
+    z-index: 1;
+    max-height: 999px;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4596, ../sass/_1024.scss */
+  .b-resttypes__elem__cont-city__anim {
+    max-height: 100px;
+  }
+
+  /* line 4599, ../sass/_1024.scss */
+  .b-resttypes__elem__another {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    height: 21px;
+    width: 218px;
+    padding-top: 4px;
+    padding-right: 10px;
+    color: #383d43;
+    font-size: 8pt;
+    text-align: left;
+    font-family: 'roboto_r';
+    text-decoration: none;
+    text-align: right;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #ebeef0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /* line 4622, ../sass/_1024.scss */
+  .width228 {
+    width: 228px;
+  }
+
+  /* line 4625, ../sass/_1024.scss */
+  .b-countries__elem__zerro {
+    display: inline-block;
+    position: relative;
+    width: 228px;
+    height: 2px;
+    margin: 7px;
+    background-color: #fff;
+  }
+
+  /* line 4634, ../sass/_1024.scss */
+  .b-resttype-place {
+    width: 73%;
+  }
+
+  /* line 4637, ../sass/_1024.scss */
+  .b-resttype__country, .b-resttyperesttype__hotel, .b-resttype__type {
+    width: 29%;
+  }
+
+  /* line 4640, ../sass/_1024.scss */
+  .b-resttyperesttype__hotel {
+    left: 1%;
+  }
+
+  /* =================================   END RESTTYPES  ============================= */
 }
 @media only screen and (min-width: 681px) and (max-width: 999px), only screen and (min-device-width: 681px) and (max-device-width: 999px) {
   /* line 1, ../sass/_768.scss */

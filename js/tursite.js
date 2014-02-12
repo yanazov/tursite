@@ -692,3 +692,18 @@ function js_open_b_add(t){
 	t.innerHTML = 'свернуть<span class="found_elem__btn__arrow"></span>';
 	document.getElementsByClassName("found_elem__btn__arrow")[number].style.backgroundPosition = "0px -60px";
 }
+function js_resttypes_open(t){
+	var number = $('.b-resttypes__elem__another').index(t);
+	if(t.parentNode.classList.contains('b-resttypes__elem__cont-city__anim')){
+		t.parentNode.classList.remove('b-resttypes__elem__cont-city__anim');		
+		document.getElementsByClassName("b-resttypes__elem__arrow")[number].style.backgroundPosition = "0px -60px";
+		return 0;
+	}
+	t.parentNode.classList.add('b-resttypes__elem__cont-city__anim');
+	document.getElementsByClassName("b-resttypes__elem__arrow")[number].style.backgroundPosition = "0px -40px";
+	
+	/*document.getElementsByClassName("b-resttypes__elem__cont-city")[number].style.height = 'auto';*/
+	
+	
+	
+}

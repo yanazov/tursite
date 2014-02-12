@@ -1,0 +1,794 @@
+<!doctype html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>ТурСайт</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" > 	
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/hammer.fakemultitouch.js"></script>
+	<script src="js/hammer.showtouches.js"></script>
+	<script src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/tursite.js"></script>   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">    -->
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/styles_ie.css" > 
+	<![endif]-->	
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+	
+	<script type="text/javascript" src="js/jquery_masonry_min.js"></script> <!-- подключаем сам плагин -->
+	<script type="text/javascript" src="js/modernizr-transitions.js"></script> <!-- подключаем плагин заставляющий работать css transitions в браузерах не поддерживающих css3 -->
+
+	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+
+</head>
+<body>
+	<span id="name_page">avia_in</span>
+	<div class="b-consultant">
+		<a class="b-consultant__form" href="#">
+			<span class="b-consultant__form__icon"><span></span></span>
+			<span class="b-consultant__form__txt">Консультант</span>
+			<span class="b-consultant__form__status">в он-лайне</span>
+			<span class="b-consultant__form__close"></span>
+		</a>
+	</div>
+	<header class="header">
+		<div class="center_cont">
+			<div class="header__b-left">
+				<div class="header__menu320">
+					<span class="header__menu320__btn">
+						<span class="header__menu320__btn__img"></span>
+					</span>
+					<span class="header__menu320__call">
+						<span class="header__menu320__call__img"></span>
+						Позвонить
+					</span>
+				</div>
+				<nav class="header__b-left_nav">
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Контакты</a></li>				
+					</ul>
+				</nav>
+				<a class="header__b-left__tel" href="">8 900 72 70</a>
+				<span class="header__b-left__icon"></span>
+				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
+			</div>
+			<div class="header__b-center">
+				<span class="header__b-center__logo"></span>
+				<span class="header__b-center__txt">ТурСайт</span>			
+			</div>
+			<div class="header__b-right">
+				<a class="header__b-right_login" href="#">
+					<span class="header__b-right_login__txt">Вход</span>
+					<span class="header__b-right_login__img"></span>				
+					<span  class="header__b-right_login__arrow"></span>
+				</a>
+				<input class="header__b-right__search" type="text" placeholder="Поиск...">
+				<a class="header__b-right__zoom" href="#"></a>
+			</div>
+		</div>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Поиск туров</a></li>
+			<li><a href="#">Отели</a></li>
+			<li><a href="#">Страны</a></li>
+			<li><a href="#">Авиабилеты</a></li>
+			<li><a href="#">Виды отдыха</a></li>
+		</ul>
+	</nav>
+	<div id="mini_search" class="b-search-mini">
+		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
+		<span id="search-mini__txt" class="b-search-mini__txt">Поиск акций</span>
+	</div>
+	<div id="open_search" class="b-search b-avia-in-search">
+		<div class="center_cont">
+			<span class="b-search__round" onClick="js_close_search()"><span></span></span>
+			<span class="b-search__caption b-avia-in__caption">
+				<span>Найти курорт</span>
+			</span>
+			<div class="b-search__place b-countries-place">
+				<div class="b-search__place__from b-avia-in-place__from b-countries-country">
+					<span class="b-search__place__name width100">Выбрать страну</span>
+					<div class="cont-place b-avia-in-cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(0)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(0, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+				<span class="b-avia-in-time__br"></span>
+				<div class="b-search__place__to b-avia-in-place__to b-countries-hotel">
+					<span class="b-avia-in-place__separ"></span>
+					<span class="b-search__place__name width100">Выбрать курорт</span>
+					<div class="cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(1)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(1, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+			</div>				
+			<div class="b-search__find b-avia-in-find">
+				<a class="btn-blue b-search__find__btn b-avia-in__find__btn" href="#">
+					Найти
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="path block-none">
+		<div class="center_cont">
+			<a class="path__active" href="index.html">Главная</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">Тайланд</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">о-в Самуи</a>
+			<span class="path__separ"></span>
+			<span class="path__current">Незабываемый отдых в Тайланде...</span>
+		</div>
+	</div>
+	<div class="center_cont">
+	<div class="b-countries__caption">
+		<span class="b-countries__caption__name">Страны и курорты</span>
+		<div class="b-countries__caption__right">
+			<div class="b-countries__chek1">
+				<span class="b-countries__arrow"></span>
+				<span class="b-countries__unit">
+					<input id="b-quick-ask__checkbox" type="checkbox">
+					<label for="b-quick-ask__checkbox"><span></span></label>
+				</span>
+				<span class="b-countries__caption__txt">	
+					Страны безвизового въезда
+				</span>
+			</div>
+			<div class="b-countries__chek1">
+				<span class="b-countries__arrow"></span>
+				<span class="b-countries__unit">
+					<input id="b-quick-ask__checkbox2" type="checkbox">
+					<label for="b-quick-ask__checkbox2"><span></span></label>
+				</span>
+				<span class="b-countries__caption__txt">	
+					Страны, где виза ставится на границе
+				</span>
+			</div>
+			<div class="b-countries__chek1">
+				<span class="b-countries__arrow"></span>
+				<span class="b-countries__unit">
+					<input id="b-quick-ask__checkbox3" type="checkbox">
+					<label for="b-quick-ask__checkbox3"><span></span></label>
+				</span>
+				<span class="b-countries__caption__txt">	
+					Страны с визовым въездом
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="b-countries__b-main">
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">18
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>			
+			<span class="b-countries__elem__name">Турция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 17...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">6
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Черногория</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 6...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">1
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Египет</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">29
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Греция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">1
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Египет</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">29
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Греция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">18
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>			
+			<span class="b-countries__elem__name">Турция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 17...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">6
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Черногория</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 6...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">18
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>			
+			<span class="b-countries__elem__name">Турция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 17...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">6
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Черногория</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 6...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">1
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Египет</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">29
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Греция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">1
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Египет</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">29
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Греция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">18
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>			
+			<span class="b-countries__elem__name">Турция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 17...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">6
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Черногория</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 6...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">18
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>			
+			<span class="b-countries__elem__name">Турция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 17...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">6
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Черногория</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 6...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">1
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Египет</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">29
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Греция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">1
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Египет</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">29
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Греция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href=""></a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">18
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>			
+			<span class="b-countries__elem__name">Турция</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Кемер</a>
+				<a class="b-countries__elem__city" href="">Мармарис</a>
+				<a class="b-countries__elem__city" href="">Аланья</a>
+				<a class="b-countries__elem__city" href="">Бодрум</a>
+				<a class="b-countries__elem__city" href="">Сиде</a>
+				<a class="b-countries__elem__city" href="">Кушадсы</a>
+				<a class="b-countries__elem__city" href="">Белек</a>
+				<a class="b-countries__elem__city" href="">Анталия</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 17...</a>
+		</div>
+		<div class="b-countries__elem">
+			<div class="b-hot__img b-countries__elem__img">	
+				<img src="pic/hot1.jpg" alt=""/>
+			</div>
+			<div class="b-counries__dimmer"></div>
+			<span class="b-countries__elem__all">6
+				<span class="b-countries__elem__all__hover">Туров в страну
+					<span></span>
+				</span>
+			</span>	
+			<span class="b-countries__elem__name">Черногория</span>
+			<div class="b-countries__elem__cont-city">
+				<a class="b-countries__elem__city" href="">Шарм-Эль-Шейх</a>
+				<a class="b-countries__elem__city" href="">Марса Алам</a>
+				<a class="b-countries__elem__city" href="">Хургада</a>
+				<a class="b-countries__elem__city" href="">Эль Кусейр</a>
+				<a class="b-countries__elem__city" href="">Макади</a>
+				<a class="b-countries__elem__city" href="">Таба</a>
+				<a class="b-countries__elem__city" href="">Сахл Хашиш</a>
+				<a class="b-countries__elem__city" href="">Сома Бей</a>
+			</div>
+			<a class="b-countries__elem__another" href="">Еще 6...</a>
+		</div>
+	
+	</div>
+	
+	<a class="btn-yellow b-search-e__body__btn">
+		еще
+	</a>
+	</div>
+	<footer class="footer footer__inner">
+		<div class="center_cont">
+			<div class="footer__contact footer__contact__inner">
+				<div class="footer__contact__elem">
+					<span class="footer__contact__elem__caption">Адрес:</span>
+					г.Киев, Украина
+					<br/>
+					ул. Ивана Франко, 40-Б
+				</div>
+				<div class="footer__contact__elem2">
+					<span class="footer__contact__elem__caption">Телефоны:</span>
+					<a href="">050 445 25 45, (044)</a>
+					<br/>
+					<a href="">238 60 20, 238 62 31</a>
+				</div>
+				<div class="footer__contact__elem3">
+					<span class="footer__contact__elem__caption">Email:</span>
+					<a href="#">sale@tursite.com.ua</a>
+					<br/>
+					<a href="#">market@tursite.com.ua</a>
+				</div>
+			</div>
+			<div class="footer__mailing footer__mailing__inner">
+				<span class="footer__mailing__check-icon"></span>
+				<span class="footer__mailing__txt mailing__txt__top">Подписатся на наши обновления</span>
+				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
+				<span class="footer__mailing__icon"></span>
+			</div>
+			<div class="footer__b-social footer__b-social__inner">
+				<span class="footer__copyright">©  ТурСайт, 2013   Все права защищены.</span>
+				<a class="footer__rule" href="#">Правила использования</a>
+				<div class="footer__social">
+					Мы в сети:
+					<ul>
+						<li><a class="footer__social__f" href="#"></a></li>
+						<li><a class="footer__social__t" href="#"></a></li>
+						<li><a class="footer__social__g" href="#"></a></li>
+					</ul>		
+				</div>
+			</div>	
+			<div class="footer__webmedia footer__webmedia__inner">
+				Разработка сайтов на Битриксе:
+				<span class="footer__webmedia__icon"></span>
+			</div>
+		</div>
+	</footer>
+	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
+		<span class="btn-up-dwn__icon"></span>
+	</span>
+	
+</body>
+</html>
