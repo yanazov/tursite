@@ -95,8 +95,8 @@
 			<span class="b-search__caption b-avia-in__caption">
 				<span>Найти туры</span>
 			</span>
-			<div class="b-search__place b-resttype-place">
-				<div class="b-search__place__from b-avia-in-place__from b-resttype__country">
+			<div class="b-search__place b-hotels-place">
+				<div class="b-search__place__from b-avia-in-place__from b-hotels__country">
 					<span class="b-search__place__name width100">Выбрать страну</span>
 					<div class="cont-place b-avia-in-cont-place">
 						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(0)">
@@ -110,7 +110,7 @@
 					<span class="b-search__place__icon b-avia-in__place__icon"></span>
 				</div>
 			
-				<div class="b-search__place__to b-avia-in-place__to b-resttyperesttype__hotel">
+				<div class="b-search__place__to b-avia-in-place__to b-hotels__hotel">
 					<span class="b-avia-in-place__separ"></span>
 					<span class="b-search__place__name width100">Выбрать курорт</span>
 					<div class="cont-place">
@@ -124,19 +124,23 @@
 					</div>
 					<span class="b-search__place__icon b-avia-in__place__icon"></span>
 				</div>
-				<div class="b-search__place__to b-avia-in-place__to b-resttype__type">
+				<div class="b-search__place__to b-avia-in-place__to b-hotels__hotel">
 					<span class="b-avia-in-place__separ"></span>
-					<span class="b-search__place__name width100">Тип отдыха</span>
+					<span class="b-search__place__name width100">Количество звезд</span>
 					<div class="cont-place">
 						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(1)">
-						<ul class="search-select-place">
-							<li></li>
-							<li onClick="js_close_select_place(1, this)">подсказка 1</li>
-							<li onClick="js_close_select_place(1, this)">подсказка 2</li>
-							<li onClick="js_close_select_place(1, this)">подсказка 3</li>														
-						</ul>
+						<div class="b-hotels__rating__cont">						
+							<span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">2
+								<span class="b-hotels__rating-select__star"></span>
+							</span><span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">3
+								<span class="b-hotels__rating-select__star"></span>
+							</span><span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">4
+								<span class="b-hotels__rating-select__star"></span>
+							</span><span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">5
+								<span class="b-hotels__rating-select__star"></span>
+							</span>
+						</div>
 					</div>
-					<span class="b-search__place__icon b-avia-in__place__icon"></span>
 				</div>
 			</div>
 				
@@ -166,7 +170,7 @@
 		<div class="b-countries__b-main">
 		<a class="b-hotels-top-elem" href="">
 			<div class="b-hot__img b-countries__elem__img">	
-				<img src="pic/resttype1.jpg" alt=""/>
+				<img src="pic/hotels-hot1.jpg" alt=""/>
 			</div>
 			<div class="b-hot__b-unit__dimmer width228"></div>					
 			<span class="b-countries__elem__name">Abant Palace
@@ -176,7 +180,7 @@
 		</a>
 		<a class="b-hotels-top-elem" href="">
 			<div class="b-hot__img b-countries__elem__img">	
-				<img src="pic/resttype1.jpg" alt=""/>
+				<img src="pic/hotels-hot2.jpg" alt=""/>
 			</div>
 			<div class="b-hot__b-unit__dimmer width228"></div>					
 			<span class="b-countries__elem__name">Acapulco Resort & Convention & SPA
@@ -186,7 +190,7 @@
 		</a>
 		<a class="b-hotels-top-elem" href="">
 			<div class="b-hot__img b-countries__elem__img">	
-				<img src="pic/resttype1.jpg" alt=""/>
+				<img src="pic/hotels-hot1.jpg" alt=""/>
 			</div>
 			<div class="b-hot__b-unit__dimmer width228"></div>					
 			<span class="b-countries__elem__name">Abant Palace
@@ -196,7 +200,7 @@
 		</a>
 		<a class="b-hotels-top-elem" href="">
 			<div class="b-hot__img b-countries__elem__img">	
-				<img src="pic/resttype1.jpg" alt=""/>
+				<img src="pic/hotels-hot2.jpg" alt=""/>
 			</div>
 			<div class="b-hot__b-unit__dimmer width228"></div>					
 			<span class="b-countries__elem__name">Acapulco Resort & Convention & SPA
@@ -204,8 +208,190 @@
 			</span>	
 			<span class="b-countries__city">Белек</span>
 		</a>
-		
-				
+		<div class="b-hotels__body__top">
+			<span class="b-search-e__body__top__txt">Всего найдено </span>
+			<span class="b-search-e__body__top__arrow"></span>
+			<span class="b-search-e__body__top__number">159</span>
+			<span class="b-search-e__body__top__unit">туров</span>			
+			<div class="b-hotels__body__top__b-input">
+				<input class="b-hotels__body__top__b-input__search" type="text" placeholder="Введите название отеля...">
+				<span class="b-hotels__body__top__b-input__search__btn"></span>
+				<div class="b-hotels__body__top__b-input__right">
+					<div class="b-hotels__body__top__b-select b-hotels__b-search-abc">
+						<span class="b-search-e__body__top__txt-select">По названию:</span>
+						<input class="b-search-e__input" type="text" value="A-Z" readonly onClick="js_select_number_men_2(0)">
+						<span class="b-search-e__body__top__b-select__arrow"></span>
+						<ul class="b-tour__select-number-men b-hotels-select-abc">
+							<li onClick=></li>
+							<li onClick="js_close_select_number_men_search(this, 0)">A-Z</li>
+							<li onClick="js_close_select_number_men_search(this, 0)">Z-A</li>
+						</ul>
+					</div>
+					<div class="b-hotels__body__top__b-select b-hotels__b-search-rating">
+						<span class="b-search-e__body__top__txt-select">Сортировать:</span>
+						<input class="b-search-e__input" type="text" value="по рейтингу" readonly onClick="js_select_number_men_2(1)">
+						<span class="b-search-e__body__top__b-select__arrow"></span>
+						<ul class="b-tour__select-number-men b-hotels-select-rating">
+							<li onClick=></li>
+							<li onClick="js_close_select_number_men_search(this, 1)">по рейтингу</li>
+							<li onClick="js_close_select_number_men_search(this, 1)">по цене</li>
+							<li onClick="js_close_select_number_men_search(this, 1)">по обслуживанию</li>
+						</ul>
+					</div>
+					<div class="b-hotels__body__top__b-select b-hotels__b-search-number">
+						<span class="b-search-e__body__top__txt-select">Отображать по:</span>
+						<input class="b-search-e__input" type="text" value="10" readonly onClick="js_select_number_men_2(2)">
+						<span class="b-search-e__body__top__b-select__arrow"></span>
+						<ul class="b-tour__select-number-men b-search-select">
+							<li onClick=></li>
+							<li onClick="js_close_select_number_men_search(this, 2)">5</li>
+							<li onClick="js_close_select_number_men_search(this, 2)">15</li>
+							<li onClick="js_close_select_number_men_search(this, 2)">20</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>		
+		<div>
+			<div class="b-hotels__elem">
+				<img class="b-hotels__elem__img" src="pic/hotels1.jpg" alt="" width="125px">
+				<div class="b-hotels__elem__left">
+					<span class="b-hotels__elem__left__name">
+						ACG Hotels Sunset Beach Resort
+					</span>
+					<br/>
+					<span class="b-counries__raiting"></span>
+					<span class="b-hotels__elem__left__city">
+						Шарм-Аль-Шейх
+					</span>
+					<a href="" class="b-hotels__elem__left__map">На карте</a>
+				</div>
+				<div class="b-hotels__elem__right">
+					<span class="b-hotels__elem__right__txt">Рейтинг:
+						<span class="b-hotels__elem__right__number">28.4</span>
+					</span>
+					<span class="b-hotels__elem__right__txt">Отзывы:
+						<span class="b-hotels__elem__right__number">49</span>
+					</span>
+					<a href="" class="btn-yellow b-hotels__elem__right__btn">Найти туры в отель</a>
+				</div>
+			</div>
+			<div class="b-hotels__elem">
+				<img class="b-hotels__elem__img" src="pic/hotels2.jpg" alt="" width="125px">
+				<div class="b-hotels__elem__left">
+					<span class="b-hotels__elem__left__name">
+						Airport Inn
+					</span>
+					<br/>
+					<span class="b-counries__raiting"></span>
+					<span class="b-hotels__elem__left__city">
+						Шарм-Аль-Шейх
+					</span>
+					<a href="" class="b-hotels__elem__left__map">На карте</a>
+				</div>
+				<div class="b-hotels__elem__right">
+					<span class="b-hotels__elem__right__txt">Рейтинг:
+						<span class="b-hotels__elem__right__number">28.4</span>
+					</span>
+					<span class="b-hotels__elem__right__txt">Отзывы:
+						<span class="b-hotels__elem__right__number">49</span>
+					</span>
+					<a href="" class="btn-yellow b-hotels__elem__right__btn">Найти туры в отель</a>
+				</div>
+			</div>
+			<div class="b-hotels__elem">
+				<img class="b-hotels__elem__img" src="pic/hotels3.jpg" alt="" width="125px">
+				<div class="b-hotels__elem__left">
+					<span class="b-hotels__elem__left__name">
+						Acacia Resort Antalya
+					</span>
+					<br/>
+					<span class="b-counries__raiting"></span>
+					<span class="b-hotels__elem__left__city">
+						Шарм-Аль-Шейх
+					</span>
+					<a href="" class="b-hotels__elem__left__map">На карте</a>
+				</div>
+				<div class="b-hotels__elem__right">
+					<span class="b-hotels__elem__right__txt">Рейтинг:
+						<span class="b-hotels__elem__right__number">28.4</span>
+					</span>
+					<span class="b-hotels__elem__right__txt">Отзывы:
+						<span class="b-hotels__elem__right__number">49</span>
+					</span>
+					<a href="" class="btn-yellow b-hotels__elem__right__btn">Найти туры в отель</a>
+				</div>
+			</div>
+			<div class="b-hotels__elem">
+				<img class="b-hotels__elem__img" src="pic/hotels1.jpg" alt="" width="125px">
+				<div class="b-hotels__elem__left">
+					<span class="b-hotels__elem__left__name">
+						ACG Hotels Sunset Beach Resort
+					</span>
+					<br/>
+					<span class="b-counries__raiting"></span>
+					<span class="b-hotels__elem__left__city">
+						Шарм-Аль-Шейх
+					</span>
+					<a href="" class="b-hotels__elem__left__map">На карте</a>
+				</div>
+				<div class="b-hotels__elem__right">
+					<span class="b-hotels__elem__right__txt">Рейтинг:
+						<span class="b-hotels__elem__right__number">28.4</span>
+					</span>
+					<span class="b-hotels__elem__right__txt">Отзывы:
+						<span class="b-hotels__elem__right__number">49</span>
+					</span>
+					<a href="" class="btn-yellow b-hotels__elem__right__btn">Найти туры в отель</a>
+				</div>
+			</div>
+			<div class="b-hotels__elem">
+				<img class="b-hotels__elem__img" src="pic/hotels2.jpg" alt="" width="125px">
+				<div class="b-hotels__elem__left">
+					<span class="b-hotels__elem__left__name">
+						Airport Inn
+					</span>
+					<br/>
+					<span class="b-counries__raiting"></span>
+					<span class="b-hotels__elem__left__city">
+						Шарм-Аль-Шейх
+					</span>
+					<a href="" class="b-hotels__elem__left__map">На карте</a>
+				</div>
+				<div class="b-hotels__elem__right">
+					<span class="b-hotels__elem__right__txt">Рейтинг:
+						<span class="b-hotels__elem__right__number">28.4</span>
+					</span>
+					<span class="b-hotels__elem__right__txt">Отзывы:
+						<span class="b-hotels__elem__right__number">49</span>
+					</span>
+					<a href="" class="btn-yellow b-hotels__elem__right__btn">Найти туры в отель</a>
+				</div>
+			</div>
+			<div class="b-hotels__elem">
+				<img class="b-hotels__elem__img" src="pic/hotels3.jpg" alt="" width="125px">
+				<div class="b-hotels__elem__left">
+					<span class="b-hotels__elem__left__name">
+						Acacia Resort Antalya
+					</span>
+					<br/>
+					<span class="b-counries__raiting"></span>
+					<span class="b-hotels__elem__left__city">
+						Шарм-Аль-Шейх
+					</span>
+					<a href="" class="b-hotels__elem__left__map">На карте</a>
+				</div>
+				<div class="b-hotels__elem__right">
+					<span class="b-hotels__elem__right__txt">Рейтинг:
+						<span class="b-hotels__elem__right__number">28.4</span>
+					</span>
+					<span class="b-hotels__elem__right__txt">Отзывы:
+						<span class="b-hotels__elem__right__number">49</span>
+					</span>
+					<a href="" class="btn-yellow b-hotels__elem__right__btn">Найти туры в отель</a>
+				</div>
+			</div>
+		</div>
 		
 		<a class="btn-yellow b-search-e__body__btn">
 			еще

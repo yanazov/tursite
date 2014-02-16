@@ -1,0 +1,836 @@
+<!doctype html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>ТурСайт</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" > 	
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/hammer.fakemultitouch.js"></script>
+	<script src="js/hammer.showtouches.js"></script>
+	<script src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/tursite.js"></script>   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">    -->
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/styles_ie.css" > 
+	<![endif]-->	
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+	
+	<script type="text/javascript" src="js/jquery_masonry_min.js"></script> <!-- подключаем сам плагин -->
+	<script type="text/javascript" src="js/modernizr-transitions.js"></script> <!-- подключаем плагин заставляющий работать css transitions в браузерах не поддерживающих css3 -->
+
+	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+
+</head>
+<body>
+	<span id="name_page">tour</span>
+	<div class="b-consultant">
+		<a class="b-consultant__form" href="#">
+			<span class="b-consultant__form__icon"><span></span></span>
+			<span class="b-consultant__form__txt">Консультант</span>
+			<span class="b-consultant__form__status">в он-лайне</span>
+			<span class="b-consultant__form__close"></span>
+		</a>
+	</div>
+	<header class="header">
+		<div class="center_cont">
+			<div class="header__b-left">
+				<div class="header__menu320">
+					<span class="header__menu320__btn">
+						<span class="header__menu320__btn__img"></span>
+					</span>
+					<span class="header__menu320__call">
+						<span class="header__menu320__call__img"></span>
+						Позвонить
+					</span>
+				</div>
+				<nav class="header__b-left_nav">
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Контакты</a></li>				
+					</ul>
+				</nav>
+				<a class="header__b-left__tel" href="">8 900 72 70</a>
+				<span class="header__b-left__icon"></span>
+				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
+			</div>
+			<div class="header__b-center">
+				<span class="header__b-center__logo"></span>
+				<span class="header__b-center__txt">ТурСайт</span>			
+			</div>
+			<div class="header__b-right">
+				<a class="header__b-right_login" href="#">
+					<span class="header__b-right_login__txt">Вход</span>
+					<span class="header__b-right_login__img"></span>				
+					<span  class="header__b-right_login__arrow"></span>
+				</a>
+				<input class="header__b-right__search" type="text" placeholder="Поиск...">
+				<a class="header__b-right__zoom" href="#"></a>
+			</div>
+		</div>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Поиск туров</a></li>
+			<li><a href="#">Отели</a></li>
+			<li><a href="#">Страны</a></li>
+			<li><a href="#">Авиабилеты</a></li>
+			<li><a href="#">Виды отдыха</a></li>
+		</ul>
+	</nav>
+	<div id="mini_search" class="b-search-mini">
+		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
+		<span id="search-mini__txt" class="b-search-mini__txt">Найти тур</span>
+	</div>
+	<div id="open_search" class="b-search b-avia-in-search">
+		<div class="center_cont">
+			<span class="b-search__round" onClick="js_close_search()"><span></span></span>
+			<span class="b-search__caption b-avia-in__caption">
+				<span>Найти туры</span>
+			</span>
+			<div class="b-search__place b-hotels-place">
+				<div class="b-search__place__from b-avia-in-place__from b-hotels__country">
+					<span class="b-search__place__name width100">Выбрать страну</span>
+					<div class="cont-place b-avia-in-cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(0)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(0, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+			
+				<div class="b-search__place__to b-avia-in-place__to b-hotels__hotel">
+					<span class="b-avia-in-place__separ"></span>
+					<span class="b-search__place__name width100">Выбрать курорт</span>
+					<div class="cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(1)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(1, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+				<div class="b-search__place__to b-avia-in-place__to b-hotels__hotel">
+					<span class="b-avia-in-place__separ"></span>
+					<span class="b-search__place__name width100">Количество звезд</span>
+					<div class="cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(1)">
+						<div class="b-hotels__rating__cont">						
+							<span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">2
+								<span class="b-hotels__rating-select__star"></span>
+							</span><span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">3
+								<span class="b-hotels__rating-select__star"></span>
+							</span><span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">4
+								<span class="b-hotels__rating-select__star"></span>
+							</span><span class="b-hotels__rating-select" onClick="js_hotels_rating_select(this)">5
+								<span class="b-hotels__rating-select__star"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="b-search__find b-avia-in-find">
+				<a class="btn-blue b-search__find__btn b-avia-in__find__btn" href="#">
+					Найти
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="path">
+		<div class="center_cont">
+			<a class="path__active" href="index.html">Главная</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">Тайланд</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">о-в Самуи</a>
+			<span class="path__separ"></span>
+			<span class="path__current">Незабываемый отдых в Тайланде...</span>
+		</div>
+	</div>
+	<div class="b-tour">
+		<div class="center_cont">
+			<div class="b-tour__b-main">
+				<span class="b-tour__b-main__dimmer"></span>
+				<span class="b-tour__b-main__b-card">
+					<span class="b-tour__b-main__b-card__caption">
+						<span id="space2"></span>
+						Информация:						
+					</span>
+					<span class="b-tour__b-main__b-card__elem">
+						<span class="b-tour__b-main__b-card__caption2">
+							Тип отеля:
+						</span>
+						Гостиничный комплекс
+					</span>
+					<span class="b-tour__b-main__b-card__elem b-card__elem__hotel">
+						<span class="b-tour__b-main__b-card__caption2">
+							Расположение:
+						</span>
+						Городской, близко к центру
+						<span class="">
+							<a class="b-hotel-in__card__a-map" href="">смотреть на карте 							
+								<span class="b-hotel-in__card__a-map__decor"></span>
+							</a>
+						</span>
+					</span>
+					<span class="b-tour__b-main__b-card__elem">
+						<span class="b-tour__b-main__b-card__elem__cont">
+							<span class="b-tour__b-main__b-card__caption2">
+								Количество номеров:
+							</span>
+							257 номеров
+						</span>
+					</span>					
+					<span class="b-tour__b-main__b-card__elem">
+						<span class="b-tour__b-main__b-card__caption2">
+							Адрес:
+						</span>
+						<a class="b-hotel-in__card__a" href="">www.radissonblu.com</a>
+					</span>
+					<span class="b-tour__b-main__b-card__elem border-bottom-none">
+						<span class="b-hotel-in__card__advisor"></span>
+					</span>
+				</span>
+				<div class="b-tour__b-main__slogan">
+					The radisson Blu
+					<br/>
+					Fujairah Resort
+					<span class="b-hotels-in__main-rating"></span>
+					<span class="b-hotel-in__slogan__txt">
+						JAL Fujairah Hotel Resort & Spa - отличный отель, который представляет
+						непровзойденное качество обслуживания для своих туристов, множество 
+						развлечений и услуг, внимательное и заботливое отношение ко всем 
+						пожеланиям и просьбам гостей. Отель постороен на живописном побережье океана, 
+						в окружении гор Hajjar.
+					</span>					
+				</div>
+								
+				
+				<a class="btn-yellow b-tour__b-main__btn">
+					Хочу сюда!
+				</a>
+			</div>
+			<span class="b-tour__btn-galery">
+				<span class="btn-yellow b-tour__btn-galery__body" onClick="js_galery_on_off()">
+					<span id="btn_galery_icon"></span>
+				</span>
+				<span class="b-tour__btn-galery__number">
+					24
+				</span>
+				<span class="b-tour__btn-galery__txt">
+					Фото
+				</span>
+			</span>
+			<div class="b-tour__b-galery">
+				<div id="b-galery__scroll" class="b-tour__b-galery__scroll">
+					<div id="galery__body" class="b-tour__b-galery__body">
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img  src="galery/s_pic1.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic2.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic3.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic4.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic5.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic6.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic7.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic8.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic9.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic10.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic1.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic2.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic3.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic4.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic5.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic6.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic7.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic8.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic9.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic10.jpg" alt="">
+						</div>    
+					
+					</div>
+				</div>
+				<div class="b-tour__b-galery__nav">
+					<span class="b-tour__b-galery__nav__up" onClick="js_galery_up()"></span>
+					<span class="b-tour__b-galery__nav__dwn" onClick="js_galery_dwn()"></span>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="center_cont">
+		<div class="b-same b-hotels-in-same">
+			<span class="details__caption"></span>
+			<div class="b-hotels-in__b-rating">
+				<span class="b-hotels-in__b-rating__caption">
+					Рейтинг:
+					<span class="b-hotels-in__b-rating__caption__number">15.7</span>
+				</span>
+				<span class="b-hotels-in__b-rating__elem">
+					<span class="b-hotels-in__b-rating__elem__txt">Расположение
+						<span class="b-hotels-in__b-rating__elem__number">11.6</span>
+					</span>
+					<span class="b-hotels-in__b-rating__elem__rating5"></span>
+				</span>
+				<span class="b-hotels-in__b-rating__elem">
+					<span class="b-hotels-in__b-rating__elem__txt">Номер
+						<span class="b-hotels-in__b-rating__elem__number">2.9</span>
+					</span>
+					<span class="b-hotels-in__b-rating__elem__rating4"></span>
+				</span>
+				<span class="b-hotels-in__b-rating__elem">
+					<span class="b-hotels-in__b-rating__elem__txt">Питание
+						<span class="b-hotels-in__b-rating__elem__number">3.5</span>
+					</span>
+					<span class="b-hotels-in__b-rating__elem__rating3"></span>
+				</span>
+				<span class="b-hotels-in__b-rating__elem">
+					<span class="b-hotels-in__b-rating__elem__txt">Сервис
+						<span class="b-hotels-in__b-rating__elem__number">28.9</span>
+					</span>
+					<span class="b-hotels-in__b-rating__elem__rating4"></span>
+				</span>
+				<span class="b-hotels-in__b-rating__elem">
+					<span class="b-hotels-in__b-rating__elem__txt">Развлечения
+						<span class="b-hotels-in__b-rating__elem__number">16.9</span>
+					</span>
+					<span class="b-hotels-in__b-rating__elem__rating2"></span>
+				</span>
+				<span class="b-hotels-in__b-rating__elem">
+					<span class="b-hotels-in__b-rating__elem__txt">Цена/Качество
+						<span class="b-hotels-in__b-rating__elem__number">2.5</span>
+					</span>
+					<span class="b-hotels-in__b-rating__elem__rating1"></span>
+				</span>
+			</div>
+			<span class="details__caption">Похожии отели:</span>
+			<a class="b-hotels-top-elem b-hotels-in__margin" href="">
+				<div class="b-hot__img b-countries__elem__img">	
+					<img src="pic/hotels-hot1.jpg" alt=""/>
+				</div>
+				<div class="b-hot__b-unit__dimmer width228"></div>					
+				<span class="b-countries__elem__name">Abant Palace
+					<span class="b-counries__raiting"></span>
+				</span>
+				<span class="b-countries__city">Аланья</span>
+				<span class="btn-yellow btn-hot-detail b-hotel-in__btn-detail" href="#">Подробнее</span>
+			</a>
+				<a class="b-hotels-top-elem b-hotels-in__margin" href="">
+				<div class="b-hot__img b-countries__elem__img">	
+					<img src="pic/hotels-hot2.jpg" alt=""/>
+				</div>
+				<div class="b-hot__b-unit__dimmer width228"></div>					
+				<span class="b-countries__elem__name">Acapulco Resort & Convention & SPA
+					<span class="b-counries__raiting"></span>
+				</span>	
+				<span class="b-countries__city">Кемер</span>
+				<span class="btn-yellow btn-hot-detail b-hotel-in__btn-detail" href="#">Подробнее</span>
+			</a>
+		</div>
+		<div class="details b-hotels-in-details">
+			<div class="details__social">
+			Поделится с друзьями:
+			<ul>
+				<li><a class="details__social__f" href="#"></a></li>
+				<li><a class="details__social__t" href="#"></a></li>
+				<li><a class="details__social__g" href="#"></a></li>
+			</ul>		
+			</div>
+			<div id="details__make__1" class="details__make">
+				<span class="details__make__txt">В избранное:</span>
+				<a id="details__favorite" class="details__make__btn"></a>
+				<span class="details__make__txt">
+					Отправить на email:
+					<input class="details__make__input-mail" type='text' placeholder="введите email...">
+					<span class="details__make__icon"></span>
+					<span class="details__make__decor"></span>
+				</span>
+				<a id="details__email" class="details__make__btn"></a>
+				<span class="details__make__txt invisible">Распечатать:</span>
+				<a id="details__print" class="details__make__btn"></a>			
+			</div>
+			<ul class="b-hotels-in__menu">
+				<li>Описание</li>
+				<li>
+					Отзывы 
+					<span class="">172</span>
+				</li>
+			</ul>
+			<div class="flex-container1">
+				<div class="flex-item-left">
+					<span class="details__caption">Описание номеров:</span>
+					Все номера отличаются неповторимым изящным дизайном и шикарным
+					интерьером, оборудованы по последним стандартам, укомплектованы 
+					удобной и красивой мебелью.
+					<ul class="flex-container__ul">
+						<li><span></span><span></span>балкон;</li>
+						<li><span></span>ТВ со спутниковыми каналами;</li>
+						<li><span></span>скоросной Интернет;</li>
+						<li><span></span>мини-бар с холодильником;</li>
+						<li><span></span>кондиционер;</li>
+						<li><span></span>сейф;</li>
+						<li><span></span>телефон;</li>
+						<li><span></span>ванная комната с санной или душевой кабиной,
+							феном и туалетными принадлежностями.
+						</li>					
+					</ul>
+					<span class="details__caption">Описание номеров:</span>
+					<ul class="flex-container__ul">
+						<li><span></span><span></span>просторный ресторан Breeze с 
+						   расслабляющей неформальной 
+						   атмосферой, в меню блюда 
+						   средиземноморской кухни, открыт с 
+						   07:00 до 22:30;
+						</li>
+						<li><span></span>
+							уютный ресторан Icho с традиционной 
+						   арабской кухней, открыт с 19:00 до 01:00;
+						   				
+						</li>
+						<li><span></span>
+							красивый арабский ресторан Al Nokhada, 
+						   открыт с 19:00 до 01:00;								
+						</li>
+						<li><span></span>
+							чудесный ресторан Marco Polo с 
+							живописной панорамой моря и вкусной 
+							японской кухней, открыт с 07:00 до 23:00;
+						</li>
+						<li><span></span>
+							стильный бар Lobby Lounge  в холле 
+							отеля с удобной мягкой мебелью, 
+							предлагает большой выбор различных 
+							напитков, коктейлей и легких закусок, 
+							открыт с 07:00 до 01:00;
+						</li>
+						<li><span></span>
+							бар на пляже Grand Bleu, открыт с 09:00 
+							до 19:00;
+						</li>
+						<li><span></span>
+							бар на пляже Moon Beach, открыт с 
+							09:00 до 03:00.
+						</li>									
+					</ul>
+				</div>
+				<div class="flex-item-right">
+					<span class="details__caption">Инфраструктура отеля:</span>
+					<ul class="flex-container__ul">
+						<li><span></span><span></span>ТВ-комната;</li>
+						<li><span></span>игровая комната;</li>
+						<li><span></span>библиотека;</li>
+						<li><span></span>бальный зал Al Bahar;</li>
+						<li><span></span>конференц-за на 60 мест;</li>
+						<li><span></span>бизнес-центр;</li>
+					</ul>
+					<span class="details__caption">Типы питания:</span>
+					<ul class="flex-container__ul">
+						<li><span></span><span></span>по системе "все включено";</li>
+						<li><span></span>полупансион;</li>
+					</ul>
+					<span class="details__caption">Бесплатный сервис:</span>
+					<ul class="flex-container__ul">
+						<li><span></span><span></span>круглосуточное обслуживание;</li>
+						<li><span></span>зонтики и шезлонги возле бассейна и на пляже;</li>
+					</ul>
+					<span class="details__caption">Бесплатный сервис:</span>
+					<ul class="flex-container__ul">
+						<li><span></span><span></span>транспорт до аэпорта;</li>
+						<li><span></span>комната для хранения багажа;</li>
+						<li><span></span>обслуживание номеров;</li>
+						<li><span></span>магазины в отеле;</li>
+						<li><span></span>магазин подарков;</li>
+						<li><span></span>организация встреч и банкетов;</li>
+						<li><span></span>парикмахерская;</li>
+						<li><span></span>косметический салон;</li>
+						<li><span></span>организация экскурсий;</li>
+						<li><span></span>услуги секретаря;</li>
+						<li><span></span>доступ в Интернет;</li>
+						<li><span></span>факс;</li>
+						<li><span></span>принтер;</li>
+					</ul>
+				</div>
+			</div>
+			<div class="flex-container2">
+				
+				<div class="b-hotels-in__body__top">
+					<span class="b-search-e__body__top__txt b-hotels-in__body__top__txt">Всего найдено </span>
+					<span class="b-search-e__body__top__arrow"></span>
+					<span class="b-search-e__body__top__number b-hotels-in__body__top__number">159</span>
+					<span class="b-search-e__body__top__unit">туров</span>
+					<span class="btn-yellow btn-hot-detail b-hotel-in__btn-coment" href="#">Написать отзыв</span>
+					<div class="b-hotels-in__body__top__b-input">		
+						<div class="b-hotels__body__top__b-select b-hotels__b-search-rating">
+							<span class="b-search-e__body__top__txt-select">Сортировать:</span>
+							<input class="b-search-e__input" type="text" value="по рейтингу" readonly onClick="js_select_number_men_2(0)">
+							<span class="b-search-e__body__top__b-select__arrow"></span>
+							<ul class="b-tour__select-number-men b-hotels-select-rating">
+								<li onClick=></li>
+								<li onClick="js_close_select_number_men_search(this, 0)">по рейтингу</li>
+								<li onClick="js_close_select_number_men_search(this, 0)">по цене</li>
+								<li onClick="js_close_select_number_men_search(this, 0)">по обслуживанию</li>
+							</ul>
+						</div>
+						<div class="b-hotels__body__top__b-select b-hotels-in__b-search-number">
+							<span class="b-search-e__body__top__txt-select">Отображать по:</span>
+							<input class="b-search-e__input" type="text" value="10" readonly onClick="js_select_number_men_2(1)">
+							<span class="b-search-e__body__top__b-select__arrow"></span>
+							<ul class="b-tour__select-number-men b-search-select">
+								<li onClick=></li>
+								<li onClick="js_close_select_number_men_search(this, 1)">5</li>
+								<li onClick="js_close_select_number_men_search(this, 1)">15</li>
+								<li onClick="js_close_select_number_men_search(this, 1)">20</li>
+							</ul>
+						</div>						
+					</div>	
+				</div>
+				<div class="b-hotels-in__coment-elem">
+					<div class="b-hotels-in__coment-elem__caption">
+						<span class="b-hotels-in__coment-elem__name">Юрий, </span>
+						
+						был(а) здесь в декабре 2013 года.    
+					</div>
+				
+				</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+		
+		
+		
+		</div>	
+	</div>
+	<div class="b-hotels-in__b-map">
+		<span class="b-hotels-in__b-map__caption">На карте:</span>
+		<div class="b-hotels-in__b-map__map">
+			<span class="b-hotels-in__b-map__btn-close" onClick="js_hotels_in_map_close()">
+				<span></span>
+			</span>
+			<div class="b-hotels-in__map-dimmer"></div>
+			<a class="btn-yellow b-hotels-in__b-map__btn-open" onClick="js_hotels_in_map_open()">
+				Смотреть на карте!
+			</a>
+		</div>
+	</div>
+	<div class="b-hotels-in__b-tour-in-hotel">
+		<span class="b-hotels-in__b-map__caption">Туры в этот отель:</span>
+		<div class="found_elem b-hotels__found_elem">
+			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+			<span class="found_elem__b-txt">
+				<span class="found_elem__b-txt__caption">
+					Новогодняя супер сказка 
+					<br/>
+					в сердце Египта
+				</span>
+				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+				<span class="found_elem__b-txt__rating"></span>
+			</span>
+			<span class="found_elem__b-resume">
+				<span class="found_elem__b-resume__price">1899$</span>
+				<span class="found_elem__b-resume__icon"></span>
+			</span>
+			<span class="found_elem__b-detail">
+				<span class="found_elem__b-detail__index">HB</span>
+				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+			</span>
+			<span class="found_elem__b-day">
+				<span class="found_elem__b-day__country">Египет</span>
+				<span class="found_elem__b-day__period">
+					22.08 - 27.08
+					<span class="found_elem__b-day__night">8 ночей</span>
+				</span>	
+			</span>
+		</div>	
+		<div class="found_elem b-hotels__found_elem">
+			<img class="found_elem__img" src="pic/search2.jpg" alt="" width="125px">
+			<span class="found_elem__b-txt">
+				<span class="found_elem__b-txt__caption">
+					Новогодняя супер сказка 
+					<br/>
+					в сердце Египта
+				</span>
+				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+				<span class="found_elem__b-txt__rating"></span>
+			</span>
+			<span class="found_elem__b-resume">
+				<span class="found_elem__b-resume__price">1899$</span>
+				<span class="found_elem__b-resume__icon"></span>
+			</span>
+			<span class="found_elem__b-detail">
+				<span class="found_elem__b-detail__index">HB</span>
+				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+			</span>
+			<span class="found_elem__b-day">
+				<span class="found_elem__b-day__country">Египет</span>
+				<span class="found_elem__b-day__period">
+					22.08 - 27.08
+					<span class="found_elem__b-day__night">8 ночей</span>
+				</span>	
+			</span>
+		</div>
+		<div class="found_elem b-hotels__found_elem">
+			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+			<span class="found_elem__b-txt">
+				<span class="found_elem__b-txt__caption">
+					Новогодняя супер сказка 
+					<br/>
+					в сердце Египта
+				</span>
+				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+				<span class="found_elem__b-txt__rating"></span>
+			</span>
+			<span class="found_elem__b-resume">
+				<span class="found_elem__b-resume__price">1899$</span>
+				<span class="found_elem__b-resume__icon"></span>
+			</span>
+			<span class="found_elem__b-detail">
+				<span class="found_elem__b-detail__index">HB</span>
+				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+			</span>
+			<span class="found_elem__b-day">
+				<span class="found_elem__b-day__country">Египет</span>
+				<span class="found_elem__b-day__period">
+					22.08 - 27.08
+					<span class="found_elem__b-day__night">8 ночей</span>
+				</span>	
+			</span>
+		</div>	
+	</div>
+	<span class="b-hotels-in__space23"></span>
+	<footer class="footer footer__inner">
+		<div class="center_cont">
+			<div class="footer__contact footer__contact__inner">
+				<div class="footer__contact__elem">
+					<span class="footer__contact__elem__caption">Адрес:</span>
+					г.Киев, Украина
+					<br/>
+					ул. Ивана Франко, 40-Б
+				</div>
+				<div class="footer__contact__elem2">
+					<span class="footer__contact__elem__caption">Телефоны:</span>
+					<a href="">050 445 25 45, (044)</a>
+					<br/>
+					<a href="">238 60 20, 238 62 31</a>
+				</div>
+				<div class="footer__contact__elem3">
+					<span class="footer__contact__elem__caption">Email:</span>
+					<a href="#">sale@tursite.com.ua</a>
+					<br/>
+					<a href="#">market@tursite.com.ua</a>
+				</div>
+			</div>
+			<div class="footer__mailing footer__mailing__inner">
+				<span class="footer__mailing__check-icon"></span>
+				<span class="footer__mailing__txt mailing__txt__top">Подписатся на наши обновления</span>
+				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
+				<span class="footer__mailing__icon"></span>
+			</div>
+			<div class="footer__b-social footer__b-social__inner">
+				<span class="footer__copyright">©  ТурСайт, 2013   Все права защищены.</span>
+				<a class="footer__rule" href="#">Правила использования</a>
+				<div class="footer__social">
+					Мы в сети:
+					<ul>
+						<li><a class="footer__social__f" href="#"></a></li>
+						<li><a class="footer__social__t" href="#"></a></li>
+						<li><a class="footer__social__g" href="#"></a></li>
+					</ul>		
+				</div>
+			</div>	
+			<div class="footer__webmedia footer__webmedia__inner">
+				Разработка сайтов на Битриксе:
+				<span class="footer__webmedia__icon"></span>
+			</div>
+		</div>
+	</footer>
+	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
+		<span class="btn-up-dwn__icon"></span>
+	</span>
+	<div id="galery_popup" onClick="js_close_foto(event)">  
+<!--	<div id="galery_popup" > -->
+		<img id="galery_popup_img" src="galery/pic3.jpg" ondragstart="return false" alt="">;
+<!--		<span id="galery__prev" onClick="js_galery_prev()"></span>
+		<span id="galery__next" onClick="js_galery_next()"></span>    -->
+		<span id="galery__prev"></span>
+		<span id="galery__next"></span>
+		<span id="galery__close">
+			<span id="galery__close__icon"></span>
+		</span>
+	</div>
+	<div id="calendar-body">
+		<span class="calendar-body__decor"></span>
+		<span class="calendar-body__close" onClick="js_calendar_close()"></span>
+		<span class="calendar-body__txt">Календарь</span>
+		<span id="calendar-body__month" onClick="js_open_select_month()">Январь</span>
+		<span id="calendar-body__month__arrow" onClick="js_open_select_month()"></span>
+		<ul id="calendar-body__select-month">
+			<li></li>
+			<li onClick="js_select_month(this)">Январь</li>
+			<li onClick="js_select_month(this)">Февраль</li>
+			<li onClick="js_select_month(this)">Март</li>
+			<li onClick="js_select_month(this)">Апрель</li>
+			<li onClick="js_select_month(this)">Май</li>
+			<li onClick="js_select_month(this)">Июнь</li>
+			<li onClick="js_select_month(this)">Июль</li>
+			<li onClick="js_select_month(this)">Август</li>
+			<li onClick="js_select_month(this)">Сентябрь</li>
+			<li onClick="js_select_month(this)">Октябрь</li>
+			<li onClick="js_select_month(this)">Ноябрь</li>
+			<li onClick="js_select_month(this)">Декабрь</li>
+		</ul>
+		<span id="calendar-body__year" onClick="js_open_select_year()">2014</span>
+		<span id="calendar-body__year__arrow" onClick="js_open_select_year()"></span>
+		<ul id="calendar-body__select-year">
+			<li></li>
+			<li onClick="js_select_year(this)">2014</li>
+			<li onClick="js_select_year(this)">2015</li>
+			<li onClick="js_select_year(this)">2016</li>
+		</ul>
+		<div id="calendar-body__fild"></div>
+	</div>
+	
+	
+	
+	
+	
+	<script type="text/javascript">
+		jQuery(".b-search__cost__select").slider({
+			min: 0,
+			max: 5000,
+			values: [0,5000],			
+			range: true,
+			stop: function(event, ui) {
+				jQuery("input#minCost").val(jQuery(".b-search__cost__select").slider("values",0));
+				jQuery("input#maxCost").val(jQuery(".b-search__cost__select").slider("values",1));
+			},
+			slide: function(event, ui){
+				jQuery("input#minCost").val(jQuery(".b-search__cost__select").slider("values",0));
+				jQuery("input#maxCost").val(jQuery(".b-search__cost__select").slider("values",1));
+			}
+			
+		});
+	
+   function getEl(id) {
+        return document.getElementById(id);
+    }
+	
+	 if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
+            Hammer.plugins.fakeMultitouch();
+        }  
+
+	var galery_img_popup = document.getElementById('galery_popup');
+    var hammertime_b_icon_l = Hammer(galery_img_popup, {
+			prevent_default: true,
+            no_mouseevents: true,
+			transform_always_block: true,
+			transform_min_scale: 1,
+		}).on("swipeleft", function(event) {
+        js_galery_next();
+    });
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on("swiperight", function(event) {
+        js_galery_prev();
+    });
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on("tap", function(event) {
+		if(event.gesture['center'].pageX > windowWidth()*0.05 && event.gesture['center'].pageX < windowWidth()*0.05+31 &&
+			event.gesture['center'].pageY > windowHeight()/2 - 15 && event.gesture['center'].pageY < windowHeight()/2 + 16){
+				js_galery_prev();
+				return 0;
+		}
+		if(event.gesture['center'].pageX > windowWidth()*0.95-31 && event.gesture['center'].pageX < windowWidth()*0.95 &&
+			event.gesture['center'].pageY > windowHeight()/2 - 15 && event.gesture['center'].pageY < windowHeight()/2 + 16){
+				js_galery_next();
+				return 0;
+		}
+		
+		if(event.gesture['center'].pageX < img.offsetLeft || event.gesture['center'].pageX > (img.offsetLeft + img.offsetWidth) ||
+			event.gesture['center'].pageY < img.offsetTop || event.gesture['center'].pageY > (img.offsetTop + img.offsetHeight)){
+			document.body.style.overflowY = "";
+			document.body.style.paddingRight = 0 + "px";
+			document.getElementById('galery_popup').style.display = "none";
+		}
+		 js_galery_next();
+		
+    });    
+	document.onkeyup = function checkKeycode(event)
+	{
+		var keycode, keyChar;
+		if(!event) var event = window.event;
+		if (event.keyCode) keycode = event.keyCode;
+		else if(event.which) keycode = event.which;
+		if(keycode ==37 && document.getElementById('galery_popup').style.display== "block"){
+			js_galery_prev();
+		}
+		if(keycode ==39 && document.getElementById('galery_popup').style.display== "block"){
+			js_galery_next();
+		}
+	}
+</script>
+
+
+</body>
+</html>

@@ -127,10 +127,20 @@ function js_scroll_up(){
 	
 }
 function js_open_search(){
+	if(document.getElementById("name_page").innerHTML == "search"){
+		document.getElementById("open_search_extended").style.display = "block";
+		document.getElementById("mini_search").style.display = "none";
+		return 0;
+	}
 	document.getElementById("open_search").style.display = "block";
 	document.getElementById("mini_search").style.display = "none";
 }
 function js_close_search(){
+	if(document.getElementById("name_page").innerHTML == "search"){
+		document.getElementById("open_search_extended").style.display = "none";
+		document.getElementById("mini_search").style.display = "block";
+		return 0;
+	}
 	document.getElementById("open_search").style.display = "none";
 	document.getElementById("mini_search").style.display = "block";
 }
@@ -703,7 +713,31 @@ function js_resttypes_open(t){
 	document.getElementsByClassName("b-resttypes__elem__arrow")[number].style.backgroundPosition = "0px -40px";
 	
 	/*document.getElementsByClassName("b-resttypes__elem__cont-city")[number].style.height = 'auto';*/
+}
+function js_hotels_rating_select(t){
+	if(t.style.backgroundColor == "rgb(255, 255, 255)" || t.style.backgroundColor == ""){
+		t.style.backgroundColor = "#00adc7";
+		t.style.color = "#fff";
+		t.firstElementChild.style.backgroundPosition = "0px -1260px";
+		return 0;
+	}
+	if(t.style.backgroundColor == "rgb(0, 173, 199)"){
+		t.style.backgroundColor = "#fff";
+		t.style.color = "#383d43";
+		t.firstElementChild.style.backgroundPosition = "0px -1240px";
+	}
+}
+function js_hotels_in_map_close(){
+	document.getElementsByClassName("b-hotels-in__b-map")[0].style.height = 305 + 'px';
+	document.getElementsByClassName("b-hotels-in__b-map__btn-close")[0].style.display = 'none';
+	document.getElementsByClassName("b-hotels-in__b-map__btn-open")[0].style.display = 'block';
+	document.getElementsByClassName("b-hotels-in__map-dimmer")[0].style.opacity = '0.5';
 	
-	
+}
+function js_hotels_in_map_open(){
+	document.getElementsByClassName("b-hotels-in__b-map")[0].style.height = 'auto';
+	document.getElementsByClassName("b-hotels-in__b-map__btn-close")[0].style.display = 'block';
+	document.getElementsByClassName("b-hotels-in__b-map__btn-open")[0].style.display = 'none';
+	document.getElementsByClassName("b-hotels-in__map-dimmer")[0].style.opacity = '0';
 	
 }
