@@ -58,6 +58,99 @@ window.onload = function() {
 	if(document.getElementById("name_page").innerHTML == "avia_in"){
 		t=setTimeout('startTime()',10);
 	}
+	if(document.getElementById("name_page").innerHTML == "hotels_in"){
+		var elem_length = document.getElementsByClassName('b-hotels-in__coment-elem_b-detail').length;
+		for(i = 0; i <elem_length; i++ ){	
+			var end_rating = 0;
+			var valuation = parseInt(document.getElementsByClassName('coment-rating-place-number')[i].innerHTML);
+			end_rating += valuation/6;
+			document.getElementsByClassName('coment-rating-place-color')[i].style.width = 19 * valuation + 'px';
+			if(valuation < 3){
+				document.getElementsByClassName('coment-rating-place-color')[i].style.backgroundColor = "#ffd200";
+			}
+			if(valuation == 3){
+				document.getElementsByClassName('coment-rating-place-color')[i].style.backgroundColor = "#ff8a00";
+			}
+			if(valuation > 3){
+				document.getElementsByClassName('coment-rating-place-color')[i].style.backgroundColor = "#00adc7";
+			}
+			var valuation = parseInt(document.getElementsByClassName('coment-rating-service-number')[i].innerHTML);
+			end_rating += valuation/6;
+			document.getElementsByClassName('coment-rating-service-color')[i].style.width = 19 * valuation + 'px';
+			if(valuation < 3){
+				document.getElementsByClassName('coment-rating-service-color')[i].style.backgroundColor = "#ffd200";
+			}
+			if(valuation == 3){
+				document.getElementsByClassName('coment-rating-service-color')[i].style.backgroundColor = "#ff8a00";
+			}
+			if(valuation > 3){
+				document.getElementsByClassName('coment-rating-service-color')[i].style.backgroundColor = "#00adc7";
+			}
+			var valuation = parseInt(document.getElementsByClassName('coment-rating-room-number')[i].innerHTML);
+			end_rating += valuation/6;
+			document.getElementsByClassName('coment-rating-room-color')[i].style.width = 19 * valuation + 'px';
+			if(valuation < 3){
+				document.getElementsByClassName('coment-rating-room-color')[i].style.backgroundColor = "#ffd200";
+			}
+			if(valuation == 3){
+				document.getElementsByClassName('coment-rating-room-color')[i].style.backgroundColor = "#ff8a00";
+			}
+			if(valuation > 3){
+				document.getElementsByClassName('coment-rating-room-color')[i].style.backgroundColor = "#00adc7";
+			}
+			var valuation = parseInt(document.getElementsByClassName('coment-rating-fun-number')[i].innerHTML);
+			end_rating += valuation/6;
+			document.getElementsByClassName('coment-rating-fun-color')[i].style.width = 19 * valuation + 'px';
+			if(valuation < 3){
+				document.getElementsByClassName('coment-rating-fun-color')[i].style.backgroundColor = "#ffd200";
+			}
+			if(valuation == 3){
+				document.getElementsByClassName('coment-rating-fun-color')[i].style.backgroundColor = "#ff8a00";
+			}
+			if(valuation > 3){
+				document.getElementsByClassName('coment-rating-fun-color')[i].style.backgroundColor = "#00adc7";
+			}
+			var valuation = parseInt(document.getElementsByClassName('coment-rating-food-number')[i].innerHTML);
+			end_rating += valuation/6;
+			document.getElementsByClassName('coment-rating-food-color')[i].style.width = 19 * valuation + 'px';
+			if(valuation < 3){
+				document.getElementsByClassName('coment-rating-food-color')[i].style.backgroundColor = "#ffd200";
+			}
+			if(valuation == 3){
+				document.getElementsByClassName('coment-rating-food-color')[i].style.backgroundColor = "#ff8a00";
+			}
+			if(valuation > 3){
+				document.getElementsByClassName('coment-rating-food-color')[i].style.backgroundColor = "#00adc7";
+			}
+			var valuation = parseInt(document.getElementsByClassName('coment-rating-price-number')[i].innerHTML);
+			end_rating += valuation/6;
+			document.getElementsByClassName('coment-rating-price-color')[i].style.width = 19 * valuation + 'px';
+			if(valuation < 3){
+				document.getElementsByClassName('coment-rating-price-color')[i].style.backgroundColor = "#ffd200";
+			}
+			if(valuation == 3){
+				document.getElementsByClassName('coment-rating-price-color')[i].style.backgroundColor = "#ff8a00";
+			}
+			if(valuation > 3){
+				document.getElementsByClassName('coment-rating-price-color')[i].style.backgroundColor = "#00adc7";
+			}
+			document.getElementsByClassName('coment-end-ratind')[i].innerHTML = end_rating.toFixed(1);
+			document.getElementsByClassName('coment-end-rating-color')[i].style.width = 19 * end_rating + 'px';
+			if(end_rating <= 2){
+				document.getElementsByClassName('coment-end-rating-color')[i].style.backgroundColor = "#ffd200";
+			}
+			if((end_rating > 2) && (end_rating < 4)){
+				document.getElementsByClassName('coment-end-rating-color')[i].style.backgroundColor = "#ff8a00";
+			}
+			if(end_rating >= 4){
+				document.getElementsByClassName('coment-end-rating-color')[i].style.backgroundColor = "#00adc7";
+			}
+			
+			
+			
+		}
+		var tmp = 0;
+	}
 	window.onresize();
 }
 window.onresize = function() {
@@ -740,4 +833,76 @@ function js_hotels_in_map_open(){
 	document.getElementsByClassName("b-hotels-in__b-map__btn-open")[0].style.display = 'none';
 	document.getElementsByClassName("b-hotels-in__map-dimmer")[0].style.opacity = '0';
 	
+}
+function js_rating_star__off(elem){
+	if(document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML == 0){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#c3cbd1";
+	}
+	if(document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML == 1){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ffd200";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 19 + "px";
+	}
+	if(document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML == 2){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ffd200";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 38 + "px";
+	}
+	if(document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML == 3){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ff8a00";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 57 + "px";
+	}
+	if(document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML == 4){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#00adc7";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 76 + "px";
+	}
+	if(document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML == 5){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#00adc7";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 95 + "px";
+	}
+	
+	
+}
+function js_rating_star(elem, number_star){
+	if(number_star == 1){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ffd200";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 19 + "px";
+	}
+	if(number_star == 2){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ffd200";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 38 + "px";
+	}
+	if(number_star == 3){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ff8a00";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 57 + "px";
+	}
+	if(number_star == 4){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#00adc7";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 76 + "px";
+	}
+	if(number_star == 5){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#00adc7";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 95 + "px";
+	}
+}
+function js_rating_star_select(elem, number_star){
+	if(number_star == 1){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ffd200";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 19 + "px";
+	}
+	if(number_star == 2){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ffd200";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 38 + "px";
+	}
+	if(number_star == 3){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#ff8a00";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 57 + "px";
+	}
+	if(number_star == 4){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#00adc7";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 76 + "px";
+	}
+	if(number_star == 5){
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.backgroundColor = "#00adc7";
+		document.getElementsByClassName("b-add-coment-elem__b-rating__color")[elem].style.width = 95 + "px";
+	}
+	document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML = number_star;
 }
