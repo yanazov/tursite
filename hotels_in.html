@@ -404,8 +404,8 @@
 				<a id="details__print" class="details__make__btn"></a>			
 			</div>
 			<ul class="b-hotels-in__menu">
-				<li>Описание</li>
-				<li>
+				<li class="b-hotels-in__menu_li" onClick="js_hotels_in(0)">Описание</li>
+				<li class="b-hotels-in__menu_li" onClick="js_hotels_in(1)">
 					Отзывы 
 					<span class="">172</span>
 				</li>
@@ -512,7 +512,7 @@
 					<span class="b-search-e__body__top__arrow"></span>
 					<span class="b-search-e__body__top__number b-hotels-in__body__top__number">159</span>
 					<span class="b-search-e__body__top__unit">туров</span>
-					<span class="btn-yellow btn-hot-detail b-hotel-in__btn-coment" href="#">Написать отзыв</span>
+					<span class="btn-yellow btn-hot-detail b-hotel-in__btn-coment" onClick="js_hotels_in_coment_new()">Написать отзыв</span>
 					<div class="b-hotels-in__body__top__b-input">		
 						<div class="b-hotels__body__top__b-select b-hotels__b-search-rating">
 							<span class="b-search-e__body__top__txt-select">Сортировать:</span>
@@ -560,8 +560,8 @@
 						работа рецепции. Персонал доброжелательный, внимательный, приятный. На достаточно
 						высоком уровне было организовано празднование Нового 2014 года...
 					
-						<span class="b-hotels-in__coment-elem_detail">подробнее
-							<span></span>
+						<span class="b-hotels-in__coment-elem_detail" onClick="js_hotels_in_detail_coment(this)">подробнее
+							<span class="b-hotels-in__coment-elem_detail__arrow"></span>
 						</span>
 					</span>
 					<div class="b-hotels-in__coment-elem_b-detail">
@@ -650,11 +650,7 @@
 							</div>
 						</div>
 					</div>
-					
-					
 				</div>
-			
-			
 				<div class="b-hotels-in__coment-elem">
 					<div class="b-hotels-in__coment-elem__caption">
 						<span class="b-hotels-in__coment-elem__name">Юрий, </span>						
@@ -677,8 +673,8 @@
 						работа рецепции. Персонал доброжелательный, внимательный, приятный. На достаточно
 						высоком уровне было организовано празднование Нового 2014 года...
 					
-						<span class="b-hotels-in__coment-elem_detail">подробнее
-							<span></span>
+						<span class="b-hotels-in__coment-elem_detail" onClick="js_hotels_in_detail_coment(this)">подробнее
+							<span class="b-hotels-in__coment-elem_detail__arrow"></span>
 						</span>
 					</span>
 					<div class="b-hotels-in__coment-elem_b-detail">
@@ -767,17 +763,233 @@
 							</div>
 						</div>
 					</div>
-					
-					
 				</div>
-			
-			
-			
-			
-			
-			
-			
-			
+				<div class="b-hotels-in__coment-elem">
+					<div class="b-hotels-in__coment-elem__caption">
+						<span class="b-hotels-in__coment-elem__name">Юрий, </span>						
+						был(а) здесь в декабре 2013 года.    
+						<div class="b-hotels-in__coment-elem__caption__rating">
+							<span class="b-hotels-in__coment-elem__caption__rating__grey"></span>
+							<span class="b-hotels-in__coment-elem__caption__rating__color coment-end-rating-color">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star"></span>
+							<span class="b-hotels-in__coment-elem__caption__rating__number coment-end-ratind">5</span>							
+						</div>
+					</div>
+					<span class="b-hotels-in__coment-elem_data">21 Января 2013</span>
+					<span class="b-hotels-in__coment-elem_caption">Отель хороший, понтон - для спортивной молодежи.</span>
+					<span class="b-hotels-in__coment-elem_txt">
+						Отель прекрасно сочетает баланс цена-качество. Обращает внимание безупречная 
+						работа рецепции. Персонал доброжелательный, внимательный, приятный. На достаточно
+						высоком уровне было организовано празднование Нового 2014 года...
+					
+						<span class="b-hotels-in__coment-elem_detail" onClick="js_hotels_in_detail_coment(this)">подробнее
+							<span class="b-hotels-in__coment-elem_detail__arrow"></span>
+						</span>
+					</span>
+					<div class="b-hotels-in__coment-elem_b-detail">
+						<div class="b-hotels-in__coment-elem_b-detail__elem">
+							<div class="b-hotels-in__coment-elem__b-detail__place">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Расположение</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-place-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-place-number">5</span>							
+								</div>
+							</div>
+							<div class="b-hotels-in__coment-elem__b-detail__place margin-b-rating">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Сервис</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-service-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-service-number">4</span>							
+								</div>
+							</div>
+						</div>
+						<div class="b-hotels-in__coment-elem_b-detail__elem">
+							<div class="b-hotels-in__coment-elem__b-detail__place">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Номер</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-room-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-room-number">5</span>							
+								</div>
+							</div>
+							<div class="b-hotels-in__coment-elem__b-detail__place margin-b-rating">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Развлечения</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-fun-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-fun-number">5</span>							
+								</div>
+							</div>
+						</div>
+						<div class="b-hotels-in__coment-elem_b-detail__elem">
+							<div class="b-hotels-in__coment-elem__b-detail__place">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Питание</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-food-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-food-number">5</span>							
+								</div>
+							</div>
+							<div class="b-hotels-in__coment-elem__b-detail__place margin-b-rating">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Цена/качество</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-price-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-price-number">3</span>							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-hotels-in__coment-elem">
+					<div class="b-hotels-in__coment-elem__caption">
+						<span class="b-hotels-in__coment-elem__name">Юрий, </span>						
+						был(а) здесь в декабре 2013 года.    
+						<div class="b-hotels-in__coment-elem__caption__rating">
+							<span class="b-hotels-in__coment-elem__caption__rating__grey"></span>
+							<span class="b-hotels-in__coment-elem__caption__rating__color coment-end-rating-color">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star">
+							</span><span class="b-hotels-in__coment-elem__caption__rating__star"></span>
+							<span class="b-hotels-in__coment-elem__caption__rating__number coment-end-ratind">5</span>							
+						</div>
+					</div>
+					<span class="b-hotels-in__coment-elem_data">21 Января 2013</span>
+					<span class="b-hotels-in__coment-elem_caption">Отель хороший, понтон - для спортивной молодежи.</span>
+					<span class="b-hotels-in__coment-elem_txt">
+						Отель прекрасно сочетает баланс цена-качество. Обращает внимание безупречная 
+						работа рецепции. Персонал доброжелательный, внимательный, приятный. На достаточно
+						высоком уровне было организовано празднование Нового 2014 года...
+					
+						<span class="b-hotels-in__coment-elem_detail" onClick="js_hotels_in_detail_coment(this)">подробнее
+							<span class="b-hotels-in__coment-elem_detail__arrow"></span>
+						</span>
+					</span>
+					<div class="b-hotels-in__coment-elem_b-detail">
+						<div class="b-hotels-in__coment-elem_b-detail__elem">
+							<div class="b-hotels-in__coment-elem__b-detail__place">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Расположение</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-place-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-place-number">3</span>							
+								</div>
+							</div>
+							<div class="b-hotels-in__coment-elem__b-detail__place margin-b-rating">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Сервис</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-service-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-service-number">5</span>							
+								</div>
+							</div>
+						</div>
+						<div class="b-hotels-in__coment-elem_b-detail__elem">
+							<div class="b-hotels-in__coment-elem__b-detail__place">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Номер</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-room-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-room-number">1</span>							
+								</div>
+							</div>
+							<div class="b-hotels-in__coment-elem__b-detail__place margin-b-rating">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Развлечения</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-fun-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-fun-number">1</span>							
+								</div>
+							</div>
+						</div>
+						<div class="b-hotels-in__coment-elem_b-detail__elem">
+							<div class="b-hotels-in__coment-elem__b-detail__place">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Питание</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-food-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-food-number">2</span>							
+								</div>
+							</div>
+							<div class="b-hotels-in__coment-elem__b-detail__place margin-b-rating">
+								<span class="b-hotels-in__coment-elem__b-detail__place__txt">Цена/качество</span>
+								<div class="b-hotels-in__coment-elem__b-detail__place__rating">
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__grey"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__rating__color coment-rating-price-color">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star">
+									</span><span class="b-hotels-in__coment-elem__b-detail__place__rating__star"></span>
+									<span class="b-hotels-in__coment-elem__b-detail__place__number coment-rating-price-number">3</span>							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			
 			
 			
@@ -787,159 +999,352 @@
 				
 				<div class="b-hotels-in__body__top">
 					<span class="b-search-e__body__top__txt b-hotels-in__body__top__txt">Добавить свой отзыв:</span>
-					
-					<div class="b-hotels-in__body__top__b-input">		
-						<div class="b-hotels__body__top__b-select b-hotels__b-search-rating">
-							<span class="b-search-e__body__top__txt-select">Сортировать:</span>
-							<input class="b-search-e__input" type="text" value="по рейтингу" readonly onClick="js_select_number_men_2(0)">
-							<span class="b-search-e__body__top__b-select__arrow"></span>
-							<ul class="b-tour__select-number-men b-hotels-select-rating">
-								<li onClick=></li>
-								<li onClick="js_close_select_number_men_search(this, 0)">по рейтингу</li>
-								<li onClick="js_close_select_number_men_search(this, 0)">по цене</li>
-								<li onClick="js_close_select_number_men_search(this, 0)">по обслуживанию</li>
-							</ul>
+					<div class="b-add-coment-elem__b-input">
+						<div class="b-add-coment-elem__b-input__left">
+							<span class="b-add-coment-elem__b-input__txt">Имя</span>
+							<input type="text" class="b-add-coment-elem__input">							
 						</div>
-						<div class="b-hotels__body__top__b-select b-hotels-in__b-search-number">
-							<span class="b-search-e__body__top__txt-select">Отображать по:</span>
-							<input class="b-search-e__input" type="text" value="10" readonly onClick="js_select_number_men_2(1)">
-							<span class="b-search-e__body__top__b-select__arrow"></span>
-							<ul class="b-tour__select-number-men b-search-select">
-								<li onClick=></li>
-								<li onClick="js_close_select_number_men_search(this, 1)">5</li>
-								<li onClick="js_close_select_number_men_search(this, 1)">15</li>
-								<li onClick="js_close_select_number_men_search(this, 1)">20</li>
+						<div class="b-add-coment-elem__b-input__right">
+							<span class="b-add-coment-elem__b-input__txt">Дата путешествия:</span>
+							<input type="text" class="b-add-coment-elem__input_year" placeholder="год">	
+							<span class="b-add-coment-elem__input_year__arrow"></span>
+							<input type="text" class="b-add-coment-elem__input_month" placeholder="месяц" readonly onClick="js_hotels_in_month_open()">	
+							<span class="b-add-coment-elem__input_month__arrow"></span>
+							<ul id="b-hotels-in__select-month">
+								<li></li>
+								<li onClick="js_hotels_in_month(this)">Январь</li>
+								<li onClick="js_hotels_in_month(this)">Февраль</li>
+								<li onClick="js_hotels_in_month(this)">Март</li>
+								<li onClick="js_hotels_in_month(this)">Апрель</li>
+								<li onClick="js_hotels_in_month(this)">Май</li>
+								<li onClick="js_hotels_in_month(this)">Июнь</li>
+								<li onClick="js_hotels_in_month(this)">Июль</li>
+								<li onClick="js_hotels_in_month(this)">Август</li>
+								<li onClick="js_hotels_in_month(this)">Сентябрь</li>
+								<li onClick="js_hotels_in_month(this)">Октябрь</li>
+								<li onClick="js_hotels_in_month(this)">Ноябрь</li>
+								<li onClick="js_hotels_in_month(this)">Декабрь</li>
 							</ul>
-						</div>						
-					</div>	
+						</div>	
+					</div>
 				</div>
 				<div class="b-add-coment-elem">
 					<span class="b-add-coment-elem__name">Расположение</span>
 					<div class="b-add-coment-elem__b-rating" onMouseout="js_rating_star__off(0)">
 						<span class="b-add-coment-elem__b-rating__color"></span>
 						<span class="b-add-coment-elem__b-rating__star " onMouseover="js_rating_star(0, 1)" onClick="js_rating_star_select(0, 1)">
+							<span class="star_description">Ужасно
+								<span></span>
+							</span>						
 						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(0, 2)" onClick="js_rating_star_select(0, 2)">
+							<span class="star_description">Плохо
+								<span></span>
+							</span>	
 						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(0, 3)" onClick="js_rating_star_select(0, 3)">
+							<span class="star_description">Удовлетворительно
+								<span></span>
+							</span>	
 						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(0, 4)" onClick="js_rating_star_select(0, 4)">
-						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(0, 5)" onClick="js_rating_star_select(0, 5)"></span>
+							<span class="star_description">Хорошо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(0, 5)" onClick="js_rating_star_select(0, 5)">
+							<span class="star_description">Отлично
+								<span></span>
+							</span>							
+						</span>
 						<span class="b-add-coment-elem__value">0</span>
-						
+						<span class="b-add-coment-elem__hover-block"></span>
 					</div>
-					
-					
-					
-					
+					<span class="b-add-coment-elem__txt">
+						Расскажите о качестве обслуживания
+					</span>
 				</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+				<div class="b-add-coment-elem">
+					<span class="b-add-coment-elem__name">Номер</span>
+					<div class="b-add-coment-elem__b-rating" onMouseout="js_rating_star__off(1)">
+						<span class="b-add-coment-elem__b-rating__color"></span>
+						<span class="b-add-coment-elem__b-rating__star " onMouseover="js_rating_star(1, 1)" onClick="js_rating_star_select(1, 1)">
+							<span class="star_description">Ужасно
+								<span></span>
+							</span>						
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(1, 2)" onClick="js_rating_star_select(1, 2)">
+							<span class="star_description">Плохо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(1, 3)" onClick="js_rating_star_select(1, 3)">
+							<span class="star_description">Удовлетворительно
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(1, 4)" onClick="js_rating_star_select(1, 4)">
+							<span class="star_description">Хорошо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(1, 5)" onClick="js_rating_star_select(1, 5)">
+							<span class="star_description">Отлично
+								<span></span>
+							</span>							
+						</span>
+						<span class="b-add-coment-elem__value">1</span>
+						<span class="b-add-coment-elem__hover-block"></span>
+					</div>
+					<span class="b-add-coment-elem__txt">
+						Опишите убранство Вашего номера
+					</span>
+				</div>
+				<div class="b-add-coment-elem">
+					<span class="b-add-coment-elem__name">Питание</span>
+					<div class="b-add-coment-elem__b-rating" onMouseout="js_rating_star__off(2)">
+						<span class="b-add-coment-elem__b-rating__color"></span>
+						<span class="b-add-coment-elem__b-rating__star " onMouseover="js_rating_star(2, 1)" onClick="js_rating_star_select(2, 1)">
+							<span class="star_description">Ужасно
+								<span></span>
+							</span>						
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(2, 2)" onClick="js_rating_star_select(2, 2)">
+							<span class="star_description">Плохо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(2, 3)" onClick="js_rating_star_select(2, 3)">
+							<span class="star_description">Удовлетворительно
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(2, 4)" onClick="js_rating_star_select(2, 4)">
+							<span class="star_description">Хорошо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(2, 5)" onClick="js_rating_star_select(2, 5)">
+							<span class="star_description">Отлично
+								<span></span>
+							</span>							
+						</span>
+						<span class="b-add-coment-elem__value">2</span>
+						<span class="b-add-coment-elem__hover-block"></span>
+					</div>
+					<span class="b-add-coment-elem__txt">
+						Чем и как Вас кормили?
+					</span>
+				</div>
+				<div class="b-add-coment-elem">
+					<span class="b-add-coment-elem__name">Сервис</span>
+					<div class="b-add-coment-elem__b-rating" onMouseout="js_rating_star__off(3)">
+						<span class="b-add-coment-elem__b-rating__color"></span>
+						<span class="b-add-coment-elem__b-rating__star " onMouseover="js_rating_star(3, 1)" onClick="js_rating_star_select(3, 1)">
+							<span class="star_description">Ужасно
+								<span></span>
+							</span>						
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(3, 2)" onClick="js_rating_star_select(3, 2)">
+							<span class="star_description">Плохо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(3, 3)" onClick="js_rating_star_select(3, 3)">
+							<span class="star_description">Удовлетворительно
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(3, 4)" onClick="js_rating_star_select(3, 4)">
+							<span class="star_description">Хорошо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(3, 5)" onClick="js_rating_star_select(3, 5)">
+							<span class="star_description">Отлично
+								<span></span>
+							</span>							
+						</span>
+						<span class="b-add-coment-elem__value">3</span>
+						<span class="b-add-coment-elem__hover-block"></span>
+					</div>
+					<span class="b-add-coment-elem__txt">
+						Расскажите о качестве обслуживания
+					</span>
+				</div>
+				<div class="b-add-coment-elem">
+					<span class="b-add-coment-elem__name">Развлечения</span>
+					<div class="b-add-coment-elem__b-rating" onMouseout="js_rating_star__off(4)">
+						<span class="b-add-coment-elem__b-rating__color"></span>
+						<span class="b-add-coment-elem__b-rating__star " onMouseover="js_rating_star(4, 1)" onClick="js_rating_star_select(4, 1)">
+							<span class="star_description">Ужасно
+								<span></span>
+							</span>						
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(4, 2)" onClick="js_rating_star_select(4, 2)">
+							<span class="star_description">Плохо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(4, 3)" onClick="js_rating_star_select(4, 3)">
+							<span class="star_description">Удовлетворительно
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(4, 4)" onClick="js_rating_star_select(4, 4)">
+							<span class="star_description">Хорошо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(4, 5)" onClick="js_rating_star_select(4, 5)">
+							<span class="star_description">Отлично
+								<span></span>
+							</span>							
+						</span>
+						<span class="b-add-coment-elem__value">4</span>
+						<span class="b-add-coment-elem__hover-block"></span>
+					</div>
+					<span class="b-add-coment-elem__txt">
+						Как можно провести время в этом отеле
+					</span>
+				</div>	
+				<div class="b-add-coment-elem">
+					<span class="b-add-coment-elem__name">Цена/Качество</span>
+					<div class="b-add-coment-elem__b-rating" onMouseout="js_rating_star__off(5)">
+						<span class="b-add-coment-elem__b-rating__color"></span>
+						<span class="b-add-coment-elem__b-rating__star " onMouseover="js_rating_star(5, 1)" onClick="js_rating_star_select(5, 1)">
+							<span class="star_description">Ужасно
+								<span></span>
+							</span>						
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(5, 2)" onClick="js_rating_star_select(5, 2)">
+							<span class="star_description">Плохо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(5, 3)" onClick="js_rating_star_select(5, 3)">
+							<span class="star_description">Удовлетворительно
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(5, 4)" onClick="js_rating_star_select(5, 4)">
+							<span class="star_description">Хорошо
+								<span></span>
+							</span>	
+						</span><span class="b-add-coment-elem__b-rating__star" onMouseover="js_rating_star(5, 5)" onClick="js_rating_star_select(5, 5)">
+							<span class="star_description">Отлично
+								<span></span>
+							</span>							
+						</span>
+						<span class="b-add-coment-elem__value">5</span>
+						<span class="b-add-coment-elem__hover-block"></span>
+					</div>
+					<span class="b-add-coment-elem__txt">
+						Оправдал ли отель Ваши затраты и почему?
+					</span>
+				</div>
+				<span class="b-add-coment-elem__space2"></span>
+				<span class="b-add-coment-elem__txt2">
+					Краткий отзыв:
+					<span>Рассказать вкратце</span>
+				</span>
+				<textarea class="b-add-coment-elem__fild1"></textarea>
+				<span class="b-add-coment-elem__txt2">
+					Полный отзыв:
+					<span>поделитесь своими впечатлениями, не жалейте символов :)</span>
+				</span>
+				<textarea class="b-add-coment-elem__fild2"></textarea>
+				<span class="b-add-coment-elem__txt2">
+					Добавить фото:
+					<span>Необязательно, но Вы можете помочь другим путешественникам</span>
+				</span>
+				<span class="b-hotels-in__btn-load">
+					<span></span>
+				</span>
+				<input type="text" class="b-add-coment-elem__fild3">
+				<span href="#"class="btn-yellow b-hotels-in__add_coment" onClick="js_hotels_in_coment_new_close()">
+					Добавить отзыв
+				</span>
 			</div>
 		
 		
 		</div>	
 	</div>
-	<div class="b-hotels-in__b-map">
-		<span class="b-hotels-in__b-map__caption">На карте:</span>
-		<div class="b-hotels-in__b-map__map">
-			<span class="b-hotels-in__b-map__btn-close" onClick="js_hotels_in_map_close()">
-				<span></span>
-			</span>
-			<div class="b-hotels-in__map-dimmer"></div>
-			<a class="btn-yellow b-hotels-in__b-map__btn-open" onClick="js_hotels_in_map_open()">
-				Смотреть на карте!
-			</a>
+	<div class="center_cont">
+		<div class="b-hotels-in__b-map">
+			<span class="b-hotels-in__b-map__caption">На карте:</span>
+			<div class="b-hotels-in__b-map__map">
+				<span class="b-hotels-in__b-map__btn-close" onClick="js_hotels_in_map_close()">
+					<span></span>
+				</span>
+				<div class="b-hotels-in__map-dimmer"></div>
+				<a class="btn-yellow b-hotels-in__b-map__btn-open" onClick="js_hotels_in_map_open()">
+					Смотреть на карте!
+				</a>
+			</div>
 		</div>
-	</div>
-	<div class="b-hotels-in__b-tour-in-hotel">
-		<span class="b-hotels-in__b-map__caption">Туры в этот отель:</span>
-		<div class="found_elem b-hotels__found_elem">
-			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
-			<span class="found_elem__b-txt">
-				<span class="found_elem__b-txt__caption">
-					Новогодняя супер сказка 
-					<br/>
-					в сердце Египта
+		<div class="b-hotels-in__b-tour-in-hotel">
+			<span class="b-hotels-in__b-map__caption">Туры в этот отель:</span>
+			<div class="found_elem b-hotels__found_elem">
+				<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+				<span class="found_elem__b-txt">
+					<span class="found_elem__b-txt__caption">
+						Новогодняя супер сказка 
+						<br/>
+						в сердце Египта
+					</span>
+					<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+					<span class="found_elem__b-txt__rating"></span>
 				</span>
-				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
-				<span class="found_elem__b-txt__rating"></span>
-			</span>
-			<span class="found_elem__b-resume">
-				<span class="found_elem__b-resume__price">1899$</span>
-				<span class="found_elem__b-resume__icon"></span>
-			</span>
-			<span class="found_elem__b-detail">
-				<span class="found_elem__b-detail__index">HB</span>
-				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
-			</span>
-			<span class="found_elem__b-day">
-				<span class="found_elem__b-day__country">Египет</span>
-				<span class="found_elem__b-day__period">
-					22.08 - 27.08
-					<span class="found_elem__b-day__night">8 ночей</span>
-				</span>	
-			</span>
-		</div>	
-		<div class="found_elem b-hotels__found_elem">
-			<img class="found_elem__img" src="pic/search2.jpg" alt="" width="125px">
-			<span class="found_elem__b-txt">
-				<span class="found_elem__b-txt__caption">
-					Новогодняя супер сказка 
-					<br/>
-					в сердце Египта
+				<span class="found_elem__b-resume">
+					<span class="found_elem__b-resume__price">1899$</span>
+					<span class="found_elem__b-resume__icon"></span>
 				</span>
-				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
-				<span class="found_elem__b-txt__rating"></span>
-			</span>
-			<span class="found_elem__b-resume">
-				<span class="found_elem__b-resume__price">1899$</span>
-				<span class="found_elem__b-resume__icon"></span>
-			</span>
-			<span class="found_elem__b-detail">
-				<span class="found_elem__b-detail__index">HB</span>
-				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
-			</span>
-			<span class="found_elem__b-day">
-				<span class="found_elem__b-day__country">Египет</span>
-				<span class="found_elem__b-day__period">
-					22.08 - 27.08
-					<span class="found_elem__b-day__night">8 ночей</span>
-				</span>	
-			</span>
+				<span class="found_elem__b-detail">
+					<span class="found_elem__b-detail__index">HB</span>
+					<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+				</span>
+				<span class="found_elem__b-day">
+					<span class="found_elem__b-day__country">Египет</span>
+					<span class="found_elem__b-day__period">
+						22.08 - 27.08
+						<span class="found_elem__b-day__night">8 ночей</span>
+					</span>	
+				</span>
+			</div>	
+			<div class="found_elem b-hotels__found_elem">
+				<img class="found_elem__img" src="pic/search2.jpg" alt="" width="125px">
+				<span class="found_elem__b-txt">
+					<span class="found_elem__b-txt__caption">
+						Новогодняя супер сказка 
+						<br/>
+						в сердце Египта
+					</span>
+					<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+					<span class="found_elem__b-txt__rating"></span>
+				</span>
+				<span class="found_elem__b-resume">
+					<span class="found_elem__b-resume__price">1899$</span>
+					<span class="found_elem__b-resume__icon"></span>
+				</span>
+				<span class="found_elem__b-detail">
+					<span class="found_elem__b-detail__index">HB</span>
+					<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+				</span>
+				<span class="found_elem__b-day">
+					<span class="found_elem__b-day__country">Египет</span>
+					<span class="found_elem__b-day__period">
+						22.08 - 27.08
+						<span class="found_elem__b-day__night">8 ночей</span>
+					</span>	
+				</span>
+			</div>
+			<div class="found_elem b-hotels__found_elem">
+				<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
+				<span class="found_elem__b-txt">
+					<span class="found_elem__b-txt__caption">
+						Новогодняя супер сказка 
+						<br/>
+						в сердце Египта
+					</span>
+					<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
+					<span class="found_elem__b-txt__rating"></span>
+				</span>
+				<span class="found_elem__b-resume">
+					<span class="found_elem__b-resume__price">1899$</span>
+					<span class="found_elem__b-resume__icon"></span>
+				</span>
+				<span class="found_elem__b-detail">
+					<span class="found_elem__b-detail__index">HB</span>
+					<span class="found_elem__b-detail__txt">Deluxe Standart</span>
+				</span>
+				<span class="found_elem__b-day">
+					<span class="found_elem__b-day__country">Египет</span>
+					<span class="found_elem__b-day__period">
+						22.08 - 27.08
+						<span class="found_elem__b-day__night">8 ночей</span>
+					</span>	
+				</span>
+			</div>	
 		</div>
-		<div class="found_elem b-hotels__found_elem">
-			<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
-			<span class="found_elem__b-txt">
-				<span class="found_elem__b-txt__caption">
-					Новогодняя супер сказка 
-					<br/>
-					в сердце Египта
-				</span>
-				<span class="found_elem__b-txt__name">Sultana Beach Resort</span>
-				<span class="found_elem__b-txt__rating"></span>
-			</span>
-			<span class="found_elem__b-resume">
-				<span class="found_elem__b-resume__price">1899$</span>
-				<span class="found_elem__b-resume__icon"></span>
-			</span>
-			<span class="found_elem__b-detail">
-				<span class="found_elem__b-detail__index">HB</span>
-				<span class="found_elem__b-detail__txt">Deluxe Standart</span>
-			</span>
-			<span class="found_elem__b-day">
-				<span class="found_elem__b-day__country">Египет</span>
-				<span class="found_elem__b-day__period">
-					22.08 - 27.08
-					<span class="found_elem__b-day__night">8 ночей</span>
-				</span>	
-			</span>
-		</div>	
+		
 	</div>
 	<span class="b-hotels-in__space23"></span>
 	<footer class="footer footer__inner">
@@ -1002,37 +1407,7 @@
 			<span id="galery__close__icon"></span>
 		</span>
 	</div>
-	<div id="calendar-body">
-		<span class="calendar-body__decor"></span>
-		<span class="calendar-body__close" onClick="js_calendar_close()"></span>
-		<span class="calendar-body__txt">Календарь</span>
-		<span id="calendar-body__month" onClick="js_open_select_month()">Январь</span>
-		<span id="calendar-body__month__arrow" onClick="js_open_select_month()"></span>
-		<ul id="calendar-body__select-month">
-			<li></li>
-			<li onClick="js_select_month(this)">Январь</li>
-			<li onClick="js_select_month(this)">Февраль</li>
-			<li onClick="js_select_month(this)">Март</li>
-			<li onClick="js_select_month(this)">Апрель</li>
-			<li onClick="js_select_month(this)">Май</li>
-			<li onClick="js_select_month(this)">Июнь</li>
-			<li onClick="js_select_month(this)">Июль</li>
-			<li onClick="js_select_month(this)">Август</li>
-			<li onClick="js_select_month(this)">Сентябрь</li>
-			<li onClick="js_select_month(this)">Октябрь</li>
-			<li onClick="js_select_month(this)">Ноябрь</li>
-			<li onClick="js_select_month(this)">Декабрь</li>
-		</ul>
-		<span id="calendar-body__year" onClick="js_open_select_year()">2014</span>
-		<span id="calendar-body__year__arrow" onClick="js_open_select_year()"></span>
-		<ul id="calendar-body__select-year">
-			<li></li>
-			<li onClick="js_select_year(this)">2014</li>
-			<li onClick="js_select_year(this)">2015</li>
-			<li onClick="js_select_year(this)">2016</li>
-		</ul>
-		<div id="calendar-body__fild"></div>
-	</div>
+	
 	
 	
 	

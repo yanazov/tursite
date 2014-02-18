@@ -906,3 +906,69 @@ function js_rating_star_select(elem, number_star){
 	}
 	document.getElementsByClassName("b-add-coment-elem__value")[elem].innerHTML = number_star;
 }
+function js_hotels_in_month(t){
+	document.getElementsByClassName("b-add-coment-elem__input_month")[0].value = t.innerHTML;
+	document.getElementById("b-hotels-in__select-month").style.display = "none";
+
+}
+function js_hotels_in_month_open(){
+	document.getElementById("b-hotels-in__select-month").style.display = "block";
+}
+function js_hotels_in(number){
+	if(number == 1){
+		document.getElementsByClassName("b-hotels-in__menu_li")[1].style.backgroundColor = "#fff";
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.backgroundColor = "#ebeef0";
+		document.getElementsByClassName("b-hotels-in__menu_li")[1].style.borderTop = "1px solid #c3cbd1";
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.borderTop = "1px solid #e1e5e8";
+		document.getElementsByClassName("b-hotels-in__menu_li")[1].style.borderBottom = "1px solid #fff";
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.borderLeft = "1px solid #ebeef0";
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.borderBottom = "1px solid #c3cbd1";
+		
+		document.getElementsByClassName("flex-container1")[0].style.display = "none";
+		document.getElementsByClassName("flex-container2")[0].style.display = "block";
+	}
+	if(number == 0){
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.backgroundColor = "#fff";
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.borderTop = "1px solid #c3cbd1";
+		document.getElementsByClassName("b-hotels-in__menu_li")[1].style.backgroundColor = "#ebeef0";
+		document.getElementsByClassName("b-hotels-in__menu_li")[1].style.borderTop = "1px solid #e1e5e8";
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.borderLeft = "1px solid #c3cbd1";
+		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.borderBottom = "1px solid #fff";		
+		document.getElementsByClassName("b-hotels-in__menu_li")[1].style.borderBottom = "1px solid #c3cbd1";
+	
+		document.getElementsByClassName("flex-container1")[0].style.display = "flex";
+		document.getElementsByClassName("flex-container2")[0].style.display = "none";
+	}
+}
+function js_hotels_in_coment_new(){
+	document.getElementsByClassName("flex-container2")[0].style.display = "none";
+	document.getElementsByClassName("flex-container3")[0].style.display = "block";
+}
+function js_hotels_in_coment_new_close(){
+	document.getElementsByClassName("flex-container3")[0].style.display = "none";
+	document.getElementsByClassName("flex-container2")[0].style.display = "block";
+}
+function js_hotels_in_detail_coment(t){
+	var number = $('.b-hotels-in__coment-elem_detail').index(t);
+	if(document.getElementsByClassName("b-hotels-in__coment-elem_b-detail")[number].style.height == 0 ||
+		document.getElementsByClassName("b-hotels-in__coment-elem_b-detail")[number].style.height == "0px"){
+		document.getElementsByClassName("b-hotels-in__coment-elem_b-detail")[number].style.height = "auto";
+		t.innerHTML = "свернуть <span class='b-hotels-in__coment-elem_detail__arrow'></span>";
+		document.getElementsByClassName("b-hotels-in__coment-elem_detail__arrow")[number].style.backgroundPosition = "0px -1300px";
+		
+		return 0;	
+	}
+	if(document.getElementsByClassName("b-hotels-in__coment-elem_b-detail")[number].style.height == "auto"){
+		document.getElementsByClassName("b-hotels-in__coment-elem_b-detail")[number].style.height = 0 + "px";
+		t.innerHTML = "подробнее <span></span>";
+	}
+}
+
+
+
+
+
+
+
+
+
