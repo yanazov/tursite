@@ -684,7 +684,9 @@ function js_calendar_open(number){
 	document.getElementById('calendar-body').style.height = 'auto';
 	document.getElementById('calendar-body__month').innerHTML = 'Февраль';
 	document.getElementById('calendar-body__year').innerHTML = '2014';
-	
+	if(document.getElementById("name_page").innerHTML == "search"){
+		document.getElementById('calendar-body').style.left = position.left - 60 + 'px';
+	}
 }
 function select_data(current_td){
 	document.getElementById('calendar-body').style.overflow = 'visible';
@@ -938,6 +940,7 @@ function js_hotels_in(number){
 	
 		document.getElementsByClassName("flex-container1")[0].style.display = "flex";
 		document.getElementsByClassName("flex-container2")[0].style.display = "none";
+		document.getElementsByClassName("flex-container3")[0].style.display = "none";
 	}
 }
 function js_hotels_in_coment_new(){

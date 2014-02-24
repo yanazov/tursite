@@ -89,10 +89,10 @@
 		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
 		<span id="search-mini__txt" class="b-search-mini__txt">Найти тур</span>
 	</div>
-	<div id="open_search" class="b-search b-avia-in-search">
+<div id="open_search" class="b-search b-avia-in-search b-hotels-search">
 		<div class="center_cont">
 			<span class="b-search__round" onClick="js_close_search()"><span></span></span>
-			<span class="b-search__caption b-avia-in__caption">
+			<span class="b-search__caption b-avia-in__caption b-hotel-caption">
 				<span>Найти туры</span>
 			</span>
 			<div class="b-search__place b-hotels-place">
@@ -124,7 +124,7 @@
 					</div>
 					<span class="b-search__place__icon b-avia-in__place__icon"></span>
 				</div>
-				<div class="b-search__place__to b-avia-in-place__to b-hotels__hotel">
+				<div class="b-search__place__to b-avia-in-place__to b-hotels__hotel b-hotels__hotel320">
 					<span class="b-avia-in-place__separ"></span>
 					<span class="b-search__place__name width100">Количество звезд</span>
 					<div class="cont-place">
@@ -144,8 +144,8 @@
 				</div>
 			</div>
 				
-			<div class="b-search__find b-avia-in-find">
-				<a class="btn-blue b-search__find__btn b-avia-in__find__btn" href="#">
+			<div class="b-search__find b-avia-in-find b-hotels-find">
+				<a class="btn-blue b-search__find__btn b-avia-in__find__btn b-hotels-find__btn" href="#">
 					Найти
 					<span></span>
 				</a>
@@ -217,8 +217,7 @@
 						JAL Fujairah Hotel Resort & Spa - отличный отель, который представляет
 						непровзойденное качество обслуживания для своих туристов, множество 
 						развлечений и услуг, внимательное и заботливое отношение ко всем 
-						пожеланиям и просьбам гостей. Отель постороен на живописном побережье океана, 
-						в окружении гор Hajjar.
+						пожеланиям и просьбам гостей. 
 					</span>					
 				</div>
 								
@@ -382,7 +381,7 @@
 			</a>
 		</div>
 		<div class="details b-hotels-in-details">
-			<div class="details__social">
+			<div class="details__social hotels-in-social">
 			Поделится с друзьями:
 			<ul>
 				<li><a class="details__social__f" href="#"></a></li>
@@ -390,7 +389,7 @@
 				<li><a class="details__social__g" href="#"></a></li>
 			</ul>		
 			</div>
-			<div id="details__make__1" class="details__make">
+			<div id="details__make__1" class="details__make  hotels-in-social">
 				<span class="details__make__txt">В избранное:</span>
 				<a id="details__favorite" class="details__make__btn"></a>
 				<span class="details__make__txt">
@@ -1007,7 +1006,7 @@
 						<div class="b-add-coment-elem__b-input__right">
 							<span class="b-add-coment-elem__b-input__txt">Дата путешествия:</span>
 							<input type="text" class="b-add-coment-elem__input_year" placeholder="год">	
-							<span class="b-add-coment-elem__input_year__arrow"></span>
+						<!--	<span class="b-add-coment-elem__input_year__arrow"></span>  -->
 							<input type="text" class="b-add-coment-elem__input_month" placeholder="месяц" readonly onClick="js_hotels_in_month_open()">	
 							<span class="b-add-coment-elem__input_month__arrow"></span>
 							<ul id="b-hotels-in__select-month">
@@ -1262,7 +1261,7 @@
 		</div>
 		<div class="b-hotels-in__b-tour-in-hotel">
 			<span class="b-hotels-in__b-map__caption">Туры в этот отель:</span>
-			<div class="found_elem b-hotels__found_elem">
+			<div class="found_elem b-hotels__found_elem b-hotels-in_found_elem">
 				<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
 				<span class="found_elem__b-txt">
 					<span class="found_elem__b-txt__caption">
@@ -1289,7 +1288,7 @@
 					</span>	
 				</span>
 			</div>	
-			<div class="found_elem b-hotels__found_elem">
+			<div class="found_elem b-hotels__found_elem b-hotels-in_found_elem">
 				<img class="found_elem__img" src="pic/search2.jpg" alt="" width="125px">
 				<span class="found_elem__b-txt">
 					<span class="found_elem__b-txt__caption">
@@ -1316,7 +1315,7 @@
 					</span>	
 				</span>
 			</div>
-			<div class="found_elem b-hotels__found_elem">
+			<div class="found_elem b-hotels__found_elem b-hotels-in_found_elem">
 				<img class="found_elem__img" src="pic/search1.jpg" alt="" width="125px">
 				<span class="found_elem__b-txt">
 					<span class="found_elem__b-txt__caption">

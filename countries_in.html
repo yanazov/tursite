@@ -1,0 +1,566 @@
+<!doctype html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>ТурСайт</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" > 	
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/hammer.fakemultitouch.js"></script>
+	<script src="js/hammer.showtouches.js"></script>
+	<script src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/tursite.js"></script>   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">    -->
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/styles_ie.css" > 
+	<![endif]-->	
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+	
+	<script type="text/javascript" src="js/jquery_masonry_min.js"></script> <!-- подключаем сам плагин -->
+	<script type="text/javascript" src="js/modernizr-transitions.js"></script> <!-- подключаем плагин заставляющий работать css transitions в браузерах не поддерживающих css3 -->
+
+	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+
+</head>
+<body>
+	<span id="name_page">counties_in</span>
+	<div class="b-consultant">
+		<a class="b-consultant__form" href="#">
+			<span class="b-consultant__form__icon"><span></span></span>
+			<span class="b-consultant__form__txt">Консультант</span>
+			<span class="b-consultant__form__status">в он-лайне</span>
+			<span class="b-consultant__form__close"></span>
+		</a>
+	</div>
+	<header class="header">
+		<div class="center_cont">
+			<div class="header__b-left">
+				<div class="header__menu320">
+					<span class="header__menu320__btn">
+						<span class="header__menu320__btn__img"></span>
+					</span>
+					<span class="header__menu320__call">
+						<span class="header__menu320__call__img"></span>
+						Позвонить
+					</span>
+				</div>
+				<nav class="header__b-left_nav">
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Контакты</a></li>				
+					</ul>
+				</nav>
+				<a class="header__b-left__tel" href="">8 900 72 70</a>
+				<span class="header__b-left__icon"></span>
+				<a class="header__b-left__zvonok" href="#">Обратный звонок</a>
+			</div>
+			<div class="header__b-center">
+				<span class="header__b-center__logo"></span>
+				<span class="header__b-center__txt">ТурСайт</span>			
+			</div>
+			<div class="header__b-right">
+				<a class="header__b-right_login" href="#">
+					<span class="header__b-right_login__txt">Вход</span>
+					<span class="header__b-right_login__img"></span>				
+					<span  class="header__b-right_login__arrow"></span>
+				</a>
+				<input class="header__b-right__search" type="text" placeholder="Поиск...">
+				<a class="header__b-right__zoom" href="#"></a>
+			</div>
+		</div>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Поиск туров</a></li>
+			<li><a href="#">Отели</a></li>
+			<li><a href="#">Страны</a></li>
+			<li><a href="#">Авиабилеты</a></li>
+			<li><a href="#">Виды отдыха</a></li>
+		</ul>
+	</nav>
+	<div id="mini_search" class="b-search-mini">
+		<span class="b-search__round" onClick="js_open_search()"><span id="b-search-mini__down"></span></span>
+		<span id="search-mini__txt" class="b-search-mini__txt">Найти тур</span>
+	</div>
+	<div id="open_search" class="b-search b-avia-in-search">
+		<div class="center_cont">
+			<span class="b-search__round" onClick="js_close_search()"><span></span></span>
+			<span class="b-search__caption b-avia-in__caption">
+				<span>Найти курорт</span>
+			</span>
+			<div class="b-search__place b-countries-place">
+				<div class="b-search__place__from b-avia-in-place__from b-countries-country">
+					<span class="b-search__place__name width100">Выбрать страну</span>
+					<div class="cont-place b-avia-in-cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(0)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(0, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(0, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+				<span class="b-avia-in-time__br"></span>
+				<div class="b-search__place__to b-avia-in-place__to b-countries-hotel">
+					<span class="b-avia-in-place__separ"></span>
+					<span class="b-search__place__name width100">Выбрать курорт</span>
+					<div class="cont-place">
+						<input class="b-search__place__input" type="text" onkeypress="js_open_select_place(1)">
+						<ul class="search-select-place">
+							<li></li>
+							<li onClick="js_close_select_place(1, this)">подсказка 1</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 2</li>
+							<li onClick="js_close_select_place(1, this)">подсказка 3</li>														
+						</ul>
+					</div>
+					<span class="b-search__place__icon b-avia-in__place__icon"></span>
+				</div>
+			</div>				
+			<div class="b-search__find b-avia-in-find">
+				<a class="btn-blue b-search__find__btn b-avia-in__find__btn" href="#">
+					Найти
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="path">
+		<div class="center_cont">
+			<a class="path__active" href="index.html">Главная</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">Тайланд</a>
+			<span class="path__separ"></span>
+			<a class="path__active" href="#">о-в Самуи</a>
+			<span class="path__separ"></span>
+			<span class="path__current">Незабываемый отдых в Тайланде...</span>
+		</div>
+	</div>
+	<div class="b-tour">
+		<div class="center_cont">
+			<div class="b-tour__b-main">
+				<span class="b-tour__b-main__dimmer"></span>
+				<span class="b-tour__b-main__b-card">
+					<span class="b-tour__b-main__b-card__caption">
+						<span id="space2"></span>
+						О стране:						
+					</span>
+					<span class="b-tour__b-main__b-card__caption4">Валюта:</span>
+					<br/>
+					<div class="select_cash">
+						<input type="text" value="1 $">
+						<span class="select_cash__arrow"></span>
+					</div>	
+					<span class="cash_calc_txt">=</span>	
+					<span class="cash_calc_unit">33 Бат</span>	
+					<span class="details__line2"></span>
+					<span class="b-tour__b-main__b-card__caption3">Время:</span>
+					<span class="time-zone-txt">Часовой пояс:</span>
+					<span class="time-zone-value">G+10</span>
+					
+					
+				</span>
+				<div class="b-tour__b-main__slogan">
+					Тайланд
+					
+					<span class="b-hotel-in__slogan__txt">
+						Таиланд (или как нередко говорят у нас, Тайланд или даже просто Тай) 
+						не случайно входит в число стран, наиболее популярных для проведения 
+						отпуска. Тайланд в значительной степени уникален по своему 
+						географическому расположению: берега Тайланда омываются двумя 
+						морями разных океанов: Южно-Китайским Тихого океана и Андаманским морем 
+						Индийского океана. 
+					</span>					
+				</div>
+								
+				
+				<a class="btn-yellow b-tour__b-main__btn">
+					Хочу поехать!
+				</a>
+			</div>
+			<span class="b-tour__btn-galery">
+				<span class="btn-yellow b-tour__btn-galery__body" onClick="js_galery_on_off()">
+					<span id="btn_galery_icon"></span>
+				</span>
+				<span class="b-tour__btn-galery__number">
+					24
+				</span>
+				<span class="b-tour__btn-galery__txt">
+					Фото
+				</span>
+			</span>
+			<div class="b-tour__b-galery">
+				<div id="b-galery__scroll" class="b-tour__b-galery__scroll">
+					<div id="galery__body" class="b-tour__b-galery__body">
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img  src="galery/s_pic1.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic2.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic3.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic4.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic5.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic6.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic7.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic8.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic9.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic10.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic1.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic2.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic3.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic4.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic5.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic6.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic7.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic8.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic9.jpg" alt="">
+						</div>
+						<div class="b-tour__b-galery__body__elem" onClick="js_open_foto(this)">
+							<img src="galery/s_pic10.jpg" alt="">
+						</div>    
+					
+					</div>
+				</div>
+				<div class="b-tour__b-galery__nav">
+					<span class="b-tour__b-galery__nav__up" onClick="js_galery_up()"></span>
+					<span class="b-tour__b-galery__nav__dwn" onClick="js_galery_dwn()"></span>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="center_cont">
+		<div class="b-same b-hotels-in-same">
+			<span class="details__caption"></span>
+			<span class="details__caption">Специальные предложения:</span>
+			<a id="same-unit1" class="b-same__b-unit" href="_tour.html">
+				<div class="b-same__img">	
+					<img src="pic/hot1.jpg" alt=""/>
+				</div>
+				<div class="b-same__b-unit__dimmer"></div>
+				<span class="b-same__b-unit__b-txt">
+					<span class="b-same__b-unit__name">
+						Шри-Ланка в лучший сезон со скидкой!!!
+					</span>
+					<span class="b-same__b-unit__period">3 - 10 Сентября 2013</span>					
+				</span>
+				<span class="b-same__b-unit__old-price">780$</span>
+				<span class="b-same__b-unit__new-price">699$</span>			
+				<span class="btn-yellow b-same__btn">Подробнее</span>
+			</a>
+			<a id="same-unit1" class="b-same__b-unit" href="_tour.html">
+				<div class="b-same__img">	
+					<img src="pic/hot1.jpg" alt=""/>
+				</div>
+				<div class="b-same__b-unit__dimmer"></div>
+				<span class="b-same__b-unit__b-txt">
+					<span class="b-same__b-unit__name">
+						Мальдивы на Новый Год это реальность!
+						Все включено, авиа, перелет, отель!
+					</span>
+					<span class="b-same__b-unit__period">3 - 10 Сентября 2013</span>					
+				</span>
+				<span class="b-same__b-unit__old-price">780$</span>
+				<span class="b-same__b-unit__new-price">699$</span>			
+				<span class="btn-yellow b-same__btn">Подробнее</span>
+			</a>
+		</div>
+		<div class="details b-hotels-in-details">
+			<div class="details__social">
+			Поделится с друзьями:
+			<ul>
+				<li><a class="details__social__f" href="#"></a></li>
+				<li><a class="details__social__t" href="#"></a></li>
+				<li><a class="details__social__g" href="#"></a></li>
+			</ul>		
+			</div>
+			<div id="details__make__1" class="details__make">
+				<span class="details__make__txt">В избранное:</span>
+				<a id="details__favorite" class="details__make__btn"></a>
+				<span class="details__make__txt">
+					Отправить на email:
+					<input class="details__make__input-mail" type='text' placeholder="введите email...">
+					<span class="details__make__icon"></span>
+					<span class="details__make__decor"></span>
+				</span>
+				<a id="details__email" class="details__make__btn"></a>
+				<span class="details__make__txt invisible">Распечатать:</span>
+				<a id="details__print" class="details__make__btn"></a>			
+			</div>
+			<span class="details__line"></span>
+			<div class="b-countries-in__city">
+				<span class="b-countries-in__b-caption">Курорты:</span>
+				<a href="">Мармарис</a>
+				<a href="">Кемер</a>
+				<a href="">Бодрум</a>
+				<a href="">Аланья</a>
+				<a href="">Кушадасы</a>
+				<a href="">Сиде</a>
+				<a href="">Шарм-Эль-Шейх</a>
+				<a href="">Сахл Хашиш</a>
+				<a href="">Хургада</a>
+				<a href="">Белек</a>
+				<a href="">Макади</a>
+				<a href="">Анталия</a>
+				<a href="">Мармарис</a>
+				<a href="">Кемер</a>
+				<a href="">Бодрум</a>
+				<a href="">Аланья</a>
+				<a href="">Кушадасы</a>
+				<a href="">Сиде</a>
+				<a href="">Шарм-Эль-Шейх</a>
+				<a href="">Сахл Хашиш</a>
+				<a href="">Хургада</a>
+				<a href="">Белек</a>
+				<a href="">Макади</a>
+				<a href="">Анталия</a>
+			</div>
+			<div class="b-countries-in__info">
+				<span class="b-countries-in__b-caption">Информация о стране:</span>
+				Туристическая компания, объединившая в себе профессионалов различных направлений 
+				туристичекой деятельности. Все сотрудники компании имеют многолетний (более 8 лет) 
+				опыт, который необходим для обслуживания запросов и желаний своих клиентов на 
+				высочайшем уровне. Множество международных и украинских дипломов и сертификатов 
+				подтверждают статус и профессионализм наших сотрудников. Мы все преданы одному 
+				делу, и мы любим то, чем занимаемся. Попробовав однажды
+				Вы навсегда останетесь членами нашей огромной туристической семьи.
+				<br/>
+				<br/>
+				Все предлагаемые нами туристические продукты рассчитаны на потребителей с 
+				различным уровнем дохода - от самых экономичных предложений до VIP-обслуживания. 
+				Индивидуальный подход к каждому клиенту - отличительная черта нашей компании. 
+				Вы всегда будете ощущать особое внимание со стороны сотрудников, 
+				потому что каждый клиент для нас - это VIP клиент.				
+			</div>
+			<div class="b-countries-in__b-flex">
+				<div class="b-countries-in__flex__item-l">
+					<span class="b-countries-in__b-caption">Политическое устройство:</span>
+					Тайланд отлично подойдет и семейным парам, и родителям с маленькими детьми, 
+					и любителям шумных развлечений. Отпуск в Тайланде можно спланировать 
+					таким образом, чтобы не досаждали ни субэкваториальные ливни, ни жара, 
+					ни сильные ветра, ни прочие природные особенности. Это по достоинству 
+					уже сумели оценить многие туристы, и сегодня путевки в Тайланд популярны 
+					у граждан со всех концов страны.	
+
+					<span class="b-countries-in__b-caption">Язык:</span>
+					Тайланд — это боевые искусства и знаменитый тайский массаж. Все это 
+					удивительным образом перемешано и рождает гамму незабываемых впечатлений!
+				</div>
+				<div class="b-countries-in__flex__item-r">
+					<span class="b-countries-in__b-caption">Население:</span>
+					Оказавшись в Тайланде, ограничиться исключительно блаженной дремой на пляже 
+					— это верх беспечности, ведь вокруг столько интересного, волшебного, 
+					незабываемого! Вот почему, планируя отдых, непременно нужно позаботиться 
+					о программе развлечений.	
+					<span class="b-countries-in__b-caption">Вероисповедание:</span>
+					Тайланд — настоящая Мекка как для фанатов созерцательного отдыха, так и 
+					для неугомонных охотников за экзотическими развлечениями. Любителей острых 
+					ощущений ждут крокодиловые фермы, более тонким натурам Тайланд подарит 
+					незабываемое знакомство с парком бабочек и садом орхидей. Даже ради того 
+					чтобы покачаться на спине неторопливо шествующего слона, стоит побывать 
+					в Тайланде!
+				</div>				
+			</div>
+			
+			
+		</div>	
+	</div>
+	<div class="center_cont">
+		<div class="b-hotels-in__b-map">
+			<span class="b-hotels-in__b-map__caption">На карте:</span>
+			<div class="b-hotels-in__b-map__map">
+				<span class="b-hotels-in__b-map__btn-close" onClick="js_hotels_in_map_close()">
+					<span></span>
+				</span>
+				<div class="b-hotels-in__map-dimmer"></div>
+				<a class="btn-yellow b-hotels-in__b-map__btn-open" onClick="js_hotels_in_map_open()">
+					Смотреть на карте!
+				</a>
+			</div>
+		</div>
+	
+	</div>
+	<footer class="footer footer__inner">
+		<div class="center_cont">
+			<div class="footer__contact footer__contact__inner">
+				<div class="footer__contact__elem">
+					<span class="footer__contact__elem__caption">Адрес:</span>
+					г.Киев, Украина
+					<br/>
+					ул. Ивана Франко, 40-Б
+				</div>
+				<div class="footer__contact__elem2">
+					<span class="footer__contact__elem__caption">Телефоны:</span>
+					<a href="">050 445 25 45, (044)</a>
+					<br/>
+					<a href="">238 60 20, 238 62 31</a>
+				</div>
+				<div class="footer__contact__elem3">
+					<span class="footer__contact__elem__caption">Email:</span>
+					<a href="#">sale@tursite.com.ua</a>
+					<br/>
+					<a href="#">market@tursite.com.ua</a>
+				</div>
+			</div>
+			<div class="footer__mailing footer__mailing__inner">
+				<span class="footer__mailing__check-icon"></span>
+				<span class="footer__mailing__txt mailing__txt__top">Подписатся на наши обновления</span>
+				<input class="footer__mailing__fild" type="text" placeholder="ваш email...">
+				<span class="footer__mailing__icon"></span>
+			</div>
+			<div class="footer__b-social footer__b-social__inner">
+				<span class="footer__copyright">©  ТурСайт, 2013   Все права защищены.</span>
+				<a class="footer__rule" href="#">Правила использования</a>
+				<div class="footer__social">
+					Мы в сети:
+					<ul>
+						<li><a class="footer__social__f" href="#"></a></li>
+						<li><a class="footer__social__t" href="#"></a></li>
+						<li><a class="footer__social__g" href="#"></a></li>
+					</ul>		
+				</div>
+			</div>	
+			<div class="footer__webmedia footer__webmedia__inner">
+				Разработка сайтов на Битриксе:
+				<span class="footer__webmedia__icon"></span>
+			</div>
+		</div>
+	</footer>
+	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
+		<span class="btn-up-dwn__icon"></span>
+	</span>
+	<div id="galery_popup" onClick="js_close_foto(event)">  
+<!--	<div id="galery_popup" > -->
+		<img id="galery_popup_img" src="galery/pic3.jpg" ondragstart="return false" alt="">;
+<!--		<span id="galery__prev" onClick="js_galery_prev()"></span>
+		<span id="galery__next" onClick="js_galery_next()"></span>    -->
+		<span id="galery__prev"></span>
+		<span id="galery__next"></span>
+		<span id="galery__close">
+			<span id="galery__close__icon"></span>
+		</span>
+	</div>
+	
+	
+	
+	
+	
+	
+	<script type="text/javascript">
+		jQuery(".b-search__cost__select").slider({
+			min: 0,
+			max: 5000,
+			values: [0,5000],			
+			range: true,
+			stop: function(event, ui) {
+				jQuery("input#minCost").val(jQuery(".b-search__cost__select").slider("values",0));
+				jQuery("input#maxCost").val(jQuery(".b-search__cost__select").slider("values",1));
+			},
+			slide: function(event, ui){
+				jQuery("input#minCost").val(jQuery(".b-search__cost__select").slider("values",0));
+				jQuery("input#maxCost").val(jQuery(".b-search__cost__select").slider("values",1));
+			}
+			
+		});
+	
+   function getEl(id) {
+        return document.getElementById(id);
+    }
+	
+	 if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
+            Hammer.plugins.fakeMultitouch();
+        }  
+
+	var galery_img_popup = document.getElementById('galery_popup');
+    var hammertime_b_icon_l = Hammer(galery_img_popup, {
+			prevent_default: true,
+            no_mouseevents: true,
+			transform_always_block: true,
+			transform_min_scale: 1,
+		}).on("swipeleft", function(event) {
+        js_galery_next();
+    });
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on("swiperight", function(event) {
+        js_galery_prev();
+    });
+	var hammertime_b_icon_r = Hammer(galery_img_popup).on("tap", function(event) {
+		if(event.gesture['center'].pageX > windowWidth()*0.05 && event.gesture['center'].pageX < windowWidth()*0.05+31 &&
+			event.gesture['center'].pageY > windowHeight()/2 - 15 && event.gesture['center'].pageY < windowHeight()/2 + 16){
+				js_galery_prev();
+				return 0;
+		}
+		if(event.gesture['center'].pageX > windowWidth()*0.95-31 && event.gesture['center'].pageX < windowWidth()*0.95 &&
+			event.gesture['center'].pageY > windowHeight()/2 - 15 && event.gesture['center'].pageY < windowHeight()/2 + 16){
+				js_galery_next();
+				return 0;
+		}
+		
+		if(event.gesture['center'].pageX < img.offsetLeft || event.gesture['center'].pageX > (img.offsetLeft + img.offsetWidth) ||
+			event.gesture['center'].pageY < img.offsetTop || event.gesture['center'].pageY > (img.offsetTop + img.offsetHeight)){
+			document.body.style.overflowY = "";
+			document.body.style.paddingRight = 0 + "px";
+			document.getElementById('galery_popup').style.display = "none";
+		}
+		 js_galery_next();
+		
+    });    
+	document.onkeyup = function checkKeycode(event)
+	{
+		var keycode, keyChar;
+		if(!event) var event = window.event;
+		if (event.keyCode) keycode = event.keyCode;
+		else if(event.which) keycode = event.which;
+		if(keycode ==37 && document.getElementById('galery_popup').style.display== "block"){
+			js_galery_prev();
+		}
+		if(keycode ==39 && document.getElementById('galery_popup').style.display== "block"){
+			js_galery_next();
+		}
+	}
+</script>
+
+
+</body>
+</html>
