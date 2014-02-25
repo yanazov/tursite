@@ -5932,3 +5932,229 @@ body{
 	top: 1px;
 }
 /* ================================   END HOTELS-IN  ============================== */
+/* =============================   BEGIN COUNTRIES-IN  ============================ */
+.b-countries-in__city{
+	display: block;
+	position: relative;
+	width: 100%;
+	a{	
+		display: inline-block;
+		position: relative;
+		width: 24.5%;
+		height: 22px;
+		font-family: 'roboto_r';
+		font-size: 9pt;
+		color: $color_blue;
+		line-height: 22px;
+	}
+}
+.b-countries-in__b-caption{	
+	display: block;
+	position: relative;
+	margin: 25px 0px 20px 0px;
+	font-family: 'roboto_slab_r';
+	font-size: 13.5pt;
+	color: $color_txt;
+}
+.b-countries-in__info{
+	display: block;
+	position: relative;
+	width: 100%;
+	font-family: 'roboto_r';
+	font-size: 10.5pt;
+	color: #5f6569;
+}
+.b-countries-in__b-flex{
+	display: flex;
+	align-items: flex-start;
+}
+.b-countries-in__flex__item-l{
+	width: 42%;
+	font-family: 'roboto_r';
+	font-size: 10.5pt;
+	color: #5f6569;
+}
+.b-countries-in__flex__item-r{
+	width: 42%;
+	margin-left: 10%;
+	font-family: 'roboto_r';
+	font-size: 10.5pt;
+	color: #5f6569;
+}
+.b-tour__b-main__b-card__caption4{
+	display: inline-block;
+	position: relative;
+	margin-left: 15px;
+	margin-top: 15px;
+	font-family: 'roboto_r';
+	font-weight: bold;
+	font-size: 9pt;	
+}
+.select_cash{
+	display: inline-block;
+	position: relative;
+	input{
+		width: 50px;
+		margin-left: 15px;
+		margin-top: 14px;
+		padding-left: 12px;
+		font-family: 'roboto_slab_b';
+		font-size: 13.5pt;
+		color: $color_txt;
+		border: 1px solid #e1e5e8;
+		border-radius: 150px 150px 150px 150px;
+		-webkit-border-radius: 150px 150px 150px 150px;
+		-moz-border-radius: 150px 150px 150px 150px;
+		-khtml-border-radius: 150px 150px 150px 150px;
+		cursor: pointer;
+	}
+}
+.select_cash__arrow{
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 3px;
+	width: 16px;
+	height: 6px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px -40px;
+	cursor: pointer;
+}
+.cash_calc_txt{
+	display: inline-block;
+	position: relative;
+	margin-top: 4px;
+	padding-left: 12px;
+	font-family: 'roboto_slab_r';
+	font-size: 18pt;
+	color: $color_txt;
+
+}
+.cash_calc_unit{
+	display: inline-block;
+	position: relative;
+	margin-top: 4px;
+	padding-left: 12px;
+	font-family: 'roboto_slab_r';
+	font-size: 18pt;
+	color: $color_blue;
+
+}
+.details__line2{
+	display: block;
+	position: relative;
+	margin-top: 16px;
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid $color_grey;
+}
+.b-tour__b-main__b-card__caption3{
+	display: inline-block;
+	position: relative;
+	margin-left: 15px;
+	margin-top: 11px;
+	font-family: 'roboto_r';
+	font-weight: bold;
+	font-size: 9pt;
+}
+.time-zone-txt{
+	display: inlilne-block;
+	position: relative;
+	margin-left: 30px;
+	font-family: 'roboto_r';
+	color: $color_txt;
+	font-size: 9pt;
+}
+.time-zone-value{
+	display: inlilne-block;
+	position: relative;
+	margin-left: 5px;
+	font-family: 'roboto_r';
+	color: $color_blue;
+	font-size: 9pt;
+	font-weight: bold;
+}
+.b-time1{
+	display: inline-block;
+	position: relative;
+	width: 49%;
+	height: 86px;
+	margin-top: 20px;
+	border-right: 1px solid #e1e5e8;
+	text-align: center;
+}
+.b-time2{
+	display: inline-block;
+	position: relative;
+	width: 49%;
+	height: 86px;	
+	margin-top: 20px;
+	text-align: center;
+}
+.line-horizintal{
+	display: block;
+	position: relative;	
+	margin-top: 20px;
+	border-top: 1px solid #e1e5e8;
+}
+.time-zone-city-txt{
+	display: inlilne-block;
+	position: relative;
+	margin-left: 0px;
+	top: 65px;
+	font-family: 'roboto_r';
+	color: $color_txt;
+	font-size: 9pt;
+}
+.time-zone-city-value{
+	display: inlilne-block;
+	position: relative;
+	margin-left: 5px;
+	top: 65px;
+	font-family: 'roboto_r';
+	color: $color_blue;
+	font-size: 9pt;
+	font-weight: bold;
+}
+.b-countriese-in_temper{
+	display: block;
+	position: relative;
+	margin: 5px 0px 0px 15px;
+	font-family: 'roboto_slab_b';
+	font-size: 22pt;
+	color: $color_txt;
+}
+.b-countriese-in_water{
+	display: block;
+	position: absolute;
+	width: 38px;
+	height: 30px;
+	left: 97px;
+	bottom: 25px;
+	background: url(../img/water1.jpg) no-repeat;
+}
+.b-time1__fon{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 30px;
+	width: 51px;
+	height: 51px;
+	background: url(../img/time.jpg) no-repeat;
+}
+/* ==============================   END COUNTRIES-IN  ============================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

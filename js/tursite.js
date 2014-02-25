@@ -928,6 +928,9 @@ function js_hotels_in(number){
 		
 		document.getElementsByClassName("flex-container1")[0].style.display = "none";
 		document.getElementsByClassName("flex-container2")[0].style.display = "block";
+		if(windowWidth() < 550){
+			document.getElementsByClassName("b-hotels-in__b-rating")[0].style.display = "block";		
+		}
 	}
 	if(number == 0){
 		document.getElementsByClassName("b-hotels-in__menu_li")[0].style.backgroundColor = "#fff";
@@ -941,11 +944,17 @@ function js_hotels_in(number){
 		document.getElementsByClassName("flex-container1")[0].style.display = "flex";
 		document.getElementsByClassName("flex-container2")[0].style.display = "none";
 		document.getElementsByClassName("flex-container3")[0].style.display = "none";
+		if(windowWidth() < 550){
+			document.getElementsByClassName("b-hotels-in__b-rating")[0].style.display = "none";		
+		}
 	}
 }
 function js_hotels_in_coment_new(){
 	document.getElementsByClassName("flex-container2")[0].style.display = "none";
 	document.getElementsByClassName("flex-container3")[0].style.display = "block";
+	if(windowWidth() < 550){
+		document.getElementsByClassName("b-hotels-in__b-rating")[0].style.display = "none";		
+	}
 }
 function js_hotels_in_coment_new_close(){
 	document.getElementsByClassName("flex-container3")[0].style.display = "none";
