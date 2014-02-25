@@ -7555,6 +7555,10 @@ label {
   }
 
   /* ==============================   END COUNTRIES-IN  ============================= */
+  /* line 6146, ../sass/_1280.scss */
+  .b-avia-elem__price320 {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1259px), only screen and (min-device-width: 1000px) and (max-device-width: 1259px) {
   /* line 2, ../sass/_1024.scss */
@@ -15133,6 +15137,10 @@ label {
   }
 
   /* ==============================   END COUNTRIES-IN  ============================= */
+  /* line 6210, ../sass/_1024.scss */
+  .b-avia-elem__price320 {
+    display: none;
+  }
 }
 @media only screen and (min-width: 681px) and (max-width: 999px), only screen and (min-device-width: 681px) and (max-device-width: 999px) {
   /* line 1, ../sass/_768.scss */
@@ -23086,6 +23094,10 @@ label {
   }
 
   /* ==============================   END COUNTRIES-IN  ============================= */
+  /* line 6487, ../sass/_768.scss */
+  .b-avia-elem__price320 {
+    display: none;
+  }
 }
 /*     */
 @media only screen and (max-width: 680px), only screen and (max-device-width: 680px) {
