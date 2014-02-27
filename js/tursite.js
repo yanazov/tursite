@@ -151,7 +151,217 @@ window.onload = function() {
 		}
 		var tmp = 0;
 	}
+	if(document.getElementById("name_page").innerHTML == "counties_in"){
+/* ================== begin timer ============================ */
+		var image = document.getElementById("img"); 
+		var image2 = document.getElementById("img2"); 
+		var image_fon = document.getElementById("img_fon"); 
+	 
+		//создаем переменную под новую картинку
+		img = new Image(); 
+		img2 = new Image(); 
+		img_fon = new Image(); 
+		// url картинки
+		img.src = image.src; 
+		img2.src = image2.src; 
+		img_fon.src = image_fon.src; 
+	 
+		// получаем canvas элемент
+		var canvas = document.getElementById("rotate"); 
+		var canvas2 = document.getElementById("rotate2"); 
+		var canvas_fon = document.getElementById("rotate_fon"); 
+	 
+		// устанавливем размеры canvas элемента исходя из размеров самого изображения
+		canvas.width  = image.width;
+		canvas.height = image.height;
+		canvas2.width  = image2.width;
+		canvas2.height = image2.height;
+		canvas_fon.width  = image_fon.width;
+		canvas_fon.height = image_fon.height;
+	 
+		// создаем переменную для работы с canvas
+		img.context = canvas.getContext("2d");
+		img.canvas = canvas;
+		img.radians = Math.PI/180; 
+		
+		img_fon.context = canvas_fon.getContext("2d");
+		img_fon.canvas = canvas_fon;
+		img_fon.radians = Math.PI/180; 
+		
+		img2.context = canvas2.getContext("2d");
+		img2.canvas = canvas2;
+		img2.radians = Math.PI/180; 
+		//
+		img.onload = function() {
+			var _this = this;
+			var _angle = 0;
+	 
+			// устанавливаем таймер
+			var timer = setInterval(function() {
+				// очищаем canvas
+				_this.context.clearRect(0,0,_this.width, _this.height); 
+				var hours = new Date().getHours();
+				var minuts = new Date().getMinutes();
+				_angle =6*minuts;
+				// поварачиваем картинку и рисуем ее
+				canvas_rotate.call(_this, _angle);
+				document.getElementsByClassName("time-zone-city-value")[0].innerHTML = hours + ':' + minuts;
+			}, 1000);
+	 
+		}
+		img2.onload = function() {
+			var _this = this;
+			var _angle = 0;
+	 
+			// устанавливаем таймер
+			var timer = setInterval(function() {
+				// очищаем canvas
+				_this.context.clearRect(0,0,_this.width, _this.height); 
+				var hours = new Date().getHours();
+				var minuts = new Date().getMinutes();
+				_angle =30*(hours+1*(minuts/60));
+				// поварачиваем картинку и рисуем ее
+				canvas_rotate.call(_this, _angle);
+				
+			}, 1000);
+	 
+		}
+		img_fon.onload = function() {
+			var _this2 = this;
+			var _angle2 = 0;
+	 
+			// устанавливаем таймер
+			var timer_fon = setInterval(function() {
+				// очищаем canvas
+				_this2.context.clearRect(0,0,_this2.width, _this2.height); 
+	 
+				// поварачиваем картинку и рисуем ее
+				canvas_rotate.call(_this2, _angle2);
+				_angle2 +=0;
+			}, 1000);
+	 
+		} 
+/* =================== end timer ============================= */
+/* ================== begin timer2 ============================ */
+		var image_2 = document.getElementById("img_2"); 
+		var image2_2 = document.getElementById("img2_2"); 
+		var image_fon_2 = document.getElementById("img_fon_2"); 
+	 
+		//создаем переменную под новую картинку
+		img_2 = new Image(); 
+		img2_2 = new Image(); 
+		img_fon_2 = new Image(); 
+		// url картинки
+		img_2.src = image_2.src; 
+		img2_2.src = image2_2.src; 
+		img_fon_2.src = image_fon_2.src; 
+	 
+		// получаем canvas элемент
+		var canvas_2 = document.getElementById("rotate_2"); 
+		var canvas2_2 = document.getElementById("rotate2_2"); 
+		var canvas_fon_2 = document.getElementById("rotate_fon_2"); 
+	 
+		// устанавливем размеры canvas элемента исходя из размеров самого изображения
+		canvas_2.width  = image_2.width;
+		canvas_2.height = image_2.height;
+		canvas2_2.width  = image2_2.width;
+		canvas2_2.height = image2_2.height;
+		canvas_fon_2.width  = image_fon_2.width;
+		canvas_fon_2.height = image_fon_2.height;
+	 
+		// создаем переменную для работы с canvas
+		img_2.context = canvas_2.getContext("2d");
+		img_2.canvas = canvas_2;
+		img_2.radians = Math.PI/180; 
+		
+		img_fon_2.context = canvas_fon_2.getContext("2d");
+		img_fon_2.canvas = canvas_fon_2;
+		img_fon_2.radians = Math.PI/180; 
+		
+		img2_2.context = canvas2_2.getContext("2d");
+		img2_2.canvas = canvas2_2;
+		img2_2.radians = Math.PI/180; 
+		//
+		img_2.onload = function() {
+			var _this = this;
+			var _angle = 0;
+	 
+			// устанавливаем таймер
+			var timer = setInterval(function() {
+				// очищаем canvas
+				_this.context.clearRect(0,0,_this.width, _this.height); 
+				var hours = new Date().getHours();
+				var minuts = new Date().getMinutes();
+				_angle =6*minuts;
+				// поварачиваем картинку и рисуем ее
+				canvas_rotate.call(_this, _angle);
+				
+			}, 1000);
+	 
+		}
+		img2_2.onload = function() {
+			var _this = this;
+			var _angle = 0;
+	 
+			// устанавливаем таймер
+			var timer = setInterval(function() {
+				// очищаем canvas
+				_this.context.clearRect(0,0,_this.width, _this.height); 
+				var hours = new Date().getHours();
+				var minuts = new Date().getMinutes();
+				//   сдвиг часового пояса  
+				var delta_hour = 10;
+				var new_hours = hours + delta_hour;
+				if(new_hours > 24){
+					new_hours -=24;
+				}
+				document.getElementsByClassName("time-zone-city-value")[1].innerHTML = new_hours + ':' + minuts;
+				_angle =30*(hours+1*(minuts/60)+delta_hour);
+				// поварачиваем картинку и рисуем ее
+				canvas_rotate.call(_this, _angle);
+				
+			}, 1000);
+	 
+		}
+		img_fon_2.onload = function() {
+			var _this2 = this;
+			var _angle2 = 0;
+	 
+			// устанавливаем таймер
+			var timer_fon = setInterval(function() {
+				// очищаем canvas
+				_this2.context.clearRect(0,0,_this2.width, _this2.height); 
+	 
+				// поварачиваем картинку и рисуем ее
+				canvas_rotate.call(_this2, _angle2);
+				_angle2 +=0;
+			}, 1000);
+	 
+		} 
+/* =================== end timer2 ============================= */		
+		
+		
+	}
 	window.onresize();
+}
+function canvas_rotate(rotate) { 
+	// save the current co-ordinate system 
+	// before we screw with it
+	this.context.save(); 
+ 
+	// move to the middle of where we want to draw our image
+	this.context.translate(this.width/2, this.height/2);
+ 
+	// rotate around that point, converting our 
+	// angle from degrees to radians 
+	this.context.rotate(rotate * this.radians);
+ 
+	// draw it up and to the left by half the width
+	// and height of the image 
+	this.context.drawImage(this, -(this.width/2), -(this.height/2));
+		 
+	// and restore the co-ords to how they were when we began
+	this.context.restore(); 
 }
 window.onresize = function() {
 	if(document.getElementById("name_page").innerHTML == "tour"){
@@ -975,8 +1185,13 @@ function js_hotels_in_detail_coment(t){
 		t.innerHTML = "подробнее <span></span>";
 	}
 }
-
-
+function js_close_select_cash(number, t){
+	document.getElementsByClassName("select_cash__input")[number].value = t.innerHTML;
+	document.getElementsByClassName("search-select-cash")[number].style.height = 0 + 'px';
+}
+function js_open_select_cash(){
+	document.getElementsByClassName("search-select-cash")[0].style.height = "auto";
+}
 
 
 
