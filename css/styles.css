@@ -7644,6 +7644,17 @@ label {
   .select_cash {
     z-index: 120;
   }
+
+  /* line 6224, ../sass/_1280.scss */
+  .countries-in-path {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 28px;
+    padding-top: 2px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1259px), only screen and (min-device-width: 1000px) and (max-device-width: 1259px) {
   /* line 2, ../sass/_1024.scss */
