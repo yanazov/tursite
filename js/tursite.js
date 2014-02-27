@@ -47,7 +47,8 @@ window.onload = function() {
 		}
 		document.getElementById("b-map-feedback").style.opacity = 1;
 	}
-	if(document.getElementById("name_page").innerHTML == "tour"){
+	if(document.getElementById("name_page").innerHTML == "tour" ||
+		document.getElementById("name_page").innerHTML == "counties_in"){
 		var n = document.getElementsByClassName('details__shedule__column1__decor').length;
 		for(i = 0; i < n-1; i++){
 			var tmp_height = parseInt(document.getElementsByClassName('details__shedule__column2')[i+1].offsetHeight);
@@ -364,7 +365,8 @@ function canvas_rotate(rotate) {
 	this.context.restore(); 
 }
 window.onresize = function() {
-	if(document.getElementById("name_page").innerHTML == "tour"){
+	if(document.getElementById("name_page").innerHTML == "tour" ||
+		document.getElementById("name_page").innerHTML == "counties_in"){
 		current_width = document.body.clientWidth;
 		if(current_width > 1260)
 			current_width = 1260;
