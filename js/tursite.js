@@ -939,7 +939,30 @@ function js_select_number_men(){
 }
 function js_select_number_men_2(number){
 	document.getElementsByClassName("b-tour__select-number-men")[number].style.height = 'auto';
+// создание блока для закрытия списка при клике за пределами списка	
+/*	var d=document.createElement('div');
+	d.setAttribute("id", "close_select_area");*/
+	var d=document.getElementById("close_select_area");
+	d.style.display = "block";
+	d.style.width = "100%";
+	d.style.height = "100%";
+	
+/*	document.body.appendChild(d);*/
+/*	d.onclick=function () {
+	   document.getElementsByClassName("b-tour__select-number-men")[0].style.height = 0 + 'px';
+	   d.style.display = "none";
+		
+
+	}*/
 }
+function js_close_select_area() {
+	var y = $(".b-tour__select-number-men").length;
+	for(i=0; i < y; i++){
+		document.getElementsByClassName("b-tour__select-number-men")[i].style.height = 0 + 'px';
+	}
+	document.getElementById("close_select_area").style.display = "none";
+}
+
 function js_close_select_number_men(t){
 	document.getElementsByClassName("select_number_men")[0].value = t.innerHTML;
 	document.getElementsByClassName("b-tour__select-number-men")[0].style.height = 0 + 'px';
@@ -947,10 +970,12 @@ function js_close_select_number_men(t){
 function js_close_select_number_men_avia_in(t, number){
 	document.getElementsByClassName("b-avia-in-order__unit-fild")[number].value = t.innerHTML;
 	document.getElementsByClassName("b-tour__select-number-men")[number].style.height = 0 + 'px';
+	document.getElementById("close_select_area").style.display = "none";
 }
 function js_close_select_number_men_search(t, number){
 	document.getElementsByClassName("b-search-e__input")[number].value = t.innerHTML;
 	document.getElementsByClassName("b-tour__select-number-men")[number].style.height = 0 + 'px';
+	document.getElementById("close_select_area").style.display = "none";
 }
 function js_open_menu320(){
 	if(document.getElementById('b-menu-320').style.display == 'block'){
@@ -961,13 +986,15 @@ function js_open_menu320(){
 	document.getElementById('b-menu-320').style.display = 'block';
 	document.getElementsByClassName("header__menu320__btn__img")[0].style.backgroundPosition = "0px -1080px";
 }
+// таймер обратного отсчета
 function startTime(){
 	var tm=new Date();
 	var d=tm.getDate();
 	var h=tm.getHours();
 	var m=tm.getMinutes();
 	var s=tm.getSeconds();
-	var end = new Date(2014, 2,1);
+	// дата окончания отсчета
+	var end = new Date(2014, 3,1);
 	var elapsed = end - tm;
 	document.getElementById('b-campaign__day').innerHTML= div(elapsed, 86400000);
 	elapsed = elapsed - div(elapsed, 86400000)*86400000;

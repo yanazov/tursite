@@ -339,7 +339,7 @@
 						<li onClick="js_close_select_place(2, this)">подсказка 3</li>														
 					</ul>
 				</div>
-				<span class="b-avia-in-order__icon"></span>
+				<span class="b-avia-in-order__icon z121"></span>
 			</div>
 			<div class="b-avia-in-order__to">
 				<span class="b-avia-in-order__name">Куда</span>
@@ -357,9 +357,9 @@
 			<br/>
 			<div class="b-avia-in-order__data-from">
 				<span class="b-avia-in-order__name">Дата отправления:</span>
-				<input class="b-avia-in-order__data-fild" type="text">
-				<span class="b-avia-in-order__data-from__txt">+/-</span>
-				<input class="b-avia-in-order__unit-fild z121" type="text" value="2" readonly onClick="js_select_number_men_2(0)">
+				<input class="time_fild b-avia-in-order__data-fild" type="text" readonly onClick="js_calendar_open(2)">
+				<span class="b-avia-in__calendar-icon" onClick="js_calendar_open(2)"></span>
+				<span class="b-avia-in-order__data-from__txt">+/-</span><input class="b-avia-in-order__unit-fild z121" type="text" value="2" readonly onClick="js_select_number_men_2(0)">
 				<ul class="b-tour__select-number-men b-avia-in-select z120">
 					<li onClick=></li>
 					<li onClick="js_close_select_number_men_avia_in(this, 0)">3</li>
@@ -371,16 +371,16 @@
 			</div>
 			<div class="b-avia-in-order__data-to">
 				<span class="b-avia-in-order__name">Дата возвращения:</span>
-				<input class="b-avia-in-order__data-fild" type="text">
-				<span class="b-avia-in-order__data-from__txt">+/-</span>
-				<input class="b-avia-in-order__unit-fild" type="text" value="2" readonly onClick="js_select_number_men_2(1)">
-				<ul class="b-tour__select-number-men b-avia-in-select">
+				<input class="time_fild b-avia-in-order__data-fild" type="text" readonly onClick="js_calendar_open(3)">
+				<span class="b-avia-in__calendar-icon" onClick="js_calendar_open(3)"></span>
+				<span class="b-avia-in-order__data-from__txt">+/-</span><input class="b-avia-in-order__unit-fild z111" type="text" value="2" readonly onClick="js_select_number_men_2(1)">
+				<ul class="b-tour__select-number-men b-avia-in-select z110">
 					<li onClick=></li>
 					<li onClick="js_close_select_number_men_avia_in(this, 1)">3</li>
 					<li onClick="js_close_select_number_men_avia_in(this, 1)">4</li>
 					<li onClick="js_close_select_number_men_avia_in(this, 1)">5</li>
 				</ul>	
-				<span class="b-avia-in-order__unit__decor"  onClick="js_select_number_men_2(1)"></span>
+				<span class="b-avia-in-order__unit__decor z111"  onClick="js_select_number_men_2(1)"></span>
 				<span class="b-avia-in-order__unit">чел.</span>	
 			</div>
 			
@@ -497,6 +497,6 @@
 		</ul>
 		<div id="calendar-body__fild"></div>
 	</div>
-	
+	<div id="close_select_area" onClick="js_close_select_area()"></div>
 </body>
 </html>
