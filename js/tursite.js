@@ -426,6 +426,10 @@ window.onscroll = function ()
 		document.getElementById("btn-up").style.display = "block";
 		
 	}
+	if (S == 0){   /* пришли в низ   */
+		document.getElementById("btn-up").style.display = "none";
+		
+	}
 }	
 function js_scroll_up(){
 	$("html, body").animate({scrollTop:0},"slow");

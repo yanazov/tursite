@@ -1708,8 +1708,8 @@ body{
 /* ===================================   END FOOTER  ============================== */
 .btn-up-dwn{
 	display: none;
-	position: absolute;
-	bottom: 400px;
+	position: fixed;
+	bottom: 200px;
 	right: 25px;
 	width: 47px;
 	height: 47px;
@@ -1719,6 +1719,7 @@ body{
 	-moz-border-radius: 150px 150px 150px 150px;
 	-khtml-border-radius: 150px 150px 150px 150px;
 	border-radius: 150px 150px 150px 150px;
+	z-index: 999;
 }
 .btn-up-dwn__icon{
 	display: block;
