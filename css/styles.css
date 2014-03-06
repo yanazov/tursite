@@ -4791,7 +4791,7 @@ label {
   /* line 3653, ../sass/_1280.scss */
   .b-search-select {
     top: 15px;
-    left: 99px;
+    left: 0px;
     width: 77px;
   }
   /* line 3657, ../sass/_1280.scss */
@@ -5730,6 +5730,7 @@ label {
     display: block;
     position: relative;
     width: 92%;
+    height: 27px;
     padding-left: 8%;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -5746,7 +5747,7 @@ label {
     transition: all 0.6s ease-in-out;
   }
 
-  /* line 4436, ../sass/_1280.scss */
+  /* line 4437, ../sass/_1280.scss */
   .b-countries__elem__city {
     display: inline-block;
     position: relative;
@@ -5758,7 +5759,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4446, ../sass/_1280.scss */
+  /* line 4447, ../sass/_1280.scss */
   .b-countries__elem__another {
     display: block;
     position: absolute;
@@ -5772,7 +5773,7 @@ label {
     text-align: right;
   }
 
-  /* line 4458, ../sass/_1280.scss */
+  /* line 4459, ../sass/_1280.scss */
   .b-countries__elem__cont-city {
     display: block;
     position: absolute;
@@ -5784,36 +5785,36 @@ label {
 
   /* ================================   END COUTNRIES 3  ============================ */
   /* ================================   BEGIN RESTTYPES  ============================ */
-  /* line 4468, ../sass/_1280.scss */
+  /* line 4469, ../sass/_1280.scss */
   .resttype-icon1 {
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -660px;
   }
 
-  /* line 4472, ../sass/_1280.scss */
+  /* line 4473, ../sass/_1280.scss */
   .resttype-icon2 {
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -630px;
   }
 
-  /* line 4476, ../sass/_1280.scss */
+  /* line 4477, ../sass/_1280.scss */
   .resttype-icon3 {
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -600px;
   }
 
-  /* line 4480, ../sass/_1280.scss */
+  /* line 4481, ../sass/_1280.scss */
   .resttype-icon4 {
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -1190px;
   }
 
-  /* line 4484, ../sass/_1280.scss */
+  /* line 4485, ../sass/_1280.scss */
   .b-resttype__hover-icon {
     top: 27px;
   }
 
-  /* line 4487, ../sass/_1280.scss */
+  /* line 4488, ../sass/_1280.scss */
   .b-resttypes__country-number {
     display: inline-block;
     position: relative;
@@ -5824,7 +5825,7 @@ label {
     color: #383d43;
   }
 
-  /* line 4496, ../sass/_1280.scss */
+  /* line 4497, ../sass/_1280.scss */
   .b-resttypes__elem__city {
     display: inline-block;
     position: relative;
@@ -5834,7 +5835,7 @@ label {
     font-family: 'roboto_r';
   }
 
-  /* line 4504, ../sass/_1280.scss */
+  /* line 4505, ../sass/_1280.scss */
   .b-resttypes__elem__arrow {
     display: inline-block;
     position: relative;
@@ -5844,7 +5845,7 @@ label {
     background-position: 0px -40px;
   }
 
-  /* line 4513, ../sass/_1280.scss */
+  /* line 4514, ../sass/_1280.scss */
   .b-resttypes__elem__cont-city {
     display: block;
     position: absolute;
@@ -5864,12 +5865,12 @@ label {
     transition: all 0.6s ease-in-out;
   }
 
-  /* line 4534, ../sass/_1280.scss */
+  /* line 4535, ../sass/_1280.scss */
   .b-resttypes__elem__cont-city__anim {
     max-height: 100px;
   }
 
-  /* line 4537, ../sass/_1280.scss */
+  /* line 4538, ../sass/_1280.scss */
   .b-resttypes__elem__another {
     display: block;
     position: absolute;
@@ -5894,12 +5895,12 @@ label {
     transition: all 0.6s ease-in-out;
   }
 
-  /* line 4560, ../sass/_1280.scss */
+  /* line 4561, ../sass/_1280.scss */
   .width228 {
     width: 228px;
   }
 
-  /* line 4563, ../sass/_1280.scss */
+  /* line 4564, ../sass/_1280.scss */
   .b-countries__elem__zerro {
     display: inline-block;
     position: relative;
@@ -5909,24 +5910,24 @@ label {
     background-color: #fff;
   }
 
-  /* line 4572, ../sass/_1280.scss */
+  /* line 4573, ../sass/_1280.scss */
   .b-resttype-place {
     width: 73%;
   }
 
-  /* line 4575, ../sass/_1280.scss */
+  /* line 4576, ../sass/_1280.scss */
   .b-resttype__country, .b-resttyperesttype__hotel, .b-resttype__type {
     width: 29%;
   }
 
-  /* line 4578, ../sass/_1280.scss */
+  /* line 4579, ../sass/_1280.scss */
   .b-resttyperesttype__hotel {
     left: 1%;
   }
 
   /* =================================   END RESTTYPES  ============================= */
   /* =================================   BEGIN HOTELS =============================== */
-  /* line 4583, ../sass/_1280.scss */
+  /* line 4584, ../sass/_1280.scss */
   .b-hotels-top-elem {
     display: inline-block;
     position: relative;
@@ -5942,19 +5943,19 @@ label {
     transition: all 0.6s ease-in-out;
   }
 
-  /* line 4597, ../sass/_1280.scss */
+  /* line 4598, ../sass/_1280.scss */
   .b-hotels-top-elem:hover {
     background-color: #fff;
     -moz-box-shadow: 0 0 28px #ccc;
     -webkit-box-shadow: 0 0 28px #ccc;
     box-shadow: 0 0 28px  #ccc;
   }
-  /* line 4602, ../sass/_1280.scss */
+  /* line 4603, ../sass/_1280.scss */
   .b-hotels-top-elem:hover .b-hot__b-unit__dimmer {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
   }
-  /* line 4606, ../sass/_1280.scss */
+  /* line 4607, ../sass/_1280.scss */
   .b-hotels-top-elem:hover .b-hot__img img {
     width: 248px;
     height: 123px;
@@ -5962,12 +5963,12 @@ label {
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
   }
-  /* line 4613, ../sass/_1280.scss */
+  /* line 4614, ../sass/_1280.scss */
   .b-hotels-top-elem:hover .b-countries__elem__name {
     background-color: #fff;
   }
 
-  /* line 4617, ../sass/_1280.scss */
+  /* line 4618, ../sass/_1280.scss */
   .b-hotels__caption__name {
     display: inline-block;
     position: relative;
@@ -5979,7 +5980,7 @@ label {
     text-align: center;
   }
 
-  /* line 4627, ../sass/_1280.scss */
+  /* line 4628, ../sass/_1280.scss */
   .b-counries__raiting {
     display: block;
     position: relative;
@@ -5989,7 +5990,7 @@ label {
     background-position: 0px 0px;
   }
 
-  /* line 4636, ../sass/_1280.scss */
+  /* line 4637, ../sass/_1280.scss */
   .b-countries__city {
     display: block;
     position: absolute;
@@ -6000,7 +6001,7 @@ label {
     color: #97999b;
   }
 
-  /* line 4645, ../sass/_1280.scss */
+  /* line 4646, ../sass/_1280.scss */
   .b-countries__elem__name {
     display: block;
     position: absolute;
@@ -6008,7 +6009,7 @@ label {
     left: 0px;
   }
 
-  /* line 4651, ../sass/_1280.scss */
+  /* line 4652, ../sass/_1280.scss */
   .b-hotels__body__top {
     display: block;
     position: relative;
@@ -6016,14 +6017,14 @@ label {
     text-align: left;
   }
 
-  /* line 4657, ../sass/_1280.scss */
+  /* line 4658, ../sass/_1280.scss */
   .b-hotels__body__top__b-input {
     display: block;
     position: relative;
     width: 100%;
   }
 
-  /* line 4662, ../sass/_1280.scss */
+  /* line 4663, ../sass/_1280.scss */
   .b-hotels__body__top__b-select {
     display: inline-block;
     position: relative;
@@ -6032,7 +6033,7 @@ label {
     margin-top: 21px;
     text-align: left;
   }
-  /* line 4669, ../sass/_1280.scss */
+  /* line 4670, ../sass/_1280.scss */
   .b-hotels__body__top__b-select input {
     display: inline-block;
     position: relative;
@@ -6051,7 +6052,7 @@ label {
     z-index: 101;
   }
 
-  /* line 4687, ../sass/_1280.scss */
+  /* line 4688, ../sass/_1280.scss */
   .b-hotels__body__top__b-input {
     display: block;
     position: absolute;
@@ -6060,7 +6061,7 @@ label {
     text-align: right;
   }
 
-  /* line 4694, ../sass/_1280.scss */
+  /* line 4695, ../sass/_1280.scss */
   .b-hotels__body__top__b-input__search {
     display: block;
     position: absolute;
@@ -6082,7 +6083,7 @@ label {
     font-weight: bold;
   }
 
-  /* line 4714, ../sass/_1280.scss */
+  /* line 4715, ../sass/_1280.scss */
   .b-hotels__body__top__b-input__search__btn {
     display: block;
     position: absolute;
@@ -6097,41 +6098,41 @@ label {
     cursor: pointer;
   }
 
-  /* line 4728, ../sass/_1280.scss */
+  /* line 4729, ../sass/_1280.scss */
   .b-hotels__b-search-number input {
     font-size: 10pt;
     line-height: 27px;
   }
 
-  /* line 4734, ../sass/_1280.scss */
+  /* line 4735, ../sass/_1280.scss */
   .b-hotels__b-search-rating {
     margin-right: 10px;
   }
-  /* line 4736, ../sass/_1280.scss */
+  /* line 4737, ../sass/_1280.scss */
   .b-hotels__b-search-rating input {
     width: 130px;
     font-size: 10pt;
     line-height: 27px;
   }
 
-  /* line 4742, ../sass/_1280.scss */
+  /* line 4743, ../sass/_1280.scss */
   .b-hotels__b-search-abc {
     margin-right: 15px;
   }
-  /* line 4744, ../sass/_1280.scss */
+  /* line 4745, ../sass/_1280.scss */
   .b-hotels__b-search-abc input {
     width: 35px;
     font-size: 10pt;
     line-height: 27px;
   }
 
-  /* line 4750, ../sass/_1280.scss */
+  /* line 4751, ../sass/_1280.scss */
   .b-hotels-select-abc {
-    left: 88px;
+    left: 0px;
     top: 15px;
     width: 72px;
   }
-  /* line 4754, ../sass/_1280.scss */
+  /* line 4755, ../sass/_1280.scss */
   .b-hotels-select-abc li {
     font-size: 10pt;
     line-height: 20px;
@@ -6140,13 +6141,13 @@ label {
     padding-left: 10px;
   }
 
-  /* line 4762, ../sass/_1280.scss */
+  /* line 4763, ../sass/_1280.scss */
   .b-hotels-select-rating {
-    left: 87px;
+    left: 0px;
     top: 15px;
     width: 167px;
   }
-  /* line 4766, ../sass/_1280.scss */
+  /* line 4767, ../sass/_1280.scss */
   .b-hotels-select-rating li {
     font-size: 10pt;
     line-height: 20px;
@@ -6155,7 +6156,7 @@ label {
     padding-left: 10px;
   }
 
-  /* line 4775, ../sass/_1280.scss */
+  /* line 4776, ../sass/_1280.scss */
   .b-hotels__b-search-number li {
     height: 20px;
     font-size: 10pt;
@@ -6165,7 +6166,7 @@ label {
     padding-left: 10px;
   }
 
-  /* line 4784, ../sass/_1280.scss */
+  /* line 4785, ../sass/_1280.scss */
   .b-hotels__elem {
     display: block;
     position: relative;
@@ -6176,31 +6177,31 @@ label {
     color: #383d43;
   }
 
-  /* line 4795, ../sass/_1280.scss */
+  /* line 4796, ../sass/_1280.scss */
   .b-hotels__elem:nth-child(2n+1) {
     background-color: #ebeef0;
   }
 
-  /* line 4798, ../sass/_1280.scss */
+  /* line 4799, ../sass/_1280.scss */
   .b-hotels__elem:last-child {
     border-bottom: 1px solid #e1e5e8;
   }
 
-  /* line 4801, ../sass/_1280.scss */
+  /* line 4802, ../sass/_1280.scss */
   .b-hotels__elem__img {
     float: left;
     margin-top: 25px;
     margin-left: 12px;
   }
 
-  /* line 4806, ../sass/_1280.scss */
+  /* line 4807, ../sass/_1280.scss */
   .b-hotels__elem__left {
     float: left;
     padding: 20px 0px 0px 15px;
     text-align: left;
   }
 
-  /* line 4811, ../sass/_1280.scss */
+  /* line 4812, ../sass/_1280.scss */
   .b-hotels__elem__left__name {
     display: block;
     position: relative;
@@ -6210,7 +6211,7 @@ label {
     color: #383d43;
   }
 
-  /* line 4819, ../sass/_1280.scss */
+  /* line 4820, ../sass/_1280.scss */
   .b-hotels__elem__left__city {
     display: inline-block;
     position: relative;
@@ -6220,7 +6221,7 @@ label {
     color: #97999b;
   }
 
-  /* line 4827, ../sass/_1280.scss */
+  /* line 4828, ../sass/_1280.scss */
   .b-hotels__elem__left__map {
     display: inline-block;
     position: relative;
@@ -6234,7 +6235,7 @@ label {
     background-position: 0px -1220px;
   }
 
-  /* line 4839, ../sass/_1280.scss */
+  /* line 4840, ../sass/_1280.scss */
   .b-hotels__elem__right {
     display: block;
     position: absolute;
@@ -6244,7 +6245,7 @@ label {
     text-align: justify;
   }
 
-  /* line 4847, ../sass/_1280.scss */
+  /* line 4848, ../sass/_1280.scss */
   .b-hotels__elem__right__txt {
     display: inline-block;
     position: relative;
@@ -6253,7 +6254,7 @@ label {
     color: #97999b;
   }
 
-  /* line 4854, ../sass/_1280.scss */
+  /* line 4855, ../sass/_1280.scss */
   .b-hotels__elem__right__number {
     display: inline-block;
     position: relative;
@@ -6263,13 +6264,13 @@ label {
     color: #383d43;
   }
 
-  /* line 4863, ../sass/_1280.scss */
+  /* line 4864, ../sass/_1280.scss */
   .found_elem__b-txt {
     float: left;
     margin-left: 15px;
   }
 
-  /* line 4867, ../sass/_1280.scss */
+  /* line 4868, ../sass/_1280.scss */
   .found_elem__b-txt__caption {
     display: block;
     position: relative;
@@ -6279,7 +6280,7 @@ label {
     font-size: 12pt;
   }
 
-  /* line 4875, ../sass/_1280.scss */
+  /* line 4876, ../sass/_1280.scss */
   .found_elem__b-txt {
     display: block;
     position: relative;
@@ -6287,7 +6288,7 @@ label {
     font-size: 12pt;
   }
 
-  /* line 4881, ../sass/_1280.scss */
+  /* line 4882, ../sass/_1280.scss */
   .b-hotels__elem__right__btn {
     width: 100%;
     margin-left: 0px;
@@ -6300,13 +6301,13 @@ label {
     font-size: 9pt;
   }
 
-  /* line 4892, ../sass/_1280.scss */
+  /* line 4893, ../sass/_1280.scss */
   .b-hotels__country, .b-hotels__hotel, .b-hotels__type {
     width: 29%;
     left: 0%;
   }
 
-  /* line 4896, ../sass/_1280.scss */
+  /* line 4897, ../sass/_1280.scss */
   .b-hotels__rating {
     display: inline-block;
     position: relative;
@@ -6318,7 +6319,7 @@ label {
     text-align: center;
   }
 
-  /* line 4906, ../sass/_1280.scss */
+  /* line 4907, ../sass/_1280.scss */
   .b-hotels__rating__cont {
     display: block;
     position: absolute;
@@ -6328,7 +6329,7 @@ label {
     z-index: 110;
   }
 
-  /* line 4914, ../sass/_1280.scss */
+  /* line 4915, ../sass/_1280.scss */
   .b-hotels__rating-select__star {
     display: block;
     position: absolute;
@@ -6342,7 +6343,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 4926, ../sass/_1280.scss */
+  /* line 4927, ../sass/_1280.scss */
   .b-hotels__rating__name {
     display: inline-block;
     position: relative;
@@ -6351,7 +6352,7 @@ label {
     color: #383d43;
   }
 
-  /* line 4933, ../sass/_1280.scss */
+  /* line 4934, ../sass/_1280.scss */
   .b-hotels__rating-select {
     display: inline-block;
     position: relative;
@@ -6379,21 +6380,21 @@ label {
     user-select: none;
   }
 
-  /* line 4961, ../sass/_1280.scss */
+  /* line 4962, ../sass/_1280.scss */
   .b-hotels-place {
     width: 72%;
   }
 
   /* ==================================   END HOTELS  =============================== */
   /* ===============================   BEGIN HOTELS-IN  ============================= */
-  /* line 4967, ../sass/_1280.scss */
+  /* line 4968, ../sass/_1280.scss */
   #space2 {
     display: block;
     position: relative;
     height: 7px;
   }
 
-  /* line 4972, ../sass/_1280.scss */
+  /* line 4973, ../sass/_1280.scss */
   .b-hotel-in__card__a-map {
     display: block;
     position: relative;
@@ -6403,7 +6404,7 @@ label {
     text-decoration: none;
   }
 
-  /* line 4980, ../sass/_1280.scss */
+  /* line 4981, ../sass/_1280.scss */
   .b-hotel-in__card__a-map__decor {
     display: inline-block;
     position: relative;
@@ -6414,7 +6415,7 @@ label {
     background-position: 0px -1280px;
   }
 
-  /* line 4989, ../sass/_1280.scss */
+  /* line 4990, ../sass/_1280.scss */
   .b-hotel-in__card__a {
     color: #00adc7;
     font-family: 'roboto_r';
@@ -6422,7 +6423,7 @@ label {
     text-decoration: none;
   }
 
-  /* line 4995, ../sass/_1280.scss */
+  /* line 4996, ../sass/_1280.scss */
   .b-hotel-in__card__advisor {
     display: block;
     position: relative;
@@ -6433,7 +6434,7 @@ label {
     background: url(../img/advisor.png) no-repeat;
   }
 
-  /* line 5004, ../sass/_1280.scss */
+  /* line 5005, ../sass/_1280.scss */
   .b-hotels-in__main-rating {
     display: block;
     position: relative;
@@ -6444,7 +6445,7 @@ label {
     background-position: 0px 0px;
   }
 
-  /* line 5013, ../sass/_1280.scss */
+  /* line 5014, ../sass/_1280.scss */
   .b-hotel-in__slogan__txt {
     display: block;
     position: relative;
@@ -6455,7 +6456,7 @@ label {
     line-height: 17px;
   }
 
-  /* line 5022, ../sass/_1280.scss */
+  /* line 5023, ../sass/_1280.scss */
   .b-hotels-in__b-rating {
     display: block;
     position: relative;
@@ -6465,7 +6466,7 @@ label {
     margin-bottom: 40px;
   }
 
-  /* line 5030, ../sass/_1280.scss */
+  /* line 5031, ../sass/_1280.scss */
   .b-hotels-in__b-rating__caption {
     display: block;
     position: relative;
@@ -6479,7 +6480,7 @@ label {
     line-height: 51px;
   }
 
-  /* line 5041, ../sass/_1280.scss */
+  /* line 5042, ../sass/_1280.scss */
   .b-hotels-in__b-rating__caption__number {
     display: inline-block;
     position: relative;
@@ -6498,7 +6499,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 5058, ../sass/_1280.scss */
+  /* line 5059, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem {
     display: block;
     position: relative;
@@ -6511,12 +6512,12 @@ label {
     border-bottom: 1px solid #e1e5e8;
   }
 
-  /* line 5069, ../sass/_1280.scss */
+  /* line 5070, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem:last-child {
     border: none;
   }
 
-  /* line 5072, ../sass/_1280.scss */
+  /* line 5073, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem__txt {
     display: inline-block;
     position: relative;
@@ -6527,7 +6528,7 @@ label {
     color: #383d43;
   }
 
-  /* line 5081, ../sass/_1280.scss */
+  /* line 5082, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem__number {
     display: block;
     position: absolute;
@@ -6540,7 +6541,7 @@ label {
     text-align: left;
   }
 
-  /* line 5092, ../sass/_1280.scss */
+  /* line 5093, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem__rating5 {
     display: block;
     position: relative;
@@ -6550,7 +6551,7 @@ label {
     background-position: 0px -80px;
   }
 
-  /* line 5100, ../sass/_1280.scss */
+  /* line 5101, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem__rating4 {
     display: block;
     position: relative;
@@ -6560,7 +6561,7 @@ label {
     background-position: 0px -60px;
   }
 
-  /* line 5108, ../sass/_1280.scss */
+  /* line 5109, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem__rating3 {
     display: block;
     position: relative;
@@ -6570,7 +6571,7 @@ label {
     background-position: 0px -40px;
   }
 
-  /* line 5116, ../sass/_1280.scss */
+  /* line 5117, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem__rating2 {
     display: block;
     position: relative;
@@ -6580,7 +6581,7 @@ label {
     background-position: 0px -20px;
   }
 
-  /* line 5124, ../sass/_1280.scss */
+  /* line 5125, ../sass/_1280.scss */
   .b-hotels-in__b-rating__elem__rating1 {
     display: block;
     position: relative;
@@ -6590,13 +6591,13 @@ label {
     background-position: 0px -0px;
   }
 
-  /* line 5132, ../sass/_1280.scss */
+  /* line 5133, ../sass/_1280.scss */
   .b-hotels-in__margin {
     margin-left: 0px;
     margin-bottom: 15px;
   }
 
-  /* line 5136, ../sass/_1280.scss */
+  /* line 5137, ../sass/_1280.scss */
   .b-hotel-in__btn-detail {
     display: block;
     position: absolute;
@@ -6604,7 +6605,7 @@ label {
     right: 10px;
   }
 
-  /* line 5142, ../sass/_1280.scss */
+  /* line 5143, ../sass/_1280.scss */
   .b-hotels-in__menu {
     display: block;
     position: relative;
@@ -6623,7 +6624,7 @@ label {
     user-select: none;
   }
 
-  /* line 5161, ../sass/_1280.scss */
+  /* line 5162, ../sass/_1280.scss */
   .b-hotels-in__menu li {
     display: inline-block;
     position: relative;
@@ -6638,7 +6639,7 @@ label {
     cursor: pointer;
     border-top: none;
   }
-  /* line 5174, ../sass/_1280.scss */
+  /* line 5175, ../sass/_1280.scss */
   .b-hotels-in__menu li span {
     dislpay: inline-block;
     position: relative;
@@ -6655,7 +6656,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 5190, ../sass/_1280.scss */
+  /* line 5191, ../sass/_1280.scss */
   .b-hotels-in__menu li:first-child {
     background-color: #fff;
     border-right: 1px solid #c3cbd1;
@@ -6665,23 +6666,23 @@ label {
     cursor: default;
   }
 
-  /* line 5198, ../sass/_1280.scss */
+  /* line 5199, ../sass/_1280.scss */
   .b-hotels-in-same {
     padding-left: 20px;
   }
 
-  /* line 5201, ../sass/_1280.scss */
+  /* line 5202, ../sass/_1280.scss */
   .b-hotels-in-details {
     margin-left: 290px;
   }
 
-  /* line 5204, ../sass/_1280.scss */
+  /* line 5205, ../sass/_1280.scss */
   .flex-container2 {
     display: none;
     position: relative;
   }
 
-  /* line 5208, ../sass/_1280.scss */
+  /* line 5209, ../sass/_1280.scss */
   .flex-container1 {
     /*display: block;
     display: -webkit-flex; */
@@ -6690,7 +6691,7 @@ label {
     align-items: flex-start;
   }
 
-  /* line 5215, ../sass/_1280.scss */
+  /* line 5216, ../sass/_1280.scss */
   .flex-item-left {
     width: 48%;
     height: 900px;
@@ -6699,20 +6700,20 @@ label {
     color: #5f6569;
   }
 
-  /* line 5222, ../sass/_1280.scss */
+  /* line 5223, ../sass/_1280.scss */
   .flex-item-right {
     width: 44%;
     margin-left: 7.5%;
     color: #5f6569;
   }
 
-  /* line 5227, ../sass/_1280.scss */
+  /* line 5228, ../sass/_1280.scss */
   .flex-container__ul {
     display: block;
     position: relative;
     margin-top: 10px;
   }
-  /* line 5231, ../sass/_1280.scss */
+  /* line 5232, ../sass/_1280.scss */
   .flex-container__ul li {
     display: block;
     position: relative;
@@ -6722,7 +6723,7 @@ label {
     font-size: 10.5pt;
     color: #5f6569;
   }
-  /* line 5239, ../sass/_1280.scss */
+  /* line 5240, ../sass/_1280.scss */
   .flex-container__ul li span {
     display: block;
     position: absolute;
@@ -6734,7 +6735,7 @@ label {
     background-position: 0px -910px;
   }
 
-  /* line 5251, ../sass/_1280.scss */
+  /* line 5252, ../sass/_1280.scss */
   .b-hotels-in__b-map__caption {
     display: block;
     position: relative;
@@ -6744,7 +6745,7 @@ label {
     color: #383d43;
   }
 
-  /* line 5259, ../sass/_1280.scss */
+  /* line 5260, ../sass/_1280.scss */
   .b-hotels-in__b-map {
     display: block;
     position: relative;
@@ -6753,7 +6754,7 @@ label {
     overflow: hidden;
   }
 
-  /* line 5266, ../sass/_1280.scss */
+  /* line 5267, ../sass/_1280.scss */
   .b-hotels-in__b-map__map {
     display: block;
     position: relative;
@@ -6763,24 +6764,24 @@ label {
     background-size: cover;
   }
 
-  /* line 5274, ../sass/_1280.scss */
+  /* line 5275, ../sass/_1280.scss */
   .b-hotels__found_elem:nth-child(2n+4) {
     background-color: #fff;
   }
 
-  /* line 5277, ../sass/_1280.scss */
+  /* line 5278, ../sass/_1280.scss */
   .b-hotels__found_elem:nth-child(2n+1) {
     background-color: #ebeef0;
   }
 
-  /* line 5280, ../sass/_1280.scss */
+  /* line 5281, ../sass/_1280.scss */
   .b-hotels-in__space23 {
     display: block;
     position: relative;
     height: 23px;
   }
 
-  /* line 5285, ../sass/_1280.scss */
+  /* line 5286, ../sass/_1280.scss */
   .b-hotels-in__b-map__btn-close {
     display: none;
     position: absolute;
@@ -6797,7 +6798,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
     z-index: 10;
   }
-  /* line 5300, ../sass/_1280.scss */
+  /* line 5301, ../sass/_1280.scss */
   .b-hotels-in__b-map__btn-close span {
     display: block;
     position: relative;
@@ -6809,7 +6810,7 @@ label {
     background-position: 0px -60px;
   }
 
-  /* line 5311, ../sass/_1280.scss */
+  /* line 5312, ../sass/_1280.scss */
   .b-hotels-in__map-dimmer {
     display: block;
     position: absolute;
@@ -6827,7 +6828,7 @@ label {
     transition: all 0.3s ease-in-out;
   }
 
-  /* line 5328, ../sass/_1280.scss */
+  /* line 5329, ../sass/_1280.scss */
   .b-hotels-in__b-map__btn-open {
     display: block;
     position: relative;
@@ -6840,7 +6841,7 @@ label {
     margin: 0 auto;
   }
 
-  /* line 5339, ../sass/_1280.scss */
+  /* line 5340, ../sass/_1280.scss */
   .b-hotels-in__body__top {
     display: block;
     position: relative;
@@ -6849,18 +6850,18 @@ label {
     margin-bottom: 20px;
   }
 
-  /* line 5346, ../sass/_1280.scss */
+  /* line 5347, ../sass/_1280.scss */
   .b-hotels-in__body__top__txt {
     margin-left: 0px;
     margin-top: 20px;
   }
 
-  /* line 5350, ../sass/_1280.scss */
+  /* line 5351, ../sass/_1280.scss */
   .b-hotels-in__body__top__number {
     margin-top: 21px;
   }
 
-  /* line 5353, ../sass/_1280.scss */
+  /* line 5354, ../sass/_1280.scss */
   .b-hotels-in__body__top__b-input {
     display: block;
     position: relative;
@@ -6868,7 +6869,7 @@ label {
     top: 0px;
   }
 
-  /* line 5359, ../sass/_1280.scss */
+  /* line 5360, ../sass/_1280.scss */
   .b-hotels-in__b-search-number {
     display: block;
     position: absolute;
@@ -6876,13 +6877,13 @@ label {
     right: 0px;
     margin-right: 0px;
   }
-  /* line 5365, ../sass/_1280.scss */
+  /* line 5366, ../sass/_1280.scss */
   .b-hotels-in__b-search-number input {
     font-size: 10pt;
     line-height: 27px;
   }
 
-  /* line 5372, ../sass/_1280.scss */
+  /* line 5373, ../sass/_1280.scss */
   .b-hotels-in__b-search-number li {
     height: 20px;
     font-size: 10pt;
@@ -6892,7 +6893,7 @@ label {
     padding-left: 10px;
   }
 
-  /* line 5381, ../sass/_1280.scss */
+  /* line 5382, ../sass/_1280.scss */
   .b-hotel-in__btn-coment {
     display: block;
     position: absolute;
@@ -6901,13 +6902,13 @@ label {
     width: 140px;
   }
 
-  /* line 5388, ../sass/_1280.scss */
+  /* line 5389, ../sass/_1280.scss */
   .b-hotel-in__btn-coment:active {
     top: 21px;
     right: -1px;
   }
 
-  /* line 5392, ../sass/_1280.scss */
+  /* line 5393, ../sass/_1280.scss */
   .b-hotels-in__coment-elem {
     display: block;
     position: relative;
@@ -6916,7 +6917,7 @@ label {
     padding: 15px 0px 35px 0px;
   }
 
-  /* line 5399, ../sass/_1280.scss */
+  /* line 5400, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__caption {
     display: block;
     position: relative;
@@ -6925,7 +6926,7 @@ label {
     color: #00adc7;
   }
 
-  /* line 5406, ../sass/_1280.scss */
+  /* line 5407, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__name {
     font-family: 'roboto_r';
     font-size: 10.5pt;
@@ -6933,7 +6934,7 @@ label {
     font-weight: bold;
   }
 
-  /* line 5413, ../sass/_1280.scss */
+  /* line 5414, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__caption__rating__grey {
     display: block;
     position: absolute;
@@ -6944,7 +6945,7 @@ label {
     background-color: #c3cbd1;
   }
 
-  /* line 5422, ../sass/_1280.scss */
+  /* line 5423, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__caption__rating__color {
     display: block;
     position: absolute;
@@ -6955,7 +6956,7 @@ label {
     background-color: #ffd200;
   }
 
-  /* line 5431, ../sass/_1280.scss */
+  /* line 5432, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__caption__rating {
     display: block;
     position: absolute;
@@ -6963,7 +6964,7 @@ label {
     right: 0px;
   }
 
-  /* line 5438, ../sass/_1280.scss */
+  /* line 5439, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__caption__rating__star {
     display: inline-block;
     position: relative;
@@ -6973,7 +6974,7 @@ label {
     background: url(../img/star.png) no-repeat;
   }
 
-  /* line 5446, ../sass/_1280.scss */
+  /* line 5447, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__caption__rating__number {
     display: inline-block;
     position: relative;
@@ -6983,7 +6984,7 @@ label {
     color: #383d43;
   }
 
-  /* line 5454, ../sass/_1280.scss */
+  /* line 5455, ../sass/_1280.scss */
   .b-hotels-in__coment-elem_data {
     display: block;
     position: relative;
@@ -6993,7 +6994,7 @@ label {
     color: #5f6569;
   }
 
-  /* line 5462, ../sass/_1280.scss */
+  /* line 5463, ../sass/_1280.scss */
   .b-hotels-in__coment-elem_caption {
     display: block;
     position: relative;
@@ -7003,7 +7004,7 @@ label {
     color: #383d43;
   }
 
-  /* line 5470, ../sass/_1280.scss */
+  /* line 5471, ../sass/_1280.scss */
   .b-hotels-in__coment-elem_txt {
     display: block;
     position: relative;
@@ -7014,7 +7015,7 @@ label {
     color: #5f6569;
   }
 
-  /* line 5479, ../sass/_1280.scss */
+  /* line 5480, ../sass/_1280.scss */
   .b-hotels-in__coment-elem_detail {
     display: inline-block;
     position: relative;
@@ -7023,7 +7024,7 @@ label {
     color: #00adc7;
     cursor: pointer;
   }
-  /* line 5486, ../sass/_1280.scss */
+  /* line 5487, ../sass/_1280.scss */
   .b-hotels-in__coment-elem_detail span {
     display: inline-block;
     position: relative;
@@ -7033,7 +7034,7 @@ label {
     background-position: 0px -1311px;
   }
 
-  /* line 5495, ../sass/_1280.scss */
+  /* line 5496, ../sass/_1280.scss */
   .b-hotels-in__coment-elem_b-detail {
     display: block;
     position: relative;
@@ -7042,7 +7043,7 @@ label {
     overflow: hidden;
   }
 
-  /* line 5502, ../sass/_1280.scss */
+  /* line 5503, ../sass/_1280.scss */
   .b-hotels-in__coment-elem_b-detail__elem {
     display: block;
     position: relative;
@@ -7051,7 +7052,7 @@ label {
     border-top: 1px solid #e1e5e8;
   }
 
-  /* line 5509, ../sass/_1280.scss */
+  /* line 5510, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__b-detail__place {
     display: inline-block;
     position: relative;
@@ -7062,7 +7063,7 @@ label {
     line-height: 50px;
   }
 
-  /* line 5518, ../sass/_1280.scss */
+  /* line 5519, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__b-detail__place__txt {
     display: inline-block;
     position: relative;
@@ -7074,7 +7075,7 @@ label {
     line-height: 48px;
   }
 
-  /* line 5528, ../sass/_1280.scss */
+  /* line 5529, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__b-detail__place__rating {
     display: inline-block;
     position: relative;
@@ -7084,7 +7085,7 @@ label {
     line-height: 48px;
   }
 
-  /* line 5536, ../sass/_1280.scss */
+  /* line 5537, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__b-detail__place__rating__grey {
     display: block;
     position: absolute;
@@ -7095,7 +7096,7 @@ label {
     background-color: #c3cbd1;
   }
 
-  /* line 5545, ../sass/_1280.scss */
+  /* line 5546, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__b-detail__place__rating__color {
     display: block;
     position: absolute;
@@ -7106,7 +7107,7 @@ label {
     background-color: #ffd200;
   }
 
-  /* line 5554, ../sass/_1280.scss */
+  /* line 5555, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__b-detail__place__rating__star {
     display: inline-block;
     position: relative;
@@ -7116,7 +7117,7 @@ label {
     background: url(../img/star.png) no-repeat;
   }
 
-  /* line 5562, ../sass/_1280.scss */
+  /* line 5563, ../sass/_1280.scss */
   .b-hotels-in__coment-elem__b-detail__place__number {
     display: inline-block;
     position: relative;
@@ -7126,18 +7127,18 @@ label {
     color: #383d43;
   }
 
-  /* line 5570, ../sass/_1280.scss */
+  /* line 5571, ../sass/_1280.scss */
   .margin-b-rating {
     margin-left: 13%;
   }
 
-  /* line 5573, ../sass/_1280.scss */
+  /* line 5574, ../sass/_1280.scss */
   .flex-container3 {
     display: none;
     position: relative;
   }
 
-  /* line 5577, ../sass/_1280.scss */
+  /* line 5578, ../sass/_1280.scss */
   .b-add-coment-elem {
     display: block;
     position: relative;
@@ -7146,12 +7147,12 @@ label {
     border-bottom: 1px solid #e1e5e8;
   }
 
-  /* line 5584, ../sass/_1280.scss */
+  /* line 5585, ../sass/_1280.scss */
   .b-add-coment-elem:last-child {
     /*	border: none;*/
   }
 
-  /* line 5587, ../sass/_1280.scss */
+  /* line 5588, ../sass/_1280.scss */
   .b-add-coment-elem__name {
     display: inline-block;
     position: relative;
@@ -7163,7 +7164,7 @@ label {
     color: #00adc7;
   }
 
-  /* line 5597, ../sass/_1280.scss */
+  /* line 5598, ../sass/_1280.scss */
   .b-add-coment-elem__b-rating {
     display: inline-block;
     position: relative;
@@ -7174,7 +7175,7 @@ label {
     margin-left: 3px;
   }
 
-  /* line 5606, ../sass/_1280.scss */
+  /* line 5607, ../sass/_1280.scss */
   .b-add-coment-elem__b-rating__color {
     display: block;
     position: absolute;
@@ -7185,7 +7186,7 @@ label {
     background-color: #00adc7;
   }
 
-  /* line 5615, ../sass/_1280.scss */
+  /* line 5616, ../sass/_1280.scss */
   .b-add-coment-elem__b-rating__star {
     display: inline-block;
     position: relative;
@@ -7196,12 +7197,12 @@ label {
     cursor: pointer;
   }
 
-  /* line 5625, ../sass/_1280.scss */
+  /* line 5626, ../sass/_1280.scss */
   .b-add-coment-elem__b-rating__star:hover .star_description {
     opacity: 1;
   }
 
-  /* line 5629, ../sass/_1280.scss */
+  /* line 5630, ../sass/_1280.scss */
   .star_description {
     display: block;
     position: absolute;
@@ -7225,7 +7226,7 @@ label {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  /* line 5653, ../sass/_1280.scss */
+  /* line 5654, ../sass/_1280.scss */
   .star_description span {
     display: block;
     position: absolute;
@@ -7237,7 +7238,7 @@ label {
     background-position: 0px -1040px;
   }
 
-  /* line 5664, ../sass/_1280.scss */
+  /* line 5665, ../sass/_1280.scss */
   .b-add-coment-elem__hover-block {
     display: block;
     position: absolute;
@@ -7247,7 +7248,7 @@ label {
     height: 33px;
   }
 
-  /* line 5673, ../sass/_1280.scss */
+  /* line 5674, ../sass/_1280.scss */
   .b-add-coment-elem__txt {
     display: inline-block;
     position: relative;
@@ -7257,7 +7258,7 @@ label {
     color: #383d43;
   }
 
-  /* line 5681, ../sass/_1280.scss */
+  /* line 5682, ../sass/_1280.scss */
   .b-add-coment-elem__b-input {
     display: block;
     position: relative;
@@ -7265,7 +7266,7 @@ label {
     height: 100px;
   }
 
-  /* line 5687, ../sass/_1280.scss */
+  /* line 5688, ../sass/_1280.scss */
   .b-add-coment-elem__b-input__left {
     display: block;
     position: absolute;
@@ -7275,7 +7276,7 @@ label {
     width: 305px;
   }
 
-  /* line 5695, ../sass/_1280.scss */
+  /* line 5696, ../sass/_1280.scss */
   .b-add-coment-elem__b-input__right {
     display: block;
     position: absolute;
@@ -7285,7 +7286,7 @@ label {
     width: 310px;
   }
 
-  /* line 5703, ../sass/_1280.scss */
+  /* line 5704, ../sass/_1280.scss */
   .b-add-coment-elem__b-input__txt {
     display: block;
     position: relative;
@@ -7295,7 +7296,7 @@ label {
     color: #383d43;
   }
 
-  /* line 5711, ../sass/_1280.scss */
+  /* line 5712, ../sass/_1280.scss */
   .b-add-coment-elem__input {
     display: block;
     position: relative;
@@ -7313,7 +7314,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 5727, ../sass/_1280.scss */
+  /* line 5728, ../sass/_1280.scss */
   .b-add-coment-elem__input_year {
     display: block;
     position: absolute;
@@ -7332,7 +7333,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
   }
 
-  /* line 5744, ../sass/_1280.scss */
+  /* line 5745, ../sass/_1280.scss */
   .b-add-coment-elem__input_month {
     display: block;
     position: absolute;
@@ -7353,7 +7354,7 @@ label {
     z-index: 6;
   }
 
-  /* line 5763, ../sass/_1280.scss */
+  /* line 5764, ../sass/_1280.scss */
   .b-add-coment-elem__input_year__arrow {
     display: block;
     position: absolute;
@@ -7366,7 +7367,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 5774, ../sass/_1280.scss */
+  /* line 5775, ../sass/_1280.scss */
   .b-add-coment-elem__input_month__arrow {
     display: block;
     position: absolute;
@@ -7380,7 +7381,7 @@ label {
     z-index: 7;
   }
 
-  /* line 5786, ../sass/_1280.scss */
+  /* line 5787, ../sass/_1280.scss */
   #b-hotels-in__select-month {
     display: none;
     position: absolute;
@@ -7388,7 +7389,7 @@ label {
     right: 0px;
     z-index: 5;
   }
-  /* line 5793, ../sass/_1280.scss */
+  /* line 5794, ../sass/_1280.scss */
   #b-hotels-in__select-month li {
     display: block;
     padding-left: 8px;
@@ -7403,19 +7404,19 @@ label {
     background-color: #ebeef0;
     cursor: pointer;
   }
-  /* line 5807, ../sass/_1280.scss */
+  /* line 5808, ../sass/_1280.scss */
   #b-hotels-in__select-month li:hover {
     background-color: #fff;
   }
-  /* line 5810, ../sass/_1280.scss */
+  /* line 5811, ../sass/_1280.scss */
   #b-hotels-in__select-month li:first-child:hover {
     background-color: #ebeef0;
   }
-  /* line 5813, ../sass/_1280.scss */
+  /* line 5814, ../sass/_1280.scss */
   #b-hotels-in__select-month li:first-child {
     border-bottom: none;
   }
-  /* line 5817, ../sass/_1280.scss */
+  /* line 5818, ../sass/_1280.scss */
   #b-hotels-in__select-month li:last-child {
     border-radius: 0px 0px 6px 6px;
     -webkit-border-radius: 0px 0px 6px 6px;
@@ -7423,14 +7424,14 @@ label {
     -khtml-border-radius: 0px 0px 6px 6px;
   }
 
-  /* line 5824, ../sass/_1280.scss */
+  /* line 5825, ../sass/_1280.scss */
   .b-add-coment-elem__space2 {
     display: block;
     position: relative;
     height: 20px;
   }
 
-  /* line 5829, ../sass/_1280.scss */
+  /* line 5830, ../sass/_1280.scss */
   .b-add-coment-elem__txt2 {
     display: block;
     position: relative;
@@ -7439,7 +7440,7 @@ label {
     font-size: 10.5pt;
     color: #383d43;
   }
-  /* line 5836, ../sass/_1280.scss */
+  /* line 5837, ../sass/_1280.scss */
   .b-add-coment-elem__txt2 span {
     display: inline-block;
     position: relative;
@@ -7449,7 +7450,7 @@ label {
     color: #747a7d;
   }
 
-  /* line 5845, ../sass/_1280.scss */
+  /* line 5846, ../sass/_1280.scss */
   .b-add-coment-elem__fild1 {
     display: block;
     position: relative;
@@ -7468,7 +7469,7 @@ label {
     font-size: 10.5pt;
   }
 
-  /* line 5862, ../sass/_1280.scss */
+  /* line 5863, ../sass/_1280.scss */
   .b-add-coment-elem__fild2 {
     display: block;
     position: relative;
@@ -7487,7 +7488,7 @@ label {
     font-size: 10.5pt;
   }
 
-  /* line 5879, ../sass/_1280.scss */
+  /* line 5880, ../sass/_1280.scss */
   .b-hotels-in__btn-load {
     display: inline-block;
     position: relative;
@@ -7501,7 +7502,7 @@ label {
     -khtml-border-radius: 150px 150px 150px 150px;
     cursor: pointer;
   }
-  /* line 5891, ../sass/_1280.scss */
+  /* line 5892, ../sass/_1280.scss */
   .b-hotels-in__btn-load span {
     display: block;
     position: relative;
@@ -7513,7 +7514,7 @@ label {
     background-position: 0px -1320px;
   }
 
-  /* line 5902, ../sass/_1280.scss */
+  /* line 5903, ../sass/_1280.scss */
   .b-add-coment-elem__fild3 {
     display: inline-block;
     position: relative;
@@ -7533,7 +7534,7 @@ label {
     font-size: 10.5pt;
   }
 
-  /* line 5920, ../sass/_1280.scss */
+  /* line 5921, ../sass/_1280.scss */
   .b-hotels-in__add_coment {
     display: block;
     position: relative;
@@ -7547,7 +7548,7 @@ label {
     text-align: center;
   }
 
-  /* line 5932, ../sass/_1280.scss */
+  /* line 5933, ../sass/_1280.scss */
   .b-hotels-in__add_coment:active {
     left: 1px;
     top: 1px;
@@ -7555,13 +7556,13 @@ label {
 
   /* ================================   END HOTELS-IN  ============================== */
   /* =============================   BEGIN COUNTRIES-IN  ============================ */
-  /* line 5938, ../sass/_1280.scss */
+  /* line 5939, ../sass/_1280.scss */
   .b-countries-in__city {
     display: block;
     position: relative;
     width: 100%;
   }
-  /* line 5942, ../sass/_1280.scss */
+  /* line 5943, ../sass/_1280.scss */
   .b-countries-in__city a {
     display: inline-block;
     position: relative;
@@ -7573,7 +7574,7 @@ label {
     line-height: 22px;
   }
 
-  /* line 5953, ../sass/_1280.scss */
+  /* line 5954, ../sass/_1280.scss */
   .b-countries-in__b-caption {
     display: block;
     position: relative;
@@ -7583,7 +7584,7 @@ label {
     color: #383d43;
   }
 
-  /* line 5961, ../sass/_1280.scss */
+  /* line 5962, ../sass/_1280.scss */
   .b-countries-in__info {
     display: block;
     position: relative;
@@ -7593,13 +7594,13 @@ label {
     color: #5f6569;
   }
 
-  /* line 5969, ../sass/_1280.scss */
+  /* line 5970, ../sass/_1280.scss */
   .b-countries-in__b-flex {
     display: flex;
     align-items: flex-start;
   }
 
-  /* line 5973, ../sass/_1280.scss */
+  /* line 5974, ../sass/_1280.scss */
   .b-countries-in__flex__item-l {
     width: 42%;
     font-family: 'roboto_r';
@@ -7607,7 +7608,7 @@ label {
     color: #5f6569;
   }
 
-  /* line 5979, ../sass/_1280.scss */
+  /* line 5980, ../sass/_1280.scss */
   .b-countries-in__flex__item-r {
     width: 42%;
     margin-left: 10%;
@@ -7616,7 +7617,7 @@ label {
     color: #5f6569;
   }
 
-  /* line 5986, ../sass/_1280.scss */
+  /* line 5987, ../sass/_1280.scss */
   .b-tour__b-main__b-card__caption4 {
     display: inline-block;
     position: relative;
@@ -7627,12 +7628,12 @@ label {
     font-size: 9pt;
   }
 
-  /* line 5995, ../sass/_1280.scss */
+  /* line 5996, ../sass/_1280.scss */
   .select_cash {
     display: inline-block;
     position: relative;
   }
-  /* line 5998, ../sass/_1280.scss */
+  /* line 5999, ../sass/_1280.scss */
   .select_cash input {
     width: 50px;
     margin-left: 15px;
@@ -7649,7 +7650,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 6014, ../sass/_1280.scss */
+  /* line 6015, ../sass/_1280.scss */
   .select_cash__arrow {
     display: block;
     position: absolute;
@@ -7662,7 +7663,7 @@ label {
     cursor: pointer;
   }
 
-  /* line 6025, ../sass/_1280.scss */
+  /* line 6026, ../sass/_1280.scss */
   .cash_calc_txt {
     display: inline-block;
     position: relative;
@@ -7673,7 +7674,7 @@ label {
     color: #383d43;
   }
 
-  /* line 6035, ../sass/_1280.scss */
+  /* line 6036, ../sass/_1280.scss */
   .cash_calc_unit {
     display: inline-block;
     position: relative;
@@ -7684,7 +7685,7 @@ label {
     color: #00adc7;
   }
 
-  /* line 6045, ../sass/_1280.scss */
+  /* line 6046, ../sass/_1280.scss */
   .details__line2 {
     display: block;
     position: relative;
@@ -7694,7 +7695,7 @@ label {
     border-top: 1px solid #ebeef0;
   }
 
-  /* line 6053, ../sass/_1280.scss */
+  /* line 6054, ../sass/_1280.scss */
   .b-tour__b-main__b-card__caption3 {
     display: inline-block;
     position: relative;
@@ -7705,7 +7706,7 @@ label {
     font-size: 9pt;
   }
 
-  /* line 6062, ../sass/_1280.scss */
+  /* line 6063, ../sass/_1280.scss */
   .time-zone-txt {
     display: inlilne-block;
     position: relative;
@@ -7715,7 +7716,7 @@ label {
     font-size: 9pt;
   }
 
-  /* line 6070, ../sass/_1280.scss */
+  /* line 6071, ../sass/_1280.scss */
   .time-zone-value {
     display: inlilne-block;
     position: relative;
@@ -7726,7 +7727,7 @@ label {
     font-weight: bold;
   }
 
-  /* line 6079, ../sass/_1280.scss */
+  /* line 6080, ../sass/_1280.scss */
   .b-time1 {
     display: inline-block;
     position: relative;
@@ -7737,7 +7738,7 @@ label {
     text-align: center;
   }
 
-  /* line 6088, ../sass/_1280.scss */
+  /* line 6089, ../sass/_1280.scss */
   .b-time2 {
     display: inline-block;
     position: relative;
@@ -7747,7 +7748,7 @@ label {
     text-align: center;
   }
 
-  /* line 6096, ../sass/_1280.scss */
+  /* line 6097, ../sass/_1280.scss */
   .line-horizintal {
     display: block;
     position: relative;
@@ -7755,7 +7756,7 @@ label {
     border-top: 1px solid #e1e5e8;
   }
 
-  /* line 6102, ../sass/_1280.scss */
+  /* line 6103, ../sass/_1280.scss */
   .time-zone-city-txt {
     display: inlilne-block;
     position: relative;
@@ -7766,7 +7767,7 @@ label {
     font-size: 9pt;
   }
 
-  /* line 6111, ../sass/_1280.scss */
+  /* line 6112, ../sass/_1280.scss */
   .time-zone-city-value {
     display: inlilne-block;
     position: relative;
@@ -7778,7 +7779,7 @@ label {
     font-weight: bold;
   }
 
-  /* line 6121, ../sass/_1280.scss */
+  /* line 6122, ../sass/_1280.scss */
   .b-countriese-in_temper {
     display: block;
     position: relative;
@@ -7788,7 +7789,7 @@ label {
     color: #383d43;
   }
 
-  /* line 6129, ../sass/_1280.scss */
+  /* line 6130, ../sass/_1280.scss */
   .b-countriese-in_water {
     display: block;
     position: absolute;
@@ -7799,7 +7800,7 @@ label {
     background: url(../img/water1.jpg) no-repeat;
   }
 
-  /* line 6138, ../sass/_1280.scss */
+  /* line 6139, ../sass/_1280.scss */
   .b-time1__fon {
     display: block;
     position: absolute;
@@ -7810,7 +7811,7 @@ label {
     /*	background: url(../img/time.png) no-repeat;*/
   }
 
-  /* line 6147, ../sass/_1280.scss */
+  /* line 6148, ../sass/_1280.scss */
   .b-time1__hour {
     display: block;
     position: absolute;
@@ -7821,7 +7822,7 @@ label {
     /*	background: url(../img/time_hour.png) no-repeat;*/
   }
 
-  /* line 6156, ../sass/_1280.scss */
+  /* line 6157, ../sass/_1280.scss */
   .b-time1__minut {
     display: block;
     position: absolute;
@@ -7835,7 +7836,7 @@ label {
     -webkit-transform: rotate(30deg);
   }
 
-  /* line 6171, ../sass/_1280.scss */
+  /* line 6172, ../sass/_1280.scss */
   .search-select-cash {
     display: block;
     position: absolute;
@@ -7846,7 +7847,7 @@ label {
     overflow: hidden;
     z-index: 1;
   }
-  /* line 6180, ../sass/_1280.scss */
+  /* line 6181, ../sass/_1280.scss */
   .search-select-cash li {
     display: block;
     position: relative;
@@ -7862,7 +7863,7 @@ label {
     border-right: 1px solid #dbdee0;
     cursor: pointer;
   }
-  /* line 6195, ../sass/_1280.scss */
+  /* line 6196, ../sass/_1280.scss */
   .search-select-cash li:last-child {
     border-bottom: 1px solid #dbdee0;
     border-radius: 0px 0px 8px 8px;
@@ -7871,37 +7872,37 @@ label {
     -khtml-border-radius: 0px 0px 8px 8px;
     /*background-color: #fff;*/
   }
-  /* line 6203, ../sass/_1280.scss */
+  /* line 6204, ../sass/_1280.scss */
   .search-select-cash li:hover {
     background-color: #fff;
   }
-  /* line 6206, ../sass/_1280.scss */
+  /* line 6207, ../sass/_1280.scss */
   .search-select-cash li:first-child:hover {
     background-color: #ebeef0;
   }
 
   /* ==============================   END COUNTRIES-IN  ============================= */
-  /* line 6212, ../sass/_1280.scss */
+  /* line 6213, ../sass/_1280.scss */
   .b-avia-elem__price320 {
     display: none;
   }
 
-  /* line 6215, ../sass/_1280.scss */
+  /* line 6216, ../sass/_1280.scss */
   .block_none {
     display: none;
   }
 
-  /* line 6219, ../sass/_1280.scss */
+  /* line 6220, ../sass/_1280.scss */
   .select_cash__input {
     z-index: 120;
   }
 
-  /* line 6223, ../sass/_1280.scss */
+  /* line 6224, ../sass/_1280.scss */
   .select_cash {
     z-index: 120;
   }
 
-  /* line 6226, ../sass/_1280.scss */
+  /* line 6227, ../sass/_1280.scss */
   .countries-in-path {
     display: block;
     position: relative;
@@ -7913,14 +7914,14 @@ label {
   }
 
   /*    правки       */
-  /* line 6237, ../sass/_1280.scss */
+  /* line 6238, ../sass/_1280.scss */
   .b-avia-in__time__name {
     width: 90%;
     margin-left: 3.8%;
     text-align: left;
   }
 
-  /* line 6242, ../sass/_1280.scss */
+  /* line 6243, ../sass/_1280.scss */
   #close_select_area {
     display: none;
     position: absolute;
@@ -7933,27 +7934,27 @@ label {
     opacity: .5;
   }
 
-  /* line 6253, ../sass/_1280.scss */
+  /* line 6254, ../sass/_1280.scss */
   .z110 {
     z-index: 110;
   }
 
-  /* line 6256, ../sass/_1280.scss */
+  /* line 6257, ../sass/_1280.scss */
   .z111 {
     z-index: 111;
   }
 
-  /* line 6259, ../sass/_1280.scss */
+  /* line 6260, ../sass/_1280.scss */
   .z120 {
     z-index: 120;
   }
 
-  /* line 6262, ../sass/_1280.scss */
+  /* line 6263, ../sass/_1280.scss */
   .z121 {
     z-index: 121;
   }
 
-  /* line 6265, ../sass/_1280.scss */
+  /* line 6266, ../sass/_1280.scss */
   .b-avia-in__calendar-icon {
     display: block;
     position: absolute;
@@ -7964,6 +7965,12 @@ label {
     background: url(../img/icon.png) no-repeat;
     background-position: 0px -90px;
     cursor: pointer;
+  }
+
+  /* line 6278, ../sass/_1280.scss */
+  .b-inline {
+    display: inline-block;
+    position: relative;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1259px), only screen and (min-device-width: 1000px) and (max-device-width: 1259px) {
@@ -12529,7 +12536,7 @@ label {
   /* line 3723, ../sass/_1024.scss */
   .b-search-select {
     top: 15px;
-    left: 99px;
+    left: 0px;
     width: 77px;
   }
   /* line 3727, ../sass/_1024.scss */
@@ -13860,7 +13867,7 @@ label {
 
   /* line 4813, ../sass/_1024.scss */
   .b-hotels-select-abc {
-    left: 88px;
+    left: 0px;
     top: 15px;
     width: 72px;
   }
@@ -13875,7 +13882,7 @@ label {
 
   /* line 4825, ../sass/_1024.scss */
   .b-hotels-select-rating {
-    left: 87px;
+    left: 0px;
     top: 15px;
     width: 167px;
   }
@@ -20498,7 +20505,7 @@ label {
   /* line 3904, ../sass/_768.scss */
   .b-search-select {
     top: 15px;
-    left: 99px;
+    left: 0px;
     width: 77px;
   }
   /* line 3908, ../sass/_768.scss */
@@ -21916,7 +21923,7 @@ label {
 
   /* line 5059, ../sass/_768.scss */
   .b-hotels-select-abc {
-    left: 88px;
+    left: 0px;
     top: 15px;
     width: 72px;
   }
@@ -21931,7 +21938,7 @@ label {
 
   /* line 5071, ../sass/_768.scss */
   .b-hotels-select-rating {
-    left: 87px;
+    left: 0px;
     top: 15px;
     width: 157px;
   }
@@ -28913,7 +28920,7 @@ label {
   /* line 4187, ../sass/_320.scss */
   .b-search-select {
     top: 15px;
-    left: 100px;
+    left: 0px;
     width: 77px;
   }
   /* line 4191, ../sass/_320.scss */
@@ -30395,7 +30402,7 @@ label {
 
   /* line 5394, ../sass/_320.scss */
   .b-hotels-select-abc {
-    left: 88px;
+    left: 0px;
     top: 15px;
     width: 72px;
   }
@@ -30410,7 +30417,7 @@ label {
 
   /* line 5406, ../sass/_320.scss */
   .b-hotels-select-rating {
-    left: 87px;
+    left: 0px;
     top: 15px;
     width: 167px;
   }

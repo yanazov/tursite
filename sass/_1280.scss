@@ -3652,7 +3652,7 @@ body{
 }
 .b-search-select{
 	top: 15px;
-	left: 99px;
+	left: 0px;
 	width: 77px;
 	li{
 		height: 25px;
@@ -4418,6 +4418,7 @@ body{
 	display: block;
 	position: relative;
 	width: 92%;
+	height: 27px;
 	padding-left: 8%;
 	margin-top: 10px;
 	margin-bottom: 5px;
@@ -4748,7 +4749,7 @@ body{
 	}
 }
 .b-hotels-select-abc{
-	left: 88px;
+	left: 0px;
 	top: 15px;
 	width: 72px;
 	li{
@@ -4760,7 +4761,7 @@ body{
 	}
 }
 .b-hotels-select-rating{
-	left: 87px;
+	left: 0px;
 	top: 15px;
 	width: 167px;
 	li{
@@ -6274,7 +6275,10 @@ body{
 	
 	cursor: pointer;
 }
-
+.b-inline{
+	display: inline-block;
+	position: relative;
+}
 
 
 

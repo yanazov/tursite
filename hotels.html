@@ -218,36 +218,42 @@
 				<span class="b-hotels__body__top__b-input__search__btn"></span>
 				<div class="b-hotels__body__top__b-input__right">
 					<div class="b-hotels__body__top__b-select b-hotels__b-search-abc">
-						<span class="b-search-e__body__top__txt-select">По названию:</span>
-						<input class="b-search-e__input" type="text" value="A-Z" readonly onClick="js_select_number_men_2(0)">
-						<span class="b-search-e__body__top__b-select__arrow"></span>
-						<ul class="b-tour__select-number-men b-hotels-select-abc">
-							<li onClick=></li>
-							<li onClick="js_close_select_number_men_search(this, 0)">A-Z</li>
-							<li onClick="js_close_select_number_men_search(this, 0)">Z-A</li>
-						</ul>
+						<span class="b-search-e__body__top__txt-select">По названию: </span>
+						<div class="b-inline">
+							<input class="b-search-e__input" type="text" value="A-Z" readonly onClick="js_select_number_men_2(0)">
+							<span class="b-search-e__body__top__b-select__arrow"></span>
+							<ul class="b-tour__select-number-men b-hotels-select-abc">
+								<li onClick=></li>
+								<li onClick="js_close_select_number_men_search(this, 0)">A-Z</li>
+								<li onClick="js_close_select_number_men_search(this, 0)">Z-A</li>
+							</ul>
+						</div>	
 					</div>
 					<div class="b-hotels__body__top__b-select b-hotels__b-search-rating">
 						<span class="b-search-e__body__top__txt-select">Сортировать:</span>
-						<input class="b-search-e__input" type="text" value="по рейтингу" readonly onClick="js_select_number_men_2(1)">
-						<span class="b-search-e__body__top__b-select__arrow"></span>
-						<ul class="b-tour__select-number-men b-hotels-select-rating">
-							<li onClick=></li>
-							<li onClick="js_close_select_number_men_search(this, 1)">по рейтингу</li>
-							<li onClick="js_close_select_number_men_search(this, 1)">по цене</li>
-							<li onClick="js_close_select_number_men_search(this, 1)">по обслуживанию</li>
-						</ul>
+						<div class="b-inline">
+							<input class="b-search-e__input" type="text" value="по рейтингу" readonly onClick="js_select_number_men_2(1)">
+							<span class="b-search-e__body__top__b-select__arrow"></span>
+							<ul class="b-tour__select-number-men b-hotels-select-rating">
+								<li onClick=></li>
+								<li onClick="js_close_select_number_men_search(this, 1)">по рейтингу</li>
+								<li onClick="js_close_select_number_men_search(this, 1)">по цене</li>
+								<li onClick="js_close_select_number_men_search(this, 1)">по обслуживанию</li>
+							</ul>
+						</div>	
 					</div>
 					<div class="b-hotels__body__top__b-select b-hotels__b-search-number">
 						<span class="b-search-e__body__top__txt-select">Отображать по:</span>
-						<input class="b-search-e__input" type="text" value="10" readonly onClick="js_select_number_men_2(2)">
-						<span class="b-search-e__body__top__b-select__arrow"></span>
-						<ul class="b-tour__select-number-men b-search-select">
-							<li onClick=></li>
-							<li onClick="js_close_select_number_men_search(this, 2)">5</li>
-							<li onClick="js_close_select_number_men_search(this, 2)">15</li>
-							<li onClick="js_close_select_number_men_search(this, 2)">20</li>
-						</ul>
+						<div class="b-inline">
+							<input class="b-search-e__input" type="text" value="10" readonly onClick="js_select_number_men_2(2)">
+							<span class="b-search-e__body__top__b-select__arrow"></span>
+							<ul class="b-tour__select-number-men b-search-select">
+								<li onClick=></li>
+								<li onClick="js_close_select_number_men_search(this, 2)">5</li>
+								<li onClick="js_close_select_number_men_search(this, 2)">15</li>
+								<li onClick="js_close_select_number_men_search(this, 2)">20</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>	
@@ -448,6 +454,6 @@
 	<span id="btn-up" class="btn-up-dwn" onClick="js_scroll_up()">
 		<span class="btn-up-dwn__icon"></span>
 	</span>
-	
+	<div id="close_select_area" onClick="js_close_select_area()"></div>
 </body>
 </html>
