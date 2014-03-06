@@ -4604,6 +4604,7 @@ body{
 .b-countries__elem__img{
 	width: 228px;
 }
+
 .b-countries__elem:hover{
 	background-color: #fff;
 	-moz-box-shadow: 0 0 28px #ccc; 
@@ -4888,6 +4889,18 @@ body{
 }
 .b-hotels-top-elem__768{
 	display: none;
+}
+.b-hot__img img{
+	display: block;
+	position: relative;
+	height: 123px;
+	width: 248px;
+	-webkit-transform:scale(1.0);
+	-webkit-transition-duration: 0.4s;
+	-moz-transform:scale(1.0);
+	-moz-transition-duration: 0.4s;
+	-o-transform:scale(1.0);
+	-o-transition-duration: 0.4s;
 }
 .b-hotels-top-elem:hover{
 	background-color: #fff;
